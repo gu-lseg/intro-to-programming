@@ -1,10 +1,10 @@
-Functions - Verbs
+Calling Functions
 *****************
 
-Functions
-=========
+Action objects
+==============
 
-Functions are a type of object. 
+Functions are another type of object. 
 
 Think of them as actions, verbs, or commands.
 
@@ -22,67 +22,28 @@ Sometimes we call and pass parameters (here a number)::
 
 Think of parameters as adverbs: 'run, quickly'
 
+All the instructions you gave turtle are examples of calling functions.
 
-Turtle functions
-================
+Tip:
 
-Here we introduce functions that turtles understand. 
+    Programming is always applied to something. Its an activity that seeks to
+    capture some aspect of reality that is useful to us. 
 
-Now type::
+    As humans we think at a higher intuitive level. We think square, or move
+    forward. 
 
-    import turtle
+    Computers need everything broken down into steps. Each step is a command.
 
-.. image:: /images/turtle-init.png
+    Programming as an activity is about breaking down our concepts into smaller defined steps.
+    In effect we define our concepts in commands.
 
-
-::
-
-    turtle.forward(25)
-
-.. image:: /images/turtle-forward.png
-
-::
-
-    turtle.left(30)
-
-.. image:: /images/turtle-left.png
-
-
-Movement:
-
-``turtle.forward(<distance>)`` moves the turtle forward by the given distance. 
-
-``turtle.left(<angle>)`` rotates the turtle by number of degrees left.
-
-``turtle.backward(...)``
-
-``turtle.right(...)``
-
-
-Environment:
-
-``turtle.reset()``  clears the drawing
-
-``turtle.shape("turtle")`` change the shape into a turtle
-
-``turtle.color("red")``
-
-    
 
 Geometry Exercises
 ==================
 
-Programming is interesting when applied to something. Here we will
-program some geometrical concepts we have.
+Here we will program some geometrical concepts.
 
-As humans we think at a higher intuitive level. We think square, or move
-forward. 
-
-But computers need everything explained. 
-Programming is about breaking down our concepts into smaller defined steps.
-We are in effect defining our concepts.
-
-Lets define some of our Gemetrical concepts.
+Lets define some of our gemetrical concepts using step by step instructions.
 
 Draw a Square
 -------------

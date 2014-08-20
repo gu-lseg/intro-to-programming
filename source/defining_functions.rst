@@ -1,22 +1,13 @@
 Defining Functions
 ******************
 
-Abstractions
-============
 
-Computers need step by step instructions. Humans however operate at higher
-levels of abstraction.
+Simple Functions
+================
 
-Functions are one way to introduce abstractions. They let you name code for
-future execution.
+The ``def`` keyword is followed by the function object name, followed by () and then a colon. 
 
-They enable us to no longer think of details.
-
-Defining Functions
-==================
-
-The ``def`` keyword followed by a name and then a colon identifies a function
-definition::
+example::
 
     def going_nowhere():
         turtle.forward(50)
@@ -30,14 +21,35 @@ The indents are 4 spaces. The block ends on the first non indented line.
         
 (Take care to use spaces and not tabs for indenting)
 
-With Parameters
-===============
+SyntaxError
+===========
 
-Defining a function with parameters is similar::
+It is normal to take some time getting used to the syntax of any language.
+
+In python people always struggle a bit when they first define functions::
+
+    >>> def my_function:
+      File "<stdin>", line 1
+        def my_function:
+                       ^
+    SyntaxError: invalid syntax
+    >>>
+
+Be precise.
+
+Functions with Parameters
+=========================
+
+We have already seen calling functions with parameters.
+
+This is how to define a function that takes parameters:: 
 
     def line(length):
         turtle.forward(length)
 
+Tip:
+
+    People also call parameters arguments.
 
 Exercises
 =========
@@ -45,57 +57,13 @@ Exercises
 Shapes
 ------
 
-Reopen ``shapes.py`` and make a function for every shape.
+Reopen ``shapes.py`` and define every shape as function.
 
+Does this make the code more modular, readable, reusable?
 
 Shapes with Paramaters
 ----------------------
 
 Reopen ``shapes.py`` and make new functions with sensible parameters.
 
-
-From shapes to houses: Higher Abstractions
-==========================================
-
-You can use the already defined shapes as building blocks for even higher abstractions.
-
-Using the ipython interactive shell copy and paste these lines of code in and
-execute them.
-
-::
-
-    def house():
-        square(100)
-        turtle.left(90)
-        turtle.forward(100)
-        turtle.right(90)
-        equilateral_triangle(100)
-
-
-::
-
-    def house():
-        square(100)
-        turtle.left(90)
-        turtle.forward(100)
-        turtle.right(90)
-        equilateral_triangle(100)
-        turtle.right(90)
-        turtle.forward(100)
-        turtle.left(90)
-
-:: 
-
-    def row_of_houses():
-        house()
-        turtle.forward(100)
-        house()
-        turtle.forward(100)
-        house()
-        turtle.forward(100)
-
-
-Try your own. Enjoy thinking at a higher level!
-
-Think of what you can do with basic parts.
-Lego? Minecraft? Bricks?
+Does this make the code more general and reusable?

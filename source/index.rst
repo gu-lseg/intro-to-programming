@@ -3,16 +3,20 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Intro to Programming with Python's documentation!
-============================================================
+Intro to Programming
+====================
 
-Contents:
+Table of Contents:
 
 .. toctree::
    :maxdepth: 2
 
+   getting_started
    objects
+   running_from_file
    functions
    variables
+   generalising_with_names
    defining_functions
+   abstractions
    loops

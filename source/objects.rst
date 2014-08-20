@@ -1,61 +1,38 @@
-Objects - Things
-****************
+Objects
+*******
+
+We live in a world of things. We use language to refer to these things.
+
+Similarly, Python is a language that refers to a world of things. Programming, we use and define things.
+
+These things are called objects. Everything in python is an object. Turtle is an object.
+
+Physically, an object is something that exists in the computer's memory. 
+
+Conceptually, an object represents something with meaning to you the programmer.
+
 
 Objects & Types
 ===============
 
-Python is a language of things called objects. Everything is an object.
+We classify things in our world as types and we have words to refer to them.
 
-Physically, an object is something that exists in the computer's memory.
+For example we talk of chairs, doors, people, spaceships...
 
-Conceptually, an object represents something with meaning to the programmer and
-python.
+We understand each type to mean an object that has a set of attributes and
+enables actions:
+You can sit on a chair; you can open or close a door.
 
+The type of a Python object also determines the attributes and actions that
+programmers can interact with.
 
-An object's type defines the behaviour and use of an object.
+You have already interacted with turtle's behavour. 
 
-Think of analogies in real life:
-
-- A door can be closed. 
-- A chair can be sat on.
-- A chair can't be closed.
-- A door can't be sat on.
+Now we introduce two new basic types.
 
 
-Aside - Running Python
-======================
-
-One way to run python is by using the interactive shell.
-
-Type ``ipython`` in the terminal.
-
-Now type::
-
-    import turtle
-    turtle.shape("turtle")
-    turtle.forward(25)
-
-
-The other (more usual) way to run Python programs is by using files. 
-
-Put this into a file::
-
-    # A line beginning with '#' is a comment. Python ignores it.
-
-    import turtle
-    turtle.shape("turtle")
-    turtle.forward(25)
-    turtle.exitonclick()  # Why this? Test by commenting it out.
-
-Save the file and now run it with::
-
-    python my_turtle_file.py
-
-
-Strings & Integers
-==================
-
-Here are two types of objects.
+Strings
+=======
 
 Strings are a sequence of letters::
 
@@ -64,6 +41,10 @@ Strings are a sequence of letters::
 A sequence of letters starting and ending with ``"`` (a double quote) indicates
 a String object to python.
 
+
+Integers
+========
+
 Integers are positive numbers::
 
     5
@@ -71,25 +52,33 @@ Integers are positive numbers::
 A number indicates an Integer to python. Unlike for strings no special syntax
 is needed. In a way a number represents itself.
 
-Strings and numbers are different types of things.
+
+Tip:
+
+    You can always ask for the type of an object using this command::
+
+        type(5)
+
 
 Exercises
 =========
 
-Use the interactive python shell.
-
-Different behaviour with +
---------------------------
+Strings and Integers with +
+---------------------------
 
 Both string and integer objects respond to the + symbol.
 
-What are the diffferences between::
+What do you expect the difference to be between the following commands?
+
+First plus sign with strings::
 
     'abc' + 'def'
 
-and::
+Second plus sign with integers::
     
     5 + 4
+
+Test your answer with python.
 
 
 '5' Vs 5
@@ -102,3 +91,14 @@ What is the diffference between::
 and::
     
     5
+
+
+names and values
+----------------
+
+Given this code::
+
+    hello = "hello"
+
+What is the difference between the meaning of each set of characters on either
+side of the equal sign?
