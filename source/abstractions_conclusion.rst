@@ -1,6 +1,9 @@
 Conclusion
 **********
 
+Building on our previously defined concept of a house we now use repetition 
+to define a row of houses.
+
 Building worlds with abstractions
 =================================
 
