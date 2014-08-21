@@ -21,21 +21,6 @@ The indents are 4 spaces. The block ends on the first non indented line.
         
 (Take care to use spaces and not tabs for indenting)
 
-SyntaxError
-===========
-
-It is normal to take some time getting used to the syntax of any language.
-
-In python people always struggle a bit when they first define functions::
-
-    >>> def my_function:
-      File "<stdin>", line 1
-        def my_function:
-                       ^
-    SyntaxError: invalid syntax
-    >>>
-
-Be precise.
 
 Functions with Parameters
 =========================
@@ -50,6 +35,29 @@ This is how to define a function that takes parameters::
 Tip:
 
     People also call parameters arguments.
+
+
+IndentationError
+================
+
+Indentation is the number of spaces a piece of code is from the left hand side of
+the page.
+
+It is important in python. It defines blocks of code. A block of code is code
+that goes together.
+
+It is not unusual to get this kind of error::
+
+    >>> def awef():
+    ... print('hi')
+      File "<stdin>", line 2
+        print('hi')
+            ^
+    IndentationError: expected an indented block
+
+It simply means we have gotten the indentation wrong. Here the programmer has
+forgotten to add 4 spaces on the new line after the colon.
+
 
 Exercises
 =========

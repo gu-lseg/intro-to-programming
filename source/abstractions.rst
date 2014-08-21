@@ -1,5 +1,5 @@
-Abstractions
-************
+Abstractions with Functions
+***************************
 
 With functions our programming expressivity has just taken a leap.
 
@@ -12,8 +12,8 @@ future execution.
 They enable us to no longer think of details.
 
 
-Case study: From shapes to houses
-=================================
+From shapes to houses
+=====================
 
 You can use the already defined shapes as building blocks for even higher abstractions.
 
@@ -31,15 +31,6 @@ Consider the following.
         turtle.forward(100)
         turtle.left(90)
 
-:: 
-
-    def row_of_houses():
-        house()
-        turtle.forward(100)
-        house()
-        turtle.forward(100)
-        house()
-        turtle.forward(100)
 
 
 By reusing the code which defined our concepts of a square and triangle we have
@@ -47,22 +38,17 @@ defined the concept of a house.
 
 Try your own. Enjoy thinking at a higher level!
 
-Be inspired
-===========
-
-This is where programming starts to become creative. You can define the
-universe of things that is of interest to you.
-
-Building on layers of details you can construct palaces.
 
 Exercise
 ========
 
-Think of everything you can make from Lego, Minecraft, Bricks...
+A house can be a lot more complicated.
 
-These are phsical and familiar to us. Just think of what you can do with basic building blocks.
+Define two functions called window and door.
 
-Programmers model many other domains. Think of an area where you are expert and
-how you might code it.
+Tip:
 
-What objects, functions and variables would need to be defined?
+    To more easily compose drawing functions it is best to return the turtle to
+    the point of departure and pointing in the same direction. The above house
+    function does this with the last three lines of code.
+

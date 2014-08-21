@@ -11,6 +11,7 @@ Table of Contents:
 .. toctree::
    :maxdepth: 2
 
+   introduction
    getting_started
    objects
    running_from_file
@@ -20,3 +21,4 @@ Table of Contents:
    defining_functions
    abstractions
    loops
+   abstractions_conclusion

@@ -26,7 +26,14 @@ You can sit on a chair; you can open or close a door.
 The type of a Python object also determines the attributes and actions that
 programmers can interact with.
 
-You have already interacted with turtle's behavour. 
+You have already interacted with turtle's behavour::
+
+    >>> turtle.forward(25)
+    >>> turtle.shape("turtle")
+
+Each of the above commands means calling functions that are defined and have
+meaning on the turtle object. The turtle object itself like everythin else 
+is defined in code.
 
 Now we introduce two new basic types.
 
@@ -72,11 +79,11 @@ What do you expect the difference to be between the following commands?
 
 First plus sign with strings::
 
-    'abc' + 'def'
+    >>> 'abc' + 'def'
 
 Second plus sign with integers::
     
-    5 + 4
+    >>> 5 + 4
 
 Test your answer with python.
 
@@ -98,7 +105,7 @@ names and values
 
 Given this code::
 
-    hello = "hello"
+    five = "five"
 
 What is the difference between the meaning of each set of characters on either
 side of the equal sign?

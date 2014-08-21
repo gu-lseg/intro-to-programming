@@ -51,4 +51,33 @@ why things went wrong though. Instead in those cases they act as a clue.
 As programmers we learn to read them. Combined with our
 intuition we always eventually arrive at solutions.
 
-Often we Google errors.
+SyntaxError
+===========
+
+It is normal to take some time getting used to the syntax of any language.
+
+In python people always struggle a bit when they first define functions::
+
+    >>> def print_hi:
+      File "<stdin>", line 1
+        def print_hi 
+                       ^
+    SyntaxError: invalid syntax
+    >>>
+
+Here the programmer has forgotten that function definitions must have
+parentheses () with zero or more parameters at the end of the first line of
+definition.
+
+::
+
+    >>> def print_hi():
+        print('hi')
+
+No error this time. `print_hi` is properly defined.
+
+Tip:
+
+    Recognising typical errors and recognising how to deal with them are an
+    important part of programming. You will learn a few here. Googling errors
+    is also very helpfull.

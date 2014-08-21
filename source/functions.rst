@@ -20,9 +20,23 @@ Sometimes we call and pass parameters (here a number)::
 
     run("quickly")
 
-Think of parameters as adverbs: 'run, quickly'
+You could think of parameters as adverbs: 'run, quickly'
 
-All the instructions you gave turtle are examples of calling functions.
+NB: 
+
+    The name `run` hasn't yet been defined so python won't recognise the above if you
+    type it. We are illustrating a point.
+
+All turtle instructions are examples of calling functions attached to the turtle object.
+
+`print` is another function::
+    
+    >>> print('hello')
+
+`print` simply prints its parameter to the console.
+
+Geometry Exercises
+==================
 
 Tip:
 
@@ -36,10 +50,6 @@ Tip:
 
     Programming as an activity is about breaking down our concepts into smaller defined steps.
     In effect we define our concepts in commands.
-
-
-Geometry Exercises
-==================
 
 Here we will program some geometrical concepts.
 
@@ -80,4 +90,7 @@ Experiment with the angles between the individual squares.
 
 The picture shows three 20 degree turns. You could try 30 and 40...
 
+Task:
 
+    Create a file called `shapes.py` and put all shape related code into it. We
+    will be reusing this file.
