@@ -61,6 +61,9 @@ This confirms whether an object is of a certain type::
 Use this to get a list of attributes and methods of an object:: 
 
     >>> dir('5')
+    [ ... many methods ... ]
+    >>> dir(5)
+    [ ... many methods ... ]
     
 
 Strings `str`
@@ -70,26 +73,27 @@ An object of type String has a sequence of letters::
 
     >>> "hello"
     'hello'
-    >>> type(a_str)
+    >>> type("hello")
     str
-
 
 Language Syntax: a sequence of letters starting and ending with ``"`` (a double quote)
 indicates a String object to the interpreter.
 
 
-Integers `int`
-==============
+Integers
+========
 
 Integers are positive numbers::
 
     >>> 5
+    5
+    >>> type(5)
+    int
 
 A number indicates an Integer to the interpreter. Unlike for strings no special syntax
 is needed. In a way a number represents itself.
 
     
-
 Exercises
 =========
 
