@@ -6,7 +6,7 @@ We live in a world that contains things and we use language to refer to these th
 Python is two things:
 
 * An Interpreter - The environment.
-* A language - Used to refer, create, and interact with the objects in the
+* A language - Used to refer, create, and interact with the objects in an 
   environment.
 
 Everything in python is an object. Turtle is an object.
@@ -21,66 +21,73 @@ Programming is about defining and manipulating objects.
 Types
 =====
 
-Things are classified as types and the type determines a set of attributes and behaviours. 
+Things are classified as types and a type defines a set of attributes and behaviours. 
 
 There are many objects that are instances of the abstract type chair. All chairs have 4 legs and can be moved or sat on. 
 
-The type of a Python object determines the attributes and actions that
-it has and how programmers can interact with it.
+The type of a Python object also determines the attributes and actions that
+it has and how to interact with it.
 
-Using the turtle object as an example.
-
-An attribute is::
+The turtle object has an attribute that is::
 
     >>> turtle.pi
 
-Examples of behaviour:: 
+Turtle behaviour:: 
 
     >>> turtle.forward(25)
     >>> turtle.shape("turtle")
 
-Each of the above commands means calling functions that are defined and have
-meaning on the turtle object. 
-
-The turtle object is defined in python code. At runtime the interpreter creates an environment, and creates a turtle object within it.
+All the above is defined in python code. It is the interpreter that executes these instructions within an environment.
 
 
-We introduce two new basic types.
+`type('a')`, `isinstance('a', str)`
+===================================
+
+Introspecting objects is often very useful.
+
+Use this to get the type of an object:: 
+
+    >>> type(5)
 
 
-Strings
-=======
+This confirms whether an object is of a certain type:: 
 
-Strings are a sequence of letters::
+    >>> isinstance('5', int)
 
-    "hello"
 
-In Python a sequence of letters starting and ending with ``"`` (a double quote)
+`dir('a')`
+==========
+
+Use this to get a list of attributes and methods of an object:: 
+
+    >>> dir('5')
+    
+
+Strings `str`
+=============
+
+An object of type String has a sequence of letters::
+
+    >>> "hello"
+    'hello'
+    >>> type(a_str)
+    str
+
+
+Language Syntax: a sequence of letters starting and ending with ``"`` (a double quote)
 indicates a String object to the interpreter.
 
 
-Integers
-========
+Integers `int`
+==============
 
 Integers are positive numbers::
 
-    5
+    >>> 5
 
 A number indicates an Integer to the interpreter. Unlike for strings no special syntax
 is needed. In a way a number represents itself.
 
-
-Introspecting Objects
-=====================
-
-Use this to get the type of an object:: 
-
-    type(5)
-
-
-Use this to get a list of attributes and methods of an object:: 
-
-    dir('5')
     
 
 Exercises
