@@ -66,8 +66,8 @@ Use this to get a list of attributes and methods of an object::
     [ ... many methods ... ]
     
 
-Strings `str`
-=============
+Strings 
+=======
 
 An object of type String has a sequence of letters::
 
