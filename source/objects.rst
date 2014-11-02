@@ -1,41 +1,51 @@
 Objects
 *******
 
-We live in a world of things. We use language to refer to these things.
+We live in a world that contains things and we use language to refer to these things. We will call things objects and the world an environment. 
 
-Similarly, Python is a language that refers to a world of things. Programming, we use and define things.
+Python is two things:
 
-These things are called objects. Everything in python is an object. Turtle is an object.
+* An Interpreter - The environment.
+* A language - Used to refer, create, and interact with the objects in the
+  environment.
 
-Physically, an object is something that exists in the computer's memory. 
+Everything in python is an object. Turtle is an object.
 
-Conceptually, an object represents something with meaning to you the programmer.
+An Object:
 
+* Physically, exists as a pattern of 0s and 1s in the computer's memory. 
+* Conceptually, represents something with meaning to the programmer.
 
-Objects & Types
-===============
+Programming is about defining and manipulating objects.
 
-We classify things in our world as types and we have words to refer to them.
+Types
+=====
 
-For example we talk of chairs, doors, people, spaceships...
+Things are classified as types and the type determines a set of attributes and behaviours. 
 
-We understand each type to mean an object that has a set of attributes and
-enables actions:
-You can sit on a chair; you can open or close a door.
+There are many objects that are instances of the abstract type chair. All chairs have 4 legs and can be moved or sat on. 
 
-The type of a Python object also determines the attributes and actions that
-programmers can interact with.
+The type of a Python object determines the attributes and actions that
+it has and how programmers can interact with it.
 
-You have already interacted with turtle's behavour::
+Using the turtle object as an example.
+
+An attribute is::
+
+    >>> turtle.pi
+
+Examples of behaviour:: 
 
     >>> turtle.forward(25)
     >>> turtle.shape("turtle")
 
 Each of the above commands means calling functions that are defined and have
-meaning on the turtle object. The turtle object itself like everythin else 
-is defined in code.
+meaning on the turtle object. 
 
-Now we introduce two new basic types.
+The turtle object is defined in python code. At runtime the interpreter creates an environment, and creates a turtle object within it.
+
+
+We introduce two new basic types.
 
 
 Strings
@@ -45,8 +55,8 @@ Strings are a sequence of letters::
 
     "hello"
 
-A sequence of letters starting and ending with ``"`` (a double quote) indicates
-a String object to python.
+In Python a sequence of letters starting and ending with ``"`` (a double quote)
+indicates a String object to the interpreter.
 
 
 Integers
@@ -56,16 +66,22 @@ Integers are positive numbers::
 
     5
 
-A number indicates an Integer to python. Unlike for strings no special syntax
+A number indicates an Integer to the interpreter. Unlike for strings no special syntax
 is needed. In a way a number represents itself.
 
 
-Tip:
+Introspecting Objects
+=====================
 
-    You can always ask for the type of an object using this command::
+Use this to get the type of an object:: 
 
-        type(5)
+    type(5)
 
+
+Use this to get a list of attributes and methods of an object:: 
+
+    dir('5')
+    
 
 Exercises
 =========
@@ -73,7 +89,7 @@ Exercises
 Strings and Integers with +
 ---------------------------
 
-Both string and integer objects respond to the + symbol.
+Both string and integer objects respond to the `+` symbol.
 
 What do you expect the difference to be between the following commands?
 
@@ -86,6 +102,9 @@ Second plus sign with integers::
     >>> 5 + 4
 
 Test your answer with python.
+
+Try the same above but this time using `*` instead of `+`. What can you
+conclude of the meaning of `*`?
 
 
 '5' Vs 5
@@ -109,3 +128,21 @@ Given this code::
 
 What is the difference between the meaning of each set of characters on either
 side of the equal sign?
+
+String methods
+--------------
+
+For the string 'abcabc' find a method that:
+
+* confirms whether the string is alphabetical
+* confirms wether the string is alphnumerical
+* confimrs whether the string is lower
+* returns `Abc`
+* returns `ABC`
+* counts the number of 'a's
+
+Tips:
+
+* Search dir('abcabc') for contenders and experiment
+* Familiarise yourself with the official docs https://docs.python.org/3/library/stdtypes.html#string-methods
+
