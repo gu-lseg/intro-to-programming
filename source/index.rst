@@ -14,11 +14,7 @@ Table of Contents:
    introduction
    getting_started
    objects
-   running_from_file
    functions
-   variables
    generalising_with_names
-   defining_functions
-   abstractions
    loops
    abstractions_conclusion

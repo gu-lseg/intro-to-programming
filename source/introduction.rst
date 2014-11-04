@@ -58,3 +58,8 @@ complicated concepts.
 Don't worry if you didn't completely understand the above. You weren't meant
 to. The course will revisit these ideas throughout and especially conclude with
 them.
+
+Practice using Koans
+====================
+
+https://github.com/arachnegl/python-koans
