@@ -1,15 +1,6 @@
 Objects & Names
 ***************
 
-We live in an environment that contains objects and we use language to refer to them. Similarly programming involves creating a manipulating objects in an environment.
-
-Everything in python is an object. Turtle for example is an object.
-
-Python consists of two things:
-
-* an Interpreter - Creates and maintains an environment.
-* a Language - Used to refer, create, and interact with objects in an environment.
-
 An Object:
 
 * Physically, exists as a pattern of 0s and 1s in the computer's memory. 

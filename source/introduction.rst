@@ -15,8 +15,21 @@ get a taste of what it is.
 Although we use Python, the concepts are the same in most other languages.
 Indeed any second language is easy to learn after the first.
 
-Python constructs
-=================
+A world of objects
+==================
+
+We live in an environment that contains objects and we use language to refer to them. Similarly programming involves creating a manipulating objects in an environment.
+
+Everything in python is an object. Turtle for example is an object.
+
+Python consists of two things:
+
+* an Interpreter - Creates and maintains an environment within which it interprets the python language.
+* a Language - Used to refer, create, and interact with objects in an environment.
+
+
+Programming ability 
+===================
 
 Give you just enough programming ability to go from::
 
@@ -35,6 +48,7 @@ to::
         for i in range(2):
             turtle.forward(side)
             turtle.left(90)
+
 
 Goal: Abstractions
 ==================
@@ -61,5 +75,7 @@ them.
 
 Practice using Koans
 ====================
+
+Repeititon is key to learning programming. Koans are a way to rote learn.
 
 https://github.com/arachnegl/python-koans
