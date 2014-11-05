@@ -15,7 +15,6 @@ Table of Contents:
    getting_started
    objects
    functions
-   generalising_with_names
    loops
    containers
    abstractions_conclusion
