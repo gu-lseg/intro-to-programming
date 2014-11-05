@@ -1,22 +1,25 @@
-Repetition
-**********
+Flow Control
+************
 
 Computers don't have any intuition, that is why we have to give step by step instructions.
-
-Computers however never get bored.
 
 Combined with abstraction, the ability to repeat vastly expands our programming
 expressivity.
 
-Repeating oneself
-=================
+We will examine in turn the important control statements that Python provides.
 
-You have probably had enough of typing all those turtle function calls.
 
-Here we learn how to tame repetition.
+Repetition
+==========
 
-The For loop
-============
+Computers however never get bored.
+
+It gets tedious typing turtle function calls.
+
+Here we learn new constructs to handle repetition.
+
+For loop
+========
 
 The for loop programming construct provides us with a mean of expressing
 repetition.
@@ -39,6 +42,11 @@ The `range(n)` function is shorthand for ``0, 1, 2, ..., n-1``.
 NB:
 
     Another word used more often than looping is iterating it means the same.
+
+While loop
+==========
+
+if
 
 Looping the Square
 ==================
