@@ -13,8 +13,7 @@ Table of Contents:
 
    introduction
    getting_started
-   objects
+   objects_names
    functions
-   loops
-   containers
-   abstractions_conclusion
+   flow_control 
+   data_structures
