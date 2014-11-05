@@ -9,6 +9,11 @@ An Object:
 Programming is about defining and manipulating objects to do something
 meaningful to the programmer.
 
+To know an objects' memory location::
+
+    >>> id('a')
+    4403687864
+
 
 Types
 =====
