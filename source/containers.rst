@@ -14,6 +14,9 @@ Operations that interest us are accessing and updating elements of the structure
 A major use of collections is iteration. This means going through each of the
 members of the 
 
+See the python tutorial for a more indepth treatment:
+https://docs.python.org/2/tutorial/datastructures.html
+
 Lists
 =====
 
