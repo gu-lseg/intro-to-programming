@@ -17,4 +17,5 @@ Table of Contents:
    functions
    generalising_with_names
    loops
+   containers
    abstractions_conclusion
