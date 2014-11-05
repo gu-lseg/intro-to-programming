@@ -1,7 +1,7 @@
 Getting Started
 ***************
 
-Interactive Python
+Interactive coding
 ==================
 
 One way to run python is by using the interactive shell.
@@ -65,16 +65,12 @@ Environment:
 ``turtle.color("red")``
 
 
-Running code in a File
-======================
+file coding 
+===========
 
-We have programmed using the Python interactive shell.
+Interactive coding is great for exploration. But code is most often executed from file.
 
-The other way to program uses files. 
-
-We `call` the python program on a file containing python code.
-
-Put the following code into a file:: 
+Create a file `my_turtle_file.py` with this code:: 
 
     # A line beginning with '#' is a comment. Python ignores it.
 
@@ -83,26 +79,23 @@ Put the following code into a file::
     turtle.forward(25)
     turtle.exitonclick()  # Why this? Test by commenting it out.
 
-and save the file as `my_turtle_file`.
-
-Now in the console call the python command with the filename as parameter::
+In the console we call the python command with the filename as parameter::
 
     python my_turtle_file.py
 
 
-This is the more usual way to run programs.
 
+Errors
+======
 
-Learn your Errors!!
-===================
-
-Errors (and Exceptions) are a constant feature of programming.
+Errors and Exceptions are a constant feature of programming.
 
 They always tell you what when wrong. They don't always tell you
-why things went wrong though, in those cases they act as a clues.
+why things went wrong though but in those cases they act as clues.
 
-As programmers learn to read errors their intuitions develop and solutions come
-quicker.
+Learn to read errors first using intuition then by debugging and researchig. It
+is a skill and it does get easier. Soon you will map errors to solutions very
+quickly.
 
 Tip:
 
@@ -111,9 +104,9 @@ Tip:
 SyntaxError
 ===========
 
-Learning any language involves making many 'grammatical' or syntax errors.
+Learning a language involves making many syntax (grammatical) errors.
 
-Here we define a function badly::
+A function defined badly::
 
     >>> def print_hi:
       File "<stdin>", line 1
@@ -122,8 +115,8 @@ Here we define a function badly::
     SyntaxError: invalid syntax
     >>>
 
-Here the programmer has forgotten that function definitions must have
-parentheses ().
+The programmer has forgotten that function definitions must have
+parentheses `()` between the function name and the ending colon `:`.
 
 ::
 
@@ -131,4 +124,3 @@ parentheses ().
         print('hi')
 
 No error this time. `print_hi` is properly defined.
-
