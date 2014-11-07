@@ -15,7 +15,7 @@ Table of Contents:
    getting_started
    objects_names
    functions
-   flow_control 
    interpreter_debugging
+   flow_control 
    data_structures
    classes
