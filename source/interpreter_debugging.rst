@@ -88,6 +88,12 @@ To exit:
 * `q` exit the debugger. Will terminate program execution.
 
 
+Tip:
+
+Whenever you get an exeception drop a `import pdb; pdb.set_trace()` on the line
+before your program terminated. That way you can inspect what went wrong at
+that point in time.
+
 Exercise
 ========
 
