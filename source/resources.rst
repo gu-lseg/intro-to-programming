@@ -28,7 +28,11 @@ Geospatial:
 * The Pyqgis Programmers' Guide
 * The Geospatial Desktop
 
-Machine Learning & Data Science:
+Data Science:
+
+* Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython
+
+Machine Learning:
 
 * Building Machine Learning with Python
 * Learning Scikit-Learn: Machine Learning in Python
@@ -38,6 +42,15 @@ Machine Learning & Data Science:
 Maths:
 
 * Sage
+
+Networking:
+
+* Python Network Programming Cookbook
+
+Forensics:
+
+* Violent Python
+* Grey Hat Python
 
 Mobile:
 
@@ -63,6 +76,7 @@ Raspberry Pi is currently the center of focus for fun with home electronics.
 Web development:
 
 * Django Tutorial
+* Test-Driven Development with Python
 
 Course References:
 
