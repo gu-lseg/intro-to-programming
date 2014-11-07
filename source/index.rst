@@ -19,3 +19,4 @@ Table of Contents:
    flow_control 
    data_structures
    classes
+   resources
