@@ -48,9 +48,17 @@ Natural Language Processing:
 * NLTK
 * Python 3 Text Processing with NLTK 3 Cookbook
 
-Raspberry Pi:
+Electronics:
 
-Lots of fun with home electronics.
+Raspberry Pi is currently the center of focus for fun with home electronics.
+
+* Make: Sensors: A Hands-On Primer for Monitoring the Real World with Arduino and Raspberry Pi
+* Make: More Electronics: Journey Deep Into the World of Logic Chips, Amplifiers, Sensors, and Randomicity
+* Raspberry Pi Home Automation with Arduino
+* Raspberry Pi for Secret Agents 
+* Raspberry Pi Cookbook for Python Programmers 
+* OReilly RPi
+* Getting Started with Sensors: Measure the World with Electronics, Arduino, and Raspberry Pi 
 
 Web development:
 
