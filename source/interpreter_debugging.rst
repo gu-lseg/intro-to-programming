@@ -13,8 +13,19 @@ bytecode is interpreted on a virtual machine.
 
 It isn't important to understand this in more detail at this stage.
 
+So far we have seen that 2 types of objects that contain (or encapsulate) code:
+`modules` and `functions`. There is a third type called a `class` more on that
+later.
+
+What is special about these 3 types of objects is that the interpreter
+automatically creates a namespace for each of these.
+
+https://docs.python.org/3/tutorial/classes.html#python-scopes-and-namespaces
+
 frames
 ======
+
+A namespace is a mapping from names to objects.
 
 The interpreter is responsible for maintaining the environment. This is
 somewhat related to scope.
@@ -41,6 +52,22 @@ Debugging
 =========
 
 A great way of interacting with a program and understanding what is going on.
+Python includes `pdb` as standard.
+
+To execute code with `pdb`::
+
+    python3 -m pdb my.py
+
+You can also pause the execution at any time by placing this line into your
+code::
+
+    import pdb; pdb.set_trace()
+
+When you run your code normally (`python my.py`) the interpreter will break out
+of the execution when it hits the line where you placed this.
+
+This is very usefull to help you inspect what state the various objects of your
+program are in at a given point in time.
 
 Type `h` to get a list of all the commands. The important ones for now are:
 
@@ -57,9 +84,16 @@ These are for examining the current location:
 * `u` go up a frame in stack
 * `d` go down a frame in the stack
 
+To exit:
+* `q` exit the debugger. Will terminate program execution.
+
 
 Exercise
 ========
+
+
+pythontutor and pdb
+-------------------
 
 Whilst pythontutor is execellent as a pedagogical tool to demo small programs it isn't a proper
 programmers tool. The programmer needs to visualise in her head.
@@ -70,25 +104,21 @@ Put this code into a file named `my.py`::
     
     x = 1
     y = 2
+    success = 'increment function works'
+    failure = 'increment function broken'
 
     def inc(p):
         incremented = p + 1
         return incremented
 
     def print_result(result):
-
-        success = 'increment function works'
-        failure = 'increment function broken'
-
         if result:
             print(success)
         else:
             print(failure)
 
-
     inc_x = inc(x)
-    result = inc_x == y
-    print_result(result)
+    print_result(inc_x == y)
 
 
 
@@ -122,8 +152,31 @@ Copy the same code into www.pythontutor.com.
 Step through each line of code keeping the visualiser tool and pdb in sync. Use
 the visualiser as a map and find the various parts through pdb.
 
+Ensure you explore the two frames when you enter the f functions' frame.
 
-`inspect` (optional)
-====================
+koans & pythontutor
+-------------------
 
-Lets take a deeper look at what the interpreter does.
+You can copy and paste any sample from the koans and use the pythontutor
+visualiser to examine what is going on.
+
+Choose one, preferrably that you found difficult to understand, and step
+through it in the pythontutor visualiser.
+
+koans & `pdb`
+-------------
+
+`pdb` is a great tool to understand code. Here we will apply it to our koans.
+
+Drop `import pdb; pdb.set_trace()` at the beginning of a koan that caused you
+difficulty. Step through the execution of the code. When you are done type `c`
+to resume execution.
+
+
+Optional: `inspect`
+===================
+
+There are four main kinds of services provided by this module: type checking, getting source code, inspecting classes and functions, and examining the interpreter stack.
+
+We are solely interested in examining the interpreter stack.
+
