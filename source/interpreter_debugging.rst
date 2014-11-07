@@ -37,6 +37,14 @@ To understand this you need to appreciate scope.
 
 Name spaces
 
+The local namespace for a function is created when the function is called, and deleted when the function returns or raises an exception that is not handled within the function.
+
+A scope is a textual region of a Python program where a namespace is directly accessible. “Directly accessible” here means that an unqualified reference to a name attempts to find the name in the namespace.
+
+When the interpreter encounters a name, it searches in the various namespaces
+available to it as specified in the frame. If it is found, the name resolves to
+the object it references. If not it springs a `NameError`.
+
 Visualising execution
 =====================
 
@@ -186,3 +194,9 @@ There are four main kinds of services provided by this module: type checking, ge
 
 We are solely interested in examining the interpreter stack.
 
+References
+==========
+
+For a more advanced treatment see this:
+
+https://docs.python.org/3.3/reference/executionmodel.html
