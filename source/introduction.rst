@@ -85,6 +85,20 @@ We interact with python using the command program.
 You can find it by searching in the start prompt. A shortcut is to type
 `Windows + R` which launches run. Then search for `cmd.exe`.
 
+cmd.exe cheat sheet
+-------------------
+
+exit  - exit cmd.exe
+cd    - change directory
+dir   - list the directory's contents
+copy  - copy a file or a directory
+move  - move a file or a directory
+mkdir - make a directory
+del   - delete a file or directory
+
+Running Python
+--------------
+
 Typically when you install the windows python package, you select for it to add
 the executable (`python.exe`) to the system path.
 
