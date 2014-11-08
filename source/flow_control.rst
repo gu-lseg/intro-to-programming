@@ -11,6 +11,51 @@ We will examine in turn the important control statements that Python provides.
 Boolean Operators
 =================
 
+These expression evaluate to `True` or `False` according to the values of x and
+y.
+
+::
+
+    x == y           # x equal to y
+    x != y           # x not equal to y
+    x > y            # x greater than y
+    x < y            # x less than y
+    x >= y           # x greater than or equal to y
+    x <= y           # x less than or equal to y
+
+
+User input
+==========
+
+To capture input from the user we use a function named `input`::
+
+    >>> name = input("Please enter your name: ")
+    Please enter your name: 
+
+The interpreter waits for a response.
+
+If the user types in `Sophocles` a string obejct 'Sophocles' is assinged to
+name.
+
+if statement
+============
+
+We use boolean expressions to make decisions.
+
+:: 
+
+    >>> x = int(input("Please enter an integer: "))
+    Please enter an integer: 42
+    >>> if x < 0:
+    ...     x = 0
+    ...     print('Negative changed to zero')
+    ... elif x == 0:
+    ...     print('Zero')
+    ... elif x == 1:
+    ...     print('Single')
+    ... else:
+    ...     print('More')
+
 Loops
 =====
 
@@ -53,22 +98,22 @@ Lets combine it in a for loop::
 While loop
 ----------
 
-if statement
-============
+Use while loop if you don't know when your loop will terminate.
 
-:: 
+Example::
 
-    >>> x = int(input("Please enter an integer: "))
-    Please enter an integer: 42
-    >>> if x < 0:
-    ...     x = 0
-    ...     print('Negative changed to zero')
-    ... elif x == 0:
-    ...     print('Zero')
-    ... elif x == 1:
-    ...     print('Single')
-    ... else:
-    ...     print('More')
+    def sumTo(aBound):
+        """ Return the sum of 1+2+3 ... n """
+
+        theSum  = 0
+        aNumber = 1
+        while aNumber <= aBound:
+            theSum = theSum + aNumber
+            aNumber = aNumber + 1
+        return theSum
+
+    print(sumTo(4))
+    print(sumTo(1000))
 
 
 Looping the Square
