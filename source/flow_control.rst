@@ -8,9 +8,11 @@ expressivity.
 
 We will examine in turn the important control statements that Python provides.
 
+Boolean Operators
+=================
 
-Repetition
-==========
+Loops
+=====
 
 Computers however never get bored.
 
@@ -19,17 +21,24 @@ It gets tedious typing turtle function calls.
 Here we learn new constructs to handle repetition.
 
 For loop
-========
+--------
 
-The for loop programming construct provides us with a mean of expressing
-repetition.
+We haven't seen list objects yet but your intuition should be enough for now.
 
-Looping through a sequence of string objects:: 
+Looping through a list of string objects:: 
 
-    for name in "John", "Sam", "Jill":
+    for name in ["John", "Sam", "Jill"]:
         print("Hello " + name)
 
 Looping through a sequence of numbers::
+`range` is a function object that takes an object of type `int` as parameter
+and returns an object that when combined with `list` gives a list of `int`
+objects with values 0 to n-1.
+
+    >>> list(range(3))
+    [0, 1, 2]
+
+Lets combine it in a for loop::
 
     >>> for i in range(2):
     ...     print(i)
@@ -37,14 +46,12 @@ Looping through a sequence of numbers::
     0
     1
 
-The `range(n)` function is shorthand for ``0, 1, 2, ..., n-1``. 
+Tip:
 
-NB:
-
-    Another word used more often than looping is iterating it means the same.
+    looping and iterating means the same.
 
 While loop
-==========
+----------
 
 if
 
@@ -100,15 +107,3 @@ time you call the function.
 .. rst-class:: solution
 
 
-Building worlds with abstractions
-=================================
-
-Building on our previously defined concept of a house we now use repetition 
-to define a row of houses.
-
-:: 
-
-    def row_of_houses(number, size):
-        for i in range(number):
-            house(size)
-            turtle.forward(size)

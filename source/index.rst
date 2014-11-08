@@ -19,5 +19,6 @@ Table of Contents:
    flow_control 
    abstraction
    data_structures
+   polymorphism
    classes
    resources
