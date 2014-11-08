@@ -95,3 +95,24 @@ Python Koans is available on Github:
 You will need to download the source as a zip and unzip it on your machine.
 
 Follow the instructions on the above link.
+
+Running
+-------
+
+::
+
+    > python3 contemplate_koans.py about_asserts
+
+    Thinking AboutAsserts
+      test_assert_truth has damaged your karma.
+
+    You have not yet reached enlightenment ...
+      AssertionError: 0 is not true
+
+    Please meditate on the following code:
+      File "/Users/greg/TEACHING/python_koans/koans/about_asserts.py", line 13, in test_assert_truth
+        self.assertTrue(_____)  # This should be true
+
+
+    You have completed 0 koans and 0 lessons.
+    You are now 77 koans and 9 lessons away from reaching enlightenment.
