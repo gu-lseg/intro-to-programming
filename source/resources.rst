@@ -7,22 +7,20 @@ Official Documentation:
 * Library Reference - Practical
 * Language Reference - Academic, authoritative.
 
-Other Python Tutorials:
+Other Free Python Tutorials:
 
-There are many of these. Here are a few.
+* http://www.codecademy.com/en/tracks/python
+* http://inventwithpython.com/
+* http://learnpythonthehardway.org/ Not hard, but hands on 
+* http://www.diveintopython3.net/
 
-* Learn Python the Hard Way
-* Dive into Python3
-* Code Academy Python Course.
-
-
-Online Courses:
+Free Online Courses:
 
 * Udacity - CS101
-* Udacity - many others
 * MIT Intro to Computer Science and Programming (MITOpenCourseware)
 * Introduction to Interative Programming in Python (Coursera)
 * Learn to Program: The Fundamentals (University of Toronto, Coursera)
+
 
 Applied:
 
@@ -34,7 +32,11 @@ Here are some resources that will inspire.
 
 * Natural Language Processing:
 
-    * NLTK
+  Natural Language processing refers to tools used to parse and add semantics
+  to human language. Talking with computers.
+
+    * http://www.nltk.org/ 
+    * http://www.nltk.org/book/
     * Python 3 Text Processing with NLTK 3 Cookbook
 
 * Electronics:
@@ -51,9 +53,9 @@ Here are some resources that will inspire.
 
 * Geospatial (GIS):
 
-    * Python Geospatial Development
-    * The Pyqgis Programmers' Guide
-    * The Geospatial Desktop
+    * http://geospatialpython.com/
+    * http://qgis.org/en/site/
+    * http://docs.qgis.org/2.0/en/docs/pyqgis_developer_cookbook/
 
 * Biology:
 
@@ -61,7 +63,8 @@ Here are some resources that will inspire.
 
 * Maths:
 
-    * Sage
+    * http://www.sagemath.org/doc/thematic_tutorials/
+    * http://www.sagemath.org/doc/tutorial/
 
 * Forensics:
 
@@ -71,26 +74,29 @@ Here are some resources that will inspire.
 * Mobile:
 
     * Creating Apps in Kivy
+    * http://kivy.org/docs/tutorials/pong.html
 
 * Data Science:
 
     * Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython
+      (book)
+    * http://pandas.pydata.org/pandas-docs/dev/tutorials.html
 
 * Machine Learning:
 
-    * Building Machine Learning with Python
-    * Learning Scikit-Learn: Machine Learning in Python
-    * Building Probabilistic Models with Python
-    * Practical Data Science Cookbook
-
-* Networking:
-
-    * Python Network Programming Cookbook
+    * Scikit-Learn: Machine Learning in Python
+    * http://scikit-learn.org/stable/tutorial/index.html
+    * Practical Data Science Cookbook (book)
+    * Building Probabilistic Models with Python (Book)
 
 * Web development:
 
-    * Django Tutorial
-    * Test-Driven Development with Python
+    * https://docs.djangoproject.com/en/ Django Tutorial
+    * http://www.obeythetestinggoat.com/ To become a pro!
+
+* Games:
+
+    * http://www.pygame.org/wiki/tutorials
 
 
 Course References:
