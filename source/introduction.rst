@@ -19,6 +19,27 @@ Indeed any second language is easy to learn after the first.
 The differences between any programming language is very litle compared to 
 the differences between human languages.
 
+Applied Programming
+===================
+
+Although programming has plenty of intrinsic value its only as popular as it is
+because of the things you can do with it.
+
+Programming is always applied to something. Its an activity that seeks to
+capture some aspect of reality that is useful to us. 
+
+As humans we think at a higher intuitive level. We think square, or move
+forward. 
+
+Computers need everything broken down into steps. Each step is a command.
+
+Programming as an activity is about breaking down our concepts into smaller defined steps.
+In effect we define our concepts in commands.
+
+Unfortunately we won't look into detail at the many application domains as we
+don't have time. Use the resources section to choose an area that is of
+interest and focus on it.
+
 A world of objects
 ==================
 

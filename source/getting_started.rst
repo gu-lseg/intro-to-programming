@@ -6,7 +6,7 @@ Interactive coding
 
 One way to run python is by using the interactive shell.
 
-::
+run python, for example::
 
     C:\Users\greg-lo>\Python34\python.exe
     Python 3.4.2rc1 (v3.4.2rc1:8711a0951384, Sep 21 2014, 21:16:45) [MSC v.1600 32 b
@@ -66,13 +66,19 @@ Environment:
 
 ``turtle.color("red")``
 
+Documentations
+--------------
 
-file coding 
-===========
+Look through the documentation and experiment with lines of code you find there.
 
-Interactive coding is great for exploration. But code is most often executed from file.
+https://docs.python.org/3/library/turtle.html
 
-Create a file `my_turtle_file.py` with this code:: 
+Executing code from a file
+==========================
+
+Code is most often executed from file.
+
+Using SublimeText create a file `my_turtle_file.py` with this code:: 
 
     # A line beginning with '#' is a comment. Python ignores it.
 
@@ -82,9 +88,16 @@ Create a file `my_turtle_file.py` with this code::
     turtle.exitonclick()  # Why this? Test by commenting it out.
 
 In the console we call the python command with the filename as parameter::
+  
+    C:\Users\greg-lo>\Python34\python.exe my_turtle_file.py
 
-    python my_turtle_file.py
 
+.. tip::
+
+    Make sure the file you created exists in the location where you execute this
+    command.
+
+    Here the location is given by the prompt.
 
 
 Errors
@@ -99,9 +112,11 @@ Learn to read errors first using intuition then by debugging and researchig. It
 is a skill and it does get easier. Soon you will map errors to solutions very
 quickly.
 
-Tip:
+.. tip::
 
-    Google errors!
+    You need to learn how to find information.
+    Always read Errors and use your intuition, then Google.
+    If that hsn't helped only then ask an expert. 
 
 AttributeError
 --------------
@@ -147,18 +162,6 @@ No error this time. `print_hi` is properly defined.
 Exercises
 =========
 
-.. tip::
-
-    Programming is always applied to something. Its an activity that seeks to
-    capture some aspect of reality that is useful to us. 
-
-    As humans we think at a higher intuitive level. We think square, or move
-    forward. 
-
-    Computers need everything broken down into steps. Each step is a command.
-
-    Programming as an activity is about breaking down our concepts into smaller defined steps.
-    In effect we define our concepts in commands.
 
 Geometry Exercises
 ------------------
