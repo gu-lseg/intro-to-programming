@@ -1,49 +1,56 @@
 Interpreter & Debugging
 ***********************
 
-Interpreter
+The interpreter does a lot of work in the background that we don't see. Some of
+it we don't need to know about. But other parts is essential to programming.
+
+Programs execute over time. There is an execution timeline during which objects and names have a life cycle and a context.
+
+Debugging exposes the work that the interpreter does that is relevant to the
+programmer. It enables interacting with the timeline of execution and the execution environment.
+
+Note a lot of this is out of the scope of this course and we will cut corners. The aim is to get an intuition for what is going on and not to be exact. 
+
+Runtime
+=======
+
+The runtime can be seen as a timeline of execution from start to finish.
+
+The interpreter starts at the top of a python file. It then proceeds line by
+line down. For each line it executes the code that is in the gloabl or higher level (0 indent).
+
+Note that functions are treated differently. The function objects are created
+and bound to their names, but the code block isn't executed until called.
+
+Note this is why Errors in functions only appear at runtime.
+
+Environment
 ===========
 
-The interpreter parses the instructions in python code. It builds
-representations or transforms the objects that are a direct cause 
-of those instructions.
+During runtime the interpreter creates, updates, and deletes frame & namespace objects as part of maintaining the environment. These objects combine to determine what is in scope at a particular point of execution.
 
-It translates the python code into another language called Bytecode. This
-bytecode is interpreted on a virtual machine.
+Some definitions:
+* A namespace is a mapping from names to objects.
+* A frame is an execution environment.
+* Scope defines what names the interpreter can find given which frame its in and
+the namespaces associated.
 
-It isn't important to understand this in more detail at this stage.
+You are exposed to frame objects when you see error messages. You have
+interacted with namesspace objects since the start of this course without
+knowing it. Every assignment has added a name to a Namespace object and
+associated it with the object instance it references.
 
-So far we have seen that 2 types of objects that contain (or encapsulate) code:
-`modules` and `functions`. There is a third type called a `class` more on that
-later.
+When the interpreter encounters a name, it searches in the various namespaces
+available to it as specified in the frame. If it is found, the name resolves to
+the object it references. If not it springs a `NameError`.
 
-What is special about these 3 types of objects is that the interpreter
-automatically creates a namespace for each of these.
-
-https://docs.python.org/3/tutorial/classes.html#python-scopes-and-namespaces
-
-frames
-======
-
-A namespace is a mapping from names to objects.
-
-The interpreter is responsible for maintaining the environment. This is
-somewhat related to scope.
-
-Programs execute over time. There is a definite time line during which
-a program executes. Objects have a life cycle and a context.
-
-To understand this you need to appreciate scope.
-
-Name spaces
+Namespaces & functions
+======================
 
 The local namespace for a function is created when the function is called, and deleted when the function returns or raises an exception that is not handled within the function.
 
 A scope is a textual region of a Python program where a namespace is directly accessible. “Directly accessible” here means that an unqualified reference to a name attempts to find the name in the namespace.
 
-When the interpreter encounters a name, it searches in the various namespaces
-available to it as specified in the frame. If it is found, the name resolves to
-the object it references. If not it springs a `NameError`.
 
 Visualising execution
 =====================
@@ -56,11 +63,10 @@ http://www.pythontutor.com/visualize.html#mode=edit
 http://pyalgoviz.appspot.com/
 
 
-Debugging
-=========
+pdb
+===
 
-A great way of interacting with a program and understanding what is going on.
-Python includes `pdb` as standard.
+pdb is the python debugger. Debugging is a way of interacting with a program by freezing execution at a particular point in time, stepping through it, and examining objects.
 
 To execute code with `pdb`::
 
@@ -79,14 +85,14 @@ program are in at a given point in time.
 
 Type `h` to get a list of all the commands. The important ones for now are:
 
-These move line of execution:
+Move along the execution timeline:
 
 * `l` print lines of code surrounding cursor
 * `n` execute next line
 * `s` step into a line. Typically used for entering functions.
 * `c` continue till the end of the program (or next break point).
 
-These are for examining the current location:
+Inspect the current location:
 
 * `w` print frames on the stack at current position
 * `u` go up a frame in stack
@@ -140,7 +146,7 @@ Execute with::
 
     python3 -m pdb my.py
 
-You should see something like::
+`pdb` starts program and pauses at first line::
 
     > /Users/greg/my.py(1)<module>()
     -> x = 5
@@ -164,7 +170,7 @@ Executing `l` results in::
 Copy the same code into www.pythontutor.com.
 
 Step through each line of code keeping the visualiser tool and pdb in sync. Use
-the visualiser as a map and find the various parts through pdb.
+the visualiser as a map to find the various parts through pdb.
 
 Ensure you explore the two frames when you enter the f functions' frame.
 
@@ -182,21 +188,15 @@ koans & `pdb`
 
 `pdb` is a great tool to understand code. Here we will apply it to our koans.
 
-Drop `import pdb; pdb.set_trace()` at the beginning of a koan that caused you
+Enter `import pdb; pdb.set_trace()` at the beginning of a koan that caused you
 difficulty. Step through the execution of the code. When you are done type `c`
 to resume execution.
-
-
-Optional: `inspect`
-===================
-
-There are four main kinds of services provided by this module: type checking, getting source code, inspecting classes and functions, and examining the interpreter stack.
-
-We are solely interested in examining the interpreter stack.
 
 References
 ==========
 
-For a more advanced treatment see this:
+There is a lot of complexity here. Only approach if feeling brave and happy for
+it to make sense over time.
 
+https://docs.python.org/3/tutorial/classes.html#python-scopes-and-namespaces
 https://docs.python.org/3.3/reference/executionmodel.html

@@ -15,70 +15,88 @@ There are many of these. Here are a few.
 * Dive into Python3
 * Code Academy Python Course.
 
-Python Applied:
+
+Online Courses:
+
+* Udacity - CS101
+* Udacity - many others
+* MIT Intro to Computer Science and Programming (MITOpenCourseware)
+* Introduction to Interative Programming in Python (Coursera)
+* Learn to Program: The Fundamentals (University of Toronto, Coursera)
+
+Applied:
 
 The best way to consolidate learning programming is to find a domain that is of
 interest and learn more about programming it.
 
 Here are some resources that will inspire.
 
-Geospatial:
 
-* Python Geospatial Development
-* The Pyqgis Programmers' Guide
-* The Geospatial Desktop
+* Natural Language Processing:
 
-Data Science:
+    * NLTK
+    * Python 3 Text Processing with NLTK 3 Cookbook
 
-* Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython
+* Electronics:
 
-Machine Learning:
+    Raspberry Pi is currently the center of focus for fun with home electronics.
 
-* Building Machine Learning with Python
-* Learning Scikit-Learn: Machine Learning in Python
-* Building Probabilistic Models with Python
-* Practical Data Science Cookbook
+    * Make: Sensors: A Hands-On Primer for Monitoring the Real World with Arduino and Raspberry Pi
+    * Make: More Electronics: Journey Deep Into the World of Logic Chips, Amplifiers, Sensors, and Randomicity
+    * Raspberry Pi Home Automation with Arduino
+    * Raspberry Pi for Secret Agents 
+    * Raspberry Pi Cookbook for Python Programmers 
+    * OReilly RPi
+    * Getting Started with Sensors: Measure the World with Electronics, Arduino, and Raspberry Pi 
 
-Maths:
+* Geospatial (GIS):
 
-* Sage
+    * Python Geospatial Development
+    * The Pyqgis Programmers' Guide
+    * The Geospatial Desktop
 
-Networking:
+* Biology:
 
-* Python Network Programming Cookbook
+    * http://biopython.org/DIST/docs/tutorial/Tutorial.html
 
-Forensics:
+* Maths:
 
-* Violent Python
-* Grey Hat Python
+    * Sage
 
-Mobile:
+* Forensics:
 
-* Creating Apps in Kivy
+    * Violent Python
+    * Grey Hat Python
 
-Natural Language Processing:
+* Mobile:
 
-* NLTK
-* Python 3 Text Processing with NLTK 3 Cookbook
+    * Creating Apps in Kivy
 
-Electronics:
+* Data Science:
 
-Raspberry Pi is currently the center of focus for fun with home electronics.
+    * Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython
 
-* Make: Sensors: A Hands-On Primer for Monitoring the Real World with Arduino and Raspberry Pi
-* Make: More Electronics: Journey Deep Into the World of Logic Chips, Amplifiers, Sensors, and Randomicity
-* Raspberry Pi Home Automation with Arduino
-* Raspberry Pi for Secret Agents 
-* Raspberry Pi Cookbook for Python Programmers 
-* OReilly RPi
-* Getting Started with Sensors: Measure the World with Electronics, Arduino, and Raspberry Pi 
+* Machine Learning:
 
-Web development:
+    * Building Machine Learning with Python
+    * Learning Scikit-Learn: Machine Learning in Python
+    * Building Probabilistic Models with Python
+    * Practical Data Science Cookbook
 
-* Django Tutorial
-* Test-Driven Development with Python
+* Networking:
+
+    * Python Network Programming Cookbook
+
+* Web development:
+
+    * Django Tutorial
+    * Test-Driven Development with Python
+
 
 Course References:
 
+Some materials that inspred this course.
+
+* http://opentechschool.github.io/python-beginners/en/index.html
 * How To Design Programs
 * Structure and Interpretation of Computer Programs

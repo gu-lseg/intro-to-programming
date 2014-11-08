@@ -14,84 +14,125 @@ To know an objects' memory location::
     >>> id('a')
     4403687864
 
+Every object has a type and a way to create them.
 
 Types
 =====
 
-Things are classified as types and a type defines a set of attributes and behaviours. 
+Objects are instances of a type. An objects' type defines its set of attributes and behaviours.
 
-There are many objects that are instances of the abstract type chair. All chairs have 4 legs and can be moved or sat on. 
+Taking the turtle object as an example:
 
-The type of a Python object also determines the attributes and actions that it has and how to interact with it.
-
-The turtle object has an attribute that is::
+attributes::
 
     >>> turtle.pi
 
-Turtle behaviour:: 
+behaviour:: 
 
     >>> turtle.forward(25)
     >>> turtle.shape("turtle")
 
-All the above is defined in python code. It is the interpreter that executes these instructions within an environment.
-
-
-Strings 
-=======
-
-An object of type String has a sequence of letters::
-
-    >>> "hello"
-    'hello'
-    >>> type("hello")
-    str
-
-Language Syntax: a sequence of letters starting and ending with ``"`` (a double quote)
-indicates a String object to the interpreter.
-
-
-Integers
-========
-
-Integers are positive numbers::
-
-    >>> 5
-    5
-    >>> type(5)
-    int
-
-A number indicates an Integer to the interpreter. Unlike for strings no special syntax
-is needed. In a way a number represents itself.
-
+The interpreter executes these instructions. It knows how to match the sequence
+of letters typed in and executed to existent code that defines the `turtle`
+object.
 
 Introspection 
 =============
 
-Introspecting objects is often very useful. The `type('a')`, `isinstance('a', str)` and `dir('a')` are functions help us learn about objects.
-
-To get the type of an object:: 
+The `type('a')` and `dir('a')` functions help us learn about objects::
 
     >>> type(5)
-
-
-To confirm if an object is of a certain type:: 
-
-    >>> isinstance('5', int)
-
-
-To get a list of attributes and methods of an object:: 
-
+    int
+    >>> type('5')
+    str
     >>> dir('5')
-    [ ... many methods ... ]
+    [ ... list of attributes and functions of an object ... ]
     >>> dir(5)
-    [ ... many methods ... ]
+    [ ... list of attributes and functions of an object ... ]
     
+We will use the above functions to explore the next two object types.
+
+Strings 
+=======
+
+`str` objects represent text in Python
+
+::
+
+    >>> type('hi')
+    str
+
+Creation::
+
+    >>> "hi"       # literal
+    hi
+    >>> str("hi")  # constructor
+    hi
+
+On `enter` a newly created `str` object is `returned` by the interpreter on the
+following line.
+
+`str` functions::
+
+    >>> dir("string")
+    [' .... many .... ']
+
+Many functions are defined by the `str` type to facilitate working with text.
+Use the documents to get an overview.
+
+https://docs.python.org/3.4/library/string.html
+
+Integers
+========
+
+Integers are whole numbers
+
+::
+
+    >>> type(5)
+    int
+
+
+Creation::
+
+    >>> 3
+    3
+    >>> int(-5)
+    -5
+
+Like strings the interpreter takes a number typed by the programmer literally. Thus it creates an object of type `int` with the value 5.
+
+`int` functions:: 
+
+    >>> dir(5)
+    [ ... many ... ]
+
+Mathematical operations you'd expect are implemented on int objects::
+
+    >>> 5 + 4
+    9
+    >>> 5 - 6
+    -1
+
+Note:: 
+    
+    >>> int.__sub__(5, 6)
+    -1
+
+The notation `5 - 6` and `int.__sub__(5, 6)` is different but have the same
+result.
+
+Actually the `-` is resolved to `__sub__` by the interpreter. When the
+interpreter reads `5 - 6` it knows to resolve the `-` to `__sub__`. 
+
+
+The point is despite special syntax Python consistently operates on functions defined on objects.
 
 
 Names
 =====
 
-To work with objects we need a way to refer to them. This is called assignemnt.
+To work effectively with objects we need a way to refer to them. This is called assignemnt.
 
 Names are like the nouns we use in every day speach.
 
@@ -104,46 +145,18 @@ String object::
 
     >>> first_name = "greg"
 
-
 Unlike in maths, the equals symbol means assignment not equality.
-Python reads `x = 5` as assign the value (Integer object) 5 to the name x.
+Python reads `x = 5` as assign the value (object of type `int`) 5 to the name x.
 
-Names in Python can refer to any type of objects. 
-
-Here we reassign x to a different type of object::
+We can reassign variables to any object::
 
     >>> x = 5            # x refers to an Integer object
     >>> x = 'greg'       # x refers now to a String object 
 
-Once defined, a name evaluates to its object::
+A variable by itself is an expression and it evaluates to its object::
 
     >>> x
     5
-
-Think of typing a name as fetching the object it refers to.
-
-Functions
-=========
-
-A function is a very special kind of object. Functions also have names. You define a name when you define a function.
-
-Example:: 
-
-    >>> def my_function():
-    ...     print('hello')    # Note 4 space indentation
-    ...
-
-We 'call' functions by adding `()`s at the end of their names.
-
-If you call print with the variable x ``print(x)``, you will output x's value.
-
-With turtle::
-    
-    >>> import turtle
-    >>> x = 5
-    >>> turtle.forward(x)
-
-More on this to come.
 
 NameError
 =========
@@ -162,10 +175,7 @@ defined it. We have forgotten to import it.
 Names & Reusability
 ===================
 
-Names are often called variables. The word `variable` captures an important
-aspect of how they serve in programming.
-
-Names give us a lot of expressivity. They enable you to generalise your code.
+Names are often called variables. Names give us a lot of expressivity. They enable you to generalise your code facilitating code reuse.
 
 Consider that you write this code to draw a square::
 
@@ -198,18 +208,19 @@ Instead using names you can do this::
 
 Now, if you change your mind you need only update one value.
 
-Also our programatic definition mirrors more the mathematical defintion in
+Note that our programatic definition mirrors the mathematical defintion in
 that the lenguth of a square's side is irrelevant to its nature as a square.
 
-So names help you:
+Names help in: 
 
-- program efficiently.
-- capture meaning. 
+- efficient programming.
+- capturing meaning. 
 
 Tip:
 
-    When you find yourself needing to replace many similar values in order
+    If you find yourself needing to replace many similar values in order
     to update your code, using names is worth considering.
+
 
     
 Exercises
@@ -261,11 +272,11 @@ side of the equal sign?
 String methods
 --------------
 
-For the string 'abcabc' find a method that:
+Using the interpreter and introspection functions, for the string 'abcabc' find a method that:
 
 * confirms whether the string is alphabetical
 * confirms wether the string is alphnumerical
-* confimrs whether the string is lower
+* confirms whether the string is lower
 * returns `Abc`
 * returns `ABC`
 * counts the number of 'a's
@@ -275,3 +286,5 @@ Tips:
 * Search dir('abcabc') for contenders and experiment
 * Familiarise yourself with the official docs https://docs.python.org/3/library/stdtypes.html#string-methods
 
+Koans
+-----

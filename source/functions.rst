@@ -1,31 +1,21 @@
 Functions
 *********
 
-Action objects
-==============
-
-Functions are another type of object. 
-
-Think of them as actions, verbs, or commands.
+Think of functions as actions, verbs, or commands.
 
 They have names::
 
     run
 
-They are called (actioned) by using parentheses::
+Are called (actioned) by using parentheses::
 
     run()
 
-Sometimes we call and pass parameters (here a number)::
+Some functions take objects as parameters that are passed when calling::
 
     run("quickly")
 
-You could think of parameters as adverbs: 'run, quickly'
-
-NB: 
-
-    The name `run` hasn't yet been defined so python won't recognise the above if you
-    type it. We are illustrating a point.
+You can think of parameters as adverbs: 'run, quickly'
 
 All turtle instructions are examples of calling functions attached to the turtle object.
 
@@ -36,8 +26,23 @@ All turtle instructions are examples of calling functions attached to the turtle
 `print` simply prints its parameter to the console.
 
 
-Simple Functions
-================
+`function`
+==========
+
+Function objects are special. They are objects that contain blocks of code.
+
+Functions help in letting programmers organise and reuse code. They help create new abstractions.
+
+Function objects have names. The name is assigned at the same time you define a function.
+
+
+Creating::
+
+    >>> def my_function():
+    ...     print('hello')    # Note 4 space indentation
+    ...
+    >>> type(my_function)
+    function
 
 The ``def`` keyword is followed by the function object name, followed by () and then a colon. 
 
@@ -47,71 +52,19 @@ example::
         turtle.forward(50)
         turlle.backward(50)
 
-The body of a function is the following block of code.
+Note:
 
-A block is defined by a colon, and one or more indented lines.
+* The body of a function is the following block of code.
+* A block is defined by a colon, and one or more indented lines.
+* The indents are 4 spaces. The block ends on the first non indented line. (Take care to use spaces and not tabs for indenting)
 
-The indents are 4 spaces. The block ends on the first non indented line.
-        
-(Take care to use spaces and not tabs for indenting)
+Functions defined on function objects::
 
-
-Parameters
-==========
-
-We have already seen calling functions with parameters.
-
-This is how to define a function that takes parameters:: 
-
-    def line(length):
-        turtle.forward(length)
-
-Tip:
-
-    People also call parameters arguments.
+    >>> dir(my_function)
+    [ ... ]
 
 
-As we shrink down our code and add functions to remove duplication, we
-are *factorizing* it. This is a good thing to do. But the functions we
-have defined so far are not very flexible. The variables are defined
-inside the function, so if we want to use a different angle or a
-distance then we need to write a new function. Our hexagon function can 
-only draw one size of hexagon!
-
-That is why we need to be able to give parameters, also called
-*arguments*, to the function.  This way the *variables* in the
-function can have different values each time we call the function:
-
-Remember how we defined the function ``line_without_moving()`` in the previous
-section::
-
-    def line_without_moving():
-        turtle.forward(50)
-        turtle.backward(50)
-
-We can improve it by giving it a parameter::
-
-    def line_without_moving(length):
-        turtle.forward(length)
-        turtle.backward(length)
-
-The parameter acts as a *variable* only known inside the function's definition.
-We use the newly defined function by calling it with the value we want the
-parameter to have like this::
-
-    line_without_moving(50)
-    line_without_moving(40)
-
-We have been using functions with parameters since the beginning of the
-tutorial with ``turtle.forward()``, ``turtle.left()``, etc... 
-
-And we can put as many arguments (or parameters) as we want, separating them
-with commas and giving them different names::
-
-    def tilted_line_without_moving(length, angle):
-        turtle.left(angle)
-        turtle.forward(length)
-        turtle.backward(length)
+We 'call' functions by adding `()` at the end of their names. This is syntax unique to functions. It means actioning the objects' code block.
 
 
 IndentationError
@@ -136,39 +89,43 @@ It simply means we have gotten the indentation wrong. Here the programmer has
 forgotten to add 4 spaces on the new line after the colon.
 
 
-Building worlds with abstractions
-=================================
 
-Building on our previously defined concept of a house we now use repetition 
-to define a row of houses.
+Parameters
+==========
 
-:: 
+We saw that using names generalises code and facilitates code reuse. This is also true of functions
+that use parameters.
 
-    def row_of_houses(number, size):
-        for i in range(number):
-            house(size)
-            turtle.forward(size)
+Consider the following two functions.
 
-Abstraction
-===========
+without parameters::
 
-Defining reusable components and the ability to repeat them is imensely powerful.
+    def right_angle():
+        turtle.forward(10)
+        turtle.left(90)
+        turtle.forward(10)
 
-Think of everything you can make from Lego bricks. Minecraft is a world build
-with cubes. In the real world think of all the components and repetition you
-typically find in a skyscraper.
+with parameters:: 
 
-This is where programming starts to become creative. You can define the
-universe of things that is of interest to you.
+    def right_angle(length):
+        turtle.forward(length)
+        turtle.left(90)
+        turtle.forward(length)
 
-Building on layers of details you can construct palaces.
+The second is far more flexible. It can be used to move by any length.
 
-These are phsical and familiar to us. Just think of what you can do with basic building blocks.
+That is why we need to be able to give parameters, also called
+*arguments*, to the function.  This way the *variables* in the
+function can have different values each time we call the function:
 
-Programmers model many other domains. Think of an area where you are expert and
-how you might code it.
+The parameter acts as a *variable* only known inside the function's code block.
 
-What objects, functions and variables would need to be defined?
+Functions can have many parameters. Multiple parameters are defined by separating them
+with commas::
+
+    def move_diagonally(angle, length):
+        turtle.left(angle)
+        turtle.forward(length)
 
 
 Exercises
@@ -189,42 +146,14 @@ Reopen ``shapes.py`` and make new functions with sensible parameters.
 
 Does this make the code more general and reusable?
 
-
-Variable length hexagons
-------------------------
-
-Write a function that allows you to draw hexagons of any size you want, each
-time you call the function.
+Hexagon
+-------
 
 
-.. image:: /images/shapes.png
+House
+-----
 
-.. tip::
+Refactor (rewrite) your house code as a function that uses two other functions.
 
-   The sum of the external angles of any shape is always 360 degrees!
-
-.. rst-class:: solution
-
-Solution
---------
-
-::
-
-    def hexagon(size):
-        for _ in range(6):
-            turtle.forward(size)
-            turtle.left(60)
-
-
-Solution
---------
-
-::
-
-    def draw_shape(sides, length):
-        for _ in range(sides):
-            turtle.forward(length)
-            turtle.right(360 / sides)
-
-
-
+Koans
+-----

@@ -15,7 +15,6 @@ Now type::
     >>> turtle.forward(25)
 
 
-
 Introducing Turtles
 ===================
 
@@ -149,8 +148,13 @@ Here we will program some geometrical concepts.
 
 Lets define some of our gemetrical concepts using step by step instructions.
 
-Draw a Square
--------------
+Put all the code inside a file named `shapes.py` and execute it::
+    
+    python3 shapes.py
+
+
+Square
+------
 
 Draw a square as in the following picture:
 
@@ -159,20 +163,18 @@ Draw a square as in the following picture:
 Squares have right angles which are 90 degrees.
 
 
-Draw a rectangle
-----------------
+Rectangle
+---------
 
 Draw a rectangle.
 
 .. image:: /images/turtle-rectangle.png
 
 
-Bonus
------
+Equilateral Triangle
+--------------------
 
-How about a triangle? In an equilateral triangle (a triangle with all
-sides of equal length) each corner has an angle of 60 degrees.
-
+An equilateral triangle has 3 sides of equal length and each corner has an angle of 60 degrees.
 
 Many squares
 ------------
@@ -184,7 +186,7 @@ Experiment with the angles between the individual squares.
 
 The picture shows three 20 degree turns. You could try 30 and 40...
 
-Task:
+House
+-----
 
-    Create a file called `shapes.py` and put all shape related code into it. We
-    will be reusing this file.
+Combining previous code, draw a simple house.
