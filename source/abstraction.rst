@@ -20,8 +20,11 @@ how you might code it.
 What objects, functions and variables would need to be defined?
 
 
-Solution
---------
+Exercises
+=========
+
+hexagon
+-------
 
 ::
 
@@ -31,8 +34,8 @@ Solution
             turtle.left(60)
 
 
-Solution
---------
+Shape
+-----
 
 ::
 
