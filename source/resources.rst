@@ -1,20 +1,36 @@
 Resources
 *********
 
-Official Documentation:
+There are many resources freely available on the web for further learning.
+
+One of the strengths of Python relative to other languages is the diversity of
+of applications it has.
+
+Do find one area of interest and make it your own.
+
+Official Documentation
+======================
+
+https://docs.python.org/3/
+
+The important ones are:
 
 * Tutorial
 * Library Reference - Practical
 * Language Reference - Academic, authoritative.
 
-Other Free Python Tutorials:
+Python Tutorials
+================
 
 * http://www.codecademy.com/en/tracks/python
 * http://inventwithpython.com/
 * http://learnpythonthehardway.org/ Not hard, but hands on 
 * http://www.diveintopython3.net/
 
-Free Online Courses:
+Online Courses
+==============
+
+Python today is widely taught in University. Here are some execelent resources.
 
 * Udacity - CS101
 * MIT Intro to Computer Science and Programming (MITOpenCourseware)
@@ -22,7 +38,8 @@ Free Online Courses:
 * Learn to Program: The Fundamentals (University of Toronto, Coursera)
 
 
-Applied:
+Applied
+=======
 
 The best way to consolidate learning programming is to find a domain that is of
 interest and learn more about programming it.
@@ -30,79 +47,91 @@ interest and learn more about programming it.
 Here are some resources that will inspire.
 
 
-* Natural Language Processing:
+Natural Language Processing
+---------------------------
 
-  Natural Language processing refers to tools used to parse and add semantics
-  to human language. Talking with computers.
+Natural Language processing refers to tools used to parse and add semantics
+to human language. Talking with computers.
 
-    * http://www.nltk.org/ 
-    * http://www.nltk.org/book/
-    * Python 3 Text Processing with NLTK 3 Cookbook
+* http://www.nltk.org/ 
+* http://www.nltk.org/book/
+* Python 3 Text Processing with NLTK 3 Cookbook
 
-* Electronics:
+Web development
+---------------
 
-    Raspberry Pi is currently the center of focus for fun with home electronics.
+* https://docs.djangoproject.com/en/ Django Tutorial
+* http://www.obeythetestinggoat.com/ To become a pro!
 
-    * Make: Sensors: A Hands-On Primer for Monitoring the Real World with Arduino and Raspberry Pi
-    * Make: More Electronics: Journey Deep Into the World of Logic Chips, Amplifiers, Sensors, and Randomicity
-    * Raspberry Pi Home Automation with Arduino
-    * Raspberry Pi for Secret Agents 
-    * Raspberry Pi Cookbook for Python Programmers 
-    * OReilly RPi
-    * Getting Started with Sensors: Measure the World with Electronics, Arduino, and Raspberry Pi 
+Games
+-----
 
-* Geospatial (GIS):
+* http://www.pygame.org/wiki/tutorials
 
-    * http://geospatialpython.com/
-    * http://qgis.org/en/site/
-    * http://docs.qgis.org/2.0/en/docs/pyqgis_developer_cookbook/
+Electronics
+-----------
 
-* Biology:
+Raspberry Pi is currently the center of focus for fun with home electronics.
 
-    * http://biopython.org/DIST/docs/tutorial/Tutorial.html
+* Make: Sensors: A Hands-On Primer for Monitoring the Real World with Arduino and Raspberry Pi
+* Make: More Electronics: Journey Deep Into the World of Logic Chips, Amplifiers, Sensors, and Randomicity
+* Raspberry Pi Home Automation with Arduino
+* Raspberry Pi for Secret Agents 
+* Raspberry Pi Cookbook for Python Programmers 
+* OReilly RPi
+* Getting Started with Sensors: Measure the World with Electronics, Arduino, and Raspberry Pi 
 
-* Maths:
+Geospatial (GIS)
+----------------
 
-    * http://www.sagemath.org/doc/thematic_tutorials/
-    * http://www.sagemath.org/doc/tutorial/
+* http://geospatialpython.com/
+* http://qgis.org/en/site/
+* http://docs.qgis.org/2.0/en/docs/pyqgis_developer_cookbook/
 
-* Forensics:
+Biology
+-------
 
-    * Violent Python
-    * Grey Hat Python
+* http://biopython.org/DIST/docs/tutorial/Tutorial.html
 
-* Mobile:
+Maths
+-----
 
-    * Creating Apps in Kivy
-    * http://kivy.org/docs/tutorials/pong.html
+* http://www.sagemath.org/doc/thematic_tutorials/
+* http://www.sagemath.org/doc/tutorial/
 
-* Data Science:
+Forensics
+---------
 
-    * Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython
-      (book)
-    * http://pandas.pydata.org/pandas-docs/dev/tutorials.html
+* Violent Python (book)
+* Grey Hat Python (book)
 
-* Machine Learning:
+Mobile
+------
 
-    * Scikit-Learn: Machine Learning in Python
-    * http://scikit-learn.org/stable/tutorial/index.html
-    * Practical Data Science Cookbook (book)
-    * Building Probabilistic Models with Python (Book)
+* http://kivy.org/docs/tutorials/pong.html
 
-* Web development:
+Data Science
+------------
 
-    * https://docs.djangoproject.com/en/ Django Tutorial
-    * http://www.obeythetestinggoat.com/ To become a pro!
+* Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython
+  (book)
+* http://pandas.pydata.org/pandas-docs/dev/tutorials.html
 
-* Games:
+Machine Learning
+----------------
 
-    * http://www.pygame.org/wiki/tutorials
+* Scikit-Learn: Machine Learning in Python
+* http://scikit-learn.org/stable/tutorial/index.html
+* Practical Data Science Cookbook (book)
+* Building Probabilistic Models with Python (Book)
 
 
-Course References:
+Course References
+=================
 
 Some materials that inspred this course.
 
 * http://opentechschool.github.io/python-beginners/en/index.html
-* How To Design Programs
+* How to Design Programs http://htdp.org/
 * Structure and Interpretation of Computer Programs
+    https://mitpress.mit.edu/sicp/full-text/book/book.html
