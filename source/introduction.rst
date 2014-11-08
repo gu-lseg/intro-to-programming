@@ -13,7 +13,10 @@ The purpose of this course it to give you just enough programming vocabulary to
 get a taste of what it is.
 
 Although we use Python, the concepts are the same in most other languages.
-Indeed any second language is easy to learn after the first.
+Indeed any second language is easy to learn after the first. 
+
+The differences between any programming language is very litle compared to 
+the differences between human languages.
 
 A world of objects
 ==================
@@ -82,28 +85,31 @@ Windows
 
 We interact with python using the command program.
 
-You can find it by searching in the start prompt. A shortcut is to type
-`Windows + R` which launches run. Then search for `cmd.exe`.
+You can find it by searching in the start prompt. 
+
+A shortcut: 
+
+* Press these two keys together `Windows + R` 
+* In the serach prompt that pops up enter and select `cmd.exe`.
 
 cmd.exe cheat sheet
 -------------------
 
-exit  - exit cmd.exe
-cd    - change directory
-dir   - list the directory's contents
-copy  - copy a file or a directory
-move  - move a file or a directory
-mkdir - make a directory
-del   - delete a file or directory
+* exit  - exit cmd.exe
+* cd    - change directory
+* dir   - list the directory's contents
+* copy  - copy a file or a directory
+* move  - move a file or a directory
+* mkdir - make a directory
+* del   - delete a file or directory
 
 Running Python
 --------------
 
-Typically when you install the windows python package, you select for it to add
-the executable (`python.exe`) to the system path.
+When you install python in windows it gives you the option to add the
+executable (`python.exe`) to your system path. 
 
-Unfortunately our IT guys forgot to do this. So we need to specify the full
-path each time: `\Python34\python.exe`.
+Unfortunately we need to specify the full path each time: `\Python34\python.exe`.
 
 ::
 
@@ -118,13 +124,13 @@ path each time: `\Python34\python.exe`.
 Koans
 =====
 
-Effective learning practice and repetition. Koans are a great way to do this in
+Learning takes practice and repetition. Koans are a great way to do this in
 programming.
 
 Throughout the course we will make reference to these koans.
 
-Downloading Koans
------------------
+Setup 
+-----
 
 Python Koans is available on Github:
 Steps:
@@ -140,6 +146,9 @@ Here are the commands::
     C:\Users\greg-lo>\unzip python-koans-master.zip
     C:\Users\greg-lo>\cd python-koans-master
     C:\Users\greg-lo\python-koans-master>
+
+Running
+-------
 
 Now we are ready to execute the contemplate_koans.py program::
 
@@ -172,6 +181,15 @@ C:\Users\greg-lo\python-koans-master\koans\about_asserts.py
      C:\Users\greg-lo>\Python34\python.exe contemplate_koans.py about_asserts
 
 You should find that one line has gone Green. You now have a new challenge.
+
+.. tip::
+
+    It is often easy to confuse the command shell and the python interpreter.
+    Python doesn't run in the command shell and likewise shell commands don't
+    work in the interpreter.
+
+    The interpreter has `>>>` as its prompt
+    The command shell has the file path eg `C:\Users\greg-lo\>`
 
 Exercise
 ========
