@@ -115,3 +115,26 @@ A list of tuples::
             ('Brian', 23, 'M', 'Single')
         ]
 
+
+Exercises
+=========
+
+Koans
+-----
+
+Lists::
+
+    > python3 contemplate_koans.py about_lists
+    
+Dictionaries::
+    
+    > python3 contemplate_koans.py about_dictionaries
+
+Tuples::
+
+    > python3 contemplate_koans.py about_tuples
+
+Sets::
+
+    
+    > python3 contemplate_koans.py about_sets

@@ -269,8 +269,8 @@ Given this code::
 What is the difference between the meaning of each set of characters on either
 side of the equal sign?
 
-String methods
---------------
+`str` functions 
+---------------
 
 Using the interpreter and introspection functions, for the string 'abcabc' find a method that:
 
@@ -281,10 +281,22 @@ Using the interpreter and introspection functions, for the string 'abcabc' find 
 * returns `ABC`
 * counts the number of 'a's
 
-Tips:
+.. tip::
 
 * Search dir('abcabc') for contenders and experiment
-* Familiarise yourself with the official docs https://docs.python.org/3/library/stdtypes.html#string-methods
+* docs https://docs.python.org/3/library/stdtypes.html#string-methods
 
-Koans
------
+Koans - `str` functions
+-----------------------
+
+::
+
+    > python3 contemplate_koans.py about_asserts
+
+::
+
+    > python3 contemplate_koans.py about_strings
+
+::
+
+    > python3 contemplate_koans.py about_strings_manipulation

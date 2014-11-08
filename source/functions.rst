@@ -154,6 +154,3 @@ House
 -----
 
 Refactor (rewrite) your house code as a function that uses two other functions.
-
-Koans
------

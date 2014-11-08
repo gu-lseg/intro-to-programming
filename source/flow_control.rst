@@ -53,7 +53,23 @@ Lets combine it in a for loop::
 While loop
 ----------
 
-if
+if statement
+============
+
+:: 
+
+    >>> x = int(input("Please enter an integer: "))
+    Please enter an integer: 42
+    >>> if x < 0:
+    ...     x = 0
+    ...     print('Negative changed to zero')
+    ... elif x == 0:
+    ...     print('Zero')
+    ... elif x == 1:
+    ...     print('Single')
+    ... else:
+    ...     print('More')
+
 
 Looping the Square
 ==================
@@ -84,8 +100,11 @@ that is the same thing repeated four times. It is more readable.
 
     Rewriting code to equivalent code is called refactoring.
 
-Exercise
-========
+Exercises
+=========
+
+Refactor `shapes.py`
+--------------------
 
 Refactor all the shapes in `shapes.py` and make good use of loops where you
 can.
@@ -107,3 +126,15 @@ time you call the function.
 .. rst-class:: solution
 
 
+Koans - Control Statements
+--------------------------
+
+Truth and Falsehood::
+
+    > python3 contemplate_koans.py about_true_and_false
+
+Boolean operators
+
+::
+
+    > python3 contemplate_koans.py about_control_statements
