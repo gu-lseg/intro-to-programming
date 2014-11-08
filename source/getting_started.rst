@@ -6,9 +6,12 @@ Interactive coding
 
 One way to run python is by using the interactive shell.
 
-Type ``python`` in the terminal.
+::
 
-Now type::
+    C:\Users\greg-lo>\Python34\python.exe
+    Python 3.4.2rc1 (v3.4.2rc1:8711a0951384, Sep 21 2014, 21:16:45) [MSC v.1600 32 b
+    it (Intel)] on win32
+    Type "help", "copyright", "credits" or "license" for more information.
 
     >>> import turtle
     >>> turtle.shape("turtle")
