@@ -156,3 +156,11 @@ C:\Users\greg-lo\python-koans-master\koans\about_asserts.py
 * Save the file. 
 * Rerun the Koans     
      C:\Users\greg-lo>\Python34\python.exe contemplate_koans.py about_asserts
+
+You should find that one line has gone Green. You now have a new challenge.
+
+Exercise
+========
+
+Using your intuition alone try to complete the about_asserts koans.
+
