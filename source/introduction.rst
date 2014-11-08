@@ -76,16 +76,30 @@ The code does the exactly the same but `square` one is at a higher level of abst
 By defining and composing layers of abstraction we arrive at ever more complex
 and useful programs.
 
-Python on Windows
+
+Windows
+=======
+
+We interact with python using the command program.
+
+You can find it by searching in the start prompt. A shortcut is to type
+`Windows + R` which launches run. Then search for `cmd.exe`.
+
+Typically when you install the windows python package, you select for it to add
+the executable (`python.exe`) to the system path.
+
+Unfortunately our IT guys forgot to do this. So we need to specify the full
+path each time: `\Python34\python.exe`.
 
 ::
 
-C:\Users\greg-lo>\Python34\python.exe
-Python 3.4.2rc1 (v3.4.2rc1:8711a0951384, Sep 21 2014, 21:16:45) [MSC v.1600 32 b
-it (Intel)] on win32
-Type "help", "copyright", "credits" or "license" for more information.
->>> import turtle
->>> turtle.forwards(10)
+    C:\Users\greg-lo>\Python34\python.exe
+    Python 3.4.2rc1 (v3.4.2rc1:8711a0951384, Sep 21 2014, 21:16:45) [MSC v.1600 32 b
+    it (Intel)] on win32
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>> import turtle
+    >>> turtle.forwards(10)
+
 
 Koans
 =====
@@ -99,26 +113,23 @@ Downloading Koans
 -----------------
 
 Python Koans is available on Github:
+Steps:
 
-    https://github.com/arachnegl/python-koans
+* Download zip from https://github.com/arachnegl/python-koans
+* move it from Downloads into your home directory (for me its `C:\Users\greg-lo`)
+* unzip it 
+* change directory (`cd`) into the python-koans-master directory
 
-You will need to download the source as a zip and unzip it on your machine.
+Here are the commands::
 
-Follow the instructions on the above link.
+    C:\Users\greg-lo>\move Downloads\python-koans-master .
+    C:\Users\greg-lo>\unzip python-koans-master.zip
+    C:\Users\greg-lo>\cd python-koans-master
+    C:\Users\greg-lo\python-koans-master>
 
-Running
--------
+Now we are ready to execute the contemplate_koans.py program::
 
-C:\Users\greg-lo>\Python34\python.exe
-Python 3.4.2rc1 (v3.4.2rc1:8711a0951384, Sep 21 2014, 21:16:45) [MSC v.1600 32 b
-it (Intel)] on win32
-Type "help", "copyright", "credits" or "license" for more information.
->>> import turtle
->>> turtle.forwards(10)
-
-::
-
-    > python3 contemplate_koans.py about_asserts
+    C:\Users\greg-lo>\Python34\python.exe contemplate_koans.py about_asserts
 
     Thinking AboutAsserts
       test_assert_truth has damaged your karma.
@@ -133,3 +144,15 @@ Type "help", "copyright", "credits" or "license" for more information.
 
     You have completed 0 koans and 0 lessons.
     You are now 77 koans and 9 lessons away from reaching enlightenment.
+
+Note that you are asked to mediate on a file with a line number.
+
+Open this file in SublimeText. You can find SublimeText in the Start search prompt.
+
+Open the file as per the output of `contemplate_koans`:
+C:\Users\greg-lo\python-koans-master\koans\about_asserts.py
+
+* Go to line 13 and replace `____` with True. 
+* Save the file. 
+* Rerun the Koans     
+     C:\Users\greg-lo>\Python34\python.exe contemplate_koans.py about_asserts
