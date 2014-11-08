@@ -213,10 +213,10 @@ that the lenguth of a square's side is irrelevant to its nature as a square.
 
 Names help in: 
 
-- efficient programming.
+- making programming efficient. 
 - capturing meaning. 
 
-Tip:
+.. tip::
 
     If you find yourself needing to replace many similar values in order
     to update your code, using names is worth considering.
@@ -225,6 +225,11 @@ Tip:
     
 Exercises
 =========
+
+Shapes
+------
+
+Refactor your code in `shapes.py` to use variables as much as possible.
 
 Strings and Integers with +
 ---------------------------
@@ -283,8 +288,8 @@ Using the interpreter and introspection functions, for the string 'abcabc' find 
 
 .. tip::
 
-* Search dir('abcabc') for contenders and experiment
-* docs https://docs.python.org/3/library/stdtypes.html#string-methods
+    * Search dir('abcabc') for contenders and experiment
+    * docs https://docs.python.org/3/library/stdtypes.html#string-methods
 
 Koans - `str` functions
 -----------------------
