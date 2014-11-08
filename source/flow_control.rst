@@ -46,7 +46,7 @@ Lets combine it in a for loop::
     0
     1
 
-Tip:
+.. tip::
 
     looping and iterating means the same.
 
@@ -80,7 +80,7 @@ The repetition is tedious to type and heavy to read. Lets use a for loop to remo
 The code is much shorter. It communicates better the nature of drawing a square: 
 that is the same thing repeated four times. It is more readable.
 
-Tip:
+.. tip::
 
     Rewriting code to equivalent code is called refactoring.
 

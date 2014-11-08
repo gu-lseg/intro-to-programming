@@ -128,10 +128,7 @@ No error this time. `print_hi` is properly defined.
 Exercises
 =========
 
-Geometry Exercises
-------------------
-
-Tip:
+.. tip::
 
     Programming is always applied to something. Its an activity that seeks to
     capture some aspect of reality that is useful to us. 
@@ -143,6 +140,9 @@ Tip:
 
     Programming as an activity is about breaking down our concepts into smaller defined steps.
     In effect we define our concepts in commands.
+
+Geometry Exercises
+------------------
 
 Here we will program some geometrical concepts.
 
