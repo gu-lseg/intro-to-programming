@@ -60,6 +60,7 @@ It is very helpful to maintain a visualisation of what is happening.
 Here are some tools to aid with developing that:
 
 http://www.pythontutor.com/visualize.html#mode=edit
+
 http://pyalgoviz.appspot.com/
 
 
@@ -124,8 +125,8 @@ Put this code into a file named `my.py`::
     
     x = 1
     y = 2
-    success = 'increment function works'
-    failure = 'increment function broken'
+    success = 'works'
+    failure = 'broken'
 
     def inc(p):
         incremented = p + 1
@@ -168,6 +169,10 @@ Executing `l` results in::
     [EOF]
 
 Copy the same code into www.pythontutor.com.
+
+After stepping through a few times you will get something like this:
+
+.. image:: /images/inc_visualisation.png
 
 Step through each line of code keeping the visualiser tool and pdb in sync. Use
 the visualiser as a map to find the various parts through pdb.
