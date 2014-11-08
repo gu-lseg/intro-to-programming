@@ -8,8 +8,8 @@ of applications it has.
 
 Do find one area of interest and make it your own.
 
-Official Documentation
-======================
+Documentation
+=============
 
 https://docs.python.org/3/
 
@@ -19,8 +19,8 @@ The important ones are:
 * Library Reference - Practical
 * Language Reference - Academic, authoritative.
 
-Python Tutorials
-================
+Tutorials
+=========
 
 * http://www.codecademy.com/en/tracks/python
 * http://inventwithpython.com/
