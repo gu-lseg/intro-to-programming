@@ -76,6 +76,16 @@ The code does the exactly the same but `square` one is at a higher level of abst
 By defining and composing layers of abstraction we arrive at ever more complex
 and useful programs.
 
+Python on Windows
+
+::
+
+C:\Users\greg-lo>\Python34\python.exe
+Python 3.4.2rc1 (v3.4.2rc1:8711a0951384, Sep 21 2014, 21:16:45) [MSC v.1600 32 b
+it (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import turtle
+>>> turtle.forwards(10)
 
 Koans
 =====
@@ -98,6 +108,13 @@ Follow the instructions on the above link.
 
 Running
 -------
+
+C:\Users\greg-lo>\Python34\python.exe
+Python 3.4.2rc1 (v3.4.2rc1:8711a0951384, Sep 21 2014, 21:16:45) [MSC v.1600 32 b
+it (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import turtle
+>>> turtle.forwards(10)
 
 ::
 
