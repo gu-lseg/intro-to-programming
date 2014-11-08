@@ -45,6 +45,8 @@ __add__
     >>> '1'.__add__('2')
     '12'
 
+Any object that implements the `__add__` function will work
+with the `<object> + x` syntax.
 
 __contains__
 ============
@@ -82,21 +84,47 @@ Demonstrating `__contains__`::
     >>> {'a', 'b'}.__contains__('b')
     True
 
+Any object that implements the `__contains__` function will work
+with the `x in <object>` syntax.
 
 __iter__
 ========
 
-In this section we are going to see how iteration is implemented in Python.
+`__iter__` is how iteration is implemented in Python. This protocol is a bit more involved
+than the previous protocols.
 
-This code::
+Taking this code::
 
+    >>> number = [1, 2]
     >>> for i in [1, 2]:
     ...     print(i)
     ...
     1
     2
 
+Roughly here is the sequence of events:
+* interpreter calls `__iter__` on the list object, 
+* an object of type iterator is returned.
+* interpreter then calls `__next__` repeatedly on the iterator
+* interpreter actions the code in the for loop
+* interpreter interrupts the loop if a `StopIteration` Exception occurs.
 
+To illustrate::
+
+    >>> itr_obj = [1, 2].__iter__()
+    >>> type(itr_obj)
+    <class 'list_iterator'>
+    >>> itr_obj.__next__()
+    1
+    >>> itr_obj.__next__()
+    2
+    >>> itr_obj.__next__()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration
+
+Any object that implements the `__iter__` function will work 
+with the `for x in <object>: ...` syntax.
 
 Exercise
 ========
