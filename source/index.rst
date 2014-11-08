@@ -17,6 +17,7 @@ Table of Contents:
    functions
    interpreter_debugging
    flow_control 
+   abstraction
    data_structures
    classes
    resources
