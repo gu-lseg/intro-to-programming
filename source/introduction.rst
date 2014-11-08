@@ -85,4 +85,13 @@ programming.
 
 Throughout the course we will make reference to these koans.
 
-https://github.com/arachnegl/python-koans
+Downloading Koans
+-----------------
+
+Python Koans is available on Github:
+
+    https://github.com/arachnegl/python-koans
+
+You will need to download the source as a zip and unzip it on your machine.
+
+Follow the instructions on the above link.
