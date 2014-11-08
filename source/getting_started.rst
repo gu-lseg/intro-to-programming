@@ -100,8 +100,24 @@ Tip:
 
     Google errors!
 
+AttributeError
+--------------
+
+An `AttributeError` means the interpreter can't find the name you have asked
+for on the object.
+
+:: 
+
+    >>> import turtle
+    >>> turtle.shp('waef')
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    AttributeError: 'module' object has no attribute 'shp'
+
+Here the programmer has misspelt shape.
+
 SyntaxError
-===========
+-----------
 
 Learning a language involves making many syntax (grammatical) errors.
 
