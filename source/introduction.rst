@@ -1,9 +1,7 @@
 Introduction
 ************
 
-Programming is a creative activity.
-
-Like most things worth learning it takes some time to learn.
+Like most things worth learning programming takes time.
 
 You don't expect to learn a foreign language or a musical instrument in
 a weekend. Master musicians state they are always learning. With programming it
@@ -11,6 +9,9 @@ is the same.
 
 The purpose of this course it to give you just enough programming vocabulary to
 get a taste of what it is.
+
+You will find that whilst it requires application it is a very rewarding
+activity.
 
 Although we use Python, the concepts are the same in most other languages.
 Indeed any second language is easy to learn after the first. 
