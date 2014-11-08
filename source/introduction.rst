@@ -189,6 +189,7 @@ You should find that one line has gone Green. You now have a new challenge.
     work in the interpreter.
 
     The interpreter has `>>>` as its prompt
+
     The command shell has the file path eg `C:\Users\greg-lo\>`
 
 Exercise
