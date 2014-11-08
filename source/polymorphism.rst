@@ -16,6 +16,9 @@ for built in objects of different type.
 Protocols
 =========
 
+When we introspect an object we have a lot of attributes that take this format:
+`__names__`. This section will make many of those clear.
+
 Everything is an object and all actions ultimately mean calling functions defined on objects.
 
 Protocols are polymorphic functions that are embbedded into python. Most
@@ -145,3 +148,15 @@ String representations
 
 What function gets called when we get results in the interpreter?
 Is it the same that gets called when we type `print(x)`?
+
+len() implementation
+--------------------
+
+len() works on many object types::
+
+    >>> len('hi')
+    2
+    >>> len([1, 2])
+    2
+
+Which protocol function is called by the function `len` on the object it is passed?
