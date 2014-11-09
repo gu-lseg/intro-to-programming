@@ -193,3 +193,14 @@ Boolean operators
 ::
 
     > python3 contemplate_koans.py about_control_statements
+
+
+Paper Sissors Rock
+------------------
+
+As a challenge code the paper sissors rock game.
+
+You will need to use some randomness. This is how::
+    
+    >>> import random
+    >>> random.randint(0, 2)
