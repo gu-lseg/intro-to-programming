@@ -140,7 +140,7 @@ Unfortunately we need to specify the full path each time: `\Python34\python.exe`
     it (Intel)] on win32
     Type "help", "copyright", "credits" or "license" for more information.
     >>> import turtle
-    >>> turtle.forwards(10)
+    >>> turtle.forward(10)
 
 
 Koans
