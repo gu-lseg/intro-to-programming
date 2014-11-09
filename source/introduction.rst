@@ -164,10 +164,10 @@ Steps:
 
 Here are the commands::
 
-    C:\Users\greg-lo>\move Downloads\python-koans-master .
-    C:\Users\greg-lo>\unzip python-koans-master.zip
-    C:\Users\greg-lo>\cd python-koans-master
-    C:\Users\greg-lo\python-koans-master>
+    C:\Users\greg-lo>move Downloads\python-koans-master .
+    C:\Users\greg-lo>unzip python-koans-master.zip
+    C:\Users\greg-lo>cd python-koans-master
+    C:\Users\greg-lo\ython-koans-master>
 
 Running
 -------
