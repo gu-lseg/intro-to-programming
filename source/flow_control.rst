@@ -8,6 +8,17 @@ expressivity.
 
 We will examine in turn the important control statements that Python provides.
 
+
+Go to these links and follow the tutorials there. Then come back here and
+complete this page.
+
+http://opentechschool.github.io/python-beginners/en/conditionals.html
+
+http://opentechschool.github.io/python-beginners/en/conditional_loops.html
+
+http://opentechschool.github.io/python-beginners/en/loops.html
+
+
 Boolean Operators
 =================
 
@@ -168,22 +179,6 @@ Honecomb
 Write code that draws this:
 
 .. image:: /images/turtle-honeycomb.png
-
-
-Variable length hexagons
-------------------------
-
-Write a function that allows you to draw hexagons of any size you want, each
-time you call the function.
-
-
-.. image:: /images/shapes.png
-
-.. tip::
-
-   The sum of the external angles of any shape is always 360 degrees!
-
-.. rst-class:: solution
 
 
 Koans - Control Statements
