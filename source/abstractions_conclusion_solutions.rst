@@ -32,3 +32,9 @@
         turtle.right(90)             # point of departure
         turtle.forward(100)
         turtle.left(90)
+
+
+    def any_shape(sides, length):
+        for _ in range(sides):
+            turtle.forward(length)
+            turtle.right(360 / sides)

@@ -19,8 +19,8 @@ how you might code it.
 
 What objects, functions and variables would need to be defined?
 
-Building abstractions
-=====================
+Building blocks 
+===============
 
 Building on our previously defined concept of a house we now use repetition 
 to define a row of houses.
@@ -36,23 +36,15 @@ to define a row of houses.
 Exercises
 =========
 
-hexagon
--------
+Any Shape
+---------
 
-::
+Write code that draws this:
 
-    def hexagon(size):
-        for _ in range(6):
-            turtle.forward(size)
-            turtle.left(60)
+.. image:: /images/tutrle-all-shapes.png
+
+.. tip::
+
+    The sum of the external angles of any shape is always 360 degrees.
 
 
-Shape
------
-
-::
-
-    def draw_shape(sides, length):
-        for _ in range(sides):
-            turtle.forward(length)
-            turtle.right(360 / sides)
