@@ -41,7 +41,7 @@ Any Shape
 
 Write code that draws this:
 
-.. image:: /images/tutrle-all-shapes.png
+.. image:: /images/turtle-all-shapes.png
 
 .. tip::
 
