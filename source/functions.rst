@@ -146,9 +146,6 @@ Reopen ``shapes.py`` and make new functions with sensible parameters.
 
 Does this make the code more general and reusable?
 
-Hexagon
--------
-
 
 House
 -----

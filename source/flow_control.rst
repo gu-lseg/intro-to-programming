@@ -154,6 +154,21 @@ Refactor `shapes.py`
 Refactor all the shapes in `shapes.py` and make good use of loops where you
 can.
 
+Hexagon
+-------
+
+Write code that draws this:
+
+.. image:: /images/turtle-hexagon.png
+
+
+Honecomb
+--------
+
+Write code that draws this:
+
+.. image:: /images/turtle-honeycomb.png
+
 
 Variable length hexagons
 ------------------------
