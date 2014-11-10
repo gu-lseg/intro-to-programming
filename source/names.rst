@@ -1,12 +1,12 @@
 Names
 *****
 
-To work effectively with objects we need a way to refer to them. This is called assignemnt.
+To work effectively with objects we need a way to refer to them.
 
 Names are like the nouns we use in every day speach.
 
-Variables
-=========
+Assignment
+==========
 
 Naming integer objects::
 
@@ -33,16 +33,17 @@ A variable by itself is an expression and it evaluates to its object::
 NameError
 =========
 
-Here we introduce the NameError::
+If the interpreter gets a name that hasn't yet been defined it will complain
+by throwing a `NameError`.
+
+example::
 
     >>> the_holy_grail
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     NameError: name 'the_holy_grail' is not defined
-    >>>
 
-Python is telling us it doesn't know what the turtle name refers to. We haven't
-defined it. We have forgotten to import it.
+Often typos lead to these types of errors.
 
 Names & Reusability
 ===================
@@ -93,8 +94,6 @@ Names help in:
     If you find yourself needing to replace many similar values in order
     to update your code, using names is worth considering.
 
-
-    
 Exercises
 =========
 
@@ -102,4 +101,3 @@ Shapes
 ------
 
 Refactor your code in `shapes.py` to use variables as much as possible.
-
