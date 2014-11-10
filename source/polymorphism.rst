@@ -9,7 +9,6 @@ therefore easier.
 Polymorphism is a fancy word that just means the same function is
 defined on objects of different types. 
 
-
 Python provides protocols which is polymorphism under the hood. These implement consistent behaviour 
 for built in objects of different type.
 

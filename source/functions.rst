@@ -3,19 +3,14 @@ Functions
 
 Think of functions as actions, verbs, or commands.
 
-They have names::
-
-    run
-
-Are called (actioned) by using parentheses::
-
-    run()
-
-Some functions take objects as parameters that are passed when calling::
-
-    run("quickly")
-
 You can think of parameters as adverbs: 'run, quickly'
+
+example::
+
+    >>> turtle.forward             # functions have names
+    <function turtle.forward>
+    >>> turtle.forward(10)         # actioned by use of '()'s
+
 
 All turtle instructions are examples of calling functions attached to the turtle object.
 
@@ -26,8 +21,8 @@ All turtle instructions are examples of calling functions attached to the turtle
 `print` simply prints its parameter to the console.
 
 
-objects of type `function`
-==========================
+`function` type
+===============
 
 Function objects are special. They are objects that contain blocks of code.
 

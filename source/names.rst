@@ -13,22 +13,37 @@ Naming integer objects::
     >>> x = 5
     >>> four = 4
 
-String object::
+Naming a string object::
 
     >>> first_name = "greg"
 
 Unlike in maths, the equals symbol means assignment not equality.
-Python reads `x = 5` as assign the value (object of type `int`) 5 to the name x.
 
-We can reassign variables to any object::
+The interprete executes the code `x = 5` as:
 
-    >>> x = 5            # x refers to an Integer object
-    >>> x = 'greg'       # x refers now to a String object 
+* Create an object of type `int` of value 5
+* Name that object `x`
 
-A variable by itself is an expression and it evaluates to its object::
+From the point of definition onwards the programmer can now refer to that
+object by using the name `x`.
+
+Names can be reassigned to any type of object::
+
+    >>> x = 5            # x refers to an `int` object
+    >>> x = 'greg'       # x refers now to a `str` object 
+
+A name is executed as an expression and it evaluates to its object::
 
     >>> x
     5
+
+.. tip::
+
+    A name doesn't exist in the environment. Its not an object. It is part of
+    the language (the code) that we use to refer to that world of objects. 
+
+    Just like the name 'greg' doesn't exist in the real world. It is a name that
+    refers to one or more objects of type persons.
 
 NameError
 =========
@@ -45,12 +60,13 @@ example::
 
 Often typos lead to these types of errors.
 
-Names & Reusability
-===================
+Reusability
+===========
 
-Names are often called variables. Names give us a lot of expressivity. They enable you to generalise your code facilitating code reuse.
+Names enhance a programmers' expressivity. They permit generalising code
+thereby facilitating code reuse. Indeed they are often called variables.
 
-Consider that you write this code to draw a square::
+Consider this code that draws a square with side length 50::
 
     turtle.forward(50)
     turtle.left(90)
@@ -61,11 +77,11 @@ Consider that you write this code to draw a square::
     turtle.forward(50)
     turtle.left(90)
 
-Now you decide the sides should be of length 100.
+Now a decision is made that the sides be of length 100. 
 
-Without names you have to go back and replace 50 with 100 four times.
+You have to go back and replace 50 with 100 four times.
 
-Instead using names you can do this::
+Using names you can do this::
 
     side = 50
     right_angle = 90
@@ -79,10 +95,15 @@ Instead using names you can do this::
     turtle.forward(side)
     turtle.left(right_angle)
 
-Now, if you change your mind you need only update one value.
+If you change your mind you need only update one value.
 
 Note that our programatic definition mirrors the mathematical defintion in
 that the lenguth of a square's side is irrelevant to its nature as a square.
+
+.. tip:: 
+    The name `right_angle` was chosen to refer to an `int` of value 90. 
+    `thirty_degree_angle`, `angle`, or `dezwbpe` could be used and the code would work fine. But the `thirty_degree_angle` is misleading, `angle` is ok but vague, `dezwbpe` conveys no meaning.
+    By choosing appropriate names you make the code more readable.
 
 Names help in: 
 

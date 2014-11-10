@@ -1,83 +1,88 @@
-Objects
-*******
+Objects & Types
+***************
+
+We see the world as containing objects. We classify those objects according to
+types.
+
+In a classroom there many objects that are instances of the type chair. You also have many objects that are instances of the type person.
+
+Chairs have attributes. They typically have four legs and a back. Persons also
+have attributes. They have 2 legs, 2 arms, a head... 
+
+Objects of type Person can interact with objects of type Chair in various ways. 
+They can sit on them, move them, or even stand on them.
+
+
+Introduction
+============
 
 An Object:
 
-* Physically, exists as a pattern of 0s and 1s in the computer's memory. 
-* Conceptually, represents something with meaning to the programmer.
+* Physically exists as a pattern of 0s and 1s in the computer's memory. 
+* Conceptually represents something with meaning to the programmer.
+
+An object is always an instance of a Type. Type determines an objects:
+
+* attributes
+* behaviours (we call these methods)
 
 Programming is about defining and manipulating objects to do something
 meaningful to the programmer.
 
-To know an objects' memory location::
+In this section we are interested in:
 
-    >>> id('a')
-    4403687864
+* creating objects using literals and constructors.
+* inspecting objects using introspection functions.
 
-Every object has a type and a way to create them.
-
-Types
-=====
-
-Objects are instances of a type. An objects' type defines its set of attributes and behaviours.
-
-Taking the turtle object as an example:
-
-attributes::
-
-    >>> turtle.pi
-
-behaviour:: 
-
-    >>> turtle.forward(25)
-    >>> turtle.shape("turtle")
-
-The interpreter executes these instructions. It knows how to match the sequence
-of letters typed in and executed to existent code that defines the `turtle`
-object.
 
 Introspection 
 =============
 
-The `type('a')` and `dir('a')` functions help us learn about objects::
+The functions `type('a')` and `dir('a')` help us learn about objects::
 
     >>> type(5)
     int
     >>> type('5')
     str
     >>> dir('5')
-    [ ... list of attributes and functions of an object ... ]
+    [ ... list of attributes and methods of an object ... ]
     >>> dir(5)
-    [ ... list of attributes and functions of an object ... ]
+    [ ... list of attributes and methods of an object ... ]
     
-We will use the above functions to explore the next two object types.
 
 Strings 
 =======
 
-`str` objects represent text in Python
+Objects that are instances of type `str` represent text.
 
+creating `str` instances
+------------------------
 ::
 
-    >>> type('hi')
+    >>> "hi"           # literal
+    hi
+    >>> str("hi")      # constructor function
+    hi
+    >>> type('hi')     # confirm type
     str
 
-Creation::
+When you execute the code `"hi"` or `str("hi")`, the python interpreter::
 
-    >>> "hi"       # literal
-    hi
-    >>> str("hi")  # constructor
-    hi
+1. Creates an object of type `str`
+2. Gives it the value "hi"
+3. Returns this newly created object
 
-On `enter` a newly created `str` object is `returned` by the interpreter on the
-following line.
+introspecting `str` instances
+-----------------------------
+
+What attributes and functions
 
 `str` functions::
 
     >>> dir("string")
     [' .... many .... ']
 
-Many functions are defined by the `str` type to facilitate working with text.
+Many methods are defined on objects of type `str`. These facilitate working with text.
 Use the documents to get an overview.
 
 https://docs.python.org/3.4/library/string.html
@@ -85,81 +90,72 @@ https://docs.python.org/3.4/library/string.html
 Integers
 ========
 
-Integers are whole numbers
+Objects that are instances of type `int` represent whole numbers.
 
+creating `int` instances
+------------------------
 ::
 
-    >>> type(5)
+    >>> 3              # literal
+    3
+    >>> int(-5)        # constructor function
+    -5
+    >>> type(5)        # confirm type
     int
 
 
-Creation::
+introspecting `int` instances
+-----------------------------
 
-    >>> 3
-    3
-    >>> int(-5)
-    -5
-
-Like strings the interpreter takes a number typed by the programmer literally. Thus it creates an object of type `int` with the value 5.
-
-`int` functions:: 
+Methods defined on objects of type `int`::
 
     >>> dir(5)
     [ ... many ... ]
 
-Mathematical operations you'd expect are implemented on int objects::
+The arithmetic operations you'd expect are implemented on int objects::
 
     >>> 5 + 4
     9
     >>> 5 - 6
     -1
 
-Note:: 
-    
-    >>> int.__sub__(5, 6)
-    -1
 
-The notation `5 - 6` and `int.__sub__(5, 6)` is different but have the same
-result.
+Exercises
+=========
 
-Actually the `-` is resolved to `__sub__` by the interpreter. When the
-interpreter reads `5 - 6` it knows to resolve the `-` to `__sub__`. 
+'5' Vs 5
+--------
 
+What does the interpreter do when you type:: 
 
-The point is despite special syntax Python consistently operates on functions defined on objects.
+    >>> '5'
 
+Followed by enter?
 
-Strings and Integers with +
----------------------------
+Same again for::
 
-Both string and integer objects respond to the `+` symbol.
+    >>> 5
 
-What do you expect the difference to be between the following commands?
+Describe every step.
 
-First plus sign with strings::
+Strings, Integers, and +
+------------------------
 
-    >>> 'abc' + 'def'
+Both string and integer objects recognise the `+` symbol.
 
-Second plus sign with integers::
-    
-    >>> 5 + 4
+What output would you expect in the following?
+
+::
+
+    >>> '1' + '2'
+    _____?
+    >>> 1 + 2
+    _____?
 
 Test your answer with python.
 
 Try the same above but this time using `*` instead of `+`. What can you
 conclude of the meaning of `*`?
-
-
-'5' Vs 5
---------
-
-What is the diffference between::
-
-    '5'
-
-and::
-    
-    5
 
 
 names and values
@@ -192,14 +188,7 @@ Using the interpreter and introspection functions, for the string 'abcabc' find 
 Koans - `str` functions
 -----------------------
 
-::
+:: 
 
-    > python3 contemplate_koans.py about_asserts
-
-::
-
-    > python3 contemplate_koans.py about_strings
-
-::
-
-    > python3 contemplate_koans.py about_strings_manipulation
+    python3 contemplate_koans.py about_strings
+    python3 contemplate_koans.py about_strings_manipulation
