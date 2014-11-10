@@ -115,9 +115,3 @@ programming.
 Throughout the course we will make reference to these koans.
 
 See the appendix for instructions.
-
-Exercise
-========
-
-Using your intuition alone try to complete the about_asserts koans.
-
