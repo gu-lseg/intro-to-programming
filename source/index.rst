@@ -13,7 +13,8 @@ Table of Contents:
 
    introduction
    getting_started
-   objects_names
+   objects
+   names
    functions
    interpreter_debugging
    flow_control 
