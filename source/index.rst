@@ -13,13 +13,16 @@ Table of Contents:
 
    introduction
    getting_started
+   errors
    objects
    names
    functions
    interpreter_debugging
    flow_control 
-   abstraction
    data_structures
-   polymorphism
+   loops
+   abstraction
    classes
+   polymorphism
    resources
+   appendix_windows

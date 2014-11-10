@@ -19,7 +19,7 @@ Naming a string object::
 
 Unlike in maths, the equals symbol means assignment not equality.
 
-The interprete executes the code `x = 5` as:
+The interpreter executes the code `x = 5` as:
 
 * Create an object of type `int` of value 5
 * Name that object `x`
@@ -37,13 +37,19 @@ A name is executed as an expression and it evaluates to its object::
     >>> x
     5
 
-.. tip::
+What's in a name?
+=================
 
-    A name doesn't exist in the environment. Its not an object. It is part of
-    the language (the code) that we use to refer to that world of objects. 
+A name doesn't exist in the environment. Its not an object. It is part of
+the language (the code) that we use to refer to that world of objects. 
 
-    Just like the name 'greg' doesn't exist in the real world. It is a name that
-    refers to one or more objects of type persons.
+Just like the name 'greg' doesn't exist in the real world. It is a name that
+refers to one or more objects of type persons.
+
+In actuality a name is a symbol that is immediately replaced by the interpreter 
+with an address in memory. A name points to an object's location in memory.
+
+In a way it is synonmymous with the `id` of the object it refers to.
 
 NameError
 =========
@@ -100,15 +106,29 @@ If you change your mind you need only update one value.
 Note that our programatic definition mirrors the mathematical defintion in
 that the lenguth of a square's side is irrelevant to its nature as a square.
 
-.. tip:: 
-    The name `right_angle` was chosen to refer to an `int` of value 90. 
-    `thirty_degree_angle`, `angle`, or `dezwbpe` could be used and the code would work fine. But the `thirty_degree_angle` is misleading, `angle` is ok but vague, `dezwbpe` conveys no meaning.
-    By choosing appropriate names you make the code more readable.
+Choosing Names
+==============
 
-Names help in: 
+The name `right_angle` was chosen to refer to an `int` of value 90. 
 
-- making programming efficient. 
+`thirty_degree_angle`, `angle`, or `dezwbpe` could be used and the code would work fine.
+
+However:
+
+* `thirty_degree_angle` is misleading
+* `angle` is better, perhaps ok but vague
+* `dezwbpe` is nonsense and conveys no meaning
+
+By choosing appropriate names you make the code more readable.
+
+Conclusion
+==========
+
+Names help: 
+
+- make programming efficient. 
 - capturing meaning. 
+
 
 .. tip::
 

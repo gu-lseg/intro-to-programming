@@ -1,9 +1,7 @@
 Functions
 *********
 
-Think of functions as actions, verbs, or commands.
-
-You can think of parameters as adverbs: 'run, quickly'
+You can think of functions as actions, verbs, or commands and you can think of parameters as adverbs: 'run, quickly'
 
 example::
 
@@ -30,8 +28,10 @@ Functions help in letting programmers organise and reuse code. They help create 
 
 Function objects have names. The name is assigned at the same time you define a function.
 
+creating `function` types
+-------------------------
 
-Creating::
+::
 
     >>> def my_function():
     ...     print('hello')    # Note 4 space indentation

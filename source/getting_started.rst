@@ -1,12 +1,12 @@
 Getting Started
 ***************
 
-Interactive coding
-==================
+Interactive shell
+=================
 
 One way to run python is by using the interactive shell.
 
-run python, for example::
+Type python without anything following to enter the interactive shell::
 
     C:\Users\greg-lo>\Python34\python.exe
     Python 3.4.2rc1 (v3.4.2rc1:8711a0951384, Sep 21 2014, 21:16:45) [MSC v.1600 32 b
@@ -17,9 +17,13 @@ run python, for example::
     >>> turtle.shape("turtle")
     >>> turtle.forward(25)
 
+.. tip::
 
-Introducing Turtles
-===================
+    Where you see `>>>` in the text you can assume the interactive shell is
+    bieng used. Don't just read, expriment yourself!
+
+Turtles
+=======
 
 The turtle will follow any instruction you give it.
 
@@ -73,8 +77,9 @@ Look through the documentation and experiment with lines of code you find there.
 
 https://docs.python.org/3/library/turtle.html
 
-Executing code from a file
-==========================
+
+Using files
+===========
 
 Code is most often executed from file.
 
@@ -99,64 +104,6 @@ In the console we call the python command with the filename as parameter::
 
     Here the location is given by the prompt.
 
-
-Errors
-======
-
-Errors and Exceptions are a constant feature of programming.
-
-They always tell you what when wrong. They don't always tell you
-why things went wrong though but in those cases they act as clues.
-
-Learn to read errors first using intuition then by debugging and researchig. It
-is a skill and it does get easier. Soon you will map errors to solutions very
-quickly.
-
-.. tip::
-
-    You need to learn how to find information.
-    Always read Errors and use your intuition, then Google.
-    If that hsn't helped only then ask an expert. 
-
-AttributeError
---------------
-
-An `AttributeError` means the interpreter can't find the name you have asked
-for on the object.
-
-:: 
-
-    >>> import turtle
-    >>> turtle.shp('waef')
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    AttributeError: 'module' object has no attribute 'shp'
-
-Here the programmer has misspelt shape.
-
-SyntaxError
------------
-
-Learning a language involves making many syntax (grammatical) errors.
-
-A function defined badly::
-
-    >>> def print_hi:
-      File "<stdin>", line 1
-        def print_hi 
-                       ^
-    SyntaxError: invalid syntax
-    >>>
-
-The programmer has forgotten that function definitions must have
-parentheses `()` between the function name and the ending colon `:`.
-
-::
-
-    >>> def print_hi():
-        print('hi')
-
-No error this time. `print_hi` is properly defined.
 
 
 Exercises
@@ -212,3 +159,13 @@ House
 -----
 
 Combining previous code, draw a simple house.
+
+
+Koans
+-----
+
+Using your intuition alone try to complete the about_asserts koans.
+
+::
+
+    C:\Users\greg-lo>\Python34\python.exe contemplate_koans.py about_asserts

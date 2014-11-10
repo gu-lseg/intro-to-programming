@@ -1,22 +1,25 @@
-Flow Control
+Conditionals
 ************
 
-Computers don't have any intuition, that is why we have to give step by step instructions.
+Conditional flow control is how a computer makes decisions.
 
-Combined with abstraction, the ability to repeat vastly expands our programming
-expressivity.
-
-We will examine in turn the important control statements that Python provides.
-
+This how we break out of doing the same thing all the time.
 
 Go to these links and follow the tutorials there. Then come back here and
 complete this page.
 
-http://opentechschool.github.io/python-beginners/en/conditionals.html
+`bool` objects
+==============
 
-http://opentechschool.github.io/python-beginners/en/conditional_loops.html
+The use of True and False has been intuitive up till now. Here we explore them
+further.
 
-http://opentechschool.github.io/python-beginners/en/loops.html
+::
+    
+    >>> type(True)
+    bool
+    >>> type(False)
+    bool
 
 
 Boolean Operators
@@ -67,119 +70,6 @@ We use boolean expressions to make decisions.
     ... else:
     ...     print('More')
 
-Loops
-=====
-
-Computers however never get bored.
-
-It gets tedious typing turtle function calls.
-
-Here we learn new constructs to handle repetition.
-
-For loop
---------
-
-We haven't seen list objects yet but your intuition should be enough for now.
-
-Looping through a list of string objects:: 
-
-    for name in ["John", "Sam", "Jill"]:
-        print("Hello " + name)
-
-Looping through a sequence of numbers::
-`range` is a function object that takes an object of type `int` as parameter
-and returns an object that when combined with `list` gives a list of `int`
-objects with values 0 to n-1.
-
-    >>> list(range(3))
-    [0, 1, 2]
-
-Lets combine it in a for loop::
-
-    >>> for i in range(2):
-    ...     print(i)
-    ...
-    0
-    1
-
-.. tip::
-
-    looping and iterating means the same.
-
-While loop
-----------
-
-Use while loop if you don't know when your loop will terminate.
-
-Example::
-
-    def sumTo(aBound):
-        """ Return the sum of 1+2+3 ... n """
-
-        theSum  = 0
-        aNumber = 1
-        while aNumber <= aBound:
-            theSum = theSum + aNumber
-            aNumber = aNumber + 1
-        return theSum
-
-    print(sumTo(4))
-    print(sumTo(1000))
-
-
-Looping the Square
-==================
-
-We have defined a square function like this::
-
-    def square(side):
-        turtle.forward(side)
-        turtle.left(90)
-        turtle.forward(side)
-        turtle.left(90)
-        turtle.forward(side)
-        turtle.left(90)
-        turtle.forward(side)
-        turtle.left(90)
-
-The repetition is tedious to type and heavy to read. Lets use a for loop to remove it::
-
-    def square(side):
-        for i in range(4):
-            turtle.forward(side)
-            turtle.left(90)
-
-The code is much shorter. It communicates better the nature of drawing a square: 
-that is the same thing repeated four times. It is more readable.
-
-.. tip::
-
-    Rewriting code to equivalent code is called refactoring.
-
-Exercises
-=========
-
-Refactor `shapes.py`
---------------------
-
-Refactor all the shapes in `shapes.py` and make good use of loops where you
-can.
-
-Hexagon
--------
-
-Write code that draws this:
-
-.. image:: /images/turtle-hexagon.png
-
-
-Honecomb
---------
-
-Write code that draws this:
-
-.. image:: /images/turtle-honeycomb.png
-
 
 Koans - Control Statements
 --------------------------
@@ -195,12 +85,7 @@ Boolean operators
     > python3 contemplate_koans.py about_control_statements
 
 
-Paper Sissors Rock
-------------------
+Resources
+=========
 
-As a challenge code the paper sissors rock game.
-
-You will need to use some randomness. This is how::
-    
-    >>> import random
-    >>> random.randint(0, 2)
+http://opentechschool.github.io/python-beginners/en/conditionals.html
