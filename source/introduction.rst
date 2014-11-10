@@ -19,14 +19,46 @@ Indeed any second language is easy to learn after the first.
 The differences between any programming language is very litle compared to 
 the differences between human languages.
 
-Applied Programming
-===================
+Learning Tips 
+=============
 
-Although programming has plenty of intrinsic value its only as popular as it is
-because of the things you can do with it.
+Intuitions
+----------
 
-Programming is always applied to something. Its an activity that seeks to
-capture some aspect of reality that is useful to us. 
+Your intuitions are your best guide. Always try to understand, never be
+bothered by not getting it. Keep your questions as pending. You don't need to
+understand everything.
+
+Practice & experiment
+---------------------
+
+Ideally try to program one hour a day.
+
+Always experiment and try things out. You can only learn to program by doing.
+
+Emotions
+--------
+
+Learning something like programming can be frustrating. 
+
+Computers and humans are different; we excel at different things. 
+
+Computers are utterly stupid, they are unforigivingly precise and logical. 
+Humans can be logical but they also have intelligence, imagination, and creativity.
+
+All programmers, beginners and advanced, make plenty of mistakes and often get stuck. 
+
+Manage your expectations. Know that everyone has been through the same.
+Computers are a tool waiting for you to learn to master them.
+
+Everyone can learn to program
+-----------------------------
+
+Studies have shown the only difference between people who are good at
+programming and those who aren't is almost completely related to amount of time spent programming.
+
+Go very slow
+------------
 
 As humans we think at a higher intuitive level. We think square, or move
 forward. 
@@ -36,12 +68,18 @@ Computers need everything broken down into steps. Each step is a command.
 Programming as an activity is about breaking down our concepts into smaller defined steps.
 In effect we define our concepts in commands.
 
+Find a project
+--------------
+
+Although programming has plenty of intrinsic value its only as popular as it is
+because of the things you can do with it.
+
 Unfortunately we won't look into detail at the many application domains as we
 don't have time. Use the resources section to choose an area that is of
 interest and focus on it.
 
-A world of objects
-==================
+World of objects
+================
 
 We live in an environment that contains objects and we use language to refer to them. Similarly programming involves creating and manipulating objects in an environment.
 
@@ -53,10 +91,8 @@ Python consists of two things:
 * a Language - Used to refer, create, and interact with objects in an environment.
 
 
-Intuitions
-==========
-
-In the following `turtle` is an object.
+Python language goals
+=====================
 
 We want to give you just enough programming ability to go from writting::
 
@@ -101,17 +137,31 @@ The code does the exactly the same but `square` one is at a higher level of abst
 By defining and composing layers of abstraction we arrive at ever more complex
 and useful programs.
 
-Python
-======
 
-Instructions for running python are in the Appendix.
+Shapes and Koans
+================
+
+There are plenty of exercises in this course. They come in two types.
+
+`shapes.py`
+-----------
+
+We will use turtles and geometry in order to learn about designing abstractions
+
+The outcome is that you have a `shapes.py` python file that evolves as you
+learn new programming constructs.
 
 Koans
-=====
+-----
 
-Learning takes practice and repetition. Koans are a great way to do this in
-programming.
+As noted learning to program takes practice and repetition. 
+
+Programming koans are a great way to do this. 
 
 Throughout the course we will make reference to these koans.
 
-See the appendix for instructions.
+Instructions
+------------
+
+Instructions for running python and the koans are in the Appendix. Go there
+now.
