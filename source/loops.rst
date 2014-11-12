@@ -13,8 +13,8 @@ The ability to repeat expands our programming expressivity.
     
     Loops work hand in hand with data structures. Especially collections.
 
-For loop
---------
+for
+===
 
 We haven't seen list objects yet but your intuition should be enough for now.
 
@@ -43,8 +43,8 @@ Lets combine it in a for loop::
 
     looping and iterating means the same.
 
-While loop
-----------
+while
+=====
 
 Use while loop if you don't know when your loop will terminate.
 
@@ -64,34 +64,34 @@ Example::
     print(sumTo(1000))
 
 
-Looping the Square
-==================
+range
+=====
 
-We have defined a square function like this::
+Range provides a way of doing things a certain number of times.
 
-    def square(side):
-        turtle.forward(side)
-        turtle.left(90)
-        turtle.forward(side)
-        turtle.left(90)
-        turtle.forward(side)
-        turtle.left(90)
-        turtle.forward(side)
-        turtle.left(90)
+::
+    >>> list(range(4))
+    [0, 1, 2, 3]
 
-The repetition is tedious to type and heavy to read. Lets use a for loop to remove it::
 
+Conclusion
+==========
+
+We refactor `square` combining `range` with a for loop.
+
+::
     def square(side):
         for i in range(4):
             turtle.forward(side)
             turtle.left(90)
 
-The code is much shorter. It communicates better the nature of drawing a square: 
-that is the same thing repeated four times. It is more readable.
 
-.. tip::
 
-    Rewriting code to equivalent code is called refactoring.
+Thanks to loops, the code is shorter and more readable.
+
+Moreover it communicates better the nature of drawing a square: 
+one action repeated four times. 
+
 
 Exercises
 =========
