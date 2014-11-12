@@ -1,23 +1,29 @@
-Errors & pdb
-************
+Debugging
+*********
+
+Errors and Exceptions are a constant feature of programming.
+
+Debugging is working out what went wrong and fixing it.
+
+It gives the interpreter's perspective.
+
+Learn to be guided by Errors, and use debugging to master programming.
+
 
 Errors
 ======
 
-Errors and Exceptions are a constant feature of programming.
+Errors always tell you what when wrong but not always why. 
 
-They always tell you what when wrong. They don't always tell you
-why things went wrong though but in those cases they act as clues.
-
-Learn to read errors first using intuition then by debugging and researchig. It
-is a skill and it does get easier. Soon you will map errors to solutions very
-quickly.
+Read errors, first using intuition then by debugging and research. 
 
 .. tip::
 
     You need to learn how to find information.
     Always read Errors and use your intuition, then Google.
     If that hsn't helped only then ask an expert. 
+
+With time many errors map to solutions instantly. 
 
 AttributeError
 --------------
@@ -47,35 +53,21 @@ A function defined badly::
         def print_hi 
                        ^
     SyntaxError: invalid syntax
-    >>>
 
-The programmer has forgotten that function definitions must have
-parentheses `()` between the function name and the ending colon `:`.
+Parentheses `()` are required after the name and the ending colon `:`.
 
 ::
 
     >>> def print_hi():
         print('hi')
 
-No error this time. `print_hi` is properly defined.
-
-
-Visualising execution
-=====================
-
-It is very helpful to maintain a visualisation of what is happening.
-
-Here are some tools to aid with developing that:
-
-http://www.pythontutor.com/visualize.html#mode=edit
-
-http://pyalgoviz.appspot.com/
+No error, `print_hi` is properly defined.
 
 
 pdb
 ===
 
-pdb is the python debugger. Debugging is a way of interacting with a program by freezing execution at a particular point in time, stepping through it, and examining objects.
+pdb is the python debugger. You can freeze execution at a particular point in time, step through it, examining objects as you go.
 
 To execute code with `pdb`::
 
@@ -86,11 +78,8 @@ code::
 
     import pdb; pdb.set_trace()
 
-When you run your code normally (`python my.py`) the interpreter will break out
-of the execution when it hits the line where you placed this.
-
-This is very usefull to help you inspect what state the various objects of your
-program are in at a given point in time.
+When you run your code normally (`python my.py`) the interpreter will break at
+the that line of code.
 
 Type `h` to get a list of all the commands. The important ones for now are:
 
@@ -111,23 +100,21 @@ To exit:
 * `q` exit the debugger. Will terminate program execution.
 
 
-Tip:
+.. tip::
 
-Whenever you get an exeception drop a `import pdb; pdb.set_trace()` on the line
-before your program terminated. That way you can inspect what went wrong at
-that point in time.
+    On any error or exeception enter a `import pdb; pdb.set_trace()` on the line
+    preceeding your program terminating. Run the program, then inspect what went wrong.
 
-Exercise
-========
+Exercises
+=========
 
+Visualising execution
+---------------------
 
-pythontutor and pdb
--------------------
+We will use pythontutor hand in hand with pdb to exercise visualising program
+execution.
 
-Whilst pythontutor is execellent as a pedagogical tool to demo small programs it isn't a proper
-programmers tool. The programmer needs to visualise in her head.
-
-We will use pythontutor.com and `pdb` together to exercise visualising program execution. 
+http://www.pythontutor.com/visualize.html#mode=edit
 
 Put this code into a file named `my.py`:: 
     
