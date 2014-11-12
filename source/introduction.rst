@@ -73,17 +73,17 @@ There are plenty of exercises throughout this course and they are of two types.
 `shapes.py`
 -----------
 
-We will use turtles and geometry in order to learn about designing abstractions
+We will use a drawing tool called `turtles` combined with concepts from simple geometry in order to learn about designing abstractions.
 
-The outcome is that you have a `shapes.py` python file that evolves as you
+Throughout the course your `shapes.py` python file will evolve as you
 learn new programming constructs.
 
 Koans
 -----
 
-As noted learning to program takes practice and repetition. 
+A koan is like a mini snippet of code. It presents a puzzle for you to resolve.
 
-Programming koans are a great way to do this. 
+We use Koans to gain hands on practice using intuition and experimentation.
 
 Throughout the course we will make reference to these koans.
 
