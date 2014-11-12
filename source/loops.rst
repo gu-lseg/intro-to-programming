@@ -13,61 +13,44 @@ The ability to repeat expands our programming expressivity.
     
     Loops work hand in hand with data structures. Especially collections.
 
+
 for
 ===
 
-We haven't seen list objects yet but your intuition should be enough for now.
-
-Looping through a list of string objects:: 
+Iterating through a list of string objects:: 
 
     for name in ["John", "Sam", "Jill"]:
         print("Hello " + name)
 
-Looping through a sequence of numbers::
-`range` is a function object that takes an object of type `int` as parameter
-and returns an object that when combined with `list` gives a list of `int`
-objects with values 0 to n-1.
-
-    >>> list(range(3))
-    [0, 1, 2]
-
-Lets combine it in a for loop::
-
-    >>> for i in range(2):
-    ...     print(i)
-    ...
-    0
-    1
-
 .. tip::
-
-    looping and iterating means the same.
+    Use for if you are iterating over all the items in a given sequence or collection.
 
 while
 =====
 
-Use while loop if you don't know when your loop will terminate.
+The `while` statement is followed by a condition. The condition defines when
+the loop will terminate.
 
-Example::
 
-    def sumTo(aBound):
-        """ Return the sum of 1+2+3 ... n """
+::
+    
+    >>> import random
+    >>> warm = 20
+    >>> temperature = random.randrange(5, 30)
+    >>> while temperature <= warm:
+    ...    print('cold')
+    ...    temperature = random.randrange(5, 30)
+    cold
+    cold
+    cold
 
-        theSum  = 0
-        aNumber = 1
-        while aNumber <= aBound:
-            theSum = theSum + aNumber
-            aNumber = aNumber + 1
-        return theSum
-
-    print(sumTo(4))
-    print(sumTo(1000))
-
+.. tip::
+    Use while if you don't know when your loop will terminate.
 
 range
 =====
 
-Range provides a way of doing things a certain number of times.
+The `range` function provides a way of doing things a certain number of times.
 
 ::
     >>> list(range(4))
