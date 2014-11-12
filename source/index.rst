@@ -17,7 +17,6 @@ Table of Contents:
    objects
    names
    functions
-   interpreter_debugging
    flow_control 
    data_structures
    loops
