@@ -66,7 +66,7 @@ creating `str` instances
     >>> type('hi')     # confirm type
     str
 
-When you execute the code `"hi"` or `str("hi")`, the python interpreter::
+When you execute the code `"hi"` or `str("hi")`, the python interpreter:
 
 1. Creates an object of type `str`
 2. Gives it the value "hi"
@@ -157,6 +157,14 @@ Test your answer with python.
 Try the same above but this time using `*` instead of `+`. What can you
 conclude of the meaning of `*`?
 
+Using the output of::
+
+    >>> dir('5')
+    [ .... ]
+    >>> dir(5)
+    [ .... ]
+
+Which double underscore function do you think might be at play?
 
 names and values
 ----------------
@@ -192,3 +200,46 @@ Koans - `str` functions
 
     python3 contemplate_koans.py about_strings
     python3 contemplate_koans.py about_strings_manipulation
+
+__add__ (Optional)
+==================
+
+`x + y` resolves to `x.__add__(y)`
+
+::
+
+    >>> 1 + 2
+    3
+    >>> one = 1
+    >>> one.__add__(2)
+    3
+    >>> '1' + '2'
+    '12'
+    >>> '1'.__add__('2')
+    '12'
+
+.. tip:: 
+
+    Any object that implements the `__add__` function will work
+    with the `<object> + x` syntax.
+
+Exercise (Optional)
+===================
+
+Boolean Operators
+-----------------
+
+Using introspection functions, which protocol functions do the following syntax
+resolve to:
+
+* `3 > 2`
+* `3 < 2`
+* `3 <= 2`
+* `3 >= 2`
+
+String representations
+----------------------
+
+What function gets called when we get results in the interpreter?
+Is it the same that gets called when we type `print(x)`?
+

@@ -1,5 +1,5 @@
-Abstraction
-***********
+Abstraction & Polymorphism 
+**************************
 
 Defining reusable components and the ability to repeat them is imensely powerful.
 
@@ -47,4 +47,35 @@ Write code that draws this:
 
     The sum of the external angles of any shape is always 360 degrees.
 
+
+
+Polymorphism
+============
+
+Polymorphism means that different types respond to the same function.
+
+Polymorphism is very useful as it makes programming more intuitive and
+therefore easier.
+
+Polymorphism is a fancy word that just means the same function is
+defined on objects of different types. 
+
+Python provides protocols which is polymorphism under the hood. These implement consistent behaviour 
+for built in objects of different type.
+
+Protocols
+=========
+
+When we introspect an object we have a lot of attributes that take this format:
+`__names__`. This section will make many of those clear.
+
+Everything is an object and all actions ultimately mean calling functions defined on objects.
+
+Protocols are polymorphic functions that are embbedded into python. Most
+importantly the interpreter is aware of them.
+
+Protocols enable:
+
+* consistency - programmers can rely on intuition
+* special syntax - interpreter translates nice syntax to functions on objects.
 

@@ -22,6 +22,5 @@ Table of Contents:
    loops
    abstraction
    classes
-   polymorphism
    resources
    appendix_windows

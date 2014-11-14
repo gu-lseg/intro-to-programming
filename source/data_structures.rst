@@ -138,3 +138,98 @@ Sets::
 
     
     > python3 contemplate_koans.py about_sets
+
+
+__contains__ (Optional)
+=======================
+
+`__contains__` is the built in protocol for membership. 
+
+`x in y` resolves to `y.__contains__(x)`
+
+When the interpreter encounters `'b' in ['a', 'b']` it knows to look for the `__contains__`
+function on the object to the right of `in` and pass it the object to the left
+of `in` as parameter.
+
+A list object has that function defined and the interpreter then executes the corresponding code block.
+
+
+All data structures have the concept of membership defined::
+
+    >>> 'b' in ['a', 'b']
+    True
+    >>> 'b' in ('a', 'b')
+    True
+    >>> 'b' in {'a': 1, 'b': 2}
+    True
+    >>> 'b' in {'a', 'b'}
+    True
+
+Demonstrating `__contains__`::
+
+    >>> ['a', 'b'].__contains__('b')
+    True
+    >>> ('a', 'b').__contains__('b')
+    True
+    >>> {'a': 1, 'b': 2}.__contains__('b')
+    True
+    >>> {'a', 'b'}.__contains__('b')
+    True
+
+Any object that implements the `__contains__` function will work
+with the `x in <object>` syntax.
+
+__iter__ (Optional)
+===================
+
+`__iter__` is how iteration is implemented in Python. This protocol is a bit more involved
+than the previous protocols.
+
+Taking this code::
+
+    >>> number = [1, 2]
+    >>> for i in [1, 2]:
+    ...     print(i)
+    ...
+    1
+    2
+
+Roughly `for i in iterable` translates to:
+
+1. `__iter__` is called on the iterable object, 
+2. an object of type iterator is returned.
+3. `__next__` called repeatedly on the iterator which returns an item in the iterable.
+4. interpreter actions the code in the for loop
+5. Steps 3 and 4 repeat until iterator object runs out of items at which point it throws a `StopIteration` exception.
+
+To illustrate::
+
+    >>> itr_obj = [1, 2].__iter__()
+    >>> type(itr_obj)
+    <class 'list_iterator'>
+    >>> itr_obj.__next__()
+    1
+    >>> itr_obj.__next__()
+    2
+    >>> itr_obj.__next__()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration
+
+Any object that implements the `__iter__` function will work 
+with the `for x in <object>: ...` syntax.
+
+Exercise (Optional)
+===================
+
+len() implementation
+--------------------
+
+len() works on many object types::
+
+    >>> len('hi')
+    2
+    >>> len([1, 2])
+    2
+
+Which protocol function is called by the function `len` on the object it is passed?
