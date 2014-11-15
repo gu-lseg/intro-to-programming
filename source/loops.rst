@@ -53,6 +53,7 @@ range
 The `range` function provides a way of doing things a certain number of times.
 
 ::
+
     >>> list(range(4))
     [0, 1, 2, 3]
 
@@ -63,6 +64,7 @@ Refactoring `square`
 We refactor `square` combining `range` with a for loop.
 
 ::
+
     def square(side):
         for i in range(4):
             turtle.forward(side)
