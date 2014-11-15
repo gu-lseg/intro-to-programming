@@ -11,7 +11,7 @@ The ability to repeat expands our programming expressivity.
 
 .. tip::
     
-    Loops work hand in hand with data structures. Especially collections.
+    Loops are flow control statements which work hand in hand with data structures. 
 
 
 for
@@ -78,6 +78,11 @@ one action repeated four times.
 Exercises
 =========
 
+Looping `turtles`
+-----------------
+
+TODO
+
 Refactor `shapes.py`
 --------------------
 
@@ -92,13 +97,24 @@ Write code that draws this:
 .. image:: /images/turtle-hexagon.png
 
 
-Honecomb
---------
+Honeycomb
+---------
 
 Write code that draws this:
 
 .. image:: /images/turtle-honeycomb.png
 
+
+Any Shape
+---------
+
+Write code that draws this:
+
+.. image:: /images/turtle-all-shapes.png
+
+.. tip::
+
+    The sum of the external angles of any shape is always 360 degrees.
 
 Further resorces
 ----------------
