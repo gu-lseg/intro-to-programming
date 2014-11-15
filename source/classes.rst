@@ -1,18 +1,25 @@
 Classes
 *******
 
-User Defined Types
-==================
+We are now going to bring what we have learnt about object oriented programming
+together as we define our own object type using classes.
 
 Classes are how programmers define objects that make new objects. Think of them
 as object templates or factories.
 
-Defining
-========
+.. tip::
+
+    The Koans are structured as classes with each koan as a method.
+
+Defining a Class
+================
+
+Much like we defined functions lets define a class.
 
 A `python.py` file contains:: 
 
     class Python():
+        """ A class that represents a snake """
         
         def __init__(self, name, sex, age, length):
             self.name = name
@@ -24,10 +31,10 @@ A `python.py` file contains::
             print("{} moves".format(self.name))
 
 
-class object
-=============
+The class object
+================
 
-::
+As always we introspect the new type of object::
 
     >>> from python import Python
     >>> type(Python)
@@ -39,12 +46,12 @@ class object
 Instances
 =========
 
-Creating
---------
-
-::
+Creating::
     
     >>> john = Python('John', 'M', 15, 4)
+
+Introspecting::
+
     >>> type(john)
     <class 'python.Python'>
     >>> dir(john)
