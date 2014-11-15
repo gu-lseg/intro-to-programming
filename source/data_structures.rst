@@ -115,8 +115,8 @@ A list of tuples::
             ('Brian', 23, 'M', 'Single')
         ]
 
-in & __contains__
-=================
+in and  __contains__
+====================
 
 `__contains__` is the built in protocol for membership. 
 
@@ -148,8 +148,8 @@ All data structures have the concept of membership defined::
 Any object that implements the `__contains__` function will work
 with the `x in <object>` syntax.
 
-for x in y: & __iter__ (Optional)
-=================================
+for x in y: and  __iter__
+=========================
 
 `__iter__` is how iteration is implemented in Python. This protocol is a bit more involved
 than the previous protocols.

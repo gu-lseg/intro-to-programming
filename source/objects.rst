@@ -123,8 +123,8 @@ For two objects of type `int` it's interpretation is identical to basic
 arithmentic.
 
 
-`+` & `__add__`
-===============
+`+` and `__add__`
+=================
 
 The symbol `+` is called an operator. It takes two objects on either 
 side of it. Its interpretation depends on the types of objects it is applied to. 
