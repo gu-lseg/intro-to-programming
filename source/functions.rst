@@ -63,7 +63,7 @@ We 'call' functions by adding `()` at the end of their names. This is syntax uni
 
 
 IndentationError
-================
+----------------
 
 Indentation is the number of spaces a piece of code is from the left hand side of
 the page.
