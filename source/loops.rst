@@ -17,10 +17,21 @@ The ability to repeat expands our programming expressivity.
 for
 ===
 
-Iterating through a list of string objects:: 
+Here we iterate through a list of `str` objects.
 
-    for name in ["John", "Sam", "Jill"]:
-        print("Hello " + name)
+::
+
+    import turtle            # set up alex
+    wn = turtle.Screen()
+    alex = turtle.Turtle()
+
+    for aColor in ["yellow", "red", "purple", "blue"]:
+       alex.color(aColor)
+       alex.forward(50)
+       alex.left(90)
+
+    wn.exitonclick()
+
 
 .. tip::
     Use for if you are iterating over all the items in a given sequence or collection.
@@ -83,7 +94,37 @@ Exercises
 Looping `turtles`
 -----------------
 
-TODO
+Using the following as template draw this:
+
+.. image:: /images/turtle-queue.png
+
+`turtle_queue.py`::
+
+    import turtle
+
+    number_of_turtles = 4
+
+    turtles = []
+    for _ in range(number_of_turtles):
+        turtles.append(turtle.Turtle())
+
+    # position point of origin at bottom left of window
+    turtle.setworldcoordinates(0, 0, 600, 600)
+
+    for i, turtle_ in enumerate(turtles):
+        turtle_.up()
+
+    # Evenly space out the turtles
+    for i, turtle_ in enumerate(turtles):
+        ypos = 600 / number_of_turtles * i
+        turtle_.setpos(0, ypos)
+
+    for i, turtle_ in enumerate(turtles):
+        turtle_.down()
+
+    ###################################
+    # Your turn! Enter your code here #
+    ###################################
 
 Refactor `shapes.py`
 --------------------
@@ -124,3 +165,5 @@ Further resorces
 http://opentechschool.github.io/python-beginners/en/conditional_loops.html
 
 http://opentechschool.github.io/python-beginners/en/loops.html
+
+http://interactivepython.org/runestone/static/thinkcspy/PythonTurtle/IterationSimplifiesourTurtleProgram.html
