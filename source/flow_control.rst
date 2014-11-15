@@ -22,11 +22,30 @@ further.
     bool
 
 
-Boolean Operators
-=================
+Object Equality
+===============
 
-These expression evaluate to `True` or `False` according to the values of x and
-y.
+Testing the equality of two objects returns `True` or `False` depending on how
+equality is defined on those two objects.
+
+Equality on stings is defined as follows::
+
+    >>> '5' == '5'
+    True
+    >>> '5' == '6'
+    False
+
+Generally the objects have to first be of the same type and then have the same
+value to be equal::
+
+    >>> 5 == '5'
+    False
+
+Comparison Operators
+====================
+
+These expressions evaluate to a boolean (`True` or `False`) according to the
+values of x and y.
 
 ::
 
