@@ -5,6 +5,17 @@ To work effectively with objects we need a way to refer to them.
 
 Names are like the nouns we use in every day speach.
 
+Names help: 
+
+- make programming efficient. 
+- capturing meaning. 
+
+
+.. tip::
+
+    If you find yourself needing to replace many similar values in order
+    to update your code, using names is worth considering.
+
 Assignment
 ==========
 
@@ -106,8 +117,8 @@ If you change your mind you need only update one value.
 Note that our programatic definition mirrors the mathematical defintion in
 that the lenguth of a square's side is irrelevant to its nature as a square.
 
-Choosing Names
-==============
+Good naming
+===========
 
 The name `right_angle` was chosen to refer to an `int` of value 90. 
 
@@ -120,20 +131,6 @@ However:
 * `dezwbpe` is nonsense and conveys no meaning
 
 By choosing appropriate names you make the code more readable.
-
-Conclusion
-==========
-
-Names help: 
-
-- make programming efficient. 
-- capturing meaning. 
-
-
-.. tip::
-
-    If you find yourself needing to replace many similar values in order
-    to update your code, using names is worth considering.
 
 Exercises
 =========
