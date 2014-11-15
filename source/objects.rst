@@ -1,5 +1,5 @@
-Objects & Types
-***************
+Objects
+*******
 
 We see the world as containing objects. We classify those objects according to
 types.
@@ -13,8 +13,8 @@ Objects of type Person can interact with objects of type Chair in various ways.
 They can sit on them, move them, or even stand on them.
 
 
-Introduction
-============
+Types
+=====
 
 An Object:
 
