@@ -88,19 +88,17 @@ forgotten to add 4 spaces on the new line after the colon.
 Parameters
 ==========
 
-We saw that using names generalises code and facilitates code reuse. This is also true of functions
-that use parameters.
+We saw that using names generalises code and facilitates code reuse. This is
+also true of functions that use parameters.
 
-Consider the following two functions.
-
-without parameters::
+Without parameters::
 
     def right_angle():
         turtle.forward(10)
         turtle.left(90)
         turtle.forward(10)
 
-with parameters:: 
+With parameters:: 
 
     def right_angle(length):
         turtle.forward(length)
@@ -109,14 +107,13 @@ with parameters::
 
 The second is far more flexible. It can be used to move by any length.
 
-That is why we need to be able to give parameters, also called
-*arguments*, to the function.  This way the *variables* in the
-function can have different values each time we call the function:
+.. tip::
+
+    parameters are also called arguments
 
 The parameter acts as a *variable* only known inside the function's code block.
 
-Functions can have many parameters. Multiple parameters are defined by separating them
-with commas::
+Functions can have many parameters::
 
     def move_diagonally(angle, length):
         turtle.left(angle)
