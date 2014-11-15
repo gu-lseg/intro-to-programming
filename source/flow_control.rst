@@ -86,8 +86,8 @@ Boolean operators::
     > python3 contemplate_koans.py about_control_statements
 
 
-`>` `<` `=<` `=>` `!=` Operators
---------------------------------
+Comparison Operators
+--------------------
 
 Using introspection which special functions does the following syntax
 resolve to:
@@ -98,8 +98,46 @@ resolve to:
 * `3 >= 2`
 * `3 != 2`
 
-Further resources
------------------
 
-http://opentechschool.github.io/python-beginners/en/conditionals.html
+Practicals
+==========
 
+Turtles Joypad
+--------------
+
+We want to control the movements of the turtle using instructions from the
+keyboard. Much like the way you'd control a sprite in a game.
+
+Write this progam in a file. 
+
+You may find this helpful to get started
+
+place this in file called `echo.py`::
+
+    while True:
+        user_said = input('\nType something (q to exit): ')
+        if user_said == 'q':
+            break
+        print(user_said)
+
+Paper Sissors Rock
+------------------
+
+As a challenge code the paper sissors rock game.
+
+Steps:
+
+1. user inputs either paper, sissors or rock.
+2. computer randomly chooses one too.
+3. print outcome according to the rules of the game:
+
+   * If user chose 'paper' and computer chose 'rock', then print 'rock wins'
+   * if user chose 'sissors' and computer chose 'paper' then print 'sissors
+     wins'
+   * ... and so on ...
+4. Exit
+
+You will need to use some randomness::
+    
+    >>> import random
+    >>> random.choice(['a', 'b', 'c'])

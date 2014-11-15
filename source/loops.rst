@@ -57,8 +57,8 @@ The `range` function provides a way of doing things a certain number of times.
     [0, 1, 2, 3]
 
 
-Conclusion
-==========
+Refactoring `square`
+====================
 
 We refactor `square` combining `range` with a for loop.
 
@@ -67,7 +67,6 @@ We refactor `square` combining `range` with a for loop.
         for i in range(4):
             turtle.forward(side)
             turtle.left(90)
-
 
 
 Thanks to loops, the code is shorter and more readable.
@@ -100,21 +99,10 @@ Write code that draws this:
 
 .. image:: /images/turtle-honeycomb.png
 
-Paper Sissors Rock
-------------------
 
-As a challenge code the paper sissors rock game.
-
-You will need to use some randomness. This is how::
-    
-    >>> import random
-    >>> random.randint(0, 2)
-
-
-Resources
-=========
+Further resorces
+----------------
 
 http://opentechschool.github.io/python-beginners/en/conditional_loops.html
 
 http://opentechschool.github.io/python-beginners/en/loops.html
-
