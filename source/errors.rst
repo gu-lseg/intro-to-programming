@@ -1,8 +1,10 @@
 Debugging
 *********
 
-It is important to stress that most of programming is error driven.
-Don't think of errors negatively rather they are problem solving opportunities.
+Exceptions occur when the interpreter can't carry out a given instruction. The
+type of error (Exceptions are objects) communicates what is wrong.
+
+We stress that most of programming is error driven. Don't think of errors negatively rather they are problem solving opportunities.
 
 Debugging is working out what went wrong and fixing it.
 
