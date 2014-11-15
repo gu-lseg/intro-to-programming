@@ -22,10 +22,17 @@ The important ones are:
 Tutorials
 =========
 
-* http://www.codecademy.com/en/tracks/python
-* http://inventwithpython.com/
-* http://learnpythonthehardway.org/ Not hard, but hands on 
-* http://www.diveintopython3.net/
+* start with these: 
+
+  * http://interactivepython.org/runestone/static/thinkcspy/toc.html
+  * http://opentechschool.github.io/python-beginners/en/index.html
+  * http://learnpythonthehardway.org/ Not hard, hands on 
+
+* Popular:
+
+  * http://www.codecademy.com/en/tracks/python
+  * http://inventwithpython.com/
+  * http://www.diveintopython3.net/
 
 Online Courses
 ==============
@@ -71,8 +78,14 @@ Games
 3D Graphics
 -----------
 
-* Blender http://wiki.blender.org/index.php/Extensions:2.6/Py/Scripts
-* Maya http://zurbrigg.com/maya-python
+* Blender 
+
+  * http://wiki.blender.org/index.php/Extensions:2.6/Py/Scripts
+  * http://www.blender.org/api/blender_python_api_2_72_1/
+
+* Maya 
+
+  * http://zurbrigg.com/maya-python
 
 Electronics
 -----------
@@ -137,7 +150,12 @@ Course References
 
 Some materials that inspred this course.
 
-* http://opentechschool.github.io/python-beginners/en/index.html
-* How to Design Programs http://htdp.org/
+* Open Tech Schoool
+  
+  * http://opentechschool.github.io/python-beginners/en/index.html
+* How to Design Programs 
+  
+  * http://htdp.org/
 * Structure and Interpretation of Computer Programs
-    https://mitpress.mit.edu/sicp/full-text/book/book.html
+
+  * https://mitpress.mit.edu/sicp/full-text/book/book.html
