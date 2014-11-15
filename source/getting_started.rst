@@ -70,13 +70,19 @@ Environment:
 
 ``turtle.color("red")``
 
-Documentations
---------------
+Documentation
+=============
 
-Look through the documentation and experiment with lines of code you find there.
+Extensive documentation is available online for pytyhon. Visit the `turtle`
+documentation. Explore some other methods that you find.
 
 https://docs.python.org/3/library/turtle.html
 
+`help` is directly available in the interactive shell::
+
+    >>> help(turtle.forward)
+
+Try any of the previously used functions. Get into habit of automatically doing this.
 
 Using files
 ===========
