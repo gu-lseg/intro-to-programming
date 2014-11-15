@@ -68,6 +68,12 @@ Games
 
 * http://www.pygame.org/wiki/tutorials
 
+3D Graphics
+-----------
+
+* Blender http://wiki.blender.org/index.php/Extensions:2.6/Py/Scripts
+* Maya http://zurbrigg.com/maya-python
+
 Electronics
 -----------
 
