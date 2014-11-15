@@ -234,8 +234,8 @@ Koans - `str` functions
     python3 contemplate_koans.py about_strings_manipulation
 
 
-`*` `/` `-` `%` Operators
--------------------------
+Arithmentic Operators
+---------------------
 
 Using introspection which special functions does the following syntax
 resolve to:
