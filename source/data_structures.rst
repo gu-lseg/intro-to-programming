@@ -115,33 +115,8 @@ A list of tuples::
             ('Brian', 23, 'M', 'Single')
         ]
 
-
-Exercises
-=========
-
-Koans
------
-
-Lists::
-
-    > python3 contemplate_koans.py about_lists
-    
-Dictionaries::
-    
-    > python3 contemplate_koans.py about_dictionaries
-
-Tuples::
-
-    > python3 contemplate_koans.py about_tuples
-
-Sets::
-
-    
-    > python3 contemplate_koans.py about_sets
-
-
-__contains__ (Optional)
-=======================
+in & __contains__
+=================
 
 `__contains__` is the built in protocol for membership. 
 
@@ -151,27 +126,21 @@ When the interpreter encounters `'b' in ['a', 'b']` it knows to look for the `__
 function on the object to the right of `in` and pass it the object to the left
 of `in` as parameter.
 
-A list object has that function defined and the interpreter then executes the corresponding code block.
-
-
 All data structures have the concept of membership defined::
 
     >>> 'b' in ['a', 'b']
     True
-    >>> 'b' in ('a', 'b')
-    True
-    >>> 'b' in {'a': 1, 'b': 2}
-    True
-    >>> 'b' in {'a', 'b'}
-    True
-
-Demonstrating `__contains__`::
-
     >>> ['a', 'b'].__contains__('b')
+    True
+    >>> 'b' in ('a', 'b')
     True
     >>> ('a', 'b').__contains__('b')
     True
+    >>> 'b' in {'a': 1, 'b': 2}
+    True
     >>> {'a': 1, 'b': 2}.__contains__('b')
+    True
+    >>> 'b' in {'a', 'b'}
     True
     >>> {'a', 'b'}.__contains__('b')
     True
@@ -179,8 +148,8 @@ Demonstrating `__contains__`::
 Any object that implements the `__contains__` function will work
 with the `x in <object>` syntax.
 
-__iter__ (Optional)
-===================
+for x in y: & __iter__ (Optional)
+=================================
 
 `__iter__` is how iteration is implemented in Python. This protocol is a bit more involved
 than the previous protocols.
@@ -219,8 +188,29 @@ To illustrate::
 Any object that implements the `__iter__` function will work 
 with the `for x in <object>: ...` syntax.
 
-Exercise (Optional)
-===================
+
+Exercises
+=========
+
+Koans
+-----
+
+Lists::
+
+    > python3 contemplate_koans.py about_lists
+    
+Dictionaries::
+    
+    > python3 contemplate_koans.py about_dictionaries
+
+Tuples::
+
+    > python3 contemplate_koans.py about_tuples
+
+Sets::
+
+    
+    > python3 contemplate_koans.py about_sets
 
 len() implementation
 --------------------
@@ -233,3 +223,4 @@ len() works on many object types::
     2
 
 Which protocol function is called by the function `len` on the object it is passed?
+
