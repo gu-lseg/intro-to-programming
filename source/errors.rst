@@ -1,14 +1,15 @@
 Debugging
 *********
 
-Errors and Exceptions are a constant feature of programming.
+It is important to stress that most of programming is error driven.
+Don't think of errors negatively rather they are problem solving opportunities.
 
 Debugging is working out what went wrong and fixing it.
 
-It gives the interpreter's perspective.
+Learn to be guided by Errors, and use debugging tools to master programming.
 
-Learn to be guided by Errors, and use debugging to master programming.
-
+Here we explore some common errors and then we introduce `pdb` the python
+debugger.
 
 Errors
 ======
