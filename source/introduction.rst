@@ -32,10 +32,9 @@ These approaches complement each other.
 Object oriented programming
 ===========================
 
-Our world contains objects and we use language to refer to them. Similarly programming involves creating and manipulating objects in an environment.
+Our world contains objects and we use language to refer to them. Similarly object oriented programming involves creating and manipulating objects in an environment.
 
-
-We systematically show that the inuitive syntax that python offers always
+We show that the inuitive syntax that python offers systematically 
 reduces to a single type of operation: objects calling methods on each other.
 
 For example::
@@ -76,18 +75,28 @@ to::
 Abstractions
 ============
 
-Without knowing programming someone can read the above and make some sense of
-it. Intuition helps because the developer who wrote the code defined a good level of
-abstraction over the complex details.
+A novice can read the above and make some sense of it. Intuition helps because
+the developer who wrote the code defined a good level of abstraction over the 
+complex details.
 
-This course illustrates the idea that creative programming is aobut constructing abstractions that are useful to your area of interest.
+This course illustrats that creative programming is aobut constructing abstractions useful to an area of interest.
 
 By calling::
 
     >>> square(100)
 
-the result is the same but the programmer has removed the detail and
-complexity.
+
+the result is the same as executing all the 8 lines of previous code. 
+
+The interpreter is indifferent to the two bits of code. It is the
+longer snippet that will be executed anyway.
+
+But there are two major advantages for us programmers:
+
+* the detail and complexity is gone. A user can fire and forget, relying 
+  on intuition to get her job done.
+* the definition of the function object called `square` is shorter clearer
+  and truer to its mathematical (conceptual) definition.
 
 By defining and composing layers of abstraction we arrive at ever more 
 useful programs.
