@@ -189,6 +189,14 @@ A list of tuples::
 Special Methods
 ===============
 
+A lot of data structure types share many special methods. This is a design
+choice made by the creators of python. 
+
+By giving us identical or similar methods and special syntax the language 
+remains consistent and therfore easier to rely on our intuitions.
+
+We will explore two such methods here.
+
 in and  __contains__
 ---------------------
 
