@@ -91,27 +91,23 @@ Parameters
 We saw that using names generalises code and facilitates code reuse. This is
 also true of functions that use parameters.
 
-Without parameters::
+Compare this function without parameters::
 
     def right_angle():
         turtle.forward(10)
         turtle.left(90)
         turtle.forward(10)
 
-With parameters:: 
+to this one with parameters:: 
 
     def right_angle(length):
         turtle.forward(length)
         turtle.left(90)
         turtle.forward(length)
 
-The second is far more flexible. It can be used to move by any length.
+The second function is more flexible. It can be used to move by any length.
 
-.. tip::
-
-    parameters are also called arguments
-
-The parameter acts as a *variable* only known inside the function's code block.
+The parameter acts as a *variable* only defined inside the function's code block.
 
 Functions can have many parameters::
 
@@ -119,6 +115,9 @@ Functions can have many parameters::
         turtle.left(angle)
         turtle.forward(length)
 
+.. tip::
+
+    parameters are also called arguments
 
 Exercises
 =========
