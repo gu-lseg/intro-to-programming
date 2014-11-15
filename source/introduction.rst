@@ -8,20 +8,48 @@ It requires application and is very rewarding and creative.
 The purpose of this course it to give you just enough programming vocabulary to
 get a taste of what it is.
 
-We use Python, but the concepts are the same in most other languages. 
-Learning a second programming language is far easier.
-
-
 Python
 ======
 
-Our world contains objects and we use language to refer to them. Similarly programming involves creating and manipulating objects in an environment.
+Python is a good language to learn as it is simple, high-level, powerful, and
+widely used in industry.
+
+Whilst python is taught the concepts are the same in most other languages. 
 
 Python consists of two things:
 
 * an Interpreter - Creates and maintains an environment within which it interprets the python language.
 * a Language - Used to refer, create, and interact with objects in an environment.
 
+Using the python language we will interact with the interpreter in 3 different ways:
+
+* running code from a file
+* interactive coding using the python interpreter
+* step by step execution using `pdb` the python debugger
+
+These approaches complement each other.
+
+Object oriented programming
+===========================
+
+Our world contains objects and we use language to refer to them. Similarly programming involves creating and manipulating objects in an environment.
+
+
+We systematically show that the inuitive syntax that python offers always
+reduces to a single type of operation: objects calling methods on each other.
+
+For example::
+
+    >>> 'a' + 'b' 
+    'ab'
+    >>> 'a'.__add__('b')
+    'ab'
+
+We will learn that Python offers a variety of builtin `special` methods
+(functions defined on objects).
+
+This style of programming provides a clear, simple, and consistent model of computation
+that maps well to our intuitions.
 
 Language goals
 ==============
@@ -58,8 +86,8 @@ By calling::
 
     >>> square(100)
 
-the result is the same but as a programmer you have kept detail and complexity
-at bay.
+the result is the same but the programmer has removed the detail and
+complexity.
 
 By defining and composing layers of abstraction we arrive at ever more 
 useful programs.
