@@ -1,5 +1,8 @@
-Abstraction & Polymorphism 
-**************************
+Conclusions 
+***********
+
+Abstractions
+============
 
 Defining reusable components and the ability to repeat them is imensely powerful.
 
@@ -19,9 +22,6 @@ how you might code it.
 
 What objects, functions and variables would need to be defined?
 
-Building blocks 
-===============
-
 Building on our previously defined concept of a house we now use repetition 
 to define a row of houses.
 
@@ -31,22 +31,6 @@ to define a row of houses.
         for i in range(number):
             house(size)
             turtle.forward(size)
-
-
-Exercises
-=========
-
-Any Shape
----------
-
-Write code that draws this:
-
-.. image:: /images/turtle-all-shapes.png
-
-.. tip::
-
-    The sum of the external angles of any shape is always 360 degrees.
-
 
 
 Polymorphism
@@ -64,7 +48,7 @@ Python provides protocols which is polymorphism under the hood. These implement 
 for built in objects of different type.
 
 Protocols
-=========
+---------
 
 When we introspect an object we have a lot of attributes that take this format:
 `__names__`. This section will make many of those clear.
@@ -79,3 +63,17 @@ Protocols enable:
 * consistency - programmers can rely on intuition
 * special syntax - interpreter translates nice syntax to functions on objects.
 
+
+Exercises
+=========
+
+Any Shape
+---------
+
+Write code that draws this:
+
+.. image:: /images/turtle-all-shapes.png
+
+.. tip::
+
+    The sum of the external angles of any shape is always 360 degrees.

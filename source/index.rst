@@ -20,7 +20,7 @@ Table of Contents:
    flow_control 
    data_structures
    loops
-   abstraction
    classes
+   abstraction
    resources
    appendix_windows
