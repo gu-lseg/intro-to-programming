@@ -12,28 +12,42 @@ It takes some time and practie knowing when to use each.
 The functions that interest us are accessing and updating elements of the structures. Also typically collections almost always combine with iteration. Which means going through each of the
 members of the collection and effecting some action.
 
-See the python tutorial for a more indepth treatment:
+We will leave a more indepth investigation of the various methods to the Koans. Also see the python tutorial: 
 
 https://docs.python.org/2/tutorial/datastructures.html
 
-As usual we will look first how to create the objects using literals and
-constructors, and then examine some functions typical of each object.
+As always first we explore how to create objects using literals and
+constructors, then we examine some functions typical of each object.
 
 Lists
 =====
 
-Lists are container objects
+Lists are container objects. They contain ordered items.
 
 creation:: 
 
-    >>> ['John Cleese', 'Eric Idle', 'Michael Palin', 'Terry Gilliam']
+    >>> pythons = ['John Cleese', 'Eric Idle', 'Michael Palin', 'Terry Gilliam']
     >>> list(['John Cleese', 'Eric Idle', 'Michael Palin', 'Terry Gilliam'])
+    ['John Cleese', 'Eric Idle', 'Michael Palin', 'Terry Gilliam']
+    >>> abc = list('abc')              # the list constructor can take a string
+    >>> abc
+    ['a', 'b', 'c']                    # the result is a list of its characters
 
-functions::
+introspection::
+    
+    >>> type(pythons)
+    <class 'list'>
+    >>> dir(pythons)
+    [ ... many methods ... ]
+
+special syntax methods:: 
 
     >>> abc = ['a', 'b', 'c']
     >>> abc[0]                        # extract elements
     'a'
+    >>> abc[2] = 'd'                  # assignment
+    >>> abc
+    ['a', 'b', 'd']
 
 IndexError
 ----------
@@ -51,9 +65,29 @@ If you ask for an element that doesn't exist you will get an IndexError::
 Dictionaries
 ============
 
-example::
+Dictionaries contain key value mappings.
 
-    >>> person = {'name': 'Brian', 'age': 23, 'sex': 'M', 'status': 'Single'}
+creation::
+
+    >>> {'name': 'Brian', 'age': 23, 'sex': 'M', 'status': 'Single'}  # literal
+    {'sex': 'M', 'age': 23, 'status': 'Single', 'name': 'Brian'}
+    >>> dict([('name', 'Brian'), ('age', 23), ('sex', 'M'), ('status', 'Single')])  # constructor
+    {'sex': 'M', 'age': 23, 'status': 'Single', 'name': 'Brian'}
+
+introspection::
+
+    >>> type(person)
+    <class 'dict'>
+    >>> dir(person)
+    [ ... many methods ... ]
+
+Special syntax for extracting and updating an attribute::
+
+    >>> person['name']
+    'Brian'
+    >>> person['name'] = 'Naomi'
+    >>> person['name']
+    'Name'
 
 KeyError
 --------
@@ -69,14 +103,29 @@ If you request a non-existent key you get this error::
 Tuples
 ======
 
-Tuples can be used like lightweight dictionaries. Instead of having keys we use 
+Tuples are very similar to lists. Order matters. 
+
+However they are used like lightweight dictionaries: instead of having keys we use 
 values in a certain order.
 
-example::
+creation::
     
-    >>> person = ('Brian', 23, 'M', 'Single')
+    >>> person = ('Brian', 23, 'M', 'Single')   # literal
 
+introspection::
+    
+    >>> type(person)
+    >>> dir(person)
 
+special syntax methods::
+
+    >>> person[2]
+    'M'
+    >>> person[2] = 'F'         # Brian has a sex change
+    >>> person[2]
+    'F'
+
+Tuples have their use but they aren't seen as often as lists and dictionaries.
 
 Sets
 ====
@@ -88,9 +137,30 @@ be used to explain each one.
 
 creation::
     
-    >>> {'John Cleese', 'Eric Idle', 'Michael Palin', 'Terry Gilliam'}
+    >>> names = {'John Cleese', 'Eric Idle', 'Michael Palin', 'Terry Gilliam'}
+    # literal
     >>> set(['John Cleese', 'Eric Idle', 'Michael Palin', 'Terry Gilliam'])
+    # constructor
+    >>> abc = set('abc')
 
+introspection::
+
+    >>> type(names)
+    >>> dir(names)
+
+methods::
+
+    >>> abc, bcd = set('cab'), set('bdc')
+    >>> abc.intersection(bcd)
+    {'b', 'c'}
+    >>> def_ = set('fed')
+    >>> abc.intersection(def_)
+    set()                             # empty set
+    
+
+To understand the methods thing of Venn Diagrams.
+
+Sets have their uses but aren't seen as much as the others.
 
 Nested
 ======
@@ -115,10 +185,14 @@ A list of tuples::
             ('Brian', 23, 'M', 'Single')
         ]
 
-in and  __contains__
-====================
 
-`__contains__` is the built in protocol for membership. 
+Special Methods
+===============
+
+in and  __contains__
+---------------------
+
+`__contains__` is the special method for testing membership. 
 
 `x in y` resolves to `y.__contains__(x)`
 
@@ -149,7 +223,7 @@ Any object that implements the `__contains__` function will work
 with the `x in <object>` syntax.
 
 for x in y: and  __iter__
-=========================
+-------------------------
 
 `__iter__` is how iteration is implemented in Python. This protocol is a bit more involved
 than the previous protocols.
@@ -208,19 +282,17 @@ Tuples::
     > python3 contemplate_koans.py about_tuples
 
 Sets::
-
     
     > python3 contemplate_koans.py about_sets
 
 len() implementation
 --------------------
 
-len() works on many object types::
+len() works on many objects which are container like types::
 
     >>> len('hi')
     2
     >>> len([1, 2])
     2
 
-Which protocol function is called by the function `len` on the object it is passed?
-
+Which special function is called by the function `len` on the object it is passed?
