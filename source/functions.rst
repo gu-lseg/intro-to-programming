@@ -19,8 +19,8 @@ All turtle instructions are examples of calling functions attached to the turtle
 `print` simply prints its parameter to the console.
 
 
-`function` type
-===============
+The `function` object
+=====================
 
 Function objects are special. They are objects that contain blocks of code.
 
