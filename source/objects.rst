@@ -119,6 +119,38 @@ The arithmetic operations you'd expect are implemented on int objects::
     >>> 5 - 6
     -1
 
+For two objects of type `int` it's interpretation is identical to basic
+arithmentic.
+
+
+`+` & `__add__`
+===============
+
+The symbol `+` is called an operator. It takes two objects on either 
+side of it. Its interpretation depends on the types of objects it is applied to. 
+
+`x + y` resolves to `x.__add__(y)`
+
+::
+
+    >>> 1 + 2
+    3
+    >>> one = 1
+    >>> one.__add__(2)
+    3
+    >>> '1' + '2'
+    '12'
+    >>> '1'.__add__('2')
+    '12'
+
+.. tip:: 
+
+    Any object that implements the `__add__` function will work
+    with the `<object> + x` syntax.
+
+.. tip:: 
+
+    Other operators: `*` `-` `/`
 
 Exercises
 =========
@@ -201,36 +233,17 @@ Koans - `str` functions
     python3 contemplate_koans.py about_strings
     python3 contemplate_koans.py about_strings_manipulation
 
-__add__ (Optional)
-==================
 
-`x + y` resolves to `x.__add__(y)`
+`*` `/` `-` `%` Operators
+-------------------------
 
-::
-
-    >>> 1 + 2
-    3
-    >>> one = 1
-    >>> one.__add__(2)
-    3
-    >>> '1' + '2'
-    '12'
-    >>> '1'.__add__('2')
-    '12'
-
-.. tip:: 
-
-    Any object that implements the `__add__` function will work
-    with the `<object> + x` syntax.
-
-Exercise (Optional)
-===================
-
-Boolean Operators
------------------
-
-Using introspection functions, which protocol functions do the following syntax
+Using introspection which special functions does the following syntax
 resolve to:
+
+* `3 - 2`
+* `3 * 2`
+* `3 / 2`
+* `3 % 2`
 
 * `3 > 2`
 * `3 < 2`

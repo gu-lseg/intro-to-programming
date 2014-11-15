@@ -71,6 +71,9 @@ We use boolean expressions to make decisions.
     ...     print('More')
 
 
+Exercises
+=========
+
 Koans - Control Statements
 --------------------------
 
@@ -78,14 +81,25 @@ Truth and Falsehood::
 
     > python3 contemplate_koans.py about_true_and_false
 
-Boolean operators
-
-::
+Boolean operators::
 
     > python3 contemplate_koans.py about_control_statements
 
 
-Resources
-=========
+`>` `<` `=<` `=>` `!=` Operators
+--------------------------------
+
+Using introspection which special functions does the following syntax
+resolve to:
+
+* `3 > 2`
+* `3 < 2`
+* `3 <= 2`
+* `3 >= 2`
+* `3 != 2`
+
+Further resources
+-----------------
 
 http://opentechschool.github.io/python-beginners/en/conditionals.html
+
