@@ -30,11 +30,21 @@ A `python.py` file contains::
         def move(self):
             print("{} moves".format(self.name))
 
+        def eat(self):
+            """ a snake gets longer when it eats """
+            self.lenth = self.legnth + 1
+
+        def starve(self):
+            """ a snake shorter when it starves """
+            # is there a bug here?
+            self.lenth = self.legnth - 1
+            
+
 
 The class object
 ================
 
-As always we introspect the new type of object::
+Lets introspect the new type of object::
 
     >>> from python import Python
     >>> type(Python)
@@ -46,9 +56,13 @@ As always we introspect the new type of object::
 Instances
 =========
 
+A class gives us a constructor function to create our snakes. Implicitly it
+runs the __init__ function as defined on the class.
+
 Creating::
     
     >>> john = Python('John', 'M', 15, 4)
+    >>> jane = Python('Jane', 'F', 4, 6)
 
 Introspecting::
 
@@ -58,12 +72,17 @@ Introspecting::
     [ ... many methods ... ]
 
 
-Note we get `move` which we defined, but we also get many methods others.
+Note we get `move`, `starve`, and `eat`  which we defined, but we also get many methods others.
+
+.. tip::
+
+    The other methods are those found when executing `dir(object)`
 
 Functions & Methods
 ===================
 
 ::
+
     >>> Python.move
     <function Python.move at 0x10f9b6840>
     >>> john.move
@@ -73,40 +92,53 @@ A function and a method are very similar. A function can stand alone, a method
 however is 'bound' to an object. When defined methods always take self as their
 first argument. It is thereby implicit when called.
 
-__str__
-========
+representing snakes
+===================
 
-The `__str__` method is called on an object when we pass it to the `print` function.
+The `__str__` special method is called on an object when we pass it to the `print` function.
 
 We decide that the semantics of printing a python is to show a visual
 representation of a snake using characters.
 
-New definition in `python.py`::
+Added to definition in `python.py`::
 
     class Python():
         
         def __init__(self, name, sex, age, length):
             self.name = name
-            self.length = length
+    [...]
 
         def __str__(self):
             body = '=' * self.length
             return "{}>".format(body)
 
-Interactive shell::
+results::
 
     >>> from python import Python
     >>> john = Python('John', 5)
     >>> print(john)
     ~-=====%>
 
+snake equality
+==============
 
 
 Exercises
 =========
 
-Decide on the semantics of the following built in magic methods:
+attack
+------
+
+Decide on the semantics of a python attacking another object.
+
+Implement your decision by defining a new method.
+
 
 __add__
+-------
 
-__lt__
+Lets define another special method to exploit the nice syntax python gives us.
+
+Decide on the semantics of 'adding' pythons together.
+
+Implemnent by defining your __add__ method on the Python class.
