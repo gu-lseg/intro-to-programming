@@ -49,6 +49,9 @@ special syntax methods::
     >>> abc
     ['a', 'b', 'd']
 
+.. tip::
+    Lists are very useful. Only the most trivial programs don't use them.
+
 IndexError
 ----------
 
@@ -89,6 +92,10 @@ Special syntax for extracting and updating an attribute::
     >>> person['name']
     'Name'
 
+.. tip::
+    Dictionaries are very useful, however their usage overlaps somewhat with Classes
+    (more on that later). 
+
 KeyError
 --------
 
@@ -125,7 +132,8 @@ special syntax methods::
     >>> person[2]
     'F'
 
-Tuples have their use but they aren't seen as often as lists and dictionaries.
+.. tip::
+    Tuples aren't seen as often as lists and dictionaries.
 
 Sets
 ====
@@ -160,7 +168,8 @@ methods::
 
 To understand the methods thing of Venn Diagrams.
 
-Sets have their uses but aren't seen as much as the others.
+.. tip::
+    Sets have their uses aren't seen that often.
 
 Nested
 ======
@@ -185,6 +194,7 @@ A list of tuples::
             ('Brian', 23, 'M', 'Single')
         ]
 
+Nested data structures are extremely common.
 
 Special Methods
 ===============
