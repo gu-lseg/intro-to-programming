@@ -142,7 +142,7 @@ place this in file called `turtle_joypad.py`::
 
         [ ... put your code here ... ]
             
-        if user_said == 'q':
+        if move == 'q':
             break
 
 Paper Sissors Rock
