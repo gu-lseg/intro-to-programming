@@ -133,6 +133,8 @@ You may find this helpful to get started
 
 place this in file called `echo.py`::
 
+    import turtle
+
     while True:
         user_said = input('\nType something (q to exit): ')
         if user_said == 'q':
