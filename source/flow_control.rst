@@ -127,19 +127,23 @@ Turtles Joypad
 We want to control the movements of the turtle using instructions from the
 keyboard. Much like the way you'd control a sprite in a game.
 
-Write this progam in a file. 
 
-You may find this helpful to get started
-
-place this in file called `echo.py`::
+place this in file called `turtle_joypad.py`::
 
     import turtle
 
+    tess = turtle.Turtle()
+
     while True:
-        user_said = input('\nType something (q to exit): ')
+        move = input('\nType a w d s for left up right down (q to exit): ')
+        if move == 'a':
+            tess.setheading(180)  # west
+            tess.forward(10)
+
+        [ ... put your code here ... ]
+            
         if user_said == 'q':
             break
-        print(user_said)
 
 Paper Sissors Rock
 ------------------
