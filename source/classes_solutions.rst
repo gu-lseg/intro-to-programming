@@ -44,14 +44,16 @@ Python Class
             return "{}>  {}".format(body, self.name)
 
 
-# Example run
+Example run
+-----------
+::
 
-# jane = Python('Jane', 'F', 4, 6)
-# john = Python('John', 'M', 15, 4)
-# print(john)
-# print(jane)
-# jane < john
-# jane > john
-# jane + john
-# baby = jane + john
-# print(baby)
+    >>> jane = Python('Jane', 'F', 4, 6)
+    >>> john = Python('John', 'M', 15, 4)
+    >>> print(john)
+    >>> print(jane)
+    >>> jane < john
+    >>> jane > john
+    >>> jane + john
+    >>> baby = jane + john
+    >>> print(baby)
