@@ -93,14 +93,14 @@ also true of functions that use parameters.
 
 Compare this function without parameters::
 
-    def right_angle():
+    def draw_right_angle():
         turtle.forward(10)
         turtle.left(90)
         turtle.forward(10)
 
 to this one with parameters:: 
 
-    def right_angle(length):
+    def draw_right_angle(length):
         turtle.forward(length)
         turtle.left(90)
         turtle.forward(length)
