@@ -85,20 +85,20 @@ forgotten to add 4 spaces on the new line after the colon.
 
 
 
-Parameters
-==========
+Arguments
+=========
 
 We saw that using names generalises code and facilitates code reuse. This is
-also true of functions that use parameters.
+also true of functions that use arguments.
 
-Compare this function without parameters::
+Compare this function without arguments:: 
 
     def draw_right_angle():
         turtle.forward(10)
         turtle.left(90)
         turtle.forward(10)
 
-to this one with parameters:: 
+to this one with arguments:: 
 
     def draw_right_angle(length):
         turtle.forward(length)
@@ -107,17 +107,14 @@ to this one with parameters::
 
 The second function is more flexible. It can be used to move by any length.
 
-The parameter acts as a *variable* only defined inside the function's code block.
+The argument acts as a *variable* only defined inside the function's code block.
 
-Functions can have many parameters::
+Functions can have many arguments:: 
 
     def move_diagonally(angle, length):
         turtle.left(angle)
         turtle.forward(length)
 
-.. tip::
-
-    parameters are also called arguments
 
 Exercises
 =========
@@ -152,10 +149,10 @@ functions.
 Does this make the code more modular, readable, reusable?
 
 
-Shapes with Paramaters
-----------------------
+Shapes with Arguments
+---------------------
 
-Reopen ``shapes.py`` and make new functions with sensible parameters.
+Reopen ``shapes.py`` and make new functions with sensible arguments.
 
 Does this make the code more general and reusable?
 
