@@ -1,5 +1,5 @@
-Debugging
-*********
+Appendix B: Debugging
+*********************
 
 Exceptions occur when the interpreter can't carry out a given instruction. The
 type of error (Exceptions are objects) communicates what is wrong.

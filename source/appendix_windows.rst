@@ -1,5 +1,5 @@
-Appendix: Windows
-*****************
+Appendix A: Windows
+*******************
 
 You interact with python using the `cmd.exe` program.
 
