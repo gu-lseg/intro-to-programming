@@ -1,6 +1,8 @@
 Objects
 *******
 
+We have already used turtle objects.
+
 An Object:
 
 * Exists as a pattern of 0s and 1s in the computer's memory. 
@@ -29,14 +31,6 @@ The function `type` returns the type of a passed object::
     >>> type('5')
     str
 
-Documentation
-=============
-
-The function `help` provides help on a passed object::
-
-    >>> help('5')
-    >>> help(5)
-    
 
 Strings 
 =======
