@@ -1,53 +1,56 @@
 Objects
 *******
 
-We see the world as containing objects. We classify those objects according to
-types.
+Our world contains objects and we classify these according to types.
 
-In a classroom there many objects that are instances of the type chair. You also have many objects that are instances of the type person.
+In a classroom there many objects that are instances of the type Chair. You also have many objects that are instances of the type Person.
 
-Chairs have attributes. They typically have four legs and a back. Persons also
-have attributes. They have 2 legs, 2 arms, a head... 
+Chairs have attributes. They have four legs and a back. Typically Persons 
+have two legs, two arms, one head... 
 
-Objects of type Person can interact with objects of type Chair in various ways. 
-They can sit on them, move them, or even stand on them.
+Objects have behaviours. An object of type Person can walk.
 
+Objects of different types can interact together. An object of type Person can
+sit on an object of type Chair.
+
+This is the essence of object oriented thinking. It is about using programmatic 
+objects to model something an area of interest.
 
 Types
 =====
 
 An Object:
 
-* Physically exists as a pattern of 0s and 1s in the computer's memory. 
-* Conceptually represents something with meaning to the programmer.
+* Exists as a pattern of 0s and 1s in the computer's memory. 
+* Conceptually represents something of meaning to the programmer.
 
-An object is always an instance of a Type. Type determines an objects:
+An object is always an instance of a Type. The Type determines an objects':
 
 * attributes
-* behaviours (we call these methods)
+* methods (behaviours)
 
-Programming is about defining and manipulating objects to do something
+Object Oriented programming is about defining and manipulating objects to do something
 meaningful to the programmer.
 
-In this section we are interested in:
+We will learn to:
 
-* creating objects using literals and constructors.
-* inspecting objects using introspection functions.
+* create objects using literal representations.
+* inspect objects to learn what they can do.
 
-
-Introspection 
-=============
-
-The functions `type('a')` and `dir('a')` help us learn about objects::
+The function `type` returns the type of a passed object:: 
 
     >>> type(5)
     int
     >>> type('5')
     str
-    >>> dir('5')
-    [ ... list of attributes and methods of an object ... ]
-    >>> dir(5)
-    [ ... list of attributes and methods of an object ... ]
+
+Documentation
+=============
+
+The function `help` provides help on a passed object::
+
+    >>> help('5')
+    >>> help(5)
     
 
 Strings 
@@ -55,13 +58,11 @@ Strings
 
 Objects that are instances of type `str` represent text.
 
-creating `str` instances
-------------------------
+creation
+--------
 ::
 
     >>> "hi"           # literal
-    hi
-    >>> str("hi")      # constructor function
     hi
     >>> type('hi')     # confirm type
     str
@@ -72,45 +73,43 @@ When you execute the code `"hi"` or `str("hi")`, the python interpreter:
 2. Gives it the value "hi"
 3. Returns this newly created object
 
-introspecting `str` instances
------------------------------
+methods
+-------
 
-What attributes and functions
+What methods do string objects have?
 
 `str` functions::
 
-    >>> dir("string")
-    [' .... many .... ']
+    >>> help("string")
 
-Many methods are defined on objects of type `str`. These facilitate working with text.
-Use the documents to get an overview.
+There are many. These facilitate working with text.
+Take time to visit the online documentation to get an overview.
 
 https://docs.python.org/3.4/library/string.html
+
+Objects of type `str` represent text in our programs. String methods help
+manipulate text.
 
 Integers
 ========
 
 Objects that are instances of type `int` represent whole numbers.
 
-creating `int` instances
-------------------------
+creation 
+--------
 ::
 
     >>> 3              # literal
     3
-    >>> int(-5)        # constructor function
-    -5
     >>> type(5)        # confirm type
     int
 
+methods
+-------
 
-introspecting `int` instances
------------------------------
+::
 
-Methods defined on objects of type `int`::
-
-    >>> dir(5)
-    [ ... many ... ]
+    >>> help(5)        # display documentation
 
 The arithmetic operations you'd expect are implemented on int objects::
 
@@ -119,38 +118,12 @@ The arithmetic operations you'd expect are implemented on int objects::
     >>> 5 - 6
     -1
 
-For two objects of type `int` it's interpretation is identical to basic
-arithmentic.
+Two objects of type `int`, separated by an arithmetic operators `*` `/` `-` `+`, have the
+exact behaviour we expect from basic arithmentic.
 
 
-`+` and `__add__`
-=================
-
-The symbol `+` is called an operator. It takes two objects on either 
-side of it. Its interpretation depends on the types of objects it is applied to. 
-
-`x + y` resolves to `x.__add__(y)`
-
-::
-
-    >>> 1 + 2
-    3
-    >>> one = 1
-    >>> one.__add__(2)
-    3
-    >>> '1' + '2'
-    '12'
-    >>> '1'.__add__('2')
-    '12'
-
-.. tip:: 
-
-    Any object that implements the `__add__` function will work
-    with the `<object> + x` syntax.
-
-.. tip:: 
-
-    Other operators: `*` `-` `/`
+Objects of type `int` represent whole numbers in our programs. Their methods
+map to arithmetic enabling us to use them to solve basic math problems.
 
 Exercises
 =========
@@ -191,9 +164,9 @@ conclude of the meaning of `*`?
 
 Using the output of::
 
-    >>> dir('5')
+    >>> help(str)
     [ .... ]
-    >>> dir(5)
+    >>> help(int)
     [ .... ]
 
 Which double underscore function do you think might be at play?
@@ -211,7 +184,7 @@ side of the equal sign?
 `str` functions 
 ---------------
 
-Using the interpreter and introspection functions, for the string 'abcabc' find a method that:
+Using the `help`, for the `str` and the string 'abcabc' as an example find a method that:
 
 * confirms whether the string is alphabetical
 * confirms wether the string is alphnumerical
@@ -222,7 +195,6 @@ Using the interpreter and introspection functions, for the string 'abcabc' find 
 
 .. tip::
 
-    * Search dir('abcabc') for contenders and experiment
     * docs https://docs.python.org/3/library/stdtypes.html#string-methods
 
 Koans - `str` functions
@@ -232,22 +204,3 @@ Koans - `str` functions
 
     python3 contemplate_koans.py about_strings
     python3 contemplate_koans.py about_strings_manipulation
-
-
-Arithmentic Operators
----------------------
-
-Using introspection which special functions does the following syntax
-resolve to:
-
-* `3 - 2`
-* `3 * 2`
-* `3 / 2`
-* `3 % 2`
-
-String representations
-----------------------
-
-What function gets called when we get results in the interpreter?
-Is it the same that gets called when we type `print(x)`?
-
