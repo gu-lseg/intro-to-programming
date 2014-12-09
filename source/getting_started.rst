@@ -1,10 +1,10 @@
-Getting Started
-***************
+Quick Start
+***********
 
-Interactive shell
-=================
+Interactive coding
+==================
 
-One way to run python is by using the interactive shell.
+One way to run python is by using the interactive interpreter.
 
 Type python without anything following to enter the interactive shell::
 
@@ -13,14 +13,11 @@ Type python without anything following to enter the interactive shell::
     it (Intel)] on win32
     Type "help", "copyright", "credits" or "license" for more information.
 
-    >>> import turtle
-    >>> turtle.shape("turtle")
-    >>> turtle.forward(25)
+    >>> print('Hi') 
 
 .. tip::
 
-    Where you see `>>>` in the text you can assume the interactive shell is
-    bieng used. Don't just read, expriment yourself!
+    Don't just read! Type everything and experiment.
 
 Turtles
 =======
@@ -29,76 +26,52 @@ The turtle will follow any instruction you give it.
 
 Type::
 
-    >>> import turtle
+    >>> from turtle import Turtle
+    >>> tess = Turtle()               # create a turtle object called tess
 
 .. image:: /images/turtle-init.png
 
-
 ::
 
-    >>> turtle.forward(25)
+    >>> tess.forward(100)
 
 .. image:: /images/turtle-forward.png
 
 ::
 
-    >>> turtle.left(30)
+    >>> tess.left(30)
 
 .. image:: /images/turtle-left.png
 
+Type these in::
 
-Experiment with the following instructions.
+    >>> tess.shape('turtle')
+    >>> tess.color('green')
+    
+    >>> bob = Turtle()
+    >>> bob.shape('circle')
+    >>> bob.color('red')
+    >>> bob.backward(100)
 
-
-Movement:
-
-``turtle.forward(<distance>)`` moves the turtle forward by the given distance. 
-
-``turtle.backward(<distance>)``
-
-``turtle.left(<angle>)`` rotates the turtle by number of degrees left.
-
-``turtle.right(<angle>)``
+Now have fun and experiment drawing shapes.
 
 
-
-Environment:
-
-``turtle.reset()``  clears the drawing
-
-``turtle.shape("turtle")`` change the shape into a turtle
-
-``turtle.color("red")``
-
-Documentation
-=============
-
-Extensive documentation is available online for pytyhon. Visit the `turtle`
-documentation. Explore some other methods that you find.
-
-https://docs.python.org/3/library/turtle.html
-
-`help` is directly available in the interactive shell::
-
-    >>> help(turtle.forward)
-
-Try any of the previously used functions. Get into habit of automatically doing this.
-
-Using files
+File coding
 ===========
 
 Code is most often executed from file.
 
-Using SublimeText create a file `my_turtle_file.py` with this code:: 
+Using SublimeText create a file named `my_turtle_file.py` with this code:: 
 
-    # A line beginning with '#' is a comment. Python ignores it.
+    from turtle import Turtle, exitonclick
 
-    import turtle
-    turtle.shape("turtle")
-    turtle.forward(25)
-    turtle.exitonclick()  # Why this? Test by commenting it out.
+    tess = Turtle()
+    tess.shape("turtle")
+    tess.forward(100)
 
-In the console we call the python command with the filename as parameter::
+    exitonclick()  # Why this? Experiment by commenting it out.
+
+In cmd.exe call the python command with the filename `my_turtle_file.py` as parameter::
   
     C:\Users\greg-lo>\Python34\python.exe my_turtle_file.py
 
@@ -108,28 +81,44 @@ In the console we call the python command with the filename as parameter::
     Make sure the file you created exists in the location where you execute this
     command.
 
-    Here the location is given by the prompt.
+    The location is given by the prompt.
 
 
 
 Exercises
 =========
 
+Documentation
+-------------
 
-Geometry Exercises
-------------------
+Visit the `turtle` online documentation. 
 
-Here we will program some geometrical concepts.
+https://docs.python.org/3/library/turtle.html
 
-Lets define some of our gemetrical concepts using step by step instructions.
+Questions:
 
-Put all the code inside a file named `shapes.py` and execute it::
+* What colors does a turtle's `color` method recognise?
+* What shapes does a trutle's `shape` method recognise?
+
+The `help` function provides documenation directly in the interactive shell::
+
+    >>> help(turtle.forward)
+
+Try any previously used functions and get into habit of automatically doing this.
+
+Find some new turtle object methods and experiment.
+
+Shapes
+------
+
+Here we will program some shapes.
+
+Lets define some of our gemetrical concepts by breaking them down into using step by step instructions.
+
+Put code inside a file named `shapes.py` to be executed using::
     
     python3 shapes.py
 
-
-Square
-------
 
 Draw a square as in the following picture:
 
@@ -138,21 +127,13 @@ Draw a square as in the following picture:
 Squares have right angles which are 90 degrees.
 
 
-Rectangle
----------
-
 Draw a rectangle.
 
 .. image:: /images/turtle-rectangle.png
 
 
-Equilateral Triangle
---------------------
-
+Draw an equilateral triangle.
 An equilateral triangle has 3 sides of equal length and each corner has an angle of 60 degrees.
-
-Many squares
-------------
 
 Now, draw many squares. Each one tilted left of the previous. 
 Experiment with the angles between the individual squares.
@@ -160,9 +141,6 @@ Experiment with the angles between the individual squares.
 .. image:: /images/turtle-many-squares.png
 
 The picture shows three 20 degree turns. You could try 30 and 40...
-
-House
------
 
 Combining previous code, draw a simple house.
 
