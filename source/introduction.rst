@@ -105,28 +105,33 @@ useful programs.
 Exercises
 =========
 
-There are plenty of exercises throughout this course and they are of two types.
 
-`shapes.py`
------------
+Turtles
+-------
 
-We will use a drawing tool called `turtles` combined with concepts from simple geometry in order to learn about designing abstractions.
+To learn about designing programs we will use a drawing tool called `turtles`.
 
 Throughout the course your `shapes.py` python file will evolve as you
 learn new programming constructs.
 
+`turtles` combined with concepts from simple geometry will help us learn about designing abstractions.
+
+
 Koans
 -----
 
-A koan is like a mini snippet of code. It presents a puzzle for you to resolve.
+A koan is a code snippet. It presents a puzzle for you to solve.
 
-We use Koans to gain hands on practice using intuition and experimentation.
+We use Koans as a kind of drill to gain hands on practice. 
 
-Throughout the course we will make reference to these koans.
+They are to be used in combination with the interpreter where you can
+experiment.
 
+Practicals
+----------
 
-Instructions
-------------
+These are programs you will be asked to write that have some real world value.
+
 
 Instructions for running python and the koans are in the Appendix. Go there
 now.
