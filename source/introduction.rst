@@ -1,27 +1,48 @@
 Introduction
 ************
 
-Learning to programm takes practice.
+Learning to programm requires much practice and is very rewarding and creative.
 
-It requires application and is very rewarding and creative.
-
-The purpose of this course it to give you just enough programming vocabulary to
+The purpose of this course it to give you enough programming vocabulary to
 get a taste of what it is.
+
+
+Object oriented programming
+===========================
+
+Our world contains objects and we classify these according to types.
+
+In a classroom there many objects that are instances of the type Chair. You also have many objects that are instances of the type Person.
+
+Chairs have attributes. They have four legs and a back. Typically Persons 
+have two legs, two arms, one head... 
+
+Objects have behaviours. An object of type Person can walk.
+
+Objects of different types can interact together. An object of type Person can
+sit on an object of type Chair.
+
+This is the essence of object oriented thinking. It is about using programmatic 
+objects to model something an area of interest.
+
+This style of programming provides a clear, simple, and consistent model of computation
+that maps well to our intuitions.
 
 Python
 ======
 
-Python is a good language to learn as it is simple, high-level, powerful, and
-widely used in industry.
+This course uses Python to introduce Object Oriented programming.
 
-Whilst python is taught the concepts are the same in most other languages. 
+Python is chosen as it is a simple, high-level, object oriented programming language. It's very popular in both the academic world and widely used in industry. 
+
+The concepts however will apply to most other object oriented languages. 
 
 Python consists of two things:
 
 * an Interpreter - Creates and maintains an environment within which it interprets the python language.
 * a Language - Used to refer, create, and interact with objects in an environment.
 
-Using the python language we will interact with the interpreter in 3 different ways:
+We can interact with the interpreter in 3 different ways:
 
 * running code from a file
 * interactive coding using the python interpreter
@@ -29,31 +50,10 @@ Using the python language we will interact with the interpreter in 3 different w
 
 These approaches complement each other.
 
-Object oriented programming
-===========================
-
-Our world contains objects and we use language to refer to them. Similarly object oriented programming involves creating and manipulating objects in an environment.
-
-We show that the inuitive syntax that python offers systematically 
-reduces to a single type of operation: objects calling methods on each other.
-
-For example::
-
-    >>> 'a' + 'b' 
-    'ab'
-    >>> 'a'.__add__('b')
-    'ab'
-
-We will learn that Python offers a variety of builtin `special` methods
-(functions defined on objects).
-
-This style of programming provides a clear, simple, and consistent model of computation
-that maps well to our intuitions.
-
 Language goals
 ==============
 
-Enough programming ability to go from writting::
+Our goal is move from::
 
     turtle.forward(100)
     turtle.left(90)

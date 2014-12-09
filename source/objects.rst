@@ -1,33 +1,10 @@
 Objects
 *******
 
-Our world contains objects and we classify these according to types.
-
-In a classroom there many objects that are instances of the type Chair. You also have many objects that are instances of the type Person.
-
-Chairs have attributes. They have four legs and a back. Typically Persons 
-have two legs, two arms, one head... 
-
-Objects have behaviours. An object of type Person can walk.
-
-Objects of different types can interact together. An object of type Person can
-sit on an object of type Chair.
-
-This is the essence of object oriented thinking. It is about using programmatic 
-objects to model something an area of interest.
-
-Types
-=====
-
 An Object:
 
 * Exists as a pattern of 0s and 1s in the computer's memory. 
 * Conceptually represents something of meaning to the programmer.
-
-An object is always an instance of a Type. The Type determines an objects':
-
-* attributes
-* methods (behaviours)
 
 Object Oriented programming is about defining and manipulating objects to do something
 meaningful to the programmer.
@@ -36,6 +13,14 @@ We will learn to:
 
 * create objects using literal representations.
 * inspect objects to learn what they can do.
+
+Types
+=====
+
+An object is always an instance of a Type. The Type determines an objects':
+
+* attributes
+* methods (behaviours)
 
 The function `type` returns the type of a passed object:: 
 
