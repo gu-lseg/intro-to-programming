@@ -18,9 +18,14 @@ All turtle instructions are examples of calling functions attached to the turtle
 
 `print` simply prints its parameter to the console.
 
+.. tip::
 
-The `function` object
-=====================
+    Functions and methods are very similar. Methods are said to exist on
+    objects. Functions stand alone.
+
+
+`function` objects
+==================
 
 Function objects are special. They are objects that contain blocks of code.
 
@@ -28,10 +33,10 @@ Functions help in letting programmers organise and reuse code. They help create 
 
 Function objects have names. The name is assigned at the same time you define a function.
 
-creating `function` types
--------------------------
+defining
+--------
 
-::
+We create function objects by defining with special syntax::
 
     >>> def my_function():
     ...     print('hello')    # Note 4 space indentation
