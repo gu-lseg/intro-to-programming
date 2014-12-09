@@ -13,7 +13,6 @@ Table of Contents:
 
    introduction
    getting_started
-   errors
    objects
    names
    functions
@@ -24,3 +23,4 @@ Table of Contents:
    abstraction
    resources
    appendix_windows
+   appendix_errors
