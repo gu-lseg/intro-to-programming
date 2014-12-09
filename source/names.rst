@@ -10,6 +10,16 @@ Names help:
 - make programming efficient. 
 - capturing meaning. 
 
+A name doesn't exist in the environment. Its not an object. It is part of
+the language (the code) that we use to refer to that world of objects. 
+
+Just like the name 'greg' doesn't exist in the real world. It is a name that
+refers to one or more objects of type Person.
+
+In actuality a name is a symbol that is immediately replaced by the interpreter 
+with an address in memory. A name points to an object's location in memory.
+
+In a way it is synonmymous with the `id` of the object it refers to.
 
 .. tip::
 
@@ -48,22 +58,8 @@ A name is executed as an expression and it evaluates to its object::
     >>> x
     5
 
-What's in a name?
-=================
-
-A name doesn't exist in the environment. Its not an object. It is part of
-the language (the code) that we use to refer to that world of objects. 
-
-Just like the name 'greg' doesn't exist in the real world. It is a name that
-refers to one or more objects of type persons.
-
-In actuality a name is a symbol that is immediately replaced by the interpreter 
-with an address in memory. A name points to an object's location in memory.
-
-In a way it is synonmymous with the `id` of the object it refers to.
-
 NameError
-=========
+---------
 
 If the interpreter gets a name that hasn't yet been defined it will complain
 by throwing a `NameError`.
@@ -76,6 +72,24 @@ example::
     NameError: name 'the_holy_grail' is not defined
 
 Often typos lead to these types of errors.
+
+
+Input
+=====
+
+We can make our programs interactive by using the `input` function::
+
+    >>> input('Enter your name: ')
+
+
+`input` prints a message to the shell and waits for user input. Once the user
+types enter the program resumes and the `input` function returns the user input
+as a `str` object.
+
+Here we assign this user input to a name::
+
+    >>> name = input('Enter your name: ')  # we assign the inputted string.
+
 
 Reusability
 ===========
@@ -117,23 +131,29 @@ If you change your mind you need only update one value.
 Note that our programatic definition mirrors the mathematical defintion in
 that the lenguth of a square's side is irrelevant to its nature as a square.
 
-Good naming
-===========
+.. tip::
 
-The name `right_angle` was chosen to refer to an `int` of value 90. 
+    The name `right_angle` was chosen to refer to an `int` of value 90. 
 
-`thirty_degree_angle`, `angle`, or `dezwbpe` could be used and the code would work fine.
+    We could have used `thirty_degree_angle`, `angle`, or `awef` and the code would work fine. However:
 
-However:
+    * `thirty_degree_angle` is misleading
+    * `angle` is better, perhaps ok but vague
+    * `dezwbpe` is nonsense and conveys no meaning
 
-* `thirty_degree_angle` is misleading
-* `angle` is better, perhaps ok but vague
-* `dezwbpe` is nonsense and conveys no meaning
-
-By choosing appropriate names you make the code more readable.
+    By choosing appropriate names you make the code more readable and
+    intuitive. Choose good names!
 
 Exercises
 =========
+
+Age in 2050
+-----------
+
+Write a program that asks the user for her age and prints how old she will be
+in 2050.
+
+Pay close attention to what the type of the objects you are dealing with are.
 
 Shapes
 ------
