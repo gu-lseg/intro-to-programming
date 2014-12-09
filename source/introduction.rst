@@ -105,6 +105,7 @@ useful programs.
 Exercises
 =========
 
+There are three types of programming materials.
 
 Turtles
 -------
