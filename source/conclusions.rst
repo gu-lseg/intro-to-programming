@@ -1,8 +1,8 @@
 Conclusions 
 ***********
 
-Programming Constructs
-======================
+Programming
+===========
 
 The constructs we have learnt (loops, conditions, data structures) mean that we
 are far more expressive as programmers.
