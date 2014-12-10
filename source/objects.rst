@@ -1,20 +1,22 @@
 Objects
 *******
 
-We have already used turtle objects.
+Object Oriented programming is about defining and manipulating objects to do something
+meaningful to the programmer.
 
 An Object:
 
 * Exists as a pattern of 0s and 1s in the computer's memory. 
 * Conceptually represents something of meaning to the programmer.
 
-Object Oriented programming is about defining and manipulating objects to do something
-meaningful to the programmer.
+We have created and manipulated turtle objects. Turtle objects represent pens
+that enable us to draw pictures.
 
-We will learn to:
+Here we will focus on two more types of objects: 
+* Strings represent and help manipulate text in our programs. 
+* Integers represent and help manipulate whole numbers in our programs.
 
-* create objects using literal representations.
-* inspect objects to learn what they can do.
+We will look at how to create and then manipulate these types of objects.
 
 Types
 =====
