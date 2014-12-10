@@ -19,7 +19,7 @@ Table of Contents:
    conditionals
    data_structures
    loops
-   abstraction
+   conclusions
    appendix_windows
    appendix_errors
    appendix_classes
