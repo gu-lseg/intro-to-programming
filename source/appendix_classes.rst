@@ -1,5 +1,5 @@
-Classes
-*******
+Appendix C: Classes
+*******************
 
 We are now going to bring what we have learnt about object oriented programming
 together as we define our own object type using classes.
