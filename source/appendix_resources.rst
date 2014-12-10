@@ -1,4 +1,4 @@
-Appendix C: Resources
+Appendix D: Resources
 *********************
 
 There are many resources freely available on the web for further learning.
