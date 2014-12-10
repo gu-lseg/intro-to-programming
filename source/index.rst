@@ -21,6 +21,6 @@ Table of Contents:
    loops
    classes
    abstraction
-   resources
    appendix_windows
    appendix_errors
+   appendix_resources
