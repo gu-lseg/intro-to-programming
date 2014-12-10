@@ -11,7 +11,7 @@ as object templates or factories.
 
     The Koans are structured as classes with each koan as a method.
 
-Defining a Class
+Defining & usage
 ================
 
 Much like we defined functions lets define a class.
@@ -41,8 +41,8 @@ A `python.py` file contains::
             
 
 
-The class object
-================
+class object
+------------
 
 Lets introspect the new type of object::
 
@@ -52,12 +52,12 @@ Lets introspect the new type of object::
     >>> dir(Python)
     [ ... many methods ... ]
 
+instances
+---------
 
-Instances
-=========
+A class is like an object instance factory. Here our class makes snakes. 
 
-A class gives us a constructor function to create our snakes. Implicitly it
-runs the __init__ function as defined on the class.
+Implicitly it runs the __init__ function as defined on the class.
 
 Creating::
     
@@ -78,8 +78,8 @@ Note we get `move`, `starve`, and `eat`  which we defined, but we also get many 
 
     The other methods are those found when executing `dir(object)`
 
-Functions & Methods
-===================
+methods
+-------
 
 ::
 
@@ -92,8 +92,8 @@ A function and a method are very similar. A function can stand alone, a method
 however is 'bound' to an object. When defined methods always take self as their
 first argument. It is thereby implicit when called.
 
-representing snakes
-===================
+snakes
+======
 
 The `__str__` special method is called on an object when we pass it to the `print` function.
 
@@ -119,8 +119,8 @@ results::
     >>> print(john)
     ~-=====%>
 
-snake equality
-==============
+special methods
+===============
 
 
 Exercises
