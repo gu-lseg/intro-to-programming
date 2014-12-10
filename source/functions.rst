@@ -20,14 +20,13 @@ All turtle instructions are examples of calling functions attached to the turtle
 
 .. tip::
 
-    Functions and methods are very similar. Methods are said to exist on
-    objects. Functions stand alone.
+    Functions and methods are very similar. Methods exist on objects however functions stand alone.
 
 
-`function` objects
-==================
+objects
+=======
 
-Function objects are special. They are objects that contain blocks of code.
+Just like everything else in Python a function is an object. Function objects are different in that they contain blocks of code.
 
 Functions help in letting programmers organise and reuse code. They help create new abstractions.
 
@@ -70,13 +69,9 @@ We 'call' functions by adding `()` at the end of their names. This is syntax uni
 IndentationError
 ----------------
 
-Indentation is the number of spaces a piece of code is from the left hand side of
-the page.
+Indentation is the number of spaces from the left hand side. In python it defines blocks of code. 
 
-It is important in python. It defines blocks of code. A block of code is code
-that goes together.
-
-It is not unusual to get this kind of error::
+If you get this kind of error::
 
     >>> def awef():
     ... print('hi')
@@ -85,16 +80,14 @@ It is not unusual to get this kind of error::
             ^
     IndentationError: expected an indented block
 
-It simply means we have gotten the indentation wrong. Here the programmer has
+It simply means the indentation wrong. Here the programmer has
 forgotten to add 4 spaces on the new line after the colon.
-
 
 
 Arguments
 =========
 
-We saw that using names generalises code and facilitates code reuse. This is
-also true of functions that use arguments.
+We saw names generalise code and eases code reuse. This is also true of functions that take arguments.
 
 Compare this function without arguments:: 
 
@@ -119,6 +112,9 @@ Functions can have many arguments::
     def move_diagonally(angle, length):
         turtle.left(angle)
         turtle.forward(length)
+
+Scope
+=====
 
 
 Exercises
