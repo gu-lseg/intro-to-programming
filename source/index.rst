@@ -16,7 +16,7 @@ Table of Contents:
    objects
    names
    functions
-   flow_control 
+   conditionals
    data_structures
    loops
    classes

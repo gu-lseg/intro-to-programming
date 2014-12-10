@@ -1,29 +1,12 @@
-Conditionals
-************
+Flow 1: Conditionals
+********************
 
-Conditional flow control is how a computer makes decisions.
-
-This how we break out of doing the same thing all the time.
-
-Go to these links and follow the tutorials there. Then come back here and
-complete this page.
-
-`bool` objects
-==============
-
-The use of True and False has been intuitive up till now. Here we explore them
-further.
-
-::
-    
-    >>> type(True)
-    bool
-    >>> type(False)
-    bool
+Conditional flow control is how the python interpreter chooses which code to
+execute. Think of it as how to express choices.
 
 
-Object Equality
-===============
+Equality
+========
 
 Testing the equality of two objects returns `True` or `False` depending on how
 equality is defined on those two objects.
@@ -41,6 +24,16 @@ value to be equal::
     >>> 5 == '5'
     False
 
+bools 
+-----
+
+::
+    
+    >>> type(True)
+    bool
+    >>> type(False)
+    bool
+
 Comparison Operators
 ====================
 
@@ -57,18 +50,6 @@ values of x and y.
     x <= y           # x less than or equal to y
 
 
-User input
-==========
-
-To capture input from the user we use a function named `input`::
-
-    >>> name = input("Please enter your name: ")
-    Please enter your name: 
-
-The interpreter waits for a response.
-
-If the user types in `Sophocles` a string obejct 'Sophocles' is assinged to
-name.
 
 if statement
 ============
@@ -118,11 +99,8 @@ resolve to:
 * `3 != 2`
 
 
-Practicals
-==========
-
-Turtles Joypad
---------------
+Practical 1: Turtles Joypad
+---------------------------
 
 We want to control the movements of the turtle using instructions from the
 keyboard. Much like the way you'd control a sprite in a game.
@@ -145,10 +123,8 @@ place this in file called `turtle_joypad.py`::
         if move == 'q':
             break
 
-Paper Sissors Rock
-------------------
-
-As a challenge code the paper sissors rock game.
+Practical 2: Paper Sissors Rock
+-------------------------------
 
 Steps:
 

@@ -74,21 +74,23 @@ example::
 Often typos lead to these types of errors.
 
 
-Input
-=====
+User input
+==========
 
-We can make our programs interactive by using the `input` function::
+To make programs interactive use a function named `input`::
 
-    >>> input('Enter your name: ')
+    >>> name = input("Please enter your name: ")
+    Please enter your name: 
 
+When the interpreter meets `input` it:
+1. prints the string message passed as an argument to `input`,
+2. Buffers any characters typed
+3. On the enter returns the characters as a new String.
 
-`input` prints a message to the shell and waits for user input. Once the user
-types enter the program resumes and the `input` function returns the user input
-as a `str` object.
+Here the resultant string is assigned to the name `name`.
 
-Here we assign this user input to a name::
-
-    >>> name = input('Enter your name: ')  # we assign the inputted string.
+So if the user types in `Sophocles` then enter, a string obejct of value
+'Sophocles' is assinged to name.
 
 
 Reusability
