@@ -1,21 +1,6 @@
 Conclusions 
 ***********
 
-Abstractions
-============
-
-We have gone from step by step instructions to defining blocks of code in such
-a way as to define higher level concepts.
-
-Defining reusable components and the ability to repeat them is immensely powerful.
-
-Think of everything you can make from Lego bricks. Minecraft is a world build
-with cubes. In the real world think of all the components and repetition you
-typically find in a skyscraper.
-
-This is where programming starts to become creative. You can define the
-universe of things that is of interest to you.
-
 Programming Constructs
 ======================
 
@@ -36,35 +21,21 @@ to define a row of houses.
 
 This is how complex and useful programs are built.
 
-Object Oriented Programming
-===========================
 
-We have seen that Python offers a single compuational model. That of objects
-using passing themselves to each others' methods.
+Design
+======
 
-There are other programming paradigms. Procedural, functional, and logic
-programming exist. Object oriented is currently the most popular.
+We have gone from step by step instructions to defining blocks of code in such
+a way as to define higher level concepts.
 
-One aspect of object oriented programming we haven't explored is inheritance.
+Defining reusable components and the ability to repeat them is immensely powerful.
 
-Polymorphism
-============
+Think of everything you can make from Lego bricks. Minecraft is a world build
+with cubes. In the real world think of all the components and repetition you
+typically find in a skyscraper.
 
-Polymorphism means that different types respond to the same function.
-Polymorphism is a fancy word that just means the same function is
-defined on objects of different types. 
-
-It makes programming more intuitive and therefore easier.
-
-Python provides a set of special methods which are defined on many objects.
-Some on all. 
-
-These implement consistent behaviour for built in objects of different type.
-
-Protocols enable:
-
-* consistency - programmers can rely on intuition
-* special syntax - interpreter translates nice syntax to functions on objects.
+This is where programming starts to become creative. You can define the
+universe of things that is of interest to you.
 
 
 Exercises
