@@ -23,8 +23,8 @@ All turtle instructions are examples of calling functions attached to the turtle
     Functions and methods are very similar. Methods exist on objects however functions stand alone.
 
 
-objects
-=======
+Function objects
+================
 
 Just like everything else in Python a function is an object. Function objects are different in that they contain blocks of code.
 
@@ -35,7 +35,7 @@ Function objects have names. The name is assigned at the same time you define a 
 defining
 --------
 
-We create function objects by defining with special syntax::
+Creating function objects requires special syntax::
 
     >>> def my_function():
     ...     print('hello')    # Note 4 space indentation
@@ -113,8 +113,8 @@ Functions can have many arguments::
         turtle.left(angle)
         turtle.forward(length)
 
-Scope
-=====
+Scope & Namespaces
+==================
 
 We will use pythontutor to exercise visualising program execution.
 
