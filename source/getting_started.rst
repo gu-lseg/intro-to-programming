@@ -177,6 +177,8 @@ Koans
 
 Using your intuition try to complete the about_asserts koans.
 
+Visit the appendix on windows for getting started.
+
 ::
 
     C:\Users\greg-lo>\Python34\python.exe contemplate_koans.py about_asserts
