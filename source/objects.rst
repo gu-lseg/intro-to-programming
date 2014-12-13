@@ -16,7 +16,7 @@ An object is always an instance of a Type and the Type determines an objects':
 
 Here we revisit turtles and introduce two new types of objects. We focus on creation and manipulation.
 
-At the end we will know of 3 types of objects:
+By the end of this section we will have examined 3 types of objects:
 
 * Turtles - represent and manipulate graphics.
 * Strings - represent and manipulate text. 
@@ -57,7 +57,7 @@ Lets confirm the type of tess::
 Turtle is a special kind of object in that it produces new objects. We call it
 a constructor object.
 
-methods
+Methods
 -------
 
 We have already explored the various methods (behaviours) that exist on turtle
@@ -69,7 +69,7 @@ Strings
 
 Objects that are instances of type `str` represent text.
 
-creation
+Creation
 --------
 ::
 
@@ -91,7 +91,7 @@ notation to create them. A literal literraly represents an
 object and one is created and returned immediately. This is in contrast to
 constructor objects such as `str` or `Turtle`.
 
-methods
+Methods
 -------
 
 It is natural to expect methods that exist on string objects facilitate working with text.
@@ -113,7 +113,7 @@ Integers
 
 Objects that are instances of type `int` represent whole numbers.
 
-creation 
+Creation 
 --------
 
 ::
@@ -131,7 +131,7 @@ type `int`::
     >>> int('3')
     3
 
-methods
+Methods
 -------
 
 Objects of type `int` methods map to arithmetic enabling us to use them to 
