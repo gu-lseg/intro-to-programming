@@ -107,6 +107,9 @@ Exercises
 
 There are three types of programming materials.
 
+.. tip:: 
+    Instructions for running python and the koans are in the Appendix. 
+
 Turtles
 -------
 
@@ -134,5 +137,3 @@ Practicals
 These are programs you will be asked to write that have some real world value.
 
 
-Instructions for running python and the koans are in the Appendix. Go there
-now.
