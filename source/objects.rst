@@ -9,29 +9,59 @@ An Object:
 * Exists as a pattern of 0s and 1s in the computer's memory. 
 * Conceptually represents something of meaning to the programmer.
 
-We have created and manipulated turtle objects. Turtle objects represent pens
-that enable us to draw pictures.
-
-Here we will focus on two more types of objects: 
-* Strings represent and help manipulate text in our programs. 
-* Integers represent and help manipulate whole numbers in our programs.
-
-We will look at how to create and then manipulate these types of objects.
-
-Types
-=====
-
-An object is always an instance of a Type. The Type determines an objects':
+An object is always an instance of a Type and the Type determines an objects':
 
 * attributes
 * methods (behaviours)
 
-The function `type` returns the type of a passed object:: 
+Here we revisit turtles and introduce two new types of objects. We focus on creation and manipulation.
 
-    >>> type(5)
-    int
-    >>> type('5')
-    str
+At the end we will know of 3 types of objects:
+
+* Turtles - represent and manipulate graphics.
+* Strings - represent and manipulate text. 
+* Integers - represent and manipulate whole numbers.
+
+
+Turtles
+=======
+
+Turtle objects represent pens that enable us to draw pictures.
+
+Creation
+--------
+
+::
+
+    >>> from turtle import Turtle
+    >>> tess = Turtle()
+
+Breakdown:
+
+1. We import an object called Turtle from somewhere called turtle. 
+2. Turtle is called, creates a new object of type turtle, and returns it.
+3. This returned object is assigned to the name tess.
+
+.. tip::
+    We call an object by adding parenthesis at the end of its name. Here the
+    parenthesis are empty but then often aren't.
+
+Lets confirm the type of tess::
+
+    >>> type(tess)
+    turtle.Turtle
+
+.. tip:: 
+    The function `type` returns the type of a passed object.
+
+Turtle is a special kind of object in that it produces new objects. We call it
+a constructor object.
+
+methods
+-------
+
+We have already explored the various methods (behaviours) that exist on turtle
+objects.
 
 
 Strings 
@@ -43,6 +73,8 @@ creation
 --------
 ::
 
+    >>> str('hi')      # constructor
+    'hi'
     >>> "hi"           # literal
     hi
     >>> type('hi')     # confirm type
@@ -54,22 +86,27 @@ When you execute the code `"hi"` or `str("hi")`, the python interpreter:
 2. Gives it the value "hi"
 3. Returns this newly created object
 
+Creating strings is very common, so the python language gives us a shortcut
+notation to create them. A literal literraly represents an
+object and one is created and returned immediately. This is in contrast to
+constructor objects such as `str` or `Turtle`.
+
 methods
 -------
 
-What methods do string objects have?
+It is natural to expect methods that exist on string objects facilitate working with text.
+
+So what methods do string objects have?
 
 `str` functions::
 
-    >>> help("string")
+    >>> help(str)
 
-There are many. These facilitate working with text.
-Take time to visit the online documentation to get an overview.
+Visit the online documentation to get a good overview and discover new methods:
 
 https://docs.python.org/3.4/library/string.html
 
-Objects of type `str` represent text in our programs. String methods help
-manipulate text.
+We will revisit string methods in the Koans.
 
 Integers
 ========
@@ -78,15 +115,27 @@ Objects that are instances of type `int` represent whole numbers.
 
 creation 
 --------
+
 ::
 
+    >>> int(3)         # constructor 
+    3
     >>> 3              # literal
     3
     >>> type(5)        # confirm type
     int
 
+You can use the constructor `int` to convert objects of type `str` into objects of
+type `int`::
+
+    >>> int('3')
+    3
+
 methods
 -------
+
+Objects of type `int` methods map to arithmetic enabling us to use them to 
+solve basic math problems.
 
 ::
 
@@ -99,12 +148,15 @@ The arithmetic operations you'd expect are implemented on int objects::
     >>> 5 - 6
     -1
 
+Special syntax exists which enable manipulating `int` objects in ways that map
+directly to arithmetic. 
+
 Two objects of type `int`, separated by an arithmetic operators `*` `/` `-` `+`, have the
 exact behaviour we expect from basic arithmentic.
 
+This is an example of a python programming feature that exists
+to make working with `int` objects intuitive.
 
-Objects of type `int` represent whole numbers in our programs. Their methods
-map to arithmetic enabling us to use them to solve basic math problems.
 
 Exercises
 =========
@@ -112,60 +164,46 @@ Exercises
 '5' Vs 5
 --------
 
-What does the interpreter do when you type:: 
+Describe in detail what the interpreter does when you type the following and
+enter:: 
 
     >>> '5'
 
-Followed by enter?
-
-Same again for::
-
     >>> 5
 
-Describe every step.
 
-Strings, Integers, and +
-------------------------
+Strings, Integers, and the + operator
+-------------------------------------
 
-Both string and integer objects recognise the `+` symbol.
+Instances of both `str` and `int` objects recognise the `+` symbol.
 
-What output would you expect in the following?
+What output would you expect of the following lines of code?
 
 ::
 
-    >>> '1' + '2'
-    _____?
-    >>> 1 + 2
-    _____?
+    '1' + '2'
 
-Test your answer with python.
+    1 + 2
+
+Use the interpreter to test your answer with python.
 
 Try the same above but this time using `*` instead of `+`. What can you
 conclude of the meaning of `*`?
 
-Using the output of::
-
-    >>> help(str)
-    [ .... ]
-    >>> help(int)
-    [ .... ]
-
-Which double underscore function do you think might be at play?
-
 names and values
 ----------------
 
-Given this code::
+::
 
     five = "five"
 
-What is the difference between the meaning of each set of characters on either
-side of the equal sign?
+What does each set of characters on either side of the equal sign mean? 
 
-`str` functions 
----------------
 
-Using the `help`, for the `str` and the string 'abcabc' as an example find a method that:
+`str` methods 
+-------------
+
+Using the `help`, or the online documentation and a string (eg 'abcabc') find methods that:
 
 * confirms whether the string is alphabetical
 * confirms wether the string is alphnumerical
@@ -176,10 +214,12 @@ Using the `help`, for the `str` and the string 'abcabc' as an example find a met
 
 .. tip::
 
-    * docs https://docs.python.org/3/library/stdtypes.html#string-methods
+    https://docs.python.org/3/library/stdtypes.html#string-methods
 
-Koans - `str` functions
------------------------
+Koans & `str`
+-------------
+
+In these Koans we will spend time exploring `str` objects.
 
 :: 
 

@@ -34,7 +34,7 @@ Turtles
 Type::
 
     >>> from turtle import Turtle
-    >>> tess = Turtle()               # create a turtle object called tess
+    >>> tess = Turtle()
 
 .. image:: /images/turtle-init.png
 
