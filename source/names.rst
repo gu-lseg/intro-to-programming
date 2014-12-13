@@ -162,6 +162,14 @@ intuitive. Choose good names!
 Exercises
 =========
 
+names and values
+----------------
+::
+
+    five = "five"
+
+What does each set of characters on either side of the equal sign mean? 
+
 Age in 2050
 -----------
 

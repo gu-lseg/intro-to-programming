@@ -201,15 +201,6 @@ Use the interpreter to test your answer with python.
 Try the same above but this time using `*` instead of `+`. What can you
 conclude of the meaning of `*`?
 
-names and values
-----------------
-
-::
-
-    five = "five"
-
-What does each set of characters on either side of the equal sign mean? 
-
 
 `str` methods 
 -------------
