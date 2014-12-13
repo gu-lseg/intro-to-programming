@@ -214,7 +214,7 @@ Using the `help`, or the online documentation and a string (eg 'abcabc') find me
 
 .. tip::
 
-    https://docs.python.org/3/library/stdtypes.html#string-methods
+    https://docs.python.org/3.4/library/stdtypes.html#string-methods
 
 Koans & `str`
 -------------
