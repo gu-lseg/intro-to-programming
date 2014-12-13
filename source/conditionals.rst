@@ -58,8 +58,8 @@ values of x and y.
 
 For `int` objects the meaning of these operators maps to our expectations from math.
 
-if
-==
+if and elif
+===========
 
 The `if <boolean expression>:` followed by an indented block of code is syntax
 that means the interpreter will only execute the block of code if the
@@ -87,8 +87,8 @@ We can add multiple conditional branches by using `elif <boolean expression>:`
     ... else:
     ...     print('You are an adult')
 
-while
-=====
+while loops
+===========
 
 The `while <condition>:` construct is a way of instructing the interpreter to repeat
 indefinitely. Intuitively `break` is a keyword that instructs the
