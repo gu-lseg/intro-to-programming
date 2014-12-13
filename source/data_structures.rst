@@ -64,25 +64,39 @@ If you ask for an element that doesn't exist you will get an IndexError::
       File "<stdin>", line 1, in <module>
     IndexError: list index out of range
 
+range
+-----
+
+The `range` function combined with the `list` constructor is a shortcut way to create a list with a specified number of increasing integers::
+
+    >>> list(range(3))   # think: give me numbers up to 3
+    [0, 1, 2]
+
+It provides a handy way of doing things a certain number of times.
+
+::
+
+    >>> for i in range(2):
+    ...    print('hi') 
+    'hi'
+    'hi'
+
 
 Dictionaries
 ============
 
 Dictionaries contain key value mappings.
 
+They can be used to represent things as well. Here we use a dictinary to
+represent a Person.
+
 creation::
 
-    >>> {'name': 'Brian', 'age': 23, 'sex': 'M', 'status': 'Single'}  # literal
-    {'sex': 'M', 'age': 23, 'status': 'Single', 'name': 'Brian'}
-    >>> dict([('name', 'Brian'), ('age', 23), ('sex', 'M'), ('status', 'Single')])  # constructor
-    {'sex': 'M', 'age': 23, 'status': 'Single', 'name': 'Brian'}
-
-introspection::
-
+    >>> {'name': 'Brian', 'age': 23, 'sex': 'M'}              # literal
+    >>> dict([('name', 'Brian'), ('age', 23), ('sex', 'M')])  # constructor
     >>> type(person)
     <class 'dict'>
-    >>> dir(person)
-    [ ... many methods ... ]
+
 
 Special syntax for extracting and updating an attribute::
 
@@ -92,28 +106,14 @@ Special syntax for extracting and updating an attribute::
     >>> person['name']
     'Name'
 
-.. tip::
-    Dictionaries are very useful, however their usage overlaps somewhat with Classes
-    (more on that later). 
-
-KeyError
---------
-
-If you request a non-existent key you get this error::
-
-    >>> {'a':1}['b']
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    KeyError: 'b'
+If you request a non-existent key you get a `KeyError`.
 
 Nested
 ======
 
-Data structures can take any object including other data structures.
+Data structures can include any type of object including other data structures.
 
-Here are some examples.
-
-A list of dictionaries::
+Here is a list of dictionaries::
 
     >>> persons = [
             {'name': 'Naomi', 'age': 32, 'sex': 'F', 'status': 'Single'},
@@ -123,17 +123,128 @@ A list of dictionaries::
 
 Nested data structures are extremely common.
 
+
+
+for loops
+=========
+
+Use `for` to iterate over each item in a given list.
+
+Here by iterate through a list of `str` objects we change the colour of our
+turtle alex.
+
+::
+
+    from turtle import Turtle, exitonclick   
+
+    alex = Turtle()
+
+    for a_colour in ["yellow", "red", "purple", "blue"]:
+       alex.color(a_colour)
+       alex.forward(50)
+       alex.left(90)
+
+    exitonclick()
+
+.. tip::
+    Loops are flow control statements which work hand in hand with data structures. 
+
+
+Refactoring `square`
+--------------------
+
+We refactor `square` combining `range` with a for loop.
+
+::
+
+    def square(side):
+        for i in range(4):
+            turtle.forward(side)
+            turtle.left(90)
+
+Drawing a square is reduced to repeating the same action four times. 
+
+Thanks to the for loop our definition of a square in code:
+* is shorter and more readable.
+* communicates an insight into the geometry of a square.
+
+
 Exercises
 =========
 
 Koans
 -----
 
-Lists::
+::
 
     > python3 contemplate_koans.py about_lists
-    
-Dictionaries::
-    
     > python3 contemplate_koans.py about_dictionaries
 
+
+Looping `turtles`
+-----------------
+
+Using the following as template draw this:
+
+.. image:: /images/turtle-queue.png
+
+`turtle_queue.py`::
+
+    import turtle
+
+    number_of_turtles = 4
+
+    turtles = []
+    for _ in range(number_of_turtles):
+        turtles.append(turtle.Turtle())
+
+    # position point of origin at bottom left of window
+    turtle.setworldcoordinates(0, 0, 600, 600)
+
+    for i, turtle_ in enumerate(turtles):
+        turtle_.up()
+
+    # Evenly space out the turtles
+    for i, turtle_ in enumerate(turtles):
+        ypos = 600 / number_of_turtles * i
+        turtle_.setpos(0, ypos)
+
+    for i, turtle_ in enumerate(turtles):
+        turtle_.down()
+
+    ###################################
+    # Your turn! Enter your code here #
+    ###################################
+
+Refactor `shapes.py`
+--------------------
+
+Refactor all the shapes in `shapes.py` and make good use of loops where you
+can.
+
+Hexagon
+-------
+
+Write code that draws this:
+
+.. image:: /images/turtle-hexagon.png
+
+
+Honeycomb
+---------
+
+Write code that draws this:
+
+.. image:: /images/turtle-honeycomb.png
+
+
+Any Shape
+---------
+
+Write code that draws this:
+
+.. image:: /images/turtle-all-shapes.png
+
+.. tip::
+
+    The sum of the external angles of any shape is always 360 degrees.

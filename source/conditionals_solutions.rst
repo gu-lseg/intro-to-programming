@@ -1,3 +1,20 @@
+Loan
+====
+::
+    In [124]: while balance > 0:
+        compound_interest = 0.1 * balance
+        print('balance: ' + str(balance))
+        balance = balance + compound_interest - 20
+       .....:
+    balance: 100.0
+    balance: 90.0
+    balance: 79.0
+    balance: 66.9
+    balance: 53.59
+    balance: 38.949000000000005
+    balance: 22.843900000000005
+    balance: 5.128290000000007
+
 Turtles joypad
 ==============
 
