@@ -3,66 +3,47 @@ Data Structures
 
 Data structures or collections contain other objects. 
 
-They are meant to keep a collection of objects together.
-
 We will look at two: `lists`, `dictionaries`.
 
-It takes some time and practice knowing when to use each.
+The methods that interest us are accessing and updating items within the collections. 
 
-The functions that interest us are accessing and updating elements of the structures. Also typically collections almost always combine with iteration. Which means going through each of the
-members of the collection and effecting some action.
-
-We will leave a more indepth investigation of the various methods to the Koans. Also see the python tutorial: 
-
-https://docs.python.org/2/tutorial/datastructures.html
+Collections go hand in hand with iteration. Often we want to do something for each
+member in a data structure. 
 
 As always first we explore how to create objects using literals and
-constructors, then we examine some functions typical of each object.
+constructors, we then examine some methods typical of each object.
+
+Then we introduce the for loop which enables easy iteration over any data
+structure.
 
 Lists
 =====
 
-Lists are container objects. They contain ordered items.
+Lists are container objects. A list object contains ordered items.
 
 creation:: 
 
-    >>> pythons = ['John Cleese', 'Eric Idle', 'Michael Palin', 'Terry Gilliam']
-    >>> list(['John Cleese', 'Eric Idle', 'Michael Palin', 'Terry Gilliam'])
-    ['John Cleese', 'Eric Idle', 'Michael Palin', 'Terry Gilliam']
-    >>> abc = list('abc')              # the list constructor can take a string
-    >>> abc
+    >>> ['John', 'Eric', 'Michael', 'Terry']          # literal
+    >>> list(['John', 'Eric', 'Michael', 'Terry'])    # constructor
+    >>> list('abc')                    # the list constructor can take a string
     ['a', 'b', 'c']                    # the result is a list of its characters
-
-introspection::
-    
-    >>> type(pythons)
+    >>> type([1, 2, 3])
     <class 'list'>
-    >>> dir(pythons)
-    [ ... many methods ... ]
 
 special syntax methods:: 
 
     >>> abc = ['a', 'b', 'c']
-    >>> abc[0]                        # extract elements
+    >>> abc[0]                        # extract item
     'a'
-    >>> abc[2] = 'd'                  # assignment
+    >>> abc[2] = 'd'                  # update item
     >>> abc
     ['a', 'b', 'd']
 
+
 .. tip::
-    Lists are very useful. Only the most trivial programs don't use them.
+    Lists are 0 indexed. The first item is at index 0, the second at 1...
 
-IndexError
-----------
-
-Lists and tuples are zero indexed. The first element is at index 0.
-
-If you ask for an element that doesn't exist you will get an IndexError::
-
-    >>> [][0]
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    IndexError: list index out of range
+If you ask for an item that is outside of the list's length you will get an IndexError
 
 range
 -----
@@ -87,29 +68,27 @@ Dictionaries
 
 Dictionaries contain key value mappings.
 
-They can be used to represent things as well. Here we use a dictinary to
+They can be used to collect information (data) about something. Here we use a dictinary to
 represent a Person.
 
 creation::
 
     >>> {'name': 'Brian', 'age': 23, 'sex': 'M'}              # literal
     >>> dict([('name', 'Brian'), ('age', 23), ('sex', 'M')])  # constructor
-    >>> type(person)
-    <class 'dict'>
-
 
 Special syntax for extracting and updating an attribute::
 
-    >>> person['name']
+    >>> person = {'name': 'Brian', 'age': 23, 'sex': 'M'}
+    >>> person['name']                          # extract value
     'Brian'
-    >>> person['name'] = 'Naomi'
+    >>> person['name'] = 'Naomi'                # update value
     >>> person['name']
     'Name'
 
 If you request a non-existent key you get a `KeyError`.
 
-Nested
-======
+Nesting Data Structures
+=======================
 
 Data structures can include any type of object including other data structures.
 
@@ -121,8 +100,8 @@ Here is a list of dictionaries::
             {'name': 'Brian', 'age': 23, 'sex': 'M', 'status': 'Single'}
         ]
 
-Nested data structures are extremely common.
-
+.. tip::
+    Nested data structures are extremely common.
 
 
 for loops
