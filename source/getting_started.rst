@@ -117,6 +117,12 @@ Try any previously used functions and get into habit of automatically doing this
 
 Find some new turtle object methods and experiment.
 
+.. tip::
+
+    As you experiment you will want to do know how to do new things. Get into
+    the habit of exploring the documenation to see what you can do.
+
+
 Shapes
 ------
 
@@ -129,7 +135,9 @@ Put all code inside a file named `shapes.py` to be executed using::
 
 Shapes:
 
-* Draw a square as in the following picture. Squares have right angles which are 90 degrees.
+* Draw a square as in the following picture. 
+  
+.. tip:: Squares have right angles which are 90 degrees.
 
 .. image:: /images/turtle-square.png
 
@@ -140,15 +148,19 @@ Shapes:
 .. image:: /images/turtle-rectangle.png
 
 
-* Draw an equilateral triangle. An equilateral triangle has 3 sides of equal length and each corner has an angle of 60 degrees.
+* Draw an equilateral triangle. 
 
-Now, draw many squares. Each one tilted left of the previous. Experiment with the angles between the individual squares.
+.. tip:: An equilateral triangle has 3 sides of equal length and each corner has an angle of 60 degrees.
+
+* Draw many squares. Each square should be tilted left of the previous. 
 
 .. image:: /images/turtle-many-squares.png
 
-The picture shows three 20 degree turns. You could try 30 and 40...
+Experiment with the angles between the individual squares. The picture shows three 20 degree turns. You could try 30 and 40...
 
-Combining previous code, draw a simple house.
+* Draw a simple house.
+
+.. tip:: Reuse the code you have already written.
 
 
 Koans
