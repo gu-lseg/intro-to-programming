@@ -19,9 +19,18 @@ Interactive coding
 
 One way to run python is by using the interactive interpreter.
 
-Type `python` without anything following to enter the interactive shell::
+One way to enter the python interpreter is through `cmd.exe`:
 
-    C:\Users\greg-lo>\Python34\python.exe
+1. Press the two keys Windows + R together
+2. Enter `cmd.exe` in the search prompt and enter.
+
+A window will appear with a prompt:: 
+
+    C:\Users\greg-lo>
+
+Type `python3` to enter the interactive shell::
+
+    C:\Users\greg-lo>python3
     Python 3.4.2rc1 (v3.4.2rc1:8711a0951384, Sep 21 2014, 21:16:45) [MSC v.1600 32 b
     it (Intel)] on win32
     Type "help", "copyright", "credits" or "license" for more information.
