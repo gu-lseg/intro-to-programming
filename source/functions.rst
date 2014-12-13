@@ -116,6 +116,43 @@ Functions can have many arguments::
 Scope
 =====
 
+We will use pythontutor to exercise visualising program execution.
+
+http://www.pythontutor.com/visualize.html#mode=edit
+
+Copy this code into the browser editor::
+    
+    x = 1
+    y = 2
+    success = 'works'
+    failure = 'broken'
+
+    def inc(p):
+        incremented = p + 1
+        return incremented
+
+    def print_result(result):
+        if result:
+            print(success)
+        else:
+            print(failure)
+
+    inc_x = inc(x)
+    print_result(inc_x == y)
+
+
+Step through each line of code in the browser.
+
+After stepping through a few times you will get something like this:
+
+.. image:: /images/inc_visualisation.png
+
+You will notice that when execution enters a function, a new 'frame' is
+created. This frame is isolated from the previous frame.
+
+In effect the interpreter creates a new namespace. This namespace is emtpy
+unless parameters pass names and their values.
+
 
 Exercises
 =========
