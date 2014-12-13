@@ -20,6 +20,7 @@ actions: point, click, drag. Using these you can launch programs and move files.
 The `cmd.exe` program offers the same interaction but using typed commands:
     
 When `cmd.exe` launches you get a prompt:: 
+
     C:\Users\greg-lo>
 
 The prompt gives you your currnent location followed by a `>`. 
@@ -27,6 +28,7 @@ Here I am in the directory `greg-lo` which itself is in the directory `Users`.
 `C` refers the hardrive I am on.
 
 Now you enter the `dir` command:: 
+
     C:\Users\greg-lo> dir
 
 This will list all the files and folders in your current directory.
@@ -42,12 +44,11 @@ Here are all the commands you need for this course:
 * unzip - unzip a zipped (compressed) file
 
 .. tip::
-    Remeber there is nothing here that you aren't very familiar doing with the
-    mouse. If necessary use the windows system with your mouse to orientate
-    yourself.
+    There is nothing here that you aren't familiar doing with the
+    mouse. If necessary use your mouse to orientate yourself.
 
-Python Interpreter
-==================
+The Python Interpreter
+======================
 
 When you install python in windows it gives you the option to add the
 executable (`python.exe`) to your system path. 
@@ -69,10 +70,11 @@ Unfortunately we need to specify the full path each time: `\Python34\python.exe`
     work in the interpreter.
 
     The interpreter has `>>>` as its prompt
+
     The command shell has the file path eg `C:\Users\greg-lo\>`
 
-Koans
-=====
+Running the Koans
+=================
 
 Setup 
 -----
@@ -121,16 +123,22 @@ Note the section that asks you to mediate on a file with a line number.
 Answering
 ---------
 
-Open this file in SublimeText. You can find SublimeText in the Start search prompt.
+Open this file in SublimeText. Find SublimeText in the Start search prompt.
 
 Open the file as specified by the output of `contemplate_koans`. In the above
 case:
 
 * open `C:\Users\greg-lo\python-koans-master\koans\about_asserts.py`
-* Go to line 13 and replace `____` with True. 
+* Go to line 13 and replace `False` with `True`. 
 * Save the file. 
 * Rerun the Koans     
-     `C:\Users\greg-lo>\Python34\python.exe contemplate_koans.py about_asserts`
 
 You should find that one line has gone Green and you now have a new challenge.
 
+.. tip::
+    Arrange the windows on your screen so that you have your text editor on one
+    side and two `cmd.exe`s on the right one above the other. 
+    
+    Have the command prompt open in one for running the koans.
+
+    Have the python interpreter in the other for experimenting with code.
