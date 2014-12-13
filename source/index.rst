@@ -15,8 +15,8 @@ Table of Contents:
    getting_started
    objects
    names
-   functions
    conditionals
+   functions
    data_structures
    loops
    conclusions
