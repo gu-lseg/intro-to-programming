@@ -14,46 +14,38 @@ Our world contains objects and we classify these according to types.
 
 In a classroom there many objects that are instances of the type Chair. You also have many objects that are instances of the type Person.
 
-Chairs have attributes. They have four legs and a back. Typically Persons 
-have two legs, two arms, one head... 
+Objects have:
 
-Objects have behaviours. An object of type Person can walk.
+* Attributes - Chairs have four legs. 
+* Behaviours (called methods) - Persons can walk.
 
-Objects of different types can interact together. An object of type Person can
+Objects can interact even if they are of different types. An object of type Person can
 sit on an object of type Chair.
 
 This is the essence of object oriented thinking. It is about using programmatic 
-objects to model something an area of interest.
+objects to model something of interest to a programmer.
 
 This style of programming provides a clear, simple, and consistent model of computation
-that maps well to our intuitions.
+that maps well to our intuitions about the world.
 
 Python
 ======
 
 This course uses Python to introduce Object Oriented programming.
 
-Python is chosen as it is a simple, high-level, object oriented programming language. It's very popular in both the academic world and widely used in industry. 
+Python is a simple to learn yet fully featured, high-level, object oriented programming language. It's popular both in academia and industry. 
 
 The concepts however will apply to most other object oriented languages. 
 
 Python consists of two things:
 
-* an Interpreter - Creates and maintains an environment within which it interprets the python language.
-* a Language - Used to refer, create, and interact with objects in an environment.
-
-We can interact with the interpreter in 3 different ways:
-
-* running code from a file
-* interactive coding using the python interpreter
-* step by step execution using `pdb` the python debugger
-
-These approaches complement each other.
+* Language - Expresses the creation and interaction of objects in an environment.
+* Interpreter - Creates and maintains an environment within which it translates language instructions to actually create and manipulate objects.
 
 Language goals
 ==============
 
-Our goal is move from::
+Our goal is move from step by step instructions such as::
 
     turtle.forward(100)
     turtle.left(90)
@@ -64,7 +56,7 @@ Our goal is move from::
     turtle.forward(100)
     turtle.left(90)
 
-to::
+to expressing the same thing but using richer language constructs::
 
     def square(side):
         for i in range(2):
@@ -75,21 +67,28 @@ to::
 Abstractions
 ============
 
-A novice can read the above and make some sense of it. Intuition helps because
-the developer who wrote the code defined a good level of abstraction over the 
-complex details.
+Why is the second snippet of code above better than the first? 
 
-This course illustrats that creative programming is aobut constructing abstractions useful to an area of interest.
+Note that ultimately the computer only knows how to execute step by step instructions anyway.
+
+Computers are complex. Even the smallest operation hides layers of incredible
+complexity. Programming is not only about getting a computer to do things. It is about
+writing code that is useful to humans.
+
+The result of good programming is code that is understandable to humans. As
+programmers we harness complexity by writing code that rhymes with our
+intuitions. Good code is code that we can use with a minimal amout of context
+and already be productive.
+
+The above code called `square` can be understood even by a non programmer. Intuition
+helps because the code is defined at the appropriate level of abstraction over the complex details for understanding to take place.
+
+This course illustrates that creative programming is aobut constructing useful abstractions. It is also about exercising your intuition to make you more productive.
 
 By calling::
 
     >>> square(100)
 
-
-the result is the same as executing all the 8 lines of previous code. 
-
-The interpreter is indifferent to the two bits of code. It is the
-longer snippet that will be executed anyway.
 
 But there are two major advantages for us programmers:
 
