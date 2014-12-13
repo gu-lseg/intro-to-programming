@@ -9,6 +9,17 @@ An Object:
 * Exists as a pattern of 0s and 1s in the computer's memory. 
 * Conceptually represents something of meaning to the programmer.
 
+The function `id` returns the location in memory of a passed object::
+
+    >>> id(tess)
+    4428974960
+
+So our digital tess lives at the above address in our computer memory chip.
+
+.. tip::
+
+    In practice we don't typically need to know what location our objects are at.
+
 An object is always an instance of a Type and the Type determines an objects':
 
 * attributes

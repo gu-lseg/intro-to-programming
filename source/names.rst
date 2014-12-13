@@ -1,33 +1,41 @@
 Names
 *****
 
-To work effectively with objects we need a way to refer to them.
-
 Names are like the nouns we use in every day speach.
 
-Names help: 
+::
 
-- make programming efficient. 
-- capturing meaning. 
+    >>> tess = Turtle()
+
+
+To work effectively with objects we need a way to refer to them. A person
+object is always referred to by a name.
 
 A name doesn't exist in the environment. Its not an object. It is part of
-the language (the code) that we use to refer to that world of objects. 
+the language (the code) that we use to refer to single objects in our
+environment.
 
-Just like the name 'greg' doesn't exist in the real world. It is a name that
-refers to one or more objects of type Person.
+For example the name 'greg' doesn't exist in the world. It is a part of language that
+refers to a single instance object of type Person.
 
-In actuality a name is a symbol that is immediately replaced by the interpreter 
-with an address in memory. A name points to an object's location in memory.
+Programmatically a name points to an object's location in memory. In a way it is 
+synonmymous with the `id` of the object it refers to.
 
-In a way it is synonmymous with the `id` of the object it refers to.
+Just like humans resolve 'greg' to the person in a room, when the interpreter
+encouters a name it resolves that name by looking up the location in memory it
+points to.
+
+A name effectively tells the interpreter how to find the object you are referring to.
 
 .. tip::
 
-    If you find yourself needing to replace many similar values in order
-    to update your code, using names is worth considering.
+    Names and variables can be used interchangeably. We use 'name' because
+    Python uses this terminology.
 
 Assignment
 ==========
+
+Unlike in maths, the equals symbol means assignment not equality.
 
 Naming integer objects::
 
@@ -37,8 +45,6 @@ Naming integer objects::
 Naming a string object::
 
     >>> first_name = "greg"
-
-Unlike in maths, the equals symbol means assignment not equality.
 
 The interpreter executes the code `x = 5` as:
 
@@ -133,18 +139,25 @@ If you change your mind you need only update one value.
 Note that our programatic definition mirrors the mathematical defintion in
 that the lenguth of a square's side is irrelevant to its nature as a square.
 
+
 .. tip::
 
-    The name `right_angle` was chosen to refer to an `int` of value 90. 
+    If you find yourself needing to replace many similar values in order
+    to update your code, using names is worth considering.
 
-    We could have used `thirty_degree_angle`, `angle`, or `awef` and the code would work fine. However:
+Good Naming
+-----------
 
-    * `thirty_degree_angle` is misleading
-    * `angle` is better, perhaps ok but vague
-    * `dezwbpe` is nonsense and conveys no meaning
+The name `right_angle` was chosen to refer to an `int` of value 90. 
 
-    By choosing appropriate names you make the code more readable and
-    intuitive. Choose good names!
+We could have used `thirty_degree_angle`, `angle`, or `awef` and the code would work fine. However:
+
+* `thirty_degree_angle` is misleading
+* `angle` is better, perhaps ok but vague
+* `dezwbpe` is nonsense and conveys no meaning
+
+By choosing appropriate names you make the code more readable and
+intuitive. Choose good names!
 
 Exercises
 =========
