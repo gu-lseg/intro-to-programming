@@ -12,15 +12,15 @@ Object oriented programming
 
 Our world contains objects and we classify these according to types.
 
-In a classroom there many objects that are instances of the type Chair. You also have many objects that are instances of the type Person.
+For example in a classroom there many objects that are instances of the type Chair. You also have many objects that are instances of the type Person.
 
 Objects have:
 
 * Attributes - Chairs have four legs. 
 * Behaviours (called methods) - Persons can walk.
 
-Objects can interact even if they are of different types. An object of type Person can
-sit on an object of type Chair.
+Objects can interact with other objects of different types. An object of type Person can
+sit on an object of type Chair. 
 
 This is the essence of object oriented thinking. It is about using programmatic 
 objects to model something of interest to a programmer.
@@ -80,26 +80,25 @@ programmers we harness complexity by writing code that rhymes with our
 intuitions. Good code is code that we can use with a minimal amout of context
 and already be productive.
 
-The above code called `square` can be understood even by a non programmer. Intuition
-helps because the code is defined at the appropriate level of abstraction over the complex details for understanding to take place.
-
-This course illustrates that creative programming is aobut constructing useful abstractions. It is also about exercising your intuition to make you more productive.
-
 By calling::
 
     >>> square(100)
 
+The above code called `square` can be understood even by a non programmer. Intuition
+helps because the code is defined at the appropriate level of abstraction over the complex details for understanding to take place.
 
-But there are two major advantages for us programmers:
+The two major advantages are:
 
-* the detail and complexity is gone. A user can fire and forget, relying 
+* detail and complexity is hidden. A user can fire and forget, relying 
   on intuition to get her job done.
 * the definition of the function object called `square` is shorter clearer
   and truer to its mathematical (conceptual) definition.
 
-By defining and composing layers of abstraction we arrive at ever more 
-useful programs.
 
+This course illustrates that creative programming is about constructing useful
+abstractions. It is also about exercising your intuition to make you more
+productive. By defining and composing layers of abstraction we arrive at ever
+more useful programs.
 
 Exercises
 =========
