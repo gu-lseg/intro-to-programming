@@ -147,25 +147,6 @@ parameters are passed.
     however think of them as the same.
 
 
-Floats
-======
-
-`int` objects have enabled us to represent programs that solve arithemtic for
-whole numbers. This is sufficient for problems which deal exclusively with
-whole numbers such as age, and days. It is insufficient for numbers that have
-a value beyond the decimal point.
-
-`float` objects represent rational numbers, numbers that have a decimal value.
-
-::
-
-    >>> type(3.0)        # literal
-    <class 'float'>
-    >>> float('3.4')     # constructor can convert from str
-
-All operators we saw defined on `int` work on `float` so it fits quite
-naturally with our intuitions.
-
 Exercises
 =========
 

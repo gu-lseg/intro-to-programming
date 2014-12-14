@@ -82,9 +82,34 @@ indefinitely. The condition defines when the loop will terminate.
     cold
     cold
 
+|py-while|
+
+.. |py-while| raw:: html
+
+    <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=import+random%0Awarm+%3D+20%0Atemperature+%3D+18%0Awhile+temperature+%3C%3D+warm%3A%0A++++print('Its+'+%2B+str(temperature)+%2B+'+degrees.+Wrap+up.')%0A++++temperature+%3D+random.randrange(5,+25)%0A++++%0Aprint('Thats+all+for+now')&origin=opt-frontend.js&cumulative=false&heapPrimitives=false&drawParentPointers=false&textReferences=false&showOnlyOutputs=false&py=3&rawInputLstJSON=%5B%5D&curInstr=0&codeDivWidth=350&codeDivHeight=400"> </iframe>
+
 .. tip::
     Use while if you don't when you only know a loop will terminate in a given
     condition.
+
+Floats
+======
+
+`int` objects have enabled us to represent programs that solve arithemtic for
+whole numbers. This is sufficient for problems which deal exclusively with
+whole numbers such as age, and days. It is insufficient for numbers that have
+a value beyond the decimal point.
+
+`float` objects represent rational numbers, numbers that have a decimal value.
+
+::
+
+    >>> type(3.0)        # literal
+    <class 'float'>
+    >>> float('3.4')     # constructor can convert from str
+
+All operators we saw defined on `int` work on `float` so it fits quite
+naturally with our intuitions.
 
 
 Exercises
