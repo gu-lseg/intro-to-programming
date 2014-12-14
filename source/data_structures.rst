@@ -149,6 +149,7 @@ We refactor `square` combining `range` with a for loop.
 Drawing a square is reduced to repeating the same action four times. 
 
 Thanks to the for loop our definition of a square in code:
+
 * is shorter and more readable.
 * communicates an insight into the geometry of a square.
 
