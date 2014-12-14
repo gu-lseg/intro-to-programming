@@ -70,7 +70,7 @@ example::
 These types of errors usually mean a typo.
 
 Visualising Namespace
-=====================
+---------------------
 
 Programmatically a name points to an object's location in memory. In a way it is 
 synonmymous with the `id` of the object it refers to.
