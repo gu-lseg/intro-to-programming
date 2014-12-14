@@ -9,7 +9,7 @@ A shortcut:
 
 1. Press `Windows + R` (the two keys together)
 2. A search prompt pops up.
-3. enter `cmd.exe` and select it
+3. Type `cmd.exe` and press enter. 
 
 Command line 101
 ================
@@ -57,8 +57,8 @@ Unfortunately we need to specify the full path each time: `\Python34\python.exe`
 
 ::
 
-    C:\Users\greg-lo>\Python34\python.exe
-    Python 3.4.2rc1 (v3.4.2rc1:8711a0951384, Sep 21 2014, 21:16:45) [MSC v.1600 32 b
+    C:\Users\greg-lo>python
+    Python 3.4.2 (v3.4.2:8711a0951384, Sep 21 2014, 21:16:45) [MSC v.1600 32 b
     it (Intel)] on win32
     Type "help", "copyright", "credits" or "license" for more information.
     >>>

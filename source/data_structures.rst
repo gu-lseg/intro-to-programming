@@ -1,25 +1,22 @@
 Data Structures
 ***************
 
-Data structures or collections contain other objects. 
+Data structures contain other objects. We will look at two: `lists`, `dictionaries`.
 
-We will look at two: `lists`, `dictionaries`.
-
-The methods that interest us are accessing and updating items within the collections. 
-
-Collections go hand in hand with iteration. Often we want to do something for each
-member in a data structure. 
+Typical methods defined on data structures are ones that allow access and
+update items within it.
 
 As always first we explore how to create objects using literals and
 constructors, we then examine some methods typical of each object.
 
-Then we introduce the for loop which enables easy iteration over any data
-structure.
+Second, we often want to do something for each item in a data structure. This
+involves 'iterating' over it. We do this using the for loop.
+
 
 Lists
 =====
 
-Lists are container objects. A list object contains ordered items.
+A list object contains ordered items.
 
 creation:: 
 
@@ -48,12 +45,12 @@ If you ask for an item that is outside of the list's length you will get an Inde
 range
 -----
 
-The `range` function combined with the `list` constructor is a shortcut way to create a list with a specified number of increasing integers::
+The `range` function combined with the `list` constructor is a fast way to create a list with a specified number of increasing integers::
 
     >>> list(range(3))   # think: give me numbers up to 3
     [0, 1, 2]
 
-It provides a handy way of doing things a certain number of times.
+It provides a way of doing things a certain number of times.
 
 ::
 
@@ -100,6 +97,9 @@ Here is a list of dictionaries::
             {'name': 'Brian', 'age': 23, 'sex': 'M', 'status': 'Single'}
         ]
 
+Think how this could be useful for example to store information about all
+students in a class.
+
 .. tip::
     Nested data structures are extremely common.
 
@@ -124,9 +124,6 @@ turtle alex.
        alex.left(90)
 
     exitonclick()
-
-.. tip::
-    Loops are flow control statements which work hand in hand with data structures. 
 
 
 Refactoring `square`

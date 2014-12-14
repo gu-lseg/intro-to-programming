@@ -141,9 +141,9 @@ Koans - Control Statements
 
 ::
 
-    > python3 contemplate_koans.py about_true_and_false
+    > python contemplate_koans.py about_true_and_false
 
-    > python3 contemplate_koans.py about_control_statements
+    > python contemplate_koans.py about_control_statements
 
 
 Practical: Turtles Joypad

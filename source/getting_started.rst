@@ -30,8 +30,8 @@ A window will appear with a prompt::
 
 Type `python3` to enter the interactive shell::
 
-    C:\Users\greg-lo>python3
-    Python 3.4.2rc1 (v3.4.2rc1:8711a0951384, Sep 21 2014, 21:16:45) [MSC v.1600 32 b
+    C:\Users\greg-lo>python
+    Python 3.4.2 (v3.4.2:8711a0951384, Sep 21 2014, 21:16:45) [MSC v.1600 32 b
     it (Intel)] on win32
     Type "help", "copyright", "credits" or "license" for more information.
 
@@ -139,7 +139,7 @@ Lets program some shapes. We do this by breaking down into step by step instruct
 
 Put all code inside a file named `shapes.py` to be executed using::
     
-    python3 shapes.py
+    python shapes.py
 
 
 Shapes:
@@ -181,10 +181,9 @@ Visit the appendix on windows for getting started.
 
 ::
 
-    C:\Users\greg-lo>\Python34\python.exe contemplate_koans.py about_asserts
+    C:\Users\greg-lo>python contemplate_koans.py about_asserts
 
 .. tip::
 
     Try copying small lines of code into the python interpreter to experiment 
     interactively with the code. Do this whenever you are stuck.
-

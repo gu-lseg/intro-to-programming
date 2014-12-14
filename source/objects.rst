@@ -225,5 +225,5 @@ In these Koans we will spend time exploring `str` objects.
 
 :: 
 
-    python3 contemplate_koans.py about_strings
-    python3 contemplate_koans.py about_strings_manipulation
+    python contemplate_koans.py about_strings
+    python contemplate_koans.py about_strings_manipulation
