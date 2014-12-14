@@ -81,7 +81,7 @@ To make programs interactive use a function named `input`::
 When the interpreter meets `input` it:
 
 1. prints the string message passed as an argument to `input`,
-2. Buffers any characters typed
+2. Buffers (stores) any characters typed
 3. On the enter returns the characters as a new String.
 
 Here the resultant string is assigned to the name `name`.
