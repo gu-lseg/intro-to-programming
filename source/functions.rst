@@ -116,6 +116,14 @@ Functions can have many arguments::
 Scope & Namespaces
 ==================
 
+We have seen two ways to add to a given namespace:
+
+1. An assignment statement adds a name that references an object.
+2. A function definition associates a name with an object of type function.
+
+Functions however create a namespace that is relative only to its block of
+code.
+
 We will use pythontutor to exercise visualising program execution.
 
 http://www.pythontutor.com/visualize.html#mode=edit
@@ -147,12 +155,25 @@ After stepping through a few times you will get something like this:
 
 .. image:: /images/inc_visualisation.png
 
+
 You will notice that when execution enters a function, a new 'frame' is
 created. This frame is isolated from the previous frame.
 
 In effect the interpreter creates a new namespace. This namespace is emtpy
 unless parameters pass names and their values.
 
+.. tip::
+
+    A namespace and a frame are different objects. For the purpose of this course 
+    however think of them as the same.
+
+Programmatically a name points to an object's location in memory. In a way it is 
+synonmymous with the `id` of the object it refers to.
+
+When the interpreter encouters a name it resolves that name by looking up the
+location in memory it points to.
+
+A name effectively tells the interpreter how to find the object you are referring to.
 
 Exercises
 =========

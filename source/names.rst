@@ -3,26 +3,18 @@ Names
 
 Names are like the nouns we use in every day speach.
 
-::
-
-    >>> tess = Turtle()
-
-
 To work effectively with objects we need a way to refer to them. A person
-object is always referred to by a name.
+object is always referred to by a name (eg 'greg').
 
-A name doesn't exist in the same way an object does. It is part of
-the language (the code) that we use to refer to single objects in our
-namespace (environment).
+When the interpreter is launched it creates an empty namespace. A namespace is
+where python stores names that refer to objects.
 
-Likewise the name 'greg' doesn't exist in the world. It is a part of language that
-refers to a single instance object of type Person.
+Assignment is how we add populate the interpreters' namespace.
 
 Programmatically a name points to an object's location in memory. In a way it is 
 synonmymous with the `id` of the object it refers to.
 
-Similar to how we resolve 'greg' to the person in a room, when the interpreter
-encouters a name it resolves that name by looking up the location in memory it
+When the interpreter encouters a name it resolves that name by looking up the location in memory it
 points to.
 
 A name effectively tells the interpreter how to find the object you are referring to.
@@ -37,19 +29,17 @@ Assignment
 
 Unlike in maths, the equals symbol means assignment not equality.
 
-Naming integer objects::
+Naming objects::
 
-    >>> x = 5
-    >>> four = 4
+    >>> four = 4              # naming int object
+    >>> first_name = "greg"   # naming str object
+    >>> tess = Turtle()       # naming a turtle object
 
-Naming a string object::
+The interpreter executes the code `four = 4` as:
 
-    >>> first_name = "greg"
-
-The interpreter executes the code `x = 5` as:
-
-* Create an object of type `int` of value 5
-* Name that object `x`
+* Create an object of type `int` of value 4.
+* Add the name `x` to the current namespace.
+* Ensure the `x` points to the `int` object created of value 4.
 
 From the point of definition onwards the programmer can now refer to that
 object by using the name `x`.

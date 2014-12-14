@@ -107,17 +107,43 @@ Methods
 
 It is natural to expect methods that exist on string objects facilitate working with text.
 
-So what methods do string objects have?
+How do we discover what methods do string objects have? 
 
-`str` functions::
+Documentation is available in the interpreter::
 
     >>> help(str)
 
-Online documentation for overview and methods: |string_docs|
+See also online documentation: |string_docs|
 
 .. |string_docs| raw:: html
 
     <a href="https://docs.python.org/3.4/library/string.html" target="_blank">https://docs.python.org/3.4/library/string.html</a>
+
+Questions
+---------
+
+Using `help`, or online documentation and using a string (eg 'abcabc') find methods that:
+
+* confirms whether the string is alphabetical
+* confirms wether the string is alphnumerical
+* confirms whether the string is lowercase
+* returns `Abc`
+* returns `ABC`
+* counts the number of 'a's
+
+Consult the online documentation: |string_methods|
+
+.. |string_methods| raw:: html
+
+    <a href="https://docs.python.org/3.4/library/stdtypes.html#string-methods" target="_blank">https://docs.python.org/3.4/library/stdtypes.html#string-methods</a>
+
+Koans
+-----
+
+Run these to explore `str` objects:: 
+
+    python contemplate_koans.py about_strings
+    python contemplate_koans.py about_strings_manipulation
 
 
 Integers
@@ -143,31 +169,47 @@ type `int`::
     >>> int('3')
     3
 
-Methods
--------
+Arithmetic Operators
+--------------------
 
-Objects of type `int` methods map to arithmetic enabling us to use them to 
-solve basic math problems.
+Two objects of type `int`, separated by an arithmetic operators `*` `/` `-` `+`, have the
+same behaviour we expect from basic arithmentic.
 
 ::
-
-    >>> help(5)        # display documentation
-
-The arithmetic operations you'd expect are implemented on int objects::
 
     >>> 5 + 4
     9
     >>> 5 - 6
     -1
 
-Special syntax exists which enable manipulating `int` objects in ways that map
-directly to arithmetic. 
+This special syntax exists to make working with `int` objects intuitive.
 
-Two objects of type `int`, separated by an arithmetic operators `*` `/` `-` `+`, have the
-exact behaviour we expect from basic arithmentic.
 
-This is an example of a python programming feature that exists
-to make working with `int` objects intuitive.
+Comparison Operators
+--------------------
+
+Likewise two objects of type `int`, separated by an comparison operators `==`
+`>=` `<=` `<` `>`, have the same behaviour we expect. 
+
+These are expressions and these evaluate to `True` or `False`.
+
+::
+
+    >>> 5 == 4
+    False
+    >>> 5 < 6
+    True
+    >>> 6 <= 6
+    True
+
+Again the special syntax exists to fit our existing expectations.
+
+Koans
+-----
+
+Run these to explore `int` objects:: 
+
+    python contemplate_koans.py about_integers
 
 
 Exercises
@@ -201,33 +243,3 @@ Use the interpreter to test your answer with python.
 
 Try the same above but this time using `*` instead of `+`. What can you
 conclude of the meaning of `*`?
-
-
-`str` methods 
--------------
-
-Using the `help`, or the online documentation and a string (eg 'abcabc') find methods that:
-
-* confirms whether the string is alphabetical
-* confirms wether the string is alphnumerical
-* confirms whether the string is lowercase
-* returns `Abc`
-* returns `ABC`
-* counts the number of 'a's
-
-Consult the online documentation: |string_methods|
-
-.. |string_methods| raw:: html
-
-    <a href="https://docs.python.org/3.4/library/stdtypes.html#string-methods" target="_blank">https://docs.python.org/3.4/library/stdtypes.html#string-methods</a>
-
-
-Koans & `str`
--------------
-
-In these Koans we will spend time exploring `str` objects.
-
-:: 
-
-    python contemplate_koans.py about_strings
-    python contemplate_koans.py about_strings_manipulation
