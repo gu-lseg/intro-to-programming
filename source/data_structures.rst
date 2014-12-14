@@ -42,6 +42,10 @@ special syntax methods::
 
 If you ask for an item that is outside of the list's length you will get an IndexError
 
+Koans::
+
+    > python3 contemplate_koans.py about_lists
+
 range
 -----
 
@@ -83,6 +87,10 @@ Special syntax for extracting and updating an attribute::
     'Name'
 
 If you request a non-existent key you get a `KeyError`.
+
+Koans::
+
+    > python3 contemplate_koans.py about_dictionaries
 
 Nesting Data Structures
 =======================
@@ -147,14 +155,6 @@ Thanks to the for loop our definition of a square in code:
 
 Exercises
 =========
-
-Koans
------
-
-::
-
-    > python3 contemplate_koans.py about_lists
-    > python3 contemplate_koans.py about_dictionaries
 
 
 Looping `turtles`
