@@ -3,7 +3,7 @@ Functions
 
 You can think of functions as actions, verbs, or commands and you can think of parameters as adverbs: 'run, quickly'
 
-example::
+::
 
     >>> turtle.forward             # functions have names
     <function turtle.forward>
@@ -26,7 +26,7 @@ All turtle instructions are examples of calling functions attached to the turtle
 Function objects
 ================
 
-Just like everything else in Python a function is an object. Function objects are different in that they contain blocks of code.
+A function like everything in Python is an object. Function objects are different in that they contain blocks of code.
 
 Functions help in letting programmers organise and reuse code. They help create new abstractions.
 
@@ -126,41 +126,20 @@ code.
 
 We will use pythontutor to exercise visualising program execution.
 
-http://www.pythontutor.com/visualize.html#mode=edit
+|py-function-ns|
 
-Copy this code into the browser editor::
-    
-    x = 1
-    y = 2
-    success = 'works'
-    failure = 'broken'
+.. |py-function-ns| raw:: html
 
-    def inc(p):
-        incremented = p + 1
-        return incremented
-
-    def print_result(result):
-        if result:
-            print(success)
-        else:
-            print(failure)
-
-    inc_x = inc(x)
-    print_result(inc_x == y)
-
+    <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=x+%3D+1%0Ay+%3D+2%0Asuccess+%3D+'works'%0Afailure+%3D+'broken'%0A%0Adef+inc(p)%3A%0A++++incremented+%3D+p+%2B+1%0A++++return+incremented%0A%0Adef+print_result(result)%3A%0A++++if+result%3A%0A++++++++print(success)%0A++++else%3A%0A++++++++print(failure)%0A%0Ainc_x+%3D+inc(x)%0Aprint_result(inc_x+%3D%3D+y)%0A&origin=opt-frontend.js&cumulative=false&heapPrimitives=false&drawParentPointers=false&textReferences=false&showOnlyOutputs=false&py=2&rawInputLstJSON=%5B%5D&curInstr=0&codeDivWidth=350&codeDivHeight=400"> </iframe>
 
 Step through each line of code in the browser.
 
-After stepping through a few times you will get something like this:
+Notice that when execution enters a function, a new 'frame' is
+created.
 
-.. image:: /images/inc_visualisation.png
-
-
-You will notice that when execution enters a function, a new 'frame' is
-created. This frame is isolated from the previous frame.
-
-In effect the interpreter creates a new namespace. This namespace is emtpy
-unless parameters pass names and their values.
+The interpreter creates a new namespace associated with this frame. It is
+isolated from the 'parent' frame's namespace. This namespace is emtpy unless 
+parameters are passed.
 
 .. tip::
 
