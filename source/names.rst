@@ -69,6 +69,31 @@ example::
 
 These types of errors usually mean a typo.
 
+Visualising Namespace
+=====================
+
+Programmatically a name points to an object's location in memory. In a way it is 
+synonmymous with the `id` of the object it refers to.
+
+When the interpreter encouters a name it resolves that name by looking up the
+location in memory it points to.
+
+A name effectively tells the interpreter how to find the object you are referring to.
+
+|py-tutor|
+
+.. |py-tutor| raw:: html
+
+    <iframe width="800" height="400" frameborder="0"
+    src="http://pythontutor.com/iframe-embed.html#code=x+%3D+5%0Ax+%3D+'greg'%0Ax+%3D+5%0Aname+%3D+'greg'%0A%0Aresult+%3D+name+%3D%3D+'greg'%0A%0Aa_list+%3D+%5B'a',+'b',+'c'%5D&origin=opt-frontend.js&cumulative=false&heapPrimitives=false&drawParentPointers=false&textReferences=false&showOnlyOutputs=false&py=2&rawInputLstJSON=%5B%5D&curInstr=0&codeDivWidth=350&codeDivHeight=400">
+    </iframe>
+
+
+As you can see for each assignment the namespace (frame) is updated:
+
+* If the name already exists, 
+* if its a new name, a new name is entered pointing to the object it is
+  assigned to.
 
 User input
 ==========

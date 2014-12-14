@@ -167,13 +167,6 @@ unless parameters pass names and their values.
     A namespace and a frame are different objects. For the purpose of this course 
     however think of them as the same.
 
-Programmatically a name points to an object's location in memory. In a way it is 
-synonmymous with the `id` of the object it refers to.
-
-When the interpreter encouters a name it resolves that name by looking up the
-location in memory it points to.
-
-A name effectively tells the interpreter how to find the object you are referring to.
 
 Floats
 ======
