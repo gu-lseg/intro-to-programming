@@ -62,6 +62,10 @@ We can add multiple conditional branches by using `elif <boolean expression>:`
     ... else:
     ...     print('You are an adult')
 
+Koans::
+
+    > python contemplate_koans.py about_if_statements
+
 while loops
 ===========
 
@@ -91,6 +95,10 @@ indefinitely. The condition defines when the loop will terminate.
 .. tip::
     Use while if you don't when you only know a loop will terminate in a given
     condition.
+
+Koans::
+
+    > python contemplate_koans.py about_while_loops
 
 Floats
 ======
@@ -132,15 +140,6 @@ The loan amount in question is £100. Repayments are made at £20. Interest is
 charged monthly at %10.
 
 Write a program that prints to screen the remaining balance after every month.
-
-Koans - Control Statements
---------------------------
-
-::
-
-    > python contemplate_koans.py about_true_and_false
-
-    > python contemplate_koans.py about_control_statements
 
 Practical: Shoe Conversion
 --------------------------
