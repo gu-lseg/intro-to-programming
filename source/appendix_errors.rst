@@ -108,16 +108,12 @@ To exit:
     On any error or exeception enter a `import pdb; pdb.set_trace()` on the line
     preceeding your program terminating. Run the program, then inspect what went wrong.
 
-Exercises
-=========
-
-Visualising execution
----------------------
+pdb example
+===========
 
 We will use pythontutor hand in hand with pdb to exercise visualising program
 execution.
 
-http://www.pythontutor.com/visualize.html#mode=edit
 
 Put this code into a file named `my.py`:: 
     
@@ -166,28 +162,17 @@ Executing `l` results in::
      10  	print(f())
     [EOF]
 
-Copy the same code into www.pythontutor.com.
-
-After stepping through a few times you will get something like this:
-
-.. image:: /images/inc_visualisation.png
-
-Step through each line of code keeping the visualiser tool and pdb in sync. Use
-the visualiser as a map to find the various parts through pdb.
+Step through each line of code keeping. 
 
 Ensure you explore the two frames when you enter the f functions' frame.
 
-koans & pythontutor
--------------------
+.. tip::
+    We have used a python code visualiser to do pretty much the same thing as pdb.
 
-You can copy and paste any sample from the koans and use the pythontutor
-visualiser to examine what is going on.
 
-Choose one, preferrably that you found difficult to understand, and step
-through it in the pythontutor visualiser.
 
 koans & `pdb`
--------------
+=============
 
 `pdb` is a great tool to understand code. Here we will apply it to our koans.
 
