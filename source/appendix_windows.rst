@@ -88,10 +88,18 @@ We need to:
 
 Here are the commands::
 
-    C:\Users\greg-lo>move Downloads\python-koans-master .
-    C:\Users\greg-lo>unzip python-koans-master.zip
-    C:\Users\greg-lo>cd python-koans-master
-    C:\Users\greg-lo\ython-koans-master>
+    C:\Users\greg-lo>move Downloads\python-koans-master .  # 1
+    C:\Users\greg-lo>unzip python-koans-master.zip         # 2
+    C:\Users\greg-lo>cd python-koans-master                # 3
+    C:\Users\greg-lo\python-koans-master>                  # 4
+
+Notes:
+
+1. move the downloaded file into the user directory. `.` represents the users'
+   directory.
+2. unzip the file.
+3. change into the unzipped directory.
+4. Note the updated location in the prompt.
 
 Running
 -------

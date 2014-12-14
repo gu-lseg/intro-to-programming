@@ -113,11 +113,12 @@ So what methods do string objects have?
 
     >>> help(str)
 
-Visit the online documentation to get a good overview and discover new methods:
+Online documentation for overview and methods: |string_methods|
 
-https://docs.python.org/3.4/library/string.html
+.. |string_methods| raw:: html
 
-We will revisit string methods in the Koans.
+    <a href="https://docs.python.org/3.4/library/string.html" target="_blank">https://docs.python.org/3.4/library/string.html</a>
+
 
 Integers
 ========
