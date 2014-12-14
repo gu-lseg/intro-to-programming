@@ -108,8 +108,8 @@ To exit:
     On any error or exeception enter a `import pdb; pdb.set_trace()` on the line
     preceeding your program terminating. Run the program, then inspect what went wrong.
 
-pdb example
-===========
+example
+-------
 
 We will use pythontutor hand in hand with pdb to exercise visualising program
 execution.
@@ -167,7 +167,7 @@ Step through each line of code keeping.
 Ensure you explore the two frames when you enter the f functions' frame.
 
 .. tip::
-    We have used a python code visualiser to do pretty much the same thing as pdb.
+    We have used a python code visualiser in a similar way.
 
 
 
@@ -176,6 +176,8 @@ koans & `pdb`
 
 `pdb` is a great tool to understand code. Here we will apply it to our koans.
 
-Enter `import pdb; pdb.set_trace()` at the beginning of a koan that caused you
-difficulty. Step through the execution of the code. When you are done type `c`
+Enter `import pdb; pdb.set_trace()` in a koan method that caused you
+difficulty. 
+
+Step through the execution of the code. When you are done type `c`
 to resume execution.
