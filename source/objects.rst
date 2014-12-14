@@ -113,9 +113,9 @@ So what methods do string objects have?
 
     >>> help(str)
 
-Online documentation for overview and methods: |string_methods|
+Online documentation for overview and methods: |string_docs|
 
-.. |string_methods| raw:: html
+.. |string_docs| raw:: html
 
     <a href="https://docs.python.org/3.4/library/string.html" target="_blank">https://docs.python.org/3.4/library/string.html</a>
 
@@ -215,9 +215,12 @@ Using the `help`, or the online documentation and a string (eg 'abcabc') find me
 * returns `ABC`
 * counts the number of 'a's
 
-.. tip::
+Consult the online documentation: |string_methods|
 
-    https://docs.python.org/3.4/library/stdtypes.html#string-methods
+.. |string_methods| raw:: html
+
+    <a href="https://docs.python.org/3.4/library/stdtypes.html#string-methods" target="_blank">https://docs.python.org/3.4/library/stdtypes.html#string-methods</a>
+
 
 Koans & `str`
 -------------

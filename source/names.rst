@@ -11,17 +11,17 @@ Names are like the nouns we use in every day speach.
 To work effectively with objects we need a way to refer to them. A person
 object is always referred to by a name.
 
-A name doesn't exist in the environment. Its not an object. It is part of
+A name doesn't exist in the same way an object does. It is part of
 the language (the code) that we use to refer to single objects in our
-environment.
+namespace (environment).
 
-For example the name 'greg' doesn't exist in the world. It is a part of language that
+Likewise the name 'greg' doesn't exist in the world. It is a part of language that
 refers to a single instance object of type Person.
 
 Programmatically a name points to an object's location in memory. In a way it is 
 synonmymous with the `id` of the object it refers to.
 
-Just like humans resolve 'greg' to the person in a room, when the interpreter
+Similar to how we resolve 'greg' to the person in a room, when the interpreter
 encouters a name it resolves that name by looking up the location in memory it
 points to.
 
@@ -77,7 +77,7 @@ example::
       File "<stdin>", line 1, in <module>
     NameError: name 'the_holy_grail' is not defined
 
-Often typos lead to these types of errors.
+These types of errors usually mean a typo.
 
 
 User input
@@ -89,6 +89,7 @@ To make programs interactive use a function named `input`::
     Please enter your name: 
 
 When the interpreter meets `input` it:
+
 1. prints the string message passed as an argument to `input`,
 2. Buffers any characters typed
 3. On the enter returns the characters as a new String.
@@ -152,12 +153,12 @@ The name `right_angle` was chosen to refer to an `int` of value 90.
 
 We could have used `thirty_degree_angle`, `angle`, or `awef` and the code would work fine. However:
 
-* `thirty_degree_angle` is misleading
-* `angle` is better, perhaps ok but vague
-* `dezwbpe` is nonsense and conveys no meaning
+* `thirty_degree_angle` is misleading its 90 not 30 degrees.
+* `angle` is perhaps ok but a little vague
+* `awef` is nonsense and conveys no meaning
 
 By choosing appropriate names you make the code more readable and
-intuitive. Choose good names!
+intuitive.
 
 Exercises
 =========
