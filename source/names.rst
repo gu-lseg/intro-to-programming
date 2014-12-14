@@ -127,9 +127,8 @@ Using names you can do this::
 
 If you change your mind you need only update one value.
 
-Note that our programatic definition mirrors the mathematical defintion in
-that the lenguth of a square's side is irrelevant to its nature as a square.
-
+Mathematics tells us a square's length can be of any size. Our
+new programmatic definition mirrors that.
 
 .. tip::
 

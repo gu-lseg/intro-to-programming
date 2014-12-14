@@ -12,6 +12,7 @@ Conditionals always base their decisions on the result of a boolean expression.
 First we look at some boolean expressions, then at two conditonal
 statements: `if` and `while`.
 
+
 Equality
 ========
 
@@ -31,32 +32,6 @@ value to be equal::
     >>> 5 == '5'
     False
 
-bools 
------
-
-::
-    
-    >>> type(True)
-    bool
-    >>> type(False)
-    bool
-
-Comparison Operators
-====================
-
-These expressions evaluate to a boolean (`True` or `False`) according to the
-values of x and y.
-
-::
-
-    x == y           # x equal to y
-    x != y           # x not equal to y
-    x > y            # x greater than y
-    x < y            # x less than y
-    x >= y           # x greater than or equal to y
-    x <= y           # x less than or equal to y
-
-For `int` objects the meaning of these operators maps to our expectations from math.
 
 if and elif
 ===========
@@ -91,12 +66,9 @@ while loops
 ===========
 
 The `while <condition>:` construct is a way of instructing the interpreter to repeat
-indefinitely. Intuitively `break` is a keyword that instructs the
-interpreter to break out of a loop. We will examine this in more detail
-later.
+indefinitely. The condition defines when the loop will terminate.
 
-A while statement is the `while` keyword followed by a condition. The condition defines when
-the loop will terminate.
+`break` is a keyword that instructs the interpreter to break out of a loop. 
 
 ::
     
@@ -145,13 +117,30 @@ Koans - Control Statements
 
     > python contemplate_koans.py about_control_statements
 
+Practical: Shoe Conversion
+--------------------------
+
+A UK company wants to export shoes to continental Europe.
+
+It hires you to write a program that prompts the user for a UK size and return
+the equivalent size it would be in Europe.
+
+Here is a conversion table:
+
+======  =====
+Europe  UK
+======  =====
+38      5
+39      6
+40      7
+42      8
+======  =====
 
 Practical: Turtles Joypad
----------------------------
+-------------------------
 
 We want to control the movements of the turtle using instructions from the
 keyboard. Much like the way you'd control a character in a game.
-
 
 Place this in a file called `turtle_joypad.py`::
 
@@ -172,7 +161,7 @@ Place this in a file called `turtle_joypad.py`::
 
 
 Practical: Paper Sissors Rock
--------------------------------
+-----------------------------
 
 Steps:
 

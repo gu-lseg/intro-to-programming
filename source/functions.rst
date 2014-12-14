@@ -175,8 +175,35 @@ location in memory it points to.
 
 A name effectively tells the interpreter how to find the object you are referring to.
 
+Floats
+======
+
+`int` objects have enabled us to represent programs that solve arithemtic for
+whole numbers. This is sufficient for problems which deal exclusively with
+whole numbers such as age, and days. It is insufficient for numbers that have
+a value beyond the decimal point.
+
+`float` objects represent rational numbers, numbers that have a decimal value.
+
+::
+
+    >>> type(3.0)        # literal
+    <class 'float'>
+    >>> float('3.4')     # constructor can convert from str
+
+All operators we saw defined on `int` work on `float` so it fits quite
+naturally with our intuitions.
+
 Exercises
 =========
+
+Koans
+-----
+
+::
+
+    > python contemplate_koans.py about_functions
+
 
 documenting functions
 ---------------------
@@ -202,7 +229,7 @@ Now::
 Shapes
 ------
 
-Reopen ``shapes.py`` and define every shape a function. Document your
+Reopen ``shapes.py`` and define every shape as a function. Document your
 functions.
 
 Does this make the code more modular, readable, reusable?
@@ -220,3 +247,47 @@ House
 -----
 
 Refactor (rewrite) your house code as a function that uses two other functions.
+
+
+Conversion Programs
+-------------------
+
+For each conversion function you completed in the Koans, write a simple command
+line program that prompts the user for input and returns the result.
+
+For example with the function convert_to_miles, create a file named
+`convert_miles_to_kilometers.py` and put your code in there.
+
+Expect users to be able to run this kind of dialog::
+
+    > python convert_miles_to_kilometers.py         # user runs program
+    Please enter miles to convert: 34               # user enters 34
+    34 miles corresponds to about 54.4 kilometers
+    >
+
+Do the same for celsius to farenheit.
+
+Practical: BMI Calculator
+-------------------------
+
+The NHS has hired you to create a BMI Calculator.
+
+Write a command line program that asks a user for:
+
+* Weigth in Kilograms
+* Height in Meters
+
+Return the bmi result, followed by the users' BMI classification.
+
+BMI Classification
+
+=============   =================
+BMI             Classification
+=============   =================
+18.5 or less	Underweight	
+18.5 to 24.99	Normal Weight
+25 to 29.99	Overweight
+30 to 34.99	Obesity (Class 1)
+35 to 39.99	Obesity (Class 2)	
+40 or greater	Morbid Obesity
+=============   =================
