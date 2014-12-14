@@ -98,7 +98,7 @@ Running
 
 Now we are ready to execute the contemplate_koans.py program::
 
-    C:\Users\greg-lo>\Python34\python.exe contemplate_koans.py about_asserts
+    C:\Users\greg-lo>python contemplate_koans.py about_asserts
 
 The above instruction is understood as calling the python program and passing in two parameters: a file name 'contenplate_koans.py' and some text 'about_asserts'.
 

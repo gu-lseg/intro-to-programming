@@ -1,7 +1,7 @@
 Introduction
 ************
 
-Learning to programm requires much practice and is very rewarding and creative.
+Learning to program requires much practice. However it is also very rewarding and creative.
 
 The purpose of this course it to give you enough programming vocabulary to
 get a taste of what it is.
@@ -33,7 +33,7 @@ Python
 
 This course uses Python to introduce Object Oriented programming.
 
-Python is a simple to learn yet fully featured, high-level, object oriented programming language. It's popular both in academia and industry. 
+Python is a simple to learn yet fully featured, high-level, object oriented programming language. It's popular both in academia, science and other industries.
 
 The concepts however will apply to most other object oriented languages. 
 

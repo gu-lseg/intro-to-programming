@@ -209,7 +209,7 @@ Using the `help`, or the online documentation and a string (eg 'abcabc') find me
 
 * confirms whether the string is alphabetical
 * confirms wether the string is alphnumerical
-* confirms whether the string is lower
+* confirms whether the string is lowercase
 * returns `Abc`
 * returns `ABC`
 * counts the number of 'a's

@@ -111,7 +111,12 @@ Documentation
 
 Visit the `turtle` online documentation. 
 
-https://docs.python.org/3/library/turtle.html
+|turtle_docs|
+
+.. |turtle_docs| raw:: html
+
+    <a href="https://docs.python.org/3/library/turtle.html" target="_blank">https://docs.python.org/3/library/turtle.html</a>
+
 
 Questions:
 
