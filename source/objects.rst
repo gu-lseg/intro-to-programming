@@ -170,6 +170,12 @@ enter::
 
     >>> 5
 
+Comparison Operators
+--------------------
+
+What is the result this line of code?::
+
+    3 < '5'
 
 Strings, Integers, and the + operator
 -------------------------------------

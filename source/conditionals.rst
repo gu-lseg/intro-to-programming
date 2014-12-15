@@ -123,13 +123,6 @@ naturally with our intuitions.
 Exercises
 =========
 
-Comparison Operators
---------------------
-
-What is the result this line of code?::
-
-    3 < '5'
-
 Practical: Loan 
 ---------------
 
