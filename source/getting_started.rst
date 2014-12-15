@@ -89,7 +89,7 @@ Using SublimeText create a file named `my_turtle_file.py` with this code::
 
 In cmd.exe call the python command with the filename `my_turtle_file.py` as parameter::
   
-    C:\Users\greg-lo>\Python34\python.exe my_turtle_file.py
+    C:\Users\greg-lo>python my_turtle_file.py
 
 
 .. tip::
