@@ -125,7 +125,7 @@ Questions:
 
 The `help` function provides documenation directly in the interactive shell::
 
-    >>> help(turtle.forward)
+    >>> help(tess.forward)
 
 Try any previously used functions and get into habit of automatically doing this.
 
