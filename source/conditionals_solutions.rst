@@ -1,9 +1,11 @@
 Loan
 ====
+
 ::
+
     while balance > 0:
         compound_interest = 0.1 * balance
-        print('balance: ' + str(int(balance)))
+        print('balance: ' + str(balance))
         balance = balance + compound_interest - 20
 
     balance: 100.0
