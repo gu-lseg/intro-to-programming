@@ -1,115 +1,37 @@
-Objects
-*******
+Text & Numbers
+**************
 
-An object is always an instance of a Type and the Type determines an objects':
+In this section we examine three new types of objects
 
-* attributes
-* methods (behaviours)
+========  ===========  ============
+Type      Used for     Examples
+========  ===========  ============
+Integers  Numbers      -5    16
+Floats    Decimal      3.4  -23.001
+Strings   Text         'abc' 'bob'
+========  ===========  ============
 
-In this section we examine three different types of objects:
-
-* Turtles - represent and manipulate graphics.
-* Strings - represent and manipulate text. 
-* Integers - represent and manipulate whole numbers.
-
-The focus is on how to create and manipulate the objects.
-
-Turtles
-=======
-
-Turtle objects represent pens that enable us to draw pictures.
-
-Creation
---------
-
-::
-
-    >>> from turtle import Turtle
-    >>> tess = Turtle()
-
-Breakdown:
-
-1. We import an object called Turtle from somewhere called turtle. 
-2. Turtle is called, creates a new object of type turtle, and returns it.
-3. This returned object is assigned to the name tess.
-
-.. tip::
-    We call an object by adding parenthesis at the end of its name. Here the
-    parenthesis are empty but then often aren't.
-
-Lets confirm the type of tess::
-
-    >>> type(tess)
-    turtle.Turtle
-
-.. tip:: 
-    The function `type` returns the type of a passed object.
-
-Turtle is a special kind of object in that it produces new objects. We call it
-a constructor object.
-
-Strings 
-=======
-
-Objects that are instances of type `str` represent text.
-
-Creation
---------
-::
-
-    >>> "hi"        
-    hi
-    >>> greg = 'greg'
-    >>> type(greg)     # confirm type
-    str
-
-When you execute the code `"hi"` or `str("hi")`, the python interpreter:
-
-1. Creates an object of type `str`
-2. Gives it the value "hi"
-3. Returns this newly created object
-
-
-Methods
--------
-
-Methods that exist on string objects facilitate working with text.
-
-How do we discover what methods do string objects have? 
-
-Consult the online documentation: |string_methods|
-
-.. |string_methods| raw:: html
-
-    <a href="https://docs.python.org/3.4/library/stdtypes.html#string-methods" target="_blank">https://docs.python.org/3.4/library/stdtypes.html#string-methods</a>
-
-Koans
------
-
-Run these to explore `str` objects:: 
-
-    python contemplate_koans.py about_strings
+We will look at how to create objects of these types and what methods
+(behaviours) they have.
 
 
 Integers
 ========
 
-Objects that are instances of type `int` represent whole numbers.
+Objects that are instances of type `int` represent numbers with no deciamal
+part. They can be positive or negative.
 
 Creation 
 --------
 
 ::
 
-    >>> int(3)         # constructor 
+    >>> 3              
     3
-    >>> 3              # literal
-    3
-    >>> type(5)        # confirm type
+    >>> type(-5)        # confirm type
     int
 
-You can use the constructor `int` to convert objects of type `str` into objects of
-type `int`::
+To convert objects of type `str` into objects of type `int`::
 
     >>> int('3')
     3
@@ -149,12 +71,67 @@ These are expressions and these evaluate to `True` or `False`.
 
 Again the special syntax exists to fit our existing expectations.
 
+.. tip::
+    `int` objects are used to solve problems that require manipulating numbers
+    but with no decimal point such as age, and days, IDs.
+
 Koans
 -----
 
 Run these to explore `int` objects:: 
 
     python contemplate_koans.py about_integers
+
+Floats
+======
+
+`float` objects represent rational numbers, numbers that have a decimal value.
+
+::
+
+    >>> 3.4
+    3.4
+    >>> type(3.0)
+    <class 'float'>
+    >>> float('3.4')     # constructor can convert from str
+    3.4
+
+All operators we saw defined on `int` work on `float` as you'd expect.
+
+Strings 
+=======
+
+Objects that are instances of type `str` represent text.
+
+Creation
+--------
+::
+
+    >>> "hi"        
+    hi
+    >>> type('hi')     # confirm type
+    str
+
+When you execute the code `"hi"` or `str("hi")`, the python interpreter:
+
+1. Creates an object of type `str`
+2. Gives it the value "hi"
+3. Returns this newly created object
+
+
+Methods
+-------
+
+Methods that exist on string objects facilitate working with text. We will
+explore these by running the koans::
+
+    python contemplate_koans.py about_strings
+
+Consult the online documentation: |string_methods|
+
+.. |string_methods| raw:: html
+
+    <a href="https://docs.python.org/3.4/library/stdtypes.html#string-methods" target="_blank">https://docs.python.org/3.4/library/stdtypes.html#string-methods</a>
 
 
 Exercises

@@ -1,27 +1,25 @@
 Quick Start
 ***********
 
-In this section we learn how to create an object of type Turtle. We then
-interact with this object and discover what attributes and methods (behaviours)
-it has.
+We use Turtle objects that know how to draw on a canvas to introduce
+programming with objects.
 
-We also look at two ways to execute python code. The interactive interpreter
-and calling python on a file that contains code.
+We look at two ways to execute python code:
 
+* The interactive interpreter
+* calling python on a file that contains code.
 
 .. tip::
 
     Don't just read! Type everything and experiment.
 
 
-Interactive coding
-==================
+Interactive interpreter 
+=======================
 
-One way to run python is by using the interactive interpreter.
+We launch the python interpreter through `cmd.exe`:
 
-One way to enter the python interpreter is through `cmd.exe`:
-
-1. Press the two keys Windows + R together
+1. Press the two keys 'Windows + R' together
 2. Enter `cmd.exe` in the search prompt and enter.
 
 A window will appear with a prompt:: 
@@ -37,10 +35,8 @@ Type `python3` to enter the interactive shell::
 
     >>> print('Hi') 
 
-Turtles
-=======
 
-Type::
+Now type::
 
     >>> from turtle import Turtle
     >>> tess = Turtle()
@@ -59,23 +55,58 @@ Type::
 
 .. image:: /images/turtle-left.png
 
-Type these in::
+Lets call some more methods on the tess our turtle object::
 
     >>> tess.shape('turtle')
     >>> tess.color('green')
     
+Lets create 'bob' a new turtle object::
+
     >>> bob = Turtle()
     >>> bob.shape('circle')
     >>> bob.color('red')
     >>> bob.backward(100)
 
-Now experiment drawing shapes.
+Now take your time to experiment drawing shapes in different colours.
 
+Turtles
+=======
 
-File coding
-===========
+Lets take a closer look at what we have typed above.
 
-Code is most often executed from file.
+Creation
+--------
+
+::
+
+    >>> from turtle import Turtle
+    >>> tess = Turtle()
+
+Breakdown:
+
+1. We import an object called Turtle from somewhere called turtle. 
+2. Turtle is called, creates a new object of type turtle, and returns it.
+3. This returned object is assigned to the name tess.
+
+.. tip::
+    We call an object by adding parenthesis at the end of its name. Here the
+    parenthesis are empty but then often aren't.
+
+Lets confirm the type of tess::
+
+    >>> type(tess)
+    turtle.Turtle
+
+.. tip:: 
+    The function `type` returns the type of a passed object.
+
+Turtle is a special kind of object in that it produces new objects. We call it
+a constructor object.
+
+code in files
+=============
+
+Code is most often executed from file. We now execute similar code to above but from a file.
 
 Using SublimeText create a file named `my_turtle_file.py` with this code:: 
 
@@ -87,6 +118,10 @@ Using SublimeText create a file named `my_turtle_file.py` with this code::
 
     exitonclick()  # Why this? Experiment by commenting it out.
 
+.. tip::
+
+    Just like all word document file names end with .doc, all files with python code should end with .py
+
 In cmd.exe call the python command with the filename `my_turtle_file.py` as parameter::
   
     C:\Users\greg-lo>python my_turtle_file.py
@@ -96,11 +131,6 @@ In cmd.exe call the python command with the filename `my_turtle_file.py` as para
 
     Make sure the file you created exists in the location where you execute this
     command. The location is given by the prompt.
-
-
-.. tip::
-
-    Just like all word document file names end with .doc, all files with python code should end with .py
 
 
 Exercises
@@ -122,12 +152,6 @@ Questions:
 
 * What colors does a turtle's `color` method recognise?
 * What shapes does a trutle's `shape` method recognise?
-
-The `help` function provides documenation directly in the interactive shell::
-
-    >>> help(tess.forward)
-
-Try any previously used functions and get into habit of automatically doing this.
 
 Find some new turtle object methods and experiment.
 
@@ -179,6 +203,23 @@ Experiment with the angles between the individual squares. The picture shows thr
 
 Koans
 -----
+
+The koans use the keyword `assert` a lot. When you assert something you are stating
+that it must be true.
+
+In python true and false are represented by the keywords True and False.
+
+`assert` passes silently when it is followed by True but throws an Error when followed by False::
+
+    >>> assert True
+    >>> assert False
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    AssertionError
+    >>>
+
+In the Koans you have to find answers that evaluate to True for the `assert` to
+pass.
 
 Using your intuition try to complete the about_asserts koans.
 
