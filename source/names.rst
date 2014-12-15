@@ -1,23 +1,11 @@
 Names
 *****
 
-Names are like the nouns we use in every day speach.
+Here we look at:
 
-To work effectively with objects we need a way to refer to them. A person
-object is always referred to by a name (eg 'greg').
-
-When the interpreter is launched it creates an empty namespace. A namespace is
-where python stores names that refer to objects.
-
-Assignment is how we add populate the interpreters' namespace.
-
-Programmatically a name points to an object's location in memory. In a way it is 
-synonmymous with the `id` of the object it refers to.
-
-When the interpreter encouters a name it resolves that name by looking up the location in memory it
-points to.
-
-A name effectively tells the interpreter how to find the object you are referring to.
+* what assignment really means
+* how to get input from a user
+* how using names makes our code more useful.
 
 .. tip::
 
@@ -27,38 +15,42 @@ A name effectively tells the interpreter how to find the object you are referrin
 Assignment
 ==========
 
-Unlike in maths, the equals symbol means assignment not equality.
+The equals symbol means assignment not equality (unlike in maths).
 
-Naming objects::
+When the interpreter is launched it creates an empty namespace. A namespace is
+where python stores names that refer to objects.
 
-    >>> four = 4              # naming int object
-    >>> first_name = "greg"   # naming str object
-    >>> tess = Turtle()       # naming a turtle object
+Assignment is how we add to the interpreters' namespace.
 
-The interpreter executes the code `four = 4` as:
+::
 
-* Create an object of type `int` of value 4.
-* Add the name `x` to the current namespace.
-* Ensure the `x` points to the `int` object created of value 4.
+    >>> x = 5
 
-From the point of definition onwards the programmer can now refer to that
+The interpreter executes the above code as:
+
+1. Creates an `int` object with value 5.
+2. Adds the name `x` to the current namespace.
+3. Ensures the `x` points to the created object.
+
+From the point of assignment onwards the programmer can refer to that
 object by using the name `x`.
+
+A name is an expression and it evaluates to its object::
+
+    >>> x
+    5
 
 Names can be reassigned to any type of object::
 
     >>> x = 5            # x refers to an `int` object
     >>> x = 'greg'       # x refers now to a `str` object 
 
-A name is executed as an expression and it evaluates to its object::
-
-    >>> x
-    5
 
 NameError
 ---------
 
-If the interpreter gets a name that hasn't yet been defined it will complain
-by throwing a `NameError`.
+If the interpreter gets a name that hasn't yet been defined through assignment 
+it will complain by throwing a `NameError`.
 
 example::
 
@@ -67,7 +59,7 @@ example::
       File "<stdin>", line 1, in <module>
     NameError: name 'the_holy_grail' is not defined
 
-These types of errors usually mean a typo.
+These types of errors often mean a typo.
 
 Visualising Namespace
 ---------------------
