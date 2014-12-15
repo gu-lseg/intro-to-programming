@@ -158,43 +158,12 @@ Exercises
 =========
 
 
-documenting functions
----------------------
-
-When you type::
-
-    >>> help(turtle.forward)
-
-What special method is being called on the method object forward?
-
-Enter this into a file named `hello.py`::
-
-    def hello():
-        """ this function says hi """
-        print('hi')
-
-Now::
-
-    >>> from hello import hello
-    >>> help(hello)
-    >>> hello.__doc__
-
-Shapes
-------
-
-Reopen ``shapes.py`` and define every shape as a function. Document your
-functions.
-
-Does this make the code more modular, readable, reusable?
-
-
 Shapes with Arguments
 ---------------------
 
-Reopen ``shapes.py`` and make new functions with sensible arguments.
+Reopen ``shapes.py`` and define every shape as a function with sensible arguments.
 
-Does this make the code more general and reusable?
-
+Consider whether this make the code more modular, readable, reusable and general?
 
 House
 -----
