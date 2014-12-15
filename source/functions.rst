@@ -113,6 +113,13 @@ Functions can have many arguments::
         turtle.left(angle)
         turtle.forward(length)
 
+
+Koans
+-----
+::
+
+    > python contemplate_koans.py about_functions
+
 Scope & Namespaces
 ==================
 
@@ -149,13 +156,6 @@ parameters are passed.
 
 Exercises
 =========
-
-Koans
------
-
-::
-
-    > python contemplate_koans.py about_functions
 
 
 documenting functions
