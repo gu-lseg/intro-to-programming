@@ -86,7 +86,7 @@ We need to:
 * unzip it 
 * change directory (`cd`) into the python-koans-master directory
 
-Here are the commands::
+Here are the commands to type::
 
     C:\Users\greg-lo>move Downloads\python-koans-master .  # 1
     C:\Users\greg-lo>unzip python-koans-master.zip         # 2
@@ -144,9 +144,11 @@ case:
 You should find that one line has gone Green and you now have a new challenge.
 
 .. tip::
+
     Arrange the windows on your screen so that you have your text editor on one
     side and two `cmd.exe`s on the right one above the other. 
     
     Have the command prompt open in one for running the koans.
 
     Have the python interpreter in the other for experimenting with code.
+
