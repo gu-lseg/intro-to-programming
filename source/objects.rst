@@ -1,38 +1,18 @@
 Objects
 *******
 
-Object Oriented programming is about defining and manipulating objects to do something
-meaningful to the programmer.
-
-An Object:
-
-* Exists as a pattern of 0s and 1s in the computer's memory. 
-* Conceptually represents something of meaning to the programmer.
-
-The function `id` returns the location in memory of a passed object::
-
-    >>> id(tess)
-    4428974960
-
-So our digital tess lives at the above address in our computer memory chip.
-
-.. tip::
-
-    In practice we don't typically need to know what location our objects are at.
-
 An object is always an instance of a Type and the Type determines an objects':
 
 * attributes
 * methods (behaviours)
 
-Here we revisit turtles and introduce two new types of objects. We focus on creation and manipulation.
-
-By the end of this section we will have examined 3 types of objects:
+In this section we examine three different types of objects:
 
 * Turtles - represent and manipulate graphics.
 * Strings - represent and manipulate text. 
 * Integers - represent and manipulate whole numbers.
 
+The focus is on how to create and manipulate the objects.
 
 Turtles
 =======
@@ -68,13 +48,6 @@ Lets confirm the type of tess::
 Turtle is a special kind of object in that it produces new objects. We call it
 a constructor object.
 
-Methods
--------
-
-We have already explored the various methods (behaviours) that exist on turtle
-objects.
-
-
 Strings 
 =======
 
@@ -84,11 +57,10 @@ Creation
 --------
 ::
 
-    >>> str('hi')      # constructor
-    'hi'
-    >>> "hi"           # literal
+    >>> "hi"        
     hi
-    >>> type('hi')     # confirm type
+    >>> greg = 'greg'
+    >>> type(greg)     # confirm type
     str
 
 When you execute the code `"hi"` or `str("hi")`, the python interpreter:
@@ -97,39 +69,13 @@ When you execute the code `"hi"` or `str("hi")`, the python interpreter:
 2. Gives it the value "hi"
 3. Returns this newly created object
 
-Creating strings is very common, so the python language gives us a shortcut
-notation to create them. A literal literraly represents an
-object and one is created and returned immediately. This is in contrast to
-constructor objects such as `str` or `Turtle`.
 
 Methods
 -------
 
-It is natural to expect methods that exist on string objects facilitate working with text.
+Methods that exist on string objects facilitate working with text.
 
 How do we discover what methods do string objects have? 
-
-Documentation is available in the interpreter::
-
-    >>> help(str)
-
-See also online documentation: |string_docs|
-
-.. |string_docs| raw:: html
-
-    <a href="https://docs.python.org/3.4/library/string.html" target="_blank">https://docs.python.org/3.4/library/string.html</a>
-
-Questions
----------
-
-Using `help`, or online documentation and using a string (eg 'abcabc') find methods that:
-
-* confirms whether the string is alphabetical
-* confirms wether the string is alphnumerical
-* confirms whether the string is lowercase
-* returns `Abc`
-* returns `ABC`
-* counts the number of 'a's
 
 Consult the online documentation: |string_methods|
 
@@ -143,7 +89,6 @@ Koans
 Run these to explore `str` objects:: 
 
     python contemplate_koans.py about_strings
-    python contemplate_koans.py about_strings_manipulation
 
 
 Integers
