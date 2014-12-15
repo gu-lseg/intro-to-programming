@@ -135,6 +135,31 @@ Europe  UK
 42      8
 ======  =====
 
+Practical: BMI Calculator
+-------------------------
+
+The NHS has hired you to create a BMI Calculator.
+
+Write a command line program that asks a user for:
+
+* Weigth in Kilograms
+* Height in Meters
+
+Return the bmi result, followed by the users' BMI classification.
+
+BMI Classification
+
+=============   =================
+BMI             Classification
+=============   =================
+18.5 or less	Underweight	
+18.5 to 24.99	Normal Weight
+25 to 29.99	Overweight
+30 to 34.99	Obesity (Class 1)
+35 to 39.99	Obesity (Class 2)	
+40 or greater	Morbid Obesity
+=============   =================
+
 Practical: Turtles Joypad
 -------------------------
 
