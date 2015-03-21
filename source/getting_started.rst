@@ -1,13 +1,13 @@
-Quick Start
-***********
+Turtles
+*******
 
-We use Turtle objects that know how to draw on a canvas to introduce
-programming with objects.
+Turtle objects know how to draw on a canvas. Here we explore creating and
+manipulating them to draw on the screen.
 
-We look at two ways to execute python code:
+We also look at the two ways the `python3` interpreter can execute your python code:
 
 * The interactive interpreter
-* calling python on a file that contains code.
+* Calling the python interpreter on a file that contains code.
 
 .. tip::
 
@@ -67,12 +67,44 @@ Lets create 'bob' a new turtle object::
     >>> bob.color('red')
     >>> bob.backward(100)
 
-Now take your time to experiment drawing shapes in different colours.
+
+Exercise
+--------
+
+Experiment drawing shapes in different colours.
+
+Documentation
+-------------
+
+Visit the `turtle` online documentation and explore what Turtle objects can do. 
+
+|turtle_docs|
+
+.. |turtle_docs| raw:: html
+
+    <a href="https://docs.python.org/3/library/turtle.html" target="_blank">https://docs.python.org/3/library/turtle.html</a>
+
+
+Questions:
+
+* What different colors does a turtle's `color` method recognise?
+* What shapes does a trutle's `shape` method recognise?
+
+Find some new turtle object methods and experiment.
+
+.. tip::
+
+    As you experiment you will want to do know how to do new things. Get into
+    the habit of exploring the documenation to see what you can do.
+
 
 Turtles
 =======
 
-Lets take a closer look at what we have typed above.
+Lets revise what we have learnt in the light of object oriented terminology.
+
+An object can be created. It has a type, and this type determines its methods
+(behaviours).
 
 Creation
 --------
@@ -103,10 +135,27 @@ Lets confirm the type of tess::
 Turtle is a special kind of object in that it produces new objects. We call it
 a constructor object.
 
-code in files
+Methods
+-------
+
+Methods are functions attached to objects. We will explore functions later.
+
+::
+
+    >>> tess.forward(100)
+
+Braces `()` have a special meaning. They indicate calling. You can think of
+this as effecting an action.
+
+The effect of calling the method `forward` on an object of type `Turtle` is to
+draw a line.
+
+What other methods (behaviours) do turtle objects have?
+
+Code in files
 =============
 
-Code is most often executed from file. We now execute similar code to above but from a file.
+Most code is written and executed from a file. 
 
 Using SublimeText create a file named `my_turtle_file.py` with this code:: 
 
@@ -120,11 +169,12 @@ Using SublimeText create a file named `my_turtle_file.py` with this code::
 
 .. tip::
 
-    Just like all word document file names end with .doc, all files with python code should end with .py
+    All word document file names end with .doc, 
+    all files names with python code must end with .py
 
 In cmd.exe call the python command with the filename `my_turtle_file.py` as parameter::
   
-    C:\Users\greg-lo>python my_turtle_file.py
+    C:\Users\greg-lo> python3 my_turtle_file.py
 
 
 .. tip::
@@ -132,34 +182,19 @@ In cmd.exe call the python command with the filename `my_turtle_file.py` as para
     Make sure the file you created exists in the location where you execute this
     command. The location is given by the prompt.
 
+Questions/Practicals
+--------------------
 
-Exercises
-=========
+1. What are the differences between using `python3` interactively and using files? When would you use one or the other?
 
-Documentation
--------------
+2. Challenge yourself to find as many different ways of drawing with a turtle object.
 
-Visit the `turtle` online documentation. 
-
-|turtle_docs|
-
-.. |turtle_docs| raw:: html
-
-    <a href="https://docs.python.org/3/library/turtle.html" target="_blank">https://docs.python.org/3/library/turtle.html</a>
+3. Take your time to draw something useful and/or crazy.
 
 
-Questions:
 
-* What colors does a turtle's `color` method recognise?
-* What shapes does a trutle's `shape` method recognise?
-
-Find some new turtle object methods and experiment.
-
-.. tip::
-
-    As you experiment you will want to do know how to do new things. Get into
-    the habit of exploring the documenation to see what you can do.
-
+Shape Exercises
+===============
 
 Shapes
 ------
@@ -178,7 +213,6 @@ Shapes:
 .. tip:: Squares have right angles which are 90 degrees.
 
 .. image:: /images/turtle-square.png
-
 
 
 * Draw a rectangle.
@@ -200,36 +234,3 @@ Experiment with the angles between the individual squares. The picture shows thr
 
 .. tip:: Reuse the code you have already written.
 
-
-Koans
------
-
-The koans use the keyword `assert` a lot. When you assert something you are stating
-that it must be true.
-
-In python true and false are represented by the keywords True and False.
-
-`assert` passes silently when it is followed by True but throws an Error when followed by False::
-
-    >>> assert True
-    >>> assert False
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    AssertionError
-    >>>
-
-In the Koans you have to find answers that evaluate to True for the `assert` to
-pass.
-
-Using your intuition try to complete the about_asserts koans.
-
-Visit the appendix on windows for getting started.
-
-::
-
-    C:\Users\greg-lo>python contemplate_koans.py about_asserts
-
-.. tip::
-
-    Try copying small lines of code into the python interpreter to experiment 
-    interactively with the code. Do this whenever you are stuck.

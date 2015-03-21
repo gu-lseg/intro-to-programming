@@ -15,12 +15,20 @@ Here we look at:
 Assignment
 ==========
 
-The equals symbol means assignment not equality (unlike in maths).
+Just like we need to name person objects to know how to differentiate between
+them, `python3`, the interpreter, also needs to know what you are referring 
+to when you give it instructions.
 
-When the interpreter is launched it creates an empty namespace. A namespace is
+Assignment is one of the ways we associate names with objects.
+
+.. tip::
+
+    `=` the equals symbol means assignment and not equality (unlike in maths).
+
+When the interpreter `python3` is launched it creates an empty namespace. A namespace is
 where python stores names that refer to objects.
 
-Assignment is how we add to the interpreters' namespace.
+Assignment is how we tell the interpreter what names refer to.
 
 ::
 
@@ -30,7 +38,7 @@ The interpreter executes the above code as:
 
 1. Creates an `int` object with value 5.
 2. Adds the name `x` to the current namespace.
-3. Ensures the `x` points to the created object.
+3. Ensures the `x` name points to the created object.
 
 From the point of assignment onwards the programmer can refer to that
 object by using the name `x`.
@@ -44,6 +52,13 @@ Names can be reassigned to any type of object::
 
     >>> x = 5            # x refers to an `int` object
     >>> x = 'greg'       # x refers now to a `str` object 
+
+
+The mysterious `from ... import ...` that we saw earlier is just about adding
+names to the namespace so the interpreter knows what you are referring to::
+
+    >>> from turtle import Turtle
+    >>> tess = Turtle()
 
 
 NameError
