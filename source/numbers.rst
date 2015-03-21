@@ -42,13 +42,12 @@ You just type them as literals::
 Questions
 ---------
 
-Why do we have two different types to represent numbers?
+1. Why do we have two different types to represent numbers?
+2. Find some uses cases where you'd choose an `int` and others where
+   a `float` is more suitable.
 
-Find some practical uses cases where you'd choose an `int` and others where
-a `float` is more suitable.
-
-Operators & numbers
-===================
+Number Operators
+================
 
 .. tip::
 
@@ -89,6 +88,7 @@ Likewise two number objects separated by comparison operators `==` `!=`
 
 
 .. tip::
+
     `int` objects are used to solve problems that require manipulating numbers
     but with no decimal point such as age, and days, IDs.
 
@@ -118,21 +118,22 @@ code to execute.::
     else:
         print('Not Greater Than')
 
+
 Questions
 ---------
 
-Find some practical uses cases where you'd use the if conditional.
+Find some uses cases where you'd use the if conditional.
 
 Number Exercises
 ================
 
-1. A bar wants to ensure only adults are allowed in. Write a program that prints
-'underaged' or 'ok' depending on the age entered in the code.
+1. A bar wants to ensure only adults are allowed in. Write a program in a file named
+   `bar.py` that prints 'underaged' or 'ok' depending on the age entered in the code.
 
 2. A ride operator needs to ensure clients are taller than 150cm due to security.
-Write a prgram that will print 'ok' or 'not tall enough' given a height entered
-in the code.
+   Write a prgram in a file named `ride.py` that will print 'ok' or 'not tall enough' 
+   given a height entered in the code.
 
 3. A trader wants to algorithmically buy 'ACME` corp stock if they rise above
-0.005$ but sell if they are below 0.001$. Write a script that prints 'buy',
-'sell', 'hold' depending on a sale price entered in the script.
+   0.005$ but sell if they are below 0.001$. Write a script `trader.py` that 
+   prints 'buy', 'sell', 'hold' depending on a sale price entered in the script.

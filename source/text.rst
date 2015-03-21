@@ -91,20 +91,27 @@ else::
     ... else:
     ...     print('You are an adult')
 
+
 Exercises
 =========
 
-1. Rewwrite the number programs to take input from the user. Think of an 
-   appropriate question to print to screen to solicit a correct response.
+1. Rewrite the number programs `bar.py`, `ride.py` and `trader.py` to take 
+   input from the user. 
+   Think of an appropriate question to print to screen to solicit 
+   a correct response.
 
 What if the user enters nonsense? There is rarely a program without some form
 of validation. This is explored in the next exercise.
 
 2. A sign up form on a website for the company 'Very Big Corp. Of America' requires 
-   information from its clients.
+   information from its clients. The company wants to do gender based 
+   email marketing. Put this code in `big_corp.py`
 
     a Write a program that asks clients their name, address, and gender. Ensure that 
       gender is represented as either 'm', 'f'. If it is not ask the user again.
+      Once all information is inputted print 'Hi Mr Greg, we have shaving
+      blades reduced this week' and for women 'Hi Ms Natalia, we have cosmetics
+      currently on sale'
 
     b The same program now requires people to enter their email address. Add this 
       but ensure it is well formed. You will need to define what a well formed email address is.
@@ -112,13 +119,13 @@ of validation. This is explored in the next exercise.
 3. A mobile phone company bills clients on a certain plan differently depending
    on whether they have dialed a number containing 0845 or not. Write a program 
    that asks the user which number they'd like to dial and answers whether it 
-   is 'free' or 'paid'.
+   is 'free' or 'paid'. Use `mobile.py`
 
 4. A geneticist needs your help identifying if a dna sequence exists in
    a larger strand of dna. A DNA sequence consists of a sequence 
    of A, T, G, and Cs. Write a program that takes a DNA sequence from the 
    user and confirms 'Found' or 'Not Found' depending on whether the input 
-   is contained in the target DNA strand.
+   is contained in the target DNA strand. Use `dna.py`
 
    DNA strand: ATTGCGCCTTATGCTTAACC
 

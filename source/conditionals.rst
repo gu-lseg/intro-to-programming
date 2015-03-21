@@ -1,5 +1,5 @@
-Conditionals & Repetition
-*************************
+Conditionals 
+************
 
 Conditional flow control is how the python interpreter chooses which code to
 execute. Think of it as how to express choices.
