@@ -1,5 +1,5 @@
-Conditionals
-************
+Conditional Repetition
+**********************
 
 Conditional flow control is how the python interpreter chooses which code to
 execute. Think of it as how to express choices.
@@ -9,9 +9,8 @@ are only two values a boolean object can take: True or False.
 
 Conditionals always base their decisions on the result of a boolean expression.
 
-First we look at some boolean expressions, then at two conditonal
-statements: `if` and `while`.
-
+First we look at some boolean expressions in more detail. Then we explore
+our first repetition construct.
 
 Equality
 ========
@@ -33,41 +32,8 @@ value to be equal::
     False
 
 
-if and elif
-===========
-
-The `if <boolean expression>:` followed by an indented block of code is syntax
-that means the interpreter will only execute the block of code if the
-expression evaluates to the object True.
-
-::
-
-    >>> person = 'Natalia'
-    >>> if person == 'Natalia':
-    ...    print('female')
-    'female'
-
-
-We can add multiple conditional branches by using `elif <boolean expression>:`
-
-:: 
-
-    >>> x = input("Enter your age: ")    # input returns a str 
-    Enter your age: 24
-    >>> x = int(x)                       # convert to an int
-    >>> if x < 18:
-    ...     print('You are a child')
-    ... elif x == 18:
-    ...     print('You have just turned into an adult')
-    ... else:
-    ...     print('You are an adult')
-
-Koans::
-
-    > python contemplate_koans.py about_if_statements
-
-while loops
-===========
+The `while` loop
+================
 
 The `while <condition>:` construct is a way of instructing the interpreter to repeat
 indefinitely. The condition defines when the loop will terminate.
@@ -102,8 +68,8 @@ Koans::
 
 
 
-Exercises
-=========
+Practicals
+==========
 
 Practical: Loan 
 ---------------

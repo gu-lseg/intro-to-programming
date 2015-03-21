@@ -13,7 +13,8 @@ Table of Contents:
 
    introduction
    getting_started
-   objects
+   numbers
+   text
    names
    conditionals
    functions
