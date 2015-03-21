@@ -55,6 +55,10 @@ Conditionals::
 
     C:\Users\greg-lo> python3 contemplate_koans.py about_if_statements
 
+Functions::
+
+    C:\Users\greg-lo> python3 contemplate_koans.py about_functions
+
 Lists::
  
     C:\Users\greg-lo> python3 contemplate_koans.py about_lists

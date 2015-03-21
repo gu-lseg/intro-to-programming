@@ -114,12 +114,6 @@ Functions can have many arguments::
         turtle.forward(length)
 
 
-Koans
------
-::
-
-    > python contemplate_koans.py about_functions
-
 Scope & Namespaces
 ==================
 
@@ -188,4 +182,3 @@ Expect users to be able to run this kind of dialog::
     >
 
 Do the same for celsius to farenheit.
-

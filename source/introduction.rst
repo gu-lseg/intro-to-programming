@@ -6,8 +6,8 @@ Learning to program requires much practice. However it is also very rewarding an
 The purpose of this course it to give you enough programming vocabulary to
 get a taste of what it is.
 
-Hello and Welcome
-=================
+print('Hello')
+==============
 
 1. Press `Windows + R` (the two keys together)
 2. A search box pops up.
@@ -41,7 +41,7 @@ Note the prompt has changed to `>>>`. Python is waiting for your instructions.
 
 In Python type the following and press enter::
 
-    >>> print('hi')
+    >>> print('Hello')
 
 Congratulations you have just written and executed a line of python!
 

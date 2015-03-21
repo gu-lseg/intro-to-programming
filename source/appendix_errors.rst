@@ -176,8 +176,11 @@ koans & `pdb`
 
 `pdb` is a great tool to understand code. Here we will apply it to our koans.
 
-Enter `import pdb; pdb.set_trace()` in a koan method that caused you
-difficulty. 
+Enter:: 
 
-Step through the execution of the code. When you are done type `c`
-to resume execution.
+    import pdb; pdb.set_trace() 
+
+In a koan method that caused you difficulty. 
+
+Step through the execution of the code. 
+When you are done type `c` to continue normal execution.
