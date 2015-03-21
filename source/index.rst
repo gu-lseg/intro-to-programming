@@ -17,6 +17,7 @@ Table of Contents:
    text
    names
    conditionals
+   koans
    functions
    data_structures
    loops

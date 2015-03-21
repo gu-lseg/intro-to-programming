@@ -42,9 +42,6 @@ special syntax methods::
 
 If you ask for an item that is outside of the list's length you will get an IndexError
 
-Koans::
-
-    > python3 contemplate_koans.py about_lists
 
 range
 -----
@@ -112,8 +109,8 @@ students in a class.
     Nested data structures are extremely common.
 
 
-for loops
-=========
+The `for` loop
+==============
 
 Use `for` to iterate over each item in a given list.
 

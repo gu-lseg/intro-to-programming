@@ -22,6 +22,55 @@ to define a row of houses.
 This is how complex and useful programs are built.
 
 
+Abstractions
+============
+
+We have gone from understanding this::
+
+    turtle.forward(100)
+    turtle.left(90)
+    turtle.forward(100)
+    turtle.left(90)
+    turtle.forward(100)
+    turtle.left(90)
+    turtle.forward(100)
+    turtle.left(90)
+
+to programming like this::
+
+    def square(side):
+        for i in range(4):
+            turtle.forward(side)
+            turtle.left(90)
+
+Why is the second version better than the first?
+
+Computers are complex. Even the smallest operation hides layers of incredible
+complexity. Programming is not only about getting a computer to do things. It is about
+writing code that is useful to humans.
+
+Good programming is harnessing complexity by writing code that rhymes with our
+intuitions. Good code is code that we can use with a minimal amout of context
+and already be productive.
+
+By calling::
+
+    >>> square(100)
+
+The above code called `square` can be understood even by a non programmer. Intuition
+helps because the code is defined at the appropriate level of abstraction over the complex details for understanding to take place.
+
+The two major advantages are:
+
+* detail and complexity is hidden. 
+* the definition of the function object called `square` is shorter clearer
+  and truer to its mathematical (conceptual) definition.
+
+
+This course illustrates that creative programming is about constructing useful
+abstractions. It is also about exercising your intuition to make you more
+productive. 
+
 Design
 ======
 
