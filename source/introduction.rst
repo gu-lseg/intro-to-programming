@@ -9,20 +9,19 @@ get a taste of what it is.
 print('Hello')
 ==============
 
-1. Press `Windows + R` (the two keys together)
-2. A search box pops up.
-3. Type `cmd.exe` and press enter. 
+1. Type `Windows + R` (the two keys together). A search box pops up.
+2. Type `cmd.exe` and press enter. 
 
-When `cmd.exe` launches you see:: 
+The program `cmd.exe` will launche and you should see a prompt:: 
 
     C:\Users\greg-lo>
 
-The line tells you your current location followed by a prompt `>`. 
+The line tells you your current location followed by `>`. 
 
 `cmd.exe` is a program often called a shell. It is an alternative to the point and
 click that we are all used to.
 
-Typing `python`, you enter the python interpreter::
+Typing `python3` and you enter the python interpreter::
 
     C:\Users\greg-lo> python3
     Python 3.4.2 (v3.4.2:8711a0951384, Sep 21 2014, 21:16:45) [MSC v.1600 32 b
@@ -36,10 +35,10 @@ Note the prompt has changed to `>>>`. Python is waiting for your instructions.
 
     Do not confuse the shell with the python interpreter.
 
-    If the prompt is `>` you are in cmd.exe, if the prompt is `>>>` you are in
-    the python interpreter.
+    If the prompt is `>` you are in cmd.exe
+    If the prompt is `>>>` you are in the python interpreter.
 
-In Python type the following and press enter::
+In the interpreter type the following and press enter::
 
     >>> print('Hello')
 
@@ -48,24 +47,24 @@ Congratulations you have just written and executed a line of python!
 Exercise
 --------
 
-Explore and experiment with the interpreter. Try printing other words.
+1. Explore and experiment with the interpreter. Try printing other words.
 
-Can you make Errors appear (it shouldn't be too difficult)? 
-How many different ones can you make?
+2. Can you make Errors appear (it shouldn't be too difficult)? 
+   How many different ones can you make? Make a list and google each one.
 
 Errors
 ======
 
-Getting errors and troubleshooting them is a large part of programming.
+Troubleshooting errors is a large part of programming.
 
 Typically given a problem to solve a programmer thinks up an idea that may work then
 battles through errors until it does work.
 
-Beginners understandably often get frustrated with
-them. However, build up resilience by taking time to understand them. 
+Often beginners understandably get frustrated with them. Don't. Instead build up 
+resilience by taking time to understand them. 
 They are always correct and trying to guide you to a solution. 
 
-Here are three you will see a lot are::
+Here are three you will see a lot::
 
     >>> def asdfwe:
       File "<stdin>", line 1
@@ -89,6 +88,14 @@ Here are three you will see a lot are::
 By the end of this course, you should be able to instantly map the above errors
 to solutions.
 
+.. tip::
+
+    Troubleshooting Errors:
+
+    1. Reading error messages. Try to intuitively solve them.
+    2. Google errors. There isn't a single error someone hasn't already had.
+    3. Ask an expert. If really stuck ask someone for help.
+
 Object oriented programming
 ===========================
 
@@ -110,7 +117,7 @@ objects to model a domain of interest to a programmer.
 This style of programming provides a clear, simple, and consistent model of computation
 that maps well to our intuitions about the world.
 
-This course introduces different types of objects: `String`, `Integer`, `Turtle`. 
+This course introduces different types of objects: `String`, `Integer`, `Turtle`, `lists`...
 
 You will discover what attributes and behaviours these objects have and how
 to use these to write programs to get stuff done.
@@ -132,10 +139,9 @@ When we ask the interpreter to execute it, it is interpreter that understands ho
 Questions
 ---------
 
-What other languages have you heard of?
-
-Explain in your own words but using the concepts `interpreter` and `language`
-what happened above when you printed text.
+1. What other languages have you heard of?
+2. Explain in your own words but using the concepts `interpreter` and `language`
+   what happened above when you printed text.
 
 Language goals
 ==============

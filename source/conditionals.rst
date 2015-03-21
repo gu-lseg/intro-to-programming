@@ -1,5 +1,5 @@
-Conditional Repetition
-**********************
+Conditionals & Repetition
+*************************
 
 Conditional flow control is how the python interpreter chooses which code to
 execute. Think of it as how to express choices.
@@ -8,6 +8,9 @@ Boolean expressions are lines of code that resolve to a boolean object. There
 are only two values a boolean object can take: True or False.
 
 Conditionals always base their decisions on the result of a boolean expression.
+
+Furthermore programming constructs such as loops enable us to harness
+repetition.
 
 First we look at some boolean expressions in more detail. Then we explore
 our first repetition construct.
