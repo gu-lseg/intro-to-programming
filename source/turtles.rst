@@ -196,9 +196,6 @@ Questions/Practicals
 Shape Exercises
 ===============
 
-Shapes
-------
-
 Lets program some shapes. We do this by breaking down into step by step instructions principles of geometry.
 
 Put all code inside a file named `shapes.py` to be executed using::

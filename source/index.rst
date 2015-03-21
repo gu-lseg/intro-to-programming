@@ -12,7 +12,7 @@ Table of Contents:
    :maxdepth: 2
 
    introduction
-   getting_started
+   turtles
    numbers
    text
    names
