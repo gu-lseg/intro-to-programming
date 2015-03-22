@@ -117,11 +117,6 @@ objects to model a domain of interest to a programmer.
 This style of programming provides a clear, simple, and consistent model of computation
 that maps well to our intuitions about the world.
 
-This course introduces different types of objects: `String`, `Integer`, `Turtle`, `lists`...
-
-You will discover what attributes and behaviours these objects have and how
-to use these to write programs to get stuff done.
-
 Python
 ======
 
@@ -135,6 +130,11 @@ Two things to bear in mind:
 Together we will learn the correct syntax and grammar of the Python language. 
 
 When we ask the interpreter to execute it, it is interpreter that understands how to translate Python scripts into creating and manipulating objects according to your instructions.
+
+This course introduces different types of Python objects: `String`, `Integer`, `Turtle`, `lists`...
+
+You will discover what attributes and behaviours these objects have and how
+to use these to write programs to get stuff done.
 
 Questions
 ---------
