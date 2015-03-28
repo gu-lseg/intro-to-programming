@@ -1,6 +1,11 @@
+Names Solutions
+***************
 
 
-`age_in_2050.py`::
+`age_in_2050.py`
+================
+
+.. code-block:: python
 
     age = input('Enter your age: ')
     age = int(age)

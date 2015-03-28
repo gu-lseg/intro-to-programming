@@ -10,7 +10,7 @@ Save these in a file called ``shapes.py``
 Square
 ------
 
-::
+.. code-block:: python
 
     turtle.forward(50)
     turtle.left(90)
@@ -25,7 +25,7 @@ Square
 rectangle
 ---------
 
-::
+.. code-block:: python
 
     turtle.forward(100)
     turtle.left(90)
@@ -40,7 +40,7 @@ rectangle
 Many Squares
 ------------
 
-::
+.. code-block:: python
 
     turtle.left(20)
 
@@ -79,7 +79,7 @@ Many Squares
 Equilateral Triangle
 --------------------
 
-::
+.. code-block:: python
 
     turtle.forward(100)
     turtle.left(180-60)

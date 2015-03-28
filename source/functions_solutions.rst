@@ -3,7 +3,7 @@ Shapes file
 
 Your ``shapes.py`` file should now look like this:
 
-::
+.. code-block:: python
 
     import turtle
 
@@ -53,7 +53,7 @@ Your ``shapes.py`` file should now look like this:
 Conversion Programs
 ===================
 
-::
+.. code-block:: python
 
     def to_celsius(fahrenheit):
         celsius = (fahrenheit - 32) * 5 / 9

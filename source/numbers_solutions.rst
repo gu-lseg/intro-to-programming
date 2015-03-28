@@ -1,7 +1,11 @@
+Number Solutions
+****************
 
 
+`bar.py`
+========
 
-`bar.py`::
+.. code-block:: python
 
     age = 17
     if age < 18:
@@ -10,7 +14,10 @@
         print('ok')
 
 
-`ride.py`::
+`ride.py`
+========
+
+.. code-block:: python
 
     heigth = 200
     if height < 150:
@@ -18,7 +25,10 @@
     else:
         print('ok')
 
-`trader.py`::
+`trader.py`
+==========
+
+.. code-block:: python
 
     acme = 0.003
     if acme < 0.002:

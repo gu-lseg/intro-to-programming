@@ -1,6 +1,10 @@
+Text Solutions
+**************
 
+`bar.py`
+========
 
-`bar.py`::
+.. code-block:: python
 
     age = input("Enter your age ")
     age = int(age)
@@ -10,7 +14,10 @@
         print('ok')
 
 
-`ride.py`::
+`ride.py`
+=========
+
+.. code-block:: python
 
     height = input("Enter your height ")
     height = int(height)
@@ -20,7 +27,10 @@
     else:
         print('ok')
 
-`trader.py`::
+`trader.py`
+===========
+
+.. code-block:: python
 
     acme = input("Enter ACME stock price ")
     acme = float(acme)
@@ -32,8 +42,10 @@
         print('Hold')
 
 
-`big_corp.py`::
+`big_corp.py`
+=============
 
+.. code-block:: python
     
     first_name = input("Enter your first name: ")
     last_name = input("Enter your last name: ")
@@ -49,7 +61,10 @@
         store')
 
 
-`mobile.py`::
+`mobile.py`
+===========
+
+.. code-block:: python
 
     phone = input("Enter phone number: ")
 
@@ -59,7 +74,10 @@
         print('Free')
 
 
-`dna.py`::
+`dna.py`
+========
+
+.. code-block:: python
     
     dna = ATTGCGCCTTATGCTTAACC
     new = input("Enter DNA strand: ")

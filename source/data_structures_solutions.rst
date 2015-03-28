@@ -3,7 +3,7 @@ Shapes file
 
 Your ``shapes.py`` file should now look like this:
 
-::
+.. code-block:: python
 
     from turtle import Turtle
 
@@ -56,7 +56,10 @@ Your ``shapes.py`` file should now look like this:
 Turtle Loops
 ============
 
-`turtle_queue.py`::
+`turtle_queue.py`
+----------------
+
+.. code-block:: python
 
     from turtle import Turtle, exitonclick, setworldcoordinates
 
