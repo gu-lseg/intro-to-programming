@@ -18,16 +18,22 @@ Lists
 
 A list object contains ordered items.
 
+Creation
+--------
+
 .. code-block:: python
 
     >>> ['John', 'Eric', 'Michael', 'Terry']          # literal
-    >>> list(['John', 'Eric', 'Michael', 'Terry'])    # constructor
-    >>> list('abc')                    # the list constructor can take a string
-    ['a', 'b', 'c']                    # the result is a list of its characters
+    >>> list('abc')                                   # `list` transform a string
+    ['a', 'b', 'c'] 
     >>> type([1, 2, 3])
     <class 'list'>
 
-special syntax methods:: 
+
+Extraction & Update
+-------------------
+
+.. code-block:: python
 
     >>> abc = ['a', 'b', 'c']
     >>> abc[0]                        # extract item
@@ -40,23 +46,27 @@ special syntax methods::
 .. tip::
     Lists are 0 indexed. The first item is at index 0, the second at 1...
 
-If you ask for an item that is outside of the list's length you will get an IndexError
+If you ask for an item that is outside of the list's length you will get an `IndexError`.
 
 
 range
 -----
 
-The `range` function combined with the `list` constructor is a fast way to create a list with a specified number of increasing integers::
+The `range` function combined with the `list` constructor is a fast way to create a list 
+with a specified number of increasing integers.
+
+.. code-block:: python
 
     >>> list(range(3))   # think: give me numbers up to 3
     [0, 1, 2]
 
-It provides a way of doing things a certain number of times.
 
-::
+It provides a convenient shortcut to do things a certain number of times.
+
+.. code-block:: python
 
     >>> for i in range(2):
-    ...    print('hi') 
+    ...    print('hi')
     'hi'
     'hi'
 
@@ -66,15 +76,24 @@ Dictionaries
 
 Dictionaries contain key value mappings.
 
-They can be used to collect information (data) about something. Here we use a dictinary to
-represent a Person.
+They can be used to collect information (data) about something. 
+Here we use a dictinary to represent a Person.
 
-creation::
+creation
+--------
+
+.. code-block:: python
 
     >>> {'name': 'Brian', 'age': 23, 'sex': 'M'}              # literal
     >>> dict([('name', 'Brian'), ('age', 23), ('sex', 'M')])  # constructor
 
-Special syntax for extracting and updating an attribute::
+
+extraction & update
+-------------------
+
+Special syntax: `<dict-name>[<key>]` for extracting and updating an attribute.
+
+.. code-block:: python
 
     >>> person = {'name': 'Brian', 'age': 23, 'sex': 'M'}
     >>> person['name']                          # extract value
@@ -91,7 +110,9 @@ Nesting
 
 Data structures can include any type of object including other data structures.
 
-Here is a list of dictionaries::
+Here is a list of dictionaries:
+
+.. code-block:: python
 
     >>> persons = [
             {'name': 'Naomi', 'age': 32, 'sex': 'F', 'status': 'Single'},
@@ -99,11 +120,10 @@ Here is a list of dictionaries::
             {'name': 'Brian', 'age': 23, 'sex': 'M', 'status': 'Single'}
         ]
 
+Nested data structures are extremely common.
+
 Think how this could be useful for example to store information about all
 students in a class.
-
-.. tip::
-    Nested data structures are extremely common.
 
 
 The `for` loop
@@ -133,7 +153,7 @@ Refactoring `square`
 
 We refactor `square` combining `range` with a for loop.
 
-::
+.. code-block:: python
 
     def square(side):
         for i in range(4):
@@ -201,8 +221,10 @@ Steps:
    * ... and so on ...
 4. Exit
 
-You will need to use some randomness::
+You will need to use some randomness:
     
+.. code-block:: python
+
     >>> import random
     >>> random.choice(['a', 'b', 'c'])
 
@@ -213,7 +235,10 @@ Using the following as template draw this:
 
 .. image:: /images/turtle-queue.png
 
-`turtle_queue.py`::
+Put the following in a file called `turtle_queue.py` and finish off the
+program.
+
+.. code-block:: python
 
     import turtle
 
