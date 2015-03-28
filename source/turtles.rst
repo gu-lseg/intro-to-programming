@@ -1,7 +1,7 @@
 Turtles
 *******
 
-Turtle objects know how to draw on a canvas. Here we explore creating and
+Turtle objects know how to draw. Here we explore creating and
 manipulating them to draw on the screen.
 
 We also look at the two ways the `python3` interpreter can execute your python code:

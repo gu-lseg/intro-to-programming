@@ -114,8 +114,8 @@ Functions can have many arguments::
         turtle.forward(length)
 
 
-Scope & Namespaces
-==================
+Scope 
+=====
 
 We have seen two ways to add to a given namespace:
 

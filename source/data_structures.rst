@@ -89,8 +89,8 @@ Koans::
 
     > python3 contemplate_koans.py about_dictionaries
 
-Nesting Data Structures
-=======================
+Nesting 
+=======
 
 Data structures can include any type of object including other data structures.
 

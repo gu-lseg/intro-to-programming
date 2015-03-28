@@ -17,11 +17,11 @@ Table of Contents:
    text
    names
    conditionals
-   koans
    functions
    data_structures
    loops
    conclusions
+   koans
    appendix_windows
    appendix_errors
    appendix_classes

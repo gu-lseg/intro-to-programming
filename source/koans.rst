@@ -1,9 +1,11 @@
-Koans
-*****
+Koans (Optional)
+****************
 
-Koans are a great way to reinforce your learning of a programming language.
+Koans are puzzles or exercises that are a great way to reinforce your learnings 
+of a programming language's constructs.
 
-Optionally work through these as you work through the course materials.
+Find instructions on how to download and run them below.
+
 
 Making assertions
 =================
@@ -40,8 +42,8 @@ The Koans
 
 .. tip::
 
-    Try copying small lines of code into the python interpreter to experiment 
-    interactively with the code. Do this whenever you are stuck.
+    When confused by code, break it up and use the interactive interpreter 
+    to experiment. Formulate assumptions and test them.
 
 Integers:: 
 
@@ -50,6 +52,7 @@ Integers::
 Strings::
 
     C:\Users\greg-lo> python3 contemplate_koans.py about_strings
+    C:\Users\greg-lo> python3 contemplate_koans.py about_string_manipulation
 
 Conditionals::
 
@@ -59,9 +62,14 @@ Functions::
 
     C:\Users\greg-lo> python3 contemplate_koans.py about_functions
 
-Lists::
+Data Structures::
  
     C:\Users\greg-lo> python3 contemplate_koans.py about_lists
+    C:\Users\greg-lo> python3 contemplate_koans.py about_dictionaries
+
+Loops::
+
+    C:\Users\greg-lo> python3 contemplate_koans.py about_loops
 
 
 Instructions
@@ -100,7 +108,7 @@ You run the koans by calling the `python3` interpreter on the
 
 Now we are ready to execute the contemplate_koans.py program::
 
-    C:\Users\greg-lo>python contemplate_koans.py about_asserts
+    C:\Users\greg-lo> python contemplate_koans.py about_asserts
 
 The above instruction is understood as calling the python program and passing in two parameters: a file name 'contenplate_koans.py' and some text 'about_asserts'.
 
