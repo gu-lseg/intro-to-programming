@@ -57,40 +57,46 @@ Turtle Loops
 
 `turtle_queue.py`::
 
-    import turtle
+    from turtle import Turtle, exitonclick, setworldcoordinates
 
     number_of_turtles = 4
 
+    # Make some turtles:
     turtles = []
     for _ in range(number_of_turtles):
-        turtles.append(turtle.Turtle())
-
-
-    def square(turtle_, side):
-        for i in range(4):
-            turtle_.forward(side)
-            turtle_.left(90)
+        turtles.append(Turtle())
 
     # position point of origin at bottom left of window
-    turtle.setworldcoordinates(0, 0, 600, 600)
+    setworldcoordinates(0, 0, 600, 600)
 
-    for i, turtle_ in enumerate(turtles):
-        turtle_.up()
+    def ready_the_turtles():
 
-    # Evenly space out the turtles
-    for i, turtle_ in enumerate(turtles):
-        ypos = 600 / number_of_turtles * i
-        turtle_.setpos(0, ypos)
+        for turtle in turtles:
+            turtle.up()
 
-    for i, turtle_ in enumerate(turtles):
-        turtle_.down()
+        # Evenly space out the turtles
+        for i, turtle in enumerate(turtles):
+            ypos = 600 / number_of_turtles * i
+            turtle.setpos(0, ypos)
 
+        for i, turtle in enumerate(turtles):
+            turtle.down()
+
+    def square(turtle, side):
+        for i in range(4):
+            turtle.forward(side)
+            turtle.left(90)
 
     def draw_squares():
         """ for each turtle draws a series of 3 squares """
-        for i, turtle_ in enumerate(turtles):
+        for turtle in turtles:
             for _ in range(3):
-                square(turtle_, 100)
-                turtle_.up()
-                turtle_.forward(200)
-                turtle_.down()
+                square(turtle, 100)
+                turtle.up()
+                turtle.forward(200)
+                turtle.down()
+
+    ready_the_turtles()
+    draw_squares()
+
+    exitonclick()
