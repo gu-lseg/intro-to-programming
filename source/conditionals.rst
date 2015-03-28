@@ -23,7 +23,7 @@ use of indentation.
 All types of conditionals use code blocks which are executed depending on the
 outcome of the conditional expression that guards their execution.
 
-::
+.. code-block:: python
 
     a = 4
     if a == 4:
@@ -48,7 +48,9 @@ Equality
 Testing the equality of two objects returns `True` or `False` depending on how
 equality is defined on those two objects.
 
-Equality on stings is defined as follows::
+Equality on stings is defined as follows:
+
+.. code-block:: python
 
     >>> '5' == '5'
     True
@@ -56,7 +58,9 @@ Equality on stings is defined as follows::
     False
 
 Generally the objects have to first be of the same type and then have the same
-value to be equal::
+value to be equal:
+
+.. code-block:: python
 
     >>> 5 == '5'
     False
@@ -71,13 +75,16 @@ indefinitely. The condition defines when the loop will terminate.
 
 syntax
 ------
+
 ::
+
     while <condition>:   # condition must evaluate to a boolean
         <code block>     # the indent defines the loop's code block
 
 example
 -------
-::
+
+.. code-block:: python
     
     >>> import random
     >>> warm = 20
@@ -180,7 +187,9 @@ Practical: Turtles Joypad
 We want to control the movements of the turtle using instructions from the
 keyboard. Much like the way you'd control a character in a game.
 
-Place this in a file called `turtle_joypad.py`::
+Place this in a file called `turtle_joypad.py`:
+
+.. code-block:: python
 
     import turtle
 
@@ -193,7 +202,7 @@ Place this in a file called `turtle_joypad.py`::
             tess.forward(10)
 
         # [ ... put your code here ... ]
-            
+
         if move == 'q':
             break
 
