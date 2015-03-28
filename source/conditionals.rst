@@ -28,14 +28,10 @@ outcome of the conditional expression that guards their execution.
     a = 4
     if a == 4:
         print('This code block will execute')
-        b = 5
-        result = a + b
-        print(result)
+        result = 5 + a
     else:
         print('This code block will not execute')
-        b = 6
-        result = a + b
-        print(result)
+        result = a + 6
 
 .. tip::
 
