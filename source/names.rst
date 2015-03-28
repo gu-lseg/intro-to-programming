@@ -173,3 +173,36 @@ Shapes
 
 Refactor your code in `shapes.py` to use variables as much as possible.
 
+
+Objects & Types Q&A
+===================
+
+If you understand the answers to these you understand everything about objects and types!!
+
+.. tip::
+    Use the interpreter to help you find answers
+
+
+Describe in detail what the interpreter does when you type the following and
+enter:: 
+
+    >>> '5'
+
+    >>> 5
+
+What is the result this line of code?::
+
+    3 < '5'
+
+
+Instances of both `str` and `int` objects recognise the `+` symbol. What output would you expect of the following lines of code?
+
+::
+
+    '1' + '2'
+
+    1 + 2
+
+
+Try the same above but this time using `*` instead of `+`. What can you
+conclude of the meaning of `*`?
