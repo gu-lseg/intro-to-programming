@@ -1,7 +1,13 @@
 Functions
 *********
 
-You can think of functions as actions, verbs, or commands and you can think of parameters as adverbs: 'run, quickly'
+You can think of functions as actions, verbs, or commands 
+and you can think of parameters as adverbs: 'run, quickly'
+
+Functions are special objects that contain code.
+
+When you call them, using special syntax `()`, you execute the
+code they contain.
 
 ::
 
@@ -10,7 +16,8 @@ You can think of functions as actions, verbs, or commands and you can think of p
     >>> turtle.forward(10)         # actioned by use of '()'s
 
 
-All turtle instructions are examples of calling functions attached to the turtle object.
+All turtle instructions are examples of calling functions attached 
+to the turtle object.
 
 `print` is another function::
     
@@ -20,7 +27,8 @@ All turtle instructions are examples of calling functions attached to the turtle
 
 .. tip::
 
-    Functions and methods are very similar. Methods exist on objects however functions stand alone.
+    Functions and methods are very similar. 
+    Methods exist on objects however functions stand alone.
 
 
 Function objects
@@ -57,13 +65,11 @@ Note:
 * A block is defined by a colon, and one or more indented lines.
 * The indents are 4 spaces. The block ends on the first non indented line. (Take care to use spaces and not tabs for indenting)
 
-Functions defined on function objects::
+Usage
+-----
 
-    >>> dir(my_function)
-    [ ... ]
-
-
-We 'call' functions by adding `()` at the end of their names. This is syntax unique to functions. It means actioning the objects' code block.
+We 'call' functions by adding `()` at the end of their names. 
+This is syntax unique to functions. It means action the function objects' code block.
 
 
 IndentationError
@@ -114,16 +120,15 @@ Functions can have many arguments::
         turtle.forward(length)
 
 
-Scope 
-=====
+Function Scope 
+==============
 
 We have seen two ways to add to a given namespace:
 
 1. An assignment statement adds a name that references an object.
 2. A function definition associates a name with an object of type function.
 
-Functions however create a namespace that is relative only to its block of
-code.
+Functions however create a namespace for the code it contains.
 
 We will use pythontutor to exercise visualising program execution.
 
@@ -167,6 +172,8 @@ Refactor (rewrite) your house code as a function that uses two other functions.
 
 Conversion Programs
 -------------------
+
+This exercise assumes you have completed the `about_functions` koans.
 
 For each conversion function you completed in the Koans, write a simple command
 line program that prompts the user for input and returns the result.

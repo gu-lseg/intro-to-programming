@@ -85,9 +85,6 @@ Special syntax for extracting and updating an attribute::
 
 If you request a non-existent key you get a `KeyError`.
 
-Koans::
-
-    > python3 contemplate_koans.py about_dictionaries
 
 Nesting 
 =======
@@ -155,6 +152,39 @@ Exercises
 =========
 
 
+Refactor `shapes.py`
+--------------------
+
+Refactor all the shapes in `shapes.py` and make good use of loops where you
+can.
+
+Hexagon
+-------
+
+Write code that draws this:
+
+.. image:: /images/turtle-hexagon.png
+
+
+Honeycomb
+---------
+
+Write code that draws this:
+
+.. image:: /images/turtle-honeycomb.png
+
+
+Any Shape
+---------
+
+Write code that draws this:
+
+.. image:: /images/turtle-all-shapes.png
+
+.. tip::
+
+    The sum of the external angles of any shape is always 360 degrees.
+
 Looping `turtles`
 -----------------
 
@@ -190,35 +220,3 @@ Using the following as template draw this:
     # Your turn! Enter your code here #
     ###################################
 
-Refactor `shapes.py`
---------------------
-
-Refactor all the shapes in `shapes.py` and make good use of loops where you
-can.
-
-Hexagon
--------
-
-Write code that draws this:
-
-.. image:: /images/turtle-hexagon.png
-
-
-Honeycomb
----------
-
-Write code that draws this:
-
-.. image:: /images/turtle-honeycomb.png
-
-
-Any Shape
----------
-
-Write code that draws this:
-
-.. image:: /images/turtle-all-shapes.png
-
-.. tip::
-
-    The sum of the external angles of any shape is always 360 degrees.
