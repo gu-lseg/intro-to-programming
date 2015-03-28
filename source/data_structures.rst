@@ -18,7 +18,7 @@ Lists
 
 A list object contains ordered items.
 
-creation:: 
+.. code-block:: python
 
     >>> ['John', 'Eric', 'Michael', 'Terry']          # literal
     >>> list(['John', 'Eric', 'Michael', 'Terry'])    # constructor
