@@ -1,7 +1,10 @@
-Loan
-====
+Solutions to Practicals
+***********************
 
-::
+loan.py
+=======
+
+.. code-block:: python
 
     while balance > 0:
         compound_interest = 0.1 * balance
@@ -17,10 +20,11 @@ Loan
     balance: 22.843900000000005
     balance: 5.128290000000007
 
-Turtles joypad
-==============
 
-`turtle_joypad.py`::
+`turtle_joypad.py`
+==================
+
+.. code-block:: python
 
     import turtle
 
@@ -46,42 +50,35 @@ Turtles joypad
             break
 
 
-Paper Sissors Rock
-==================
+bmi_django.py
+=============
 
-`paper_sissors_rock.py`::
+.. code-block:: python
 
-    import random
+    from django.shortcuts import render
+    from django.http import HttpResponse
 
-    choices = ['paper', 'sissors', 'rock']
-    chosen = random.choice(choices)
+    bmi_html = """
+    <html>
+    <head></head>
+    <body>
+        <h1>BMI calculator</h1>
+        <p>Your bmi is {}</p>
+        <p>see where you are on this chart:</p>
+        <img src="http://upload.wikimedia.org/wikipedia/commons/e/e9/Body_mass_index_chart.svg">
+    </body>
+    </html>
+    """
 
-    while True:
-        msg = 'Type one of following {}: '.format(' '.join(choices))
-        usr = input(msg)
-        if usr in choices:
-            break
-        print('Please choose a correct choice')
+    def bmi(request):
 
-    print('computer choses: {}'.format(chosen))
+        mass = request.GET['mass']
+        height = request.GET['height']
 
-    if usr == chosen:
-        print('The result is a tie!')
+        bmi = float(mass) / float(height)**2
 
-    if usr == 'paper':
-        if chosen == 'rock':
-            print('paper wins')
-        else:
-            print('rock wins')
+        response = bmi_html.format(bmi)
 
-    if usr == 'sissors':
-        if chosen == 'paper':
-            print('sissors wins')
-        else:
-            print('rock wins')
+        return HttpResponse(response)
 
-    if usr == 'rock':
-        if chosen == 'sissors':
-            print('rock wins')
-        else:
-            print('paper wins')
+

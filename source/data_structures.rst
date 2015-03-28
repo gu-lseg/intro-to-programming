@@ -114,9 +114,9 @@ Use `for` to iterate over each item in a given list.
 Here by iterate through a list of `str` objects we change the colour of our
 turtle alex.
 
-::
+.. code-block:: python
 
-    from turtle import Turtle, exitonclick   
+    from turtle import Turtle, exitonclick
 
     alex = Turtle()
 
@@ -177,7 +177,7 @@ Write code that draws this:
 Any Shape
 ---------
 
-Write code that draws this:
+Write code that can draw any shape like this:
 
 .. image:: /images/turtle-all-shapes.png
 

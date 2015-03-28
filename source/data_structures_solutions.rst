@@ -25,7 +25,7 @@ Your ``shapes.py`` file should now look like this:
         for _ in range(3):
             tess.forward(side)
             tess.left(180-60)
-        
+
     def hexagon():
       for _ in range(6):
           tess.forward(100)
@@ -52,12 +52,49 @@ Your ``shapes.py`` file should now look like this:
             tess.forward(length)
             tess.right(360 / sides)
 
+`paper_sissors_rock.py`
+=======================
 
-Turtle Loops
-============
+.. code-block:: python
+
+    import random
+
+    choices = ['paper', 'sissors', 'rock']
+    chosen = random.choice(choices)
+
+    while True:
+        msg = 'Type one of following {}: '.format(' '.join(choices))
+        usr = input(msg)
+        if usr in choices:
+            break
+        print('Please choose a correct choice')
+
+    print('computer choses: {}'.format(chosen))
+
+    if usr == chosen:
+        print('The result is a tie!')
+
+    if usr == 'paper':
+        if chosen == 'rock':
+            print('paper wins')
+        else:
+            print('rock wins')
+
+    if usr == 'sissors':
+        if chosen == 'paper':
+            print('sissors wins')
+        else:
+            print('rock wins')
+
+    if usr == 'rock':
+        if chosen == 'sissors':
+            print('rock wins')
+        else:
+            print('paper wins')
+
 
 `turtle_queue.py`
-----------------
+=================
 
 .. code-block:: python
 
