@@ -185,6 +185,27 @@ Write code that draws this:
 
     The sum of the external angles of any shape is always 360 degrees.
 
+
+Practical: Paper Sissors Rock
+-----------------------------
+
+Steps:
+
+1. user inputs either paper, sissors or rock.
+2. computer randomly chooses one too.
+3. print outcome according to the rules of the game:
+
+   * If user chose 'paper' and computer chose 'rock', then print 'rock wins'
+   * if user chose 'sissors' and computer chose 'paper' then print 'sissors
+     wins'
+   * ... and so on ...
+4. Exit
+
+You will need to use some randomness::
+    
+    >>> import random
+    >>> random.choice(['a', 'b', 'c'])
+
 Looping `turtles`
 -----------------
 

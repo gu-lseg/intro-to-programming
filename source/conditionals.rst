@@ -8,12 +8,39 @@ Boolean expressions are lines of code that resolve to a boolean object. There
 are only two values a boolean object can take: True or False.
 
 Conditionals always base their decisions on the result of a boolean expression.
+They are always followed by a block of code.
 
-Furthermore programming constructs such as loops enable us to harness
-repetition.
 
-First we look at some boolean expressions in more detail. Then we explore
-our first repetition construct.
+Furthermore conditional loops enable us to harness logic relating to repetition.
+
+
+Code Blocks
+===========
+
+A block of code is code that will execute together. A block is defined by the 
+use of indentation.
+
+All types of conditionals use code blocks which are executed depending on the
+outcome of the conditional expression that guards their execution.
+
+::
+
+    a = 4
+    if a == 4:
+        print('This code block will execute')
+        b = 5
+        result = a + b
+        print(result)
+    else:
+        print('This code block will not execute')
+        b = 6
+        result = a + b
+        print(result)
+
+.. tip::
+
+    In other languages code blocks are defined by the use of braces `{}`s
+
 
 Equality
 ========
@@ -41,8 +68,15 @@ The `while` loop
 The `while <condition>:` construct is a way of instructing the interpreter to repeat
 indefinitely. The condition defines when the loop will terminate.
 
-`break` is a keyword that instructs the interpreter to break out of a loop. 
 
+syntax
+------
+::
+    while <condition>:   # condition must evaluate to a boolean
+        <code block>     # the indent defines the loop's code block
+
+example
+-------
 ::
     
     >>> import random
@@ -55,6 +89,10 @@ indefinitely. The condition defines when the loop will terminate.
     cold
     cold
 
+
+visualising execution
+---------------------
+
 |py-while|
 
 .. |py-while| raw:: html
@@ -65,10 +103,12 @@ indefinitely. The condition defines when the loop will terminate.
     Use while if you don't when you only know a loop will terminate in a given
     condition.
 
-Koans::
+loop keywords
+-------------
 
-    > python contemplate_koans.py about_while_loops
-
+`break` is a keyword that instructs the interpreter to break out of a loop. 
+`continue` instructs the interpreter to skip the rest of the loop code block
+and continue with the next loop.
 
 
 Practicals
@@ -118,6 +158,11 @@ Return the bmi result, followed by the users' BMI classification.
 
 BMI Classification
 
+.. tip::
+
+    You will have to do some research online for how to calculate a persons
+    bmi.
+
 =============   =================
 BMI             Classification
 =============   =================
@@ -152,23 +197,3 @@ Place this in a file called `turtle_joypad.py`::
         if move == 'q':
             break
 
-
-Practical: Paper Sissors Rock
------------------------------
-
-Steps:
-
-1. user inputs either paper, sissors or rock.
-2. computer randomly chooses one too.
-3. print outcome according to the rules of the game:
-
-   * If user chose 'paper' and computer chose 'rock', then print 'rock wins'
-   * if user chose 'sissors' and computer chose 'paper' then print 'sissors
-     wins'
-   * ... and so on ...
-4. Exit
-
-You will need to use some randomness::
-    
-    >>> import random
-    >>> random.choice(['a', 'b', 'c'])
