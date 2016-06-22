@@ -3,7 +3,8 @@ Intro to Programming using Python
 
 
 To run locally:
-
+	
+	pip install sphinx
     make html
     cd build/html
     python -m SimpleHTTPServer
