@@ -9,23 +9,25 @@ get a taste of what it is.
 print('Hello')
 ==============
 
-1. Type `Windows + R` (the two keys together). A search box pops up.
-2. Type `cmd.exe` and press enter. 
+First we need to open the 'terminal' - An application that provides text-based access to the operating system.
 
-The program `cmd.exe` will launche and you should see a prompt:: 
+1. Press `Cmd(apple) + Spacebar` (the two keys together). A search box pops up.
+2. Type `terminal` and press enter. 
 
-    C:\Users\greg-lo>
+The program `terminal` will launch and you should see a prompt:: 
+
+   ~
 
 The line tells you your current location followed by `>`. 
 
-`cmd.exe` is a program often called a shell. It is an alternative to the point and
-click that we are all used to.
+`terminal` is a program often called a shell. It is an alternative to the point and
+click 'graphical user interface' that we are all used to.
 
-Typing `python3` and you enter the python interpreter::
+Typing `python` and you enter the python interpreter::
 
-    C:\Users\greg-lo> python3
-    Python 3.4.2 (v3.4.2:8711a0951384, Sep 21 2014, 21:16:45) [MSC v.1600 32 b
-    it (Intel)] on win32
+    ~> python
+    Python 2.7.11 (default, Dec 26 2015, 17:47:15) 
+    [GCC 4.2.1 Compatible Apple LLVM 7.0.2 (clang-700.1.81)] on darwin
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
 
@@ -35,7 +37,7 @@ Note the prompt has changed to `>>>`. Python is waiting for your instructions.
 
     Do not confuse the shell with the python interpreter.
 
-    If the prompt is `>` you are in cmd.exe
+    If the prompt is `>` you are in terminal
     If the prompt is `>>>` you are in the python interpreter.
 
 In the interpreter type the following and press enter::
@@ -49,7 +51,9 @@ Exercise
 
 1. Explore and experiment with the interpreter. Try printing other words.
 
-2. Can you make Errors appear (it shouldn't be too difficult)? 
+2. What happens if you miss off the end bracket `print('hello'`? How do you continue?
+
+3. Can you make Errors appear (it shouldn't be too difficult)? 
    How many different ones can you make? Make a list and google each one.
 
 Errors
@@ -85,7 +89,7 @@ Here are three you will see a lot::
                   ^
     SyntaxError: invalid syntax
 
-By the end of this course, you should be able to instantly map the above errors
+By the end of this course, you should be able to instantly understand and map the above errors
 to solutions.
 
 .. tip::
