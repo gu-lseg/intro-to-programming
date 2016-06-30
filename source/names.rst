@@ -5,18 +5,23 @@ In this section we will examine names and assignment more closely.
 
 .. tip::
 
-    Names and variables in this context are synonyms. We use 'name' because
+    Names and variables in this context mean the same thing. We use 'name' because
     Python uses this terminology.
 
 Assignment
 ==========
 
-Assignment is one of the ways we associate names with objects. Names are how 
-the interpreter knows to locate what programmers are referring to.
+Assignment is one of the ways we associate names with objects. Names are how
+the interpreter knows what programmers are referring to.
 
-Just like we need to name person objects to know how to differentiate between
-them, `python3`, the interpreter, also needs to know what you are referring 
+Just like people have names so we can uniquely identify them,
+ in `python` the interpreter also needs to know what you are referring
 to when you give it instructions.
+
+The namespace is a collection of all the available names that could be associated
+with an object. You can think of a namespace as like a register. A register is a list of
+all possible names a child in a class could have and each name is assigned to one
+child only and uniquely identifies them.
 
 .. tip::
 
@@ -48,7 +53,7 @@ A name is an expression and it evaluates to its object::
 Names can be reassigned to any type of object::
 
     >>> x = 5            # x refers to an `int` object
-    >>> x = 'greg'       # x refers now to a `str` object 
+    >>> x = 'greg'       # x refers now to a `str` object
 
 
 The mysterious `from ... import ...` that we saw earlier is just about adding
@@ -73,14 +78,14 @@ Visualising
 For each assignment:
 
 * If the name already exists, the namespace (frame) is updated.
-* If the name doesn't exist, a new name is created pointing and it references 
+* If the name doesn't exist, a new name is created pointing and it references
   the newly created object.
 
 
 NameError
 ---------
 
-If the interpreter gets a name that hasn't yet been defined through assignment 
+If the interpreter gets a name that hasn't yet been defined through assignment
 it will complain by throwing a `NameError`.
 
 example::
@@ -97,7 +102,7 @@ Questions
 
     five = "five"
 
-What does each set of characters on either side of the equal sign mean? 
+What does each set of characters on either side of the equal sign mean?
 
 
 Reusability
@@ -117,7 +122,7 @@ Consider this code that draws a square with side length 50::
     turtle.forward(50)
     turtle.left(90)
 
-Now a decision is made that the sides be of length 100. 
+Now a decision is made that the sides be of length 100.
 
 You have to go back and replace 50 with 100 four times.
 
@@ -148,7 +153,7 @@ new programmatic definition mirrors that.
 Good Naming
 -----------
 
-The name `right_angle` was chosen to refer to an `int` of value 90. 
+The name `right_angle` was chosen to refer to an `int` of value 90.
 
 We could have used `thirty_degree_angle`, `angle`, or `awef` and the code would work fine. However:
 
@@ -166,7 +171,7 @@ Age in 2050
 -----------
 
 Write a program that asks the user for her age and prints how old she will be
-in 2020.
+in 2050.
 
 Shapes
 ------
@@ -184,7 +189,7 @@ If you understand the answers to these you understand everything about objects a
 
 
 Describe in detail what the interpreter does when you type the following and
-enter:: 
+enter::
 
     >>> '5'
 
