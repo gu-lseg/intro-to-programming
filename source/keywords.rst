@@ -6,3 +6,6 @@ Key Words
 * Namespace
 * Boolean
 * Conditional Flow Control
+* Syntax
+* Parentheses
+* Terminal
