@@ -16,7 +16,9 @@ the interpreter knows what programmers are referring to.
 
 Just like people have names so we can uniquely identify them,
  in `python` the interpreter also needs to know what you are referring
-to when you give it instructions.
+to when you give it instructions. For example you would not want it to be possible
+for there to be 2 methods called 'forward' which did different things as you would
+not know which method was going to be executed.
 
 The namespace is a collection of all the available names that could be associated
 with an object. You can think of a namespace as like a register. A register is a list of
@@ -89,7 +91,9 @@ If the interpreter gets a name that hasn't yet been defined through assignment
 it will complain by throwing a `NameError`.
 
 example::
-
+    >>> x = 5
+    >>> x
+    5
     >>> the_holy_grail
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
@@ -142,8 +146,8 @@ Using names you can do this::
 
 If you change your mind you need only update one value.
 
-Mathematics tells us a square's length can be of any size. Our
-new programmatic definition mirrors that.
+Mathematics tells us a square's length can be of any size but that all sides
+must be the same length. Our new programmatic definition mirrors that.
 
 .. tip::
 
@@ -162,7 +166,10 @@ We could have used `thirty_degree_angle`, `angle`, or `awef` and the code would 
 * `awef` is nonsense and conveys no meaning
 
 By choosing appropriate names you make the code more readable and
-intuitive.
+intuitive. Readability is very important even for projects you are working on on
+your own. It is not always easy to remember what your intention was when you come
+back and look at your code at a later date. If you have used good variable and method names
+it will be easier to make changes to your code at a later date.
 
 Exercises
 =========
