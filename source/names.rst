@@ -15,7 +15,7 @@ Assignment is one of the ways we associate names with objects. Names are how
 the interpreter knows what programmers are referring to.
 
 Just like people have names so we can uniquely identify them,
- in `python` the interpreter also needs to know what you are referring
+in `python` the interpreter also needs to know what you are referring
 to when you give it instructions. For example you would not want it to be possible
 for there to be 2 methods called 'forward' which did different things as you would
 not know which method was going to be executed.
