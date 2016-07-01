@@ -26,3 +26,4 @@ Table of Contents:
    appendix_errors
    appendix_classes
    appendix_resources
+   keywords
