@@ -18,7 +18,9 @@ Errors
 
 Errors always tell you what when wrong but not always why.
 
-Read errors, first using intuition then by debugging and research.
+Read errors, first using intuition then by debugging and research. Google is
+a very valuable resource when faced with an error, odds are you're not the first
+person to come up against the problem.
 
 .. tip::
 
@@ -74,7 +76,7 @@ pdb is the python debugger. You can freeze execution at a particular point in ti
 
 To execute code with `pdb`::
 
-    python3 -m pdb my.py
+    python -m pdb my.py
 
 You can also pause the execution at any time by placing this line into your
 code::
@@ -139,7 +141,7 @@ Put this code into a file named `my.py`::
 
 Execute with::
 
-    python3 -m pdb my.py
+    python -m pdb my.py
 
 `pdb` starts program and pauses at first line::
 
