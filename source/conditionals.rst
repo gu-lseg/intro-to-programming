@@ -20,7 +20,7 @@ Furthermore conditional loops enable us to harness logic relating to repetition.
 Code Blocks
 ===========
 
-A block of code is code that will execute together. In python a block is defined by the
+A block of code is code that will execute together. In Python a block is defined by the
 use of indentation.
 
 All types of conditionals use code blocks which are executed depending on the
@@ -119,7 +119,7 @@ visualising execution
     <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=import+random%0Awarm+%3D+20%0Atemperature+%3D+18%0Awhile+temperature+%3C%3D+warm%3A%0A++++print('Its+'+%2B+str(temperature)+%2B+'+degrees.+Wrap+up.')%0A++++temperature+%3D+random.randrange(5,+25)%0A++++%0Aprint('Thats+all+for+now')&origin=opt-frontend.js&cumulative=false&heapPrimitives=false&drawParentPointers=false&textReferences=false&showOnlyOutputs=false&py=3&rawInputLstJSON=%5B%5D&curInstr=0&codeDivWidth=350&codeDivHeight=400"> </iframe>
 
 .. tip::
-    A while loop is used repeatedly execute an instruction until a condition
+    A while loop is used to repeatedly execute an instruction until a condition
     is no longer true. You should make sure that the condition will eventually be
     false otherwise your program will run forever. If you do end up writing a loop like
     this use ``ctrl + c`` to terminate your program.
@@ -187,6 +187,8 @@ BMI Classification
 
     You will have to do some research online for how to calculate a persons
     bmi.
+
+    Try working the maths out on paper first before you write the code.
 
 =============   =================
 BMI             Classification
