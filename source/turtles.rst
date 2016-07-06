@@ -4,9 +4,9 @@ Turtles
 Turtle objects know how to draw. Here we explore creating and
 manipulating them to draw on the screen.
 
-We also look at the two ways the `python3` interpreter can execute your python code:
+We also look at the two ways the `python` interpreter can execute your Python code:
 
-* The interactive interpreter
+* The interactive interpreter (typing directly into the terminal).
 * Calling the python interpreter on a file that contains code.
 
 .. tip::
@@ -17,37 +17,38 @@ We also look at the two ways the `python3` interpreter can execute your python c
 Interactive interpreter 
 =======================
 
-We launch the python interpreter through `cmd.exe`:
+We launch the python interpreter through `terminal`:
 
-1. Press the two keys 'Windows + R' together
-2. Enter `cmd.exe` in the search prompt and enter.
+1. Press `Cmd(apple) + Spacebar` (the two keys together). A search box pops up.
+2. Type `terminal` and press enter. 
 
 A window will appear with a prompt:: 
 
-    C:\Users\greg-lo>
+    ~
 
-Type `python3` to enter the interactive shell::
+Type `python` to enter the interactive shell::
 
-    C:\Users\greg-lo>python
-    Python 3.4.2 (v3.4.2:8711a0951384, Sep 21 2014, 21:16:45) [MSC v.1600 32 b
-    it (Intel)] on win32
-    Type "help", "copyright", "credits" or "license" for more information.
-
-    >>> print('Hi') 
+    ~ >python
+    ...
+    >>>
 
 
-Now type::
+The interpreter is awaiting your commands. Now type each of the lines, pressing enter after each line::
 
     >>> from turtle import Turtle
     >>> tess = Turtle()
 
+A window will pop up called `Python Turtle Graphics` containing tess the turtle.
+
 .. image:: /images/turtle-init.png
 
-::
+Try typing some different commands - forward and left are methods on our tess turtle object
 
     >>> tess.forward(100)
 
 .. image:: /images/turtle-forward.png
+
+The left and right methods take degrees as their input
 
 ::
 
@@ -67,11 +68,18 @@ Lets create 'bob' a new turtle object::
     >>> bob.color('red')
     >>> bob.backward(100)
 
+Clear your canvas and move both turtles back to the middle
+
+    >>> bob.reset()
+    >>> tess.reset()
 
 Exercise
 --------
 
 Experiment drawing shapes in different colours.
+
+1. Can you draw a triangle?
+2. Can you draw a square using two turtles in two different colours?
 
 Documentation
 -------------
@@ -157,7 +165,7 @@ Code in files
 
 Most code is written and executed from a file. 
 
-Using SublimeText create a file named `my_turtle_file.py` with this code:: 
+Using SublimeText to create a file named `my_turtle_file.py` with this code:: 
 
     from turtle import Turtle, exitonclick
 
@@ -171,21 +179,24 @@ Using SublimeText create a file named `my_turtle_file.py` with this code::
 
     All word document file names end with .doc, 
     all files names with python code must end with .py
+    We can comment out lines of code using #
 
 In cmd.exe call the python command with the filename `my_turtle_file.py` as parameter::
   
-    C:\Users\greg-lo> python3 my_turtle_file.py
+    ~ > python my_turtle_file.py
 
 
 .. tip::
 
     Make sure the file you created exists in the location where you execute this
     command. The location is given by the prompt.
+    You can use the 'Change Directory' command `cd` to get to the right directory
+    E.g: `cd /folder` will move the current directory to 'folder'
 
 Questions/Practicals
 --------------------
 
-1. What are the differences between using `python3` interactively and using files? When would you use one or the other?
+1. What are the differences between using `python` interactively and using files? When would you use one or the other?
 
 2. Challenge yourself to find as many different ways of drawing with a turtle object.
 
