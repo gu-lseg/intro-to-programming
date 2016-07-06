@@ -9,3 +9,5 @@ Key Words
 * Syntax
 * Parentheses
 * Terminal
+* Execute
+* Terminate
