@@ -179,7 +179,7 @@ Using SublimeText to create a file named `my_turtle_file.py` with this code::
 
     All word document file names end with .doc, 
     all files names with python code must end with .py
-    We can comment our lines of code using #
+    We can comment out lines of code using #
 
 In cmd.exe call the python command with the filename `my_turtle_file.py` as parameter::
   
