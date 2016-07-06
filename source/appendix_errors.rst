@@ -26,7 +26,7 @@ person to come up against the problem.
 
     You need to learn how to find information.
     Always read Errors and use your intuition, then Google.
-    If that hsn't helped only then ask an expert.
+    If that hasn't helped only then ask an expert.
 
 With time many errors map to solutions instantly.
 
