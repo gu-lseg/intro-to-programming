@@ -25,8 +25,7 @@ Both types can represent positive or negative numbers.
 Creation 
 --------
 
-Unlike creating turtles there is no specific command to creating an `int`
-and `float` objects.
+It is easier to create ints and floats than it was to create turtles.
 
 You can just type them out::
 
