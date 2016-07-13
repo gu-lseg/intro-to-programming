@@ -12,7 +12,7 @@ x is the variable.
 
 Assignment
 ==========
-In coding assignment is giving a value to a variable.
+In coding, assignment is giving a value to a variable.
 
 For example:
 x = 5
