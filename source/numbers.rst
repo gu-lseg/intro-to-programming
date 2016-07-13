@@ -43,8 +43,8 @@ Questions
 ---------
 
 1. What is the different between an `int` and a `float`?
-1. Why do we have two different types to represent numbers?
-2. Find some uses cases where you'd choose an `int` and others where
+2. Why do we have two different types to represent numbers?
+3. Find some uses cases where you'd choose an `int` and others where
    a `float` is more suitable.
 
 Number Operators
