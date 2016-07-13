@@ -1,13 +1,16 @@
-Intro to Programming using Python
-=================================
+# Introduction to programming in Python
 
+## Dependencies
 
-To run locally:
-	
-	pip install sphinx
+   pip install -r requirements.txt
+
+You might want to install the dependencies in a [virtualenv](https://virtualenv.pypa.io/en/stable/userguide/#usage).
+
+## Build
+
     make html
+
+## Run
+
     cd build/html
     python -m SimpleHTTPServer
-
-
-Inspired by the OpenTechSchool Introduction to programming with python.
