@@ -11,3 +11,6 @@ Key Words
 * Terminal
 * Execute
 * Terminate
+* Types
+* Objects
+* Operators
