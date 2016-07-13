@@ -72,6 +72,14 @@ behaviour we expect from basic arithmentic.
 The behaviour is to compute and return the result as a new number object with the same
 type. In the above example `5 + 4` equals the 9 which is of type `int`.
 
+Questions
+---------
+
+1. What is the difference between `2 * 5 + 3` and `2 * (5 + 3)`? What are the
+   answers of each expression?
+2. What happens when you divide `5` by `2`? What about `5` by `2.0`. Is there a
+   difference? If so, why?
+
 Comparison operators
 --------------------
 
