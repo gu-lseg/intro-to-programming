@@ -1,6 +1,6 @@
 import random
 
-choices = ['paper', 'sissors', 'rock']
+choices = ['paper', 'scissors', 'rock']
 computer_choice = random.choice(choices)
 
 while True:
@@ -21,14 +21,14 @@ else:
         else:
             print('rock wins')
 
-    if user_choice == 'sissors':
+    if user_choice == 'scissors':
         if computer_choice == 'paper':
-            print('sissors wins')
+            print('scissors wins')
         else:
             print('rock wins')
 
     if user_choice == 'rock':
-        if computer_choice == 'sissors':
+        if computer_choice == 'scissors':
             print('rock wins')
         else:
             print('paper wins')
