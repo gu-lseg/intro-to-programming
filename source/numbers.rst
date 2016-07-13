@@ -132,7 +132,7 @@ Questions
 
 1. In an if conditional, what happens if the boolean is true?
 2. When does the `else` block of code run in an if else statement?
-3. What are some use cases for an if conditional?
+3. What could you use an if conditional for?
 
 Number Exercises
 ================
