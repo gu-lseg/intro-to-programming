@@ -14,15 +14,15 @@ We also look at the two ways the `python` interpreter can execute your Python co
     Don't just read! Type everything and experiment.
 
 
-Interactive interpreter 
+Interactive interpreter
 =======================
 
 We launch the python interpreter through `terminal`:
 
 1. Press `Cmd(apple) + Spacebar` (the two keys together). A search box pops up.
-2. Type `terminal` and press enter. 
+2. Type `terminal` and press enter.
 
-A window will appear with a prompt:: 
+A window will appear with a prompt::
 
     ~
 
@@ -60,7 +60,7 @@ Lets call some more methods on the tess our turtle object::
 
     >>> tess.shape('turtle')
     >>> tess.color('green')
-    
+
 Lets create 'bob' a new turtle object::
 
     >>> bob = Turtle()
@@ -84,7 +84,7 @@ Experiment drawing shapes in different colours.
 Documentation
 -------------
 
-Visit the `turtle` online documentation and explore what Turtle objects can do. 
+Visit the `turtle` online documentation and explore what Turtle objects can do.
 
 |turtle_docs|
 
@@ -124,20 +124,20 @@ Creation
 
 Breakdown:
 
-1. We import an object called Turtle from somewhere called turtle. 
+1. We import an object called Turtle from somewhere called turtle.
 2. Turtle is called, creates a new object of type turtle, and returns it.
 3. This returned object is assigned to the name tess.
 
 .. tip::
-    We call an object by adding parenthesis at the end of its name. Here the
-    parenthesis are empty but then often aren't.
+    We call an object by adding braces (also called parentheses) at the end of its name.
+    Here the braces are empty but they often aren't.
 
 Lets confirm the type of tess::
 
     >>> type(tess)
     turtle.Turtle
 
-.. tip:: 
+.. tip::
     The function `type` returns the type of a passed object.
 
 Turtle is a special kind of object in that it produces new objects. We call it
@@ -163,9 +163,9 @@ What other methods (behaviours) do turtle objects have?
 Code in files
 =============
 
-Most code is written and executed from a file. 
+Most code is written and executed from a file.
 
-Using SublimeText to create a file named `my_turtle_file.py` with this code:: 
+Using SublimeText, create a file named `my_turtle_file.py` with this code::
 
     from turtle import Turtle, exitonclick
 
@@ -177,12 +177,12 @@ Using SublimeText to create a file named `my_turtle_file.py` with this code::
 
 .. tip::
 
-    All word document file names end with .doc, 
+    All word document file names end with .doc,
     all files names with python code must end with .py
     We can comment out lines of code using #
 
-In cmd.exe call the python command with the filename `my_turtle_file.py` as parameter::
-  
+In your shell call the python command with the filename `my_turtle_file.py` as parameter::
+
     ~ > python my_turtle_file.py
 
 
@@ -207,17 +207,17 @@ Questions/Practicals
 Shape Exercises
 ===============
 
-Lets program some shapes. We do this by breaking down into step by step instructions principles of geometry.
+Lets program some shapes. We do this by breaking down the principles of geometry into step by step instructions.
 
 Put all code inside a file named `shapes.py` to be executed using::
-    
+
     python shapes.py
 
 
 Shapes:
 
-* Draw a square as in the following picture. 
-  
+* Draw a square as in the following picture.
+
 .. tip:: Squares have right angles which are 90 degrees.
 
 .. image:: /images/turtle-square.png
@@ -228,11 +228,11 @@ Shapes:
 .. image:: /images/turtle-rectangle.png
 
 
-* Draw an equilateral triangle. 
+* Draw an equilateral triangle.
 
 .. tip:: An equilateral triangle has 3 sides of equal length and each corner has an angle of 60 degrees.
 
-* Draw many squares. Each square should be tilted left of the previous. 
+* Draw many squares. Each square should be tilted left of the previous.
 
 .. image:: /images/turtle-many-squares.png
 
@@ -241,4 +241,3 @@ Experiment with the angles between the individual squares. The picture shows thr
 * Draw a simple house.
 
 .. tip:: Reuse the code you have already written.
-
