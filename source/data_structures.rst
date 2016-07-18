@@ -2,10 +2,11 @@ Data Structures
 ***************
 
 Data structures are objects that contain or organise other objects in a useful
-way. We will look at two datastructures in this lesson: lists and dictionaries.
+way. We will look at two datastructures in this lesson: lists and dictionaries
+("dicts").
 
-We will learn how to create lists and dictionaries and examine how to access
-their contents. Then we look at how to do something with every item in a data
+We will learn how to create these data structures and how to access their
+contents. We'll also look at how to do something with every item in a data
 structure. To do this we use loops.
 
 Lists
@@ -46,8 +47,7 @@ You can access a specific item in a list like so::
 
 .. tip::
 
-   It's important to note that the first item in a list is at position zero, not
-   position one.
+   The first item in a list is at position zero, *not* position one.
 
 Updating lists
 --------------
@@ -60,8 +60,8 @@ You update lists in a similar way::
 
 .. tip::
 
-   You can only update positions in the list which are already occupied. If you
-   try doing ``abc[25] = 'z'`` the computer will say:
+   You can only access and update positions in the list which are already
+   occupied. For example try doing ``abc[25] = 'z'``; the computer will say:
 
    ``IndexError: list assignment index out of range``
 
@@ -69,35 +69,56 @@ You update lists in a similar way::
 Dictionaries
 ============
 
-Dictionaries contain key value mappings.
+A dictionary or "dict", is another type of data structure which contains other
+objects, but instead of having them in a set order, each object has a name. The
+names are called "keys" and the objects are called "values"; a dictionary
+contains "key-value pairs".
 
-They can be used to collect information (data) about something. 
-Here we use a dictinary to represent a Person.
+Dictionaries can be used to contain information about a specific thing, in the
+examples below we use a dictionary to contain information a person.
 
-creation
---------
+Creating dicts
+--------------
 
-.. code-block:: python
+When creating a dict we use curly brackets. These enclose a series of
+pairs of keys and values like ``key: value`` separated by commas.
 
-    >>> {'name': 'Brian', 'age': 23, 'sex': 'M'}              # literal
-    >>> dict([('name', 'Brian'), ('age', 23), ('sex', 'M')])  # constructor
+    >>> brian = {'name': 'Brian', 'age': 23, 'sex': 'M'}
+    >>> brian
+    {'age': 23, 'name': 'Brian', 'sex': 'M'}
+    >>> type(brian)
+    <type 'dict'>
 
+.. tip::
 
-extraction & update
--------------------
+   When ``brian`` is printed to the terminal, the keys and values aren't
+   necessarily shown in the order they were defined in. Dictionaries don't care
+   about the order of their contents like lists do.
+    
+Accessing values in a dict
+--------------------------
 
-Special syntax: `<dict-name>[<key>]` for extracting and updating an attribute.
+You access a value in a dictionary in a similar way to how you access an item in
+a list::
 
-.. code-block:: python
-
-    >>> person = {'name': 'Brian', 'age': 23, 'sex': 'M'}
-    >>> person['name']                          # extract value
+    >>> brian['name']
     'Brian'
-    >>> person['name'] = 'Naomi'                # update value
-    >>> person['name']
-    'Name'
+    >>> brian['age']
+    23
 
-If you request a non-existent key you get a `KeyError`.
+Updating a dict
+---------------
+
+The way you update a dict is similar to how you update a list too.
+
+    >>> brian['age'] = 24
+    >>> brian
+    {'age': 24, 'name': 'Brian', 'sex': 'M'}
+
+.. tip::
+
+   If you access or update a non-existent key the computer will say there is a
+   ``KeyError``.
 
 
 Nesting 
