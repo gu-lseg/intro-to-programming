@@ -1,74 +1,69 @@
 Data Structures
 ***************
 
-Data structures contain other objects. We will look at two: `lists`, `dictionaries`.
+Data structures are objects that contain or organise other objects in a useful
+way. We will look at two datastructures in this lesson: lists and dictionaries.
 
-Typical methods defined on data structures are ones that allow access and
-update items within it.
-
-As always first we explore how to create objects using literals and
-constructors, we then examine some methods typical of each object.
-
-Second, we often want to do something for each item in a data structure. This
-involves 'iterating' over it. We do this using the for loop.
-
+We will learn how to create lists and dictionaries and examine how to access
+their contents. Then we look at how to do something with every item in a data
+structure. To do this we use loops.
 
 Lists
 =====
 
-A list object contains ordered items.
+A list is a data structure which contains objects in a specific order.
 
-Creation
---------
+Creating lists
+--------------
 
-.. code-block:: python
+To create a list from some other objects use square brackets like so::
 
-    >>> ['John', 'Eric', 'Michael', 'Terry']          # literal
-    >>> list('abc')                                   # `list` transform a string
-    ['a', 'b', 'c'] 
-    >>> type([1, 2, 3])
-    <class 'list'>
+    >>> monty_python = ['John', 'Terry G', 'Eric', 'Michael', 'Terry J', 'Graham']
+    >>> monty_python
+    ['John', 'Terry G', 'Eric', 'Michael', 'Terry J', 'Graham']
+    >>> type(monty_python)
+    <type 'list'>
+
+You can also create lists using some built-in functions such as ``list`` and
+``range``::
+
+    >>> list('abc')
+    ['a', 'b', 'c']
+    >>> range(4)
+    [0, 1, 2, 3]
 
 
-Extraction & Update
--------------------
+Accessing items
+---------------
 
-.. code-block:: python
+You can access a specific item in a list like so::
 
     >>> abc = ['a', 'b', 'c']
-    >>> abc[0]                        # extract item
+    >>> abc[0]
     'a'
-    >>> abc[2] = 'd'                  # update item
+    >>> abc[2]
+    'c'
+
+.. tip::
+
+   It's important to note that the first item in a list is at position zero, not
+   position one.
+
+Updating lists
+--------------
+
+You update lists in a similar way::
+    
+    >>> abc[2] = 'd'
     >>> abc
     ['a', 'b', 'd']
 
-
 .. tip::
-    Lists are 0 indexed. The first item is at index 0, the second at 1...
 
-If you ask for an item that is outside of the list's length you will get an `IndexError`.
+   You can only update positions in the list which are already occupied. If you
+   try doing ``abc[25] = 'z'`` the computer will say:
 
-
-range
------
-
-The `range` function combined with the `list` constructor is a fast way to create a list 
-with a specified number of increasing integers.
-
-.. code-block:: python
-
-    >>> list(range(3))   # think: give me numbers up to 3
-    [0, 1, 2]
-
-
-It provides a convenient shortcut to do things a certain number of times.
-
-.. code-block:: python
-
-    >>> for i in range(2):
-    ...    print('hi')
-    'hi'
-    'hi'
+   ``IndexError: list assignment index out of range``
 
 
 Dictionaries
