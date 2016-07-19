@@ -20,8 +20,13 @@ x = 5
 
 Interpreter
 ==========
-An interpreter takes a program written in a language that is human readable
-- for example Python and translates it into instructions that a computer can execute. An
+An interpreter takes a program written in a language that is human readable. This is because
+in order for a computer to be able to execute your code it needs to be in a very different
+format, google `machine code` if you're interested what it looks like. Machine code is known as
+a low level language whereas Python is a high level language. This means that the interpreter
+takes care of lots of things for you such as managing memory allocation.
+
+For example Python and translates it into instructions that a computer can execute. An
 interpreter does this line by line. This means if you have a 10 line program and a bug on
 the 5th line the interpreter will execute lines 1 to 4 before an error is raised.
 
@@ -67,12 +72,14 @@ This is because the code is incorrectly structured. All if statements must end w
 Function
 ==========
 A function is a block of instructions assigned to a name. For example:
+
 ::
->>> def add_5_subtract_2(number):
-...     return number + 5 - 2
-...
->>> add_5_subtract_2(7)
-10
+
+  >>> def add_5_subtract_2(number):
+  ...     return number + 5 - 2
+  ...
+  >>> add_5_subtract_2(7)
+  10
 
 Functions are useful as it means that you can reuse code. Every time you want to add
 5 and subtract 2 from a number you can just call the function. This is particularly
@@ -81,15 +88,30 @@ out each time. Also it also makes it easier to find problems in your code.
 
 Calling a Function
 ==========
-Code inside a function does not run until the function is called.
+Code inside a function does not run until the function is called. For example:
+
+::
+
+  >>> def say_hello(name):
+  ...    return "Hello " + name
+  ...
+  >>> say_hello("Susie")
+  Hello Susie
+
+We have defined a function that gives instructions on how to say hello. However
+we don't actually carry out the set of instructions until we call the function using:
+
+::
+
+>>> say_hello("Susie")
 
 Parameters
 ==========
 A parameter is additional information that is given to the function when it is called.
 In this example the parameter is `number`
 ::
->>> def add_5_subtract_2(number):
-...     return number + 5 - 2
+  >>> def add_5_subtract_2(number):
+  ...     return number + 5 - 2
 
 If a function has no parameters you will always get the same behaviour every time you
 call it. A function is much more powerful if it has parameters. In the case of the
@@ -116,9 +138,10 @@ There are two main ways to interact with a computer. The most common way is usin
 The shell is focused around icons and mouse clicks. The terminal is another way to interact
 with a computer. It is text based and involves the user typing commands and the computer
 then displays a text response. For example (for macs) open the terminal:
+
 1. Press `Cmd(apple) + Spacebar` (the two keys together). A search box pops up.
 2. Type `terminal` and press enter.
-3. Type ls
+3. Type ``ls``
 
 This will display a list of all the files and directories in your home directory.
 
