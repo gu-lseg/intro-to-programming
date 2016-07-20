@@ -16,17 +16,19 @@ debugger.
 Errors
 ======
 
-Errors always tell you what when wrong but not always why. 
+Errors always tell you what when wrong but not always why.
 
-Read errors, first using intuition then by debugging and research. 
+Read errors, first using intuition then by debugging and research. Google is
+a very valuable resource when faced with an error, odds are you're not the first
+person to come up against the problem.
 
 .. tip::
 
     You need to learn how to find information.
     Always read Errors and use your intuition, then Google.
-    If that hsn't helped only then ask an expert. 
+    If that hasn't helped only then ask an expert.
 
-With time many errors map to solutions instantly. 
+With time many errors map to solutions instantly.
 
 AttributeError
 --------------
@@ -34,7 +36,7 @@ AttributeError
 An `AttributeError` means the interpreter can't find the name you have asked
 for on the object.
 
-:: 
+::
 
     >>> import turtle
     >>> turtle.shp('waef')
@@ -53,7 +55,7 @@ A function defined badly::
 
     >>> def print_hi:
       File "<stdin>", line 1
-        def print_hi 
+        def print_hi
                        ^
     SyntaxError: invalid syntax
 
@@ -74,7 +76,7 @@ pdb is the python debugger. You can freeze execution at a particular point in ti
 
 To execute code with `pdb`::
 
-    python3 -m pdb my.py
+    python -m pdb my.py
 
 You can also pause the execution at any time by placing this line into your
 code::
@@ -115,8 +117,8 @@ We will use pythontutor hand in hand with pdb to exercise visualising program
 execution.
 
 
-Put this code into a file named `my.py`:: 
-    
+Put this code into a file named `my.py`::
+
     x = 1
     y = 2
     success = 'works'
@@ -139,7 +141,7 @@ Put this code into a file named `my.py`::
 
 Execute with::
 
-    python3 -m pdb my.py
+    python -m pdb my.py
 
 `pdb` starts program and pauses at first line::
 
@@ -162,25 +164,9 @@ Executing `l` results in::
      10  	print(f())
     [EOF]
 
-Step through each line of code keeping. 
+Step through each line of code keeping.
 
 Ensure you explore the two frames when you enter the f functions' frame.
 
 .. tip::
     We have used a python code visualiser in a similar way.
-
-
-
-koans & `pdb`
-=============
-
-`pdb` is a great tool to understand code. Here we will apply it to our koans.
-
-Enter:: 
-
-    import pdb; pdb.set_trace() 
-
-In a koan method that caused you difficulty. 
-
-Step through the execution of the code. 
-When you are done type `c` to continue normal execution.

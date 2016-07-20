@@ -9,3 +9,8 @@ Key Words
 * Syntax
 * Parentheses
 * Terminal
+* Execute
+* Terminate
+* Types
+* Objects
+* Operators
