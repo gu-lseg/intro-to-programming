@@ -44,24 +44,26 @@ A window will pop up called `Python Turtle Graphics` containing tess the turtle.
 
 Try typing some different commands - forward and left are methods on our tess turtle object
 
+Forward takes pixels as it's input - this will move tess forward 100 pixels::
+
     >>> tess.forward(100)
 
 .. image:: /images/turtle-forward.png
 
-The left and right methods take degrees as their input
-
-::
+The left and right methods take degrees as their input - this will turn tess left 30 degrees::
 
     >>> tess.left(30)
 
 .. image:: /images/turtle-left.png
 
-Lets call some more methods on the tess our turtle object::
+Lets call some more methods on the tess our turtle object
+
+Shape and colour take strings as their inputs::
 
     >>> tess.shape('turtle')
     >>> tess.color('green')
     
-Lets create 'bob' a new turtle object::
+Lets create 'bob' - a new turtle object::
 
     >>> bob = Turtle()
     >>> bob.shape('circle')
@@ -78,8 +80,9 @@ Exercise
 
 Experiment drawing shapes in different colours.
 
-1. Can you draw a triangle?
-2. Can you draw a square using two turtles in two different colours?
+1. Can you make bob a triangle so you can see which way he is pointing?
+2. Can you draw a triangle?
+3. What shapes can you draw using both turtles in different colours?
 
 Documentation
 -------------
@@ -129,16 +132,17 @@ Breakdown:
 3. This returned object is assigned to the name tess.
 
 .. tip::
-    We call an object by adding parenthesis at the end of its name. Here the
-    parenthesis are empty but then often aren't.
+    We call an object by adding parenthesis (brackets) at the end of its name. Here the
+    parenthesis are empty but they often aren't.
 
-Lets confirm the type of tess::
+Run this command to find the object type of tess::
 
     >>> type(tess)
-    turtle.Turtle
+
+What type of object is tess?
 
 .. tip:: 
-    The function `type` returns the type of a passed object.
+    The function `type` returns the type of the object passed in.
 
 Turtle is a special kind of object in that it produces new objects. We call it
 a constructor object.
@@ -165,7 +169,7 @@ Code in files
 
 Most code is written and executed from a file. 
 
-Using SublimeText to create a file named `my_turtle_file.py` with this code:: 
+Use SublimeText to create a file named `my_turtle_file.py` in the documents folder with this code:: 
 
     from turtle import Turtle, exitonclick
 
@@ -173,17 +177,19 @@ Using SublimeText to create a file named `my_turtle_file.py` with this code::
     tess.shape("turtle")
     tess.forward(100)
 
-    exitonclick()  # Why this? Experiment by commenting it out.
+    exitonclick()
 
 .. tip::
 
-    All word document file names end with .doc, 
-    all files names with python code must end with .py
+    All files names with python code must end with .py
+    
     We can comment out lines of code using #
 
-In cmd.exe call the python command with the filename `my_turtle_file.py` as parameter::
+Open terminal and make sure you are in the documents directory (:ref:`See Terminal 101 <terminal-101>`). If you still have the Python interpreter open in your terminal you can exit using ``cmd + d``.
+
+In terminal call the python interpreter command with the filename `my_turtle_file.py` as parameter::
   
-    ~ > python my_turtle_file.py
+    python my_turtle_file.py
 
 
 .. tip::
@@ -196,11 +202,13 @@ In cmd.exe call the python command with the filename `my_turtle_file.py` as para
 Questions/Practicals
 --------------------
 
-1. What are the differences between using `python` interactively and using files? When would you use one or the other?
+1. What happens if you delete or comment out ``exitonclick()`` in your script and re-run it? Explain why you think this happens - discuss with your team and mentor.
 
-2. Challenge yourself to find as many different ways of drawing with a turtle object.
+2. What are the differences between using `python` interactively and using files? When would you use one or the other?
 
-3. Take your time to draw something useful and/or crazy.
+3. Challenge yourself to find as many different ways of drawing with a turtle object.
+
+4. Take your time to draw something useful and/or crazy.
 
 
 
@@ -242,3 +250,6 @@ Experiment with the angles between the individual squares. The picture shows thr
 
 .. tip:: Reuse the code you have already written.
 
+* Really want a challenge - Draw the 'flower' shape below:
+
+.. image:: /images/spirograph.png
