@@ -152,3 +152,8 @@ Execution is when a computer runs a series of code instructions.
 Terminate
 ==========
 A program has terminated when it has executed all instructions and stopped running.
+=======
+
+* Types
+* Objects
+* Operators
