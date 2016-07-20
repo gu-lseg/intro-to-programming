@@ -18,7 +18,7 @@ This introductory course will use a programming language called |python_website|
 
 .. image:: /images/python-logo.png
 
-Python is popular both in academia, science and other industries.
+Python is popular both in academia, science and other industries. It is used for the Google search engine, Dropbox and at the Guardian, in games like Battlefield 2 and by NASA.
 
 Together we will learn the correct syntax and grammar of the Python language.
 
@@ -48,9 +48,9 @@ The line tells you your current location followed by `>`.
 
 .. tip::
 
-    We want to change directories into the 'documents' folder.
+    We want to change folders (directories) into 'documents'.
     
-    Take a look at the :ref:`Terminal 101 <terminal-101>` section to work out how to change directories.
+    Take a look at the :ref:`Terminal 101 <terminal-101>` section to work out how to change folders.
 
 
 `terminal` is a program often called a shell. It is an alternative to the point and
@@ -175,7 +175,7 @@ In other words, the Python language is the textual instructions you type.
 **An interpreter**
     A program (called `python`) that reads and executes (runs) a programming language, line-by-line.
 
-When we ask the interpreter to execute the Python we write, it understands how to translate Python scripts into the creation and manipulation of objects according to your instructions.
+When we ask the interpreter to execute the Python we write, it understands how to translate Python scripts, the instructions that are easy for a human to read and write, into the creation and manipulation of objects that a computer can understand.
 
 This course introduces different types of Python objects: `String`, `Integer`, `Turtle`, `lists`...
 

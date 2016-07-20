@@ -142,7 +142,7 @@ Run this command to find the object type of tess::
 What type of object is tess?
 
 .. tip:: 
-    The function `type` returns the type of a passed object.
+    The function `type` returns the type of the object passed in.
 
 Turtle is a special kind of object in that it produces new objects. We call it
 a constructor object.
