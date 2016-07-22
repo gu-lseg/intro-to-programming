@@ -130,14 +130,16 @@ someone else can often be very helpful.
 
 Parentheses
 ==========
-() These are parentheses. They are common syntax in many programming languages
+() These are parentheses. They are common syntax in many programming languages.
+Parentheses can also be referred to brackets or braces.
 
 Terminal
 ==========
-There are two main ways to interact with a computer. The most common way is using the shell.
-The shell is focused around icons and mouse clicks. The terminal is another way to interact
-with a computer. It is text based and involves the user typing commands and the computer
-then displays a text response. For example (for macs) open the terminal:
+There are two main ways to interact with a computer. The most common way is using a GUI.
+A GUI is a Graphical User Interface and is focused around icons and mouse clicks.
+The terminal is another way to interact with a computer. It is text based and
+involves the user typing commands and the computer then displays a text response.
+For example (for macs) open the terminal:
 
 1. Press `Cmd(apple) + Spacebar` (the two keys together). A search box pops up.
 2. Type `terminal` and press enter.
