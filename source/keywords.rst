@@ -197,3 +197,8 @@ will have values for each one of these properties.
 
 Operators
 ==========
+An operator is a character or set of characters that represents an action. Some
+examples of operators are ``+``, ``&&``, ``-``. Operators perform an action on operands.
+For example in the case of the sum ``2 + 3``
+
+``2`` and ``3`` are operands and ``+`` is the operator.
