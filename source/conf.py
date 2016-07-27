@@ -39,7 +39,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Introduction to Programming with Python'
-copyright = u'2015, Greg Loyse'
+copyright = u'Attribution-NonCommercial 3.0 Unported (Greg Loyse & the Guardian digital development): https://creativecommons.org/licenses/by-nc/3.0/'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
