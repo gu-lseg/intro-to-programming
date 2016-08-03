@@ -130,14 +130,16 @@ someone else can often be very helpful.
 
 Parentheses
 ==========
-() These are parentheses. They are common syntax in many programming languages
+() These are parentheses. They are common syntax in many programming languages.
+Parentheses can also be referred to brackets or braces.
 
 Terminal
 ==========
-There are two main ways to interact with a computer. The most common way is using the shell.
-The shell is focused around icons and mouse clicks. The terminal is another way to interact
-with a computer. It is text based and involves the user typing commands and the computer
-then displays a text response. For example (for macs) open the terminal:
+There are two main ways to interact with a computer. The most common way is using a GUI.
+A GUI is a Graphical User Interface and is focused around icons and mouse clicks.
+The terminal is another way to interact with a computer. It is text based and
+involves the user typing commands and the computer then displays a text response.
+For example (for macs) open the terminal:
 
 1. Press `Cmd(apple) + Spacebar` (the two keys together). A search box pops up.
 2. Type `terminal` and press enter.
@@ -152,8 +154,51 @@ Execution is when a computer runs a series of code instructions.
 Terminate
 ==========
 A program has terminated when it has executed all instructions and stopped running.
-=======
 
-* Types
-* Objects
-* Operators
+Types
+==========
+Types are used to classify the data in a program. Some examples of types are `integer`
+(whole numbers e.g. 5, 103), `boolean` (true or false), `string`(characters surrounded
+by quotes e.g. "hello", "ID1453"). Types are useful as it allows us to understand
+what we can do with data of this type for example it makes sense to divide one integer
+by another but dividing one string by another doesn't make sense.
+
+Types are also useful to understand how different bits of data within your program
+can interact with each other. For example you can add two integers together and
+get an answer however it is not possible to add a boolean to an integer as the two
+types are not compatible.
+
+Objects
+==========
+Objects in the real world have properties that describe them and actions they
+can carry out. For example a dog is an object. A dog can be described in terms
+of properties e.g. breed, colour, name etc. A dog also has actions that it can
+carry out e.g. fetch, lie down, bark etc.
+
+We also have objects in programming. These objects also have properties to describe
+them and actions they can carry out. For example we may have an object that represents
+a video. The video will have properties for example a title and how long it is. There will
+also be actions on the video such as play and pause. In an object in programming
+the properties are variables and the actions are functions.
+
+An object can also be referred to as an `instance of a class`.
+
+Class
+==========
+Classes and objects are very closely related. Classes are templates for creating objects.
+It is likely that you will want multiple copies of the same type of object. For example
+It is unlikely that you would only have one video you would want to have multiple video
+objects all representing different videos. This is when you use a class. A class describes
+what an object should look like. It determines what properties the object should have
+and what actions it can carry out. This class is then used to create an object. The object
+will have values for each of the properties. This is what make an object an `instance
+of a class`, the class indicates what properties an object should have and each object
+will have values for each one of these properties.
+
+Operators
+==========
+An operator is a character or set of characters that represents an action. Some
+examples of operators are ``+``, ``&&``, ``-``. Operators perform an action on operands.
+For example in the case of the sum ``2 + 3``
+
+``2`` and ``3`` are operands and ``+`` is the operator.
