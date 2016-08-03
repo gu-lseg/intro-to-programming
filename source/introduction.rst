@@ -37,19 +37,19 @@ This is our Python 'Hellow World' tutorial.
 First we need to open the 'terminal' - An application that provides text-based access to the operating system.
 
 1. Press `Cmd(apple) + Spacebar` (the two keys together). A search box pops up.
-2. Type `terminal` and press enter. 
+2. Type `terminal` and press enter.
 
-The program `terminal` will launch and you should see a prompt:: 
+The program `terminal` will launch and you should see a prompt::
 
    ~
 
-The line tells you your current location followed by `>`. 
+The line tells you your current location followed by `>`.
 
 
 .. tip::
 
     We want to change folders (directories) into 'documents'.
-    
+
     Take a look at the :ref:`Terminal 101 <terminal-101>` section to work out how to change folders.
 
 
@@ -59,7 +59,7 @@ click 'graphical user interface' that we are all used to.
 Typing `python` and you enter the python interpreter::
 
     ~> python
-    Python 2.7.11 (default, Dec 26 2015, 17:47:15) 
+    Python 2.7.11 (default, Dec 26 2015, 17:47:15)
     [GCC 4.2.1 Compatible Apple LLVM 7.0.2 (clang-700.1.81)] on darwin
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
@@ -86,7 +86,7 @@ Exercise
 
 2. What happens if you miss off the end bracket `print('hello'`? How do you continue?
 
-3. Can you make Errors appear (it shouldn't be too difficult)? 
+3. Can you make Errors appear (it shouldn't be too difficult)?
    How many different ones can you make? Make a list and google each one.
 
 4. List the commands for printing 'Hello World' in other languages.
@@ -99,9 +99,9 @@ Troubleshooting errors is a large part of programming.
 Typically given a problem to solve a programmer thinks up an idea that may work then
 battles through errors until it does work.
 
-Often beginners understandably get frustrated with them. Don't. Instead build up 
-resilience by taking time to understand them. 
-They are always correct and trying to guide you to a solution. 
+Often beginners understandably get frustrated with them. Don't. Instead build up
+resilience by taking time to understand them.
+They are always correct and trying to guide you to a solution.
 
 Here are three you will see a lot::
 
@@ -144,7 +144,7 @@ Object oriented programming
 
 We can see our world as containing different types of objects that we can classify according to common attributes and behaviours.
 
-For example in a classroom there many objects that are instances of the type `Chair` and many other objects that are instances of the type `Person`.
+For example in a classroom there are many objects that are instances of the type `Chair` and many other objects that are instances of the type `Person`.
 
 Objects have:
 
@@ -154,7 +154,7 @@ Objects have:
 Objects can interact with other objects of different types. An object of type Person can
 can sit on an object of type Chair.
 
-This is the essence of object oriented thinking. It is about using programmatic 
+This is the essence of object oriented thinking. It is about using programmatic
 objects to model a domain of interest to a programmer.
 
 This style of programming provides a clear, simple, and consistent model of computation
@@ -188,7 +188,7 @@ Questions
 ---------
 
 1. Explain in your own words but using the concepts `interpreter` and `language`
-   what happened above when you ran the command ``print('Hello World')``. 
+   what happened above when you ran the command ``print('Hello World')``.
 
 Start your answer "Using the Python language..."
 

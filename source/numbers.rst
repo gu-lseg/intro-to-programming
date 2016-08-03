@@ -18,18 +18,18 @@ them.
 Integers & Floats
 =================
 
-`int` objects represent natural numbers. 
+`int` objects represent natural numbers.
 `float` objects represent rational numbers, numbers that have a decimal value.
 Both types can represent positive or negative numbers.
 
-Creation 
+Creation
 --------
 
 It is easier to create ints and floats than it was to create turtles.
 
 You can just type them out::
 
-    >>> 3              
+    >>> 3
     3
     >>> type(-5)        # confirm type
     int
@@ -83,7 +83,7 @@ Comparison operators
 --------------------
 
 Likewise two number objects separated by comparison operators `==` `!=`
-`>=` `<=` `<` `>`, have the behaviour we expect. 
+`>=` `<=` `<` `>`, have the behaviour we expect.
 
 ::
 
@@ -98,7 +98,7 @@ Likewise two number objects separated by comparison operators `==` `!=`
 .. tip::
 
     `int` objects are used to solve problems that require manipulating numbers
-    but with no decimal point such as age, and days, IDs.
+    but with no decimal point such as age, days, and IDs.
 
 These are expressions and these evaluate to `True` or `False`.
 
@@ -141,9 +141,9 @@ Number Exercises
    `bar.py` that prints 'underaged' or 'ok' depending on the age entered in the code.
 
 2. A ride operator needs to ensure clients are taller than 150cm due to security.
-   Write a prgram in a file named `ride.py` that will print 'ok' or 'not tall enough' 
+   Write a prgram in a file named `ride.py` that will print 'ok' or 'not tall enough'
    given a height entered in the code.
 
 3. A trader wants to algorithmically buy 'ACME` corp stock if they rise above
-   0.005$ but sell if they are below 0.001$. Write a script `trader.py` that 
+   0.005$ but sell if they are below 0.001$. Write a script `trader.py` that
    prints 'buy', 'sell', 'hold' depending on a sale price entered in the script.
