@@ -20,13 +20,13 @@ The ``print`` function simply prints out what is between the brackets. The
 string "13"). The ``type`` function tells you the type of object something
 is.
 
-All of these functions only require one value, or "argument", inside the
-brackets. But some functions can be called with zero arguments, for example
+All of these functions only require one value, or "parameter", inside the
+brackets. But some functions can be called with zero parameters, for example
 the ``exit`` function:
 
     >>> exit()
 
-Other functions require more than one argument, for example the ``max``
+Other functions require more than one parameter, for example the ``max``
 function:
 
     >>> max(1, 2)
@@ -37,7 +37,7 @@ function:
 .. tip::
 
    Like everything else in Python, functions are objects. Function objects
-   contain code which you run using the brackets containing whatever arguments
+   contain code which you run using the brackets containing whatever parameters
    that function needs.
 
 
@@ -59,13 +59,13 @@ like variables. To define a function you use ``def``:
     ...
 
 The ``def`` keyword is followed by the function name, then the names of any
-arguments the function requires inside brackets, and then a colon. On the
+parameters the function requires inside brackets, and then a colon. On the
 following lines you write the block of code for the function indented by four
 spaces, like it's indented when you write an ``if`` or ``while`` block. We call
 this a "definition".
 
 Here's an example of a definition of a function called "going_nowhere" which
-doesn't have any arguments:
+doesn't have any parameters:
 
     >>> def going_nowhere():
     ...     turtle.forward(50)
@@ -84,7 +84,7 @@ Using functions
 
 Once you've defined a function you can use, or "call", it as many times as you
 need it by putting the function name followed by the brackets containing the
-arguments the function requires.
+parameters the function requires.
 
     >>> say_hello("Barry")
     hello Barry!
@@ -93,11 +93,11 @@ arguments the function requires.
     >>> going_nowhere()
     >>> exit()
 
-Function arguments
-==================
+Function parameters
+===================
 
-Function arguments make functions more flexible and useful. For example compare
-this function for drawing a square without arguments::
+Function parameters make functions more flexible and useful. For example compare
+this function for drawing a square without parameters::
 
     def draw_100_by_100_square():
         turtle.forward(100)
@@ -109,7 +109,7 @@ this function for drawing a square without arguments::
 	turtle.forward(100)
         turtle.left(90)
 
-to this one with an argument called "size"::
+to this one with an parameter called "size"::
 
     def draw_square(size):
         turtle.forward(size)
@@ -122,7 +122,7 @@ to this one with an argument called "size"::
         turtle.left(90)
 
 The second function is more flexible; it can be used to draw a square of any
-size. Here are some more examples of functions with arguments::
+size. Here are some more examples of functions with parameters::
   
     def left_diagonal(angle, length):
         turtle.left(angle)
@@ -136,7 +136,7 @@ size. Here are some more examples of functions with arguments::
 
 .. tip::
 
-   See what happens if you define a function with and argument which has the
+   See what happens if you define a function with and parameter which has the
    same name as a variable in your program.
 
        >>> name = "Miss Moneypenny"
@@ -155,7 +155,7 @@ Shapes
 ------
 
 1. Open your "shapes.py" file and define every shape as a function with
-   arguments.
+   parameters.
 2. Write a simple program which uses your new functions to check that they work.
 3. Rewrite your program for drawing a house using your shape functions.
 
@@ -163,7 +163,7 @@ Shapes
 Conversions
 -----------
 
-4. Write a function called ``celsius_to_fahrenheit`` which has one argument and
+4. Write a function called ``celsius_to_fahrenheit`` which has one parameter and
    converts a temperature in degrees celsius into the equivalent in degrees
    fahrenheit
    
