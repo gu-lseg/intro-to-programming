@@ -50,14 +50,6 @@ without repeating it.
 
 Definining functions
 --------------------
-=======
-A function - like everything in Python - is an object. Function objects are different to
-normal objects in that they contain blocks of code.
-
-Functions help in letting programmers organise and reuse code. They help create useful abstractions.
-
-Function objects - like normal variables - have names. The name is assigned at the same time you define a function.
->>>>>>> master
 
 Every function has to be "defined" before it can be used; functions have names
 like variables. To define a function you use ``def``:
@@ -77,7 +69,7 @@ doesn't have any arguments:
 
     >>> def going_nowhere():
     ...     turtle.forward(50)
-    ...     turlle.backward(50)
+    ...     turtle.backward(50)
     ...
 
 .. tip::
