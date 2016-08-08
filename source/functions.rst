@@ -167,8 +167,10 @@ Conversions
    converts a temperature in degrees celsius into the equivalent in degrees
    fahrenheit
    
-   .. tip:: Check Wikipedia to find out how to do this conversion --
-            https://en.wikipedia.org/wiki/Fahrenheit#Definition_and_conversions
+   .. tip::
+
+      Check Wikipedia to find out how to do this conversion --
+      https://en.wikipedia.org/wiki/Fahrenheit#Definition_and_conversions
 
 5. (Extension) Create a new program called "currency_converter.py" and copy the
    following code into it::
