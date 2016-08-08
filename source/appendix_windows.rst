@@ -11,7 +11,8 @@ A shortcut:
 2. A search prompt pops up.
 3. Type `cmd.exe` and press enter. 
 
-Command line 101
+.. _terminal-101:
+Terminal 101
 ================
 
 Typically you interact with your operating system using a mouse with certain

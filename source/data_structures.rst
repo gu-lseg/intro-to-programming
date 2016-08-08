@@ -5,9 +5,9 @@ Data structures are objects that contain or organise other objects in a useful
 way. We will look at two datastructures in this lesson: lists and dictionaries
 ("dicts").
 
-We will learn how to create these data structures and how to access their
-contents. We'll also look at how to do something with every item in a data
-structure. To do this we use loops.
+We will learn how to create these data structures, and how to access and
+update their contents. We'll also look at how to do something with every item
+in a data structure. To do this we use loops.
 
 Lists
 =====
@@ -33,6 +33,12 @@ You can also create lists using some built-in functions such as ``list`` and
     >>> range(4)
     [0, 1, 2, 3]
 
+``list`` takes another object which can be represented as a list and returns that
+list. In this case it takes the string "abc" and turns it into a list of its
+letters.
+
+``range`` creates a list of numbers from zero up to some number.
+
 
 Accessing items
 ---------------
@@ -52,11 +58,16 @@ You can access a specific item in a list like so::
 Updating lists
 --------------
 
+<<<<<<< HEAD
 You update lists in a similar way::
     
     >>> abc[2] = 'd'
     >>> abc
     ['a', 'b', 'd']
+=======
+The `range` function combined with the `list` constructor is a quick way of creating a list
+with a specified number of increasing integers.
+>>>>>>> master
 
 .. tip::
 
@@ -70,12 +81,15 @@ Dictionaries
 ============
 
 A dictionary or "dict", is another type of data structure which contains other
-objects, but instead of having them in a set order, each object has a name. The
-names are called "keys" and the objects are called "values"; a dictionary
-contains "key-value pairs".
+objects. But unlike in a list the order of the objects is not important and we
+don't access or update an item using its index.
 
-Dictionaries can be used to contain information about a specific thing, in the
-examples below we use a dictionary to contain information a person.
+Instead, each object has a name. These names are called "keys" and the objects
+are called "values"; a dictionary contains "key-value pairs". If we have a
+key we can get access to the corresponding value.
+
+Dictionaries are often used to contain information about a specific thing, in
+the examples below we use a dictionary to contain information a person.
 
 Creating dicts
 --------------
@@ -87,13 +101,12 @@ pairs of keys and values like ``key: value`` separated by commas.
     >>> brian
     {'age': 23, 'name': 'Brian', 'sex': 'M'}
     >>> type(brian)
-    <type 'dict'>
 
 .. tip::
 
    When ``brian`` is printed to the terminal, the keys and values aren't
-   necessarily shown in the order they were defined in. Dictionaries don't care
-   about the order of their contents like lists do.
+   necessarily shown in the order they were defined in. Dictionaries don't
+   care about the order of their contents like lists do.
     
 Accessing values in a dict
 --------------------------
@@ -121,7 +134,7 @@ The way you update a dict is similar to how you update a list too.
    ``KeyError``.
 
 
-Nesting 
+Nesting
 =======
 
 Data structures can include any type of object including other data structures.
@@ -130,7 +143,7 @@ Here is a list of dictionaries:
 
 .. code-block:: python
 
-    >>> persons = [
+    >>> people = [
             {'name': 'Naomi', 'age': 32, 'sex': 'F', 'status': 'Single'},
             {'name': 'Jane', 'age': 29, 'sex': 'F', 'status': 'Married'},
             {'name': 'Brian', 'age': 23, 'sex': 'M', 'status': 'Single'}
@@ -138,17 +151,17 @@ Here is a list of dictionaries:
 
 Nested data structures are extremely common.
 
-Think how this could be useful for example to store information about all
-students in a class.
+Think how this could be used to store information about all of the students
+in a class.
 
 
 The `for` loop
 ==============
 
-Use `for` to iterate over each item in a given list.
+Often, when we have a list of objects, we want to go through them one by one
+and do something with each of them.
 
-Here by iterate through a list of `str` objects we change the colour of our
-turtle alex.
+Use ``for`` to iterate over each item in a given list.
 
 .. code-block:: python
 
@@ -163,11 +176,14 @@ turtle alex.
 
     exitonclick()
 
+Here by iterating through a list of `str` objects we change the colour of our
+turtle alex.
+
 
 Refactoring `square`
 --------------------
 
-We refactor `square` combining `range` with a for loop.
+We can refactor `square` by combining `range` with a `for` loop.
 
 .. code-block:: python
 
@@ -176,9 +192,9 @@ We refactor `square` combining `range` with a for loop.
             turtle.forward(side)
             turtle.left(90)
 
-Drawing a square is reduced to repeating the same action four times. 
+Drawing a square is reduced to repeating the same action four times.
 
-Thanks to the for loop our definition of a square in code:
+Thanks to the `for` loop our definition of a square in code:
 
 * is shorter and more readable.
 * communicates an insight into the geometry of a square.
@@ -222,23 +238,22 @@ Write code that can draw any shape like this:
     The sum of the external angles of any shape is always 360 degrees.
 
 
-Practical: Paper Sissors Rock
+Practical: Paper Scissors Rock
 -----------------------------
 
 Steps:
 
-1. user inputs either paper, sissors or rock.
-2. computer randomly chooses one too.
-3. print outcome according to the rules of the game:
+1. The user inputs either 'paper', 'scissors' or 'rock'.
+2. The computer randomly chooses one too.
+3. The outcome is printed, according to the rules of the game:
 
-   * If user chose 'paper' and computer chose 'rock', then print 'rock wins'
-   * if user chose 'sissors' and computer chose 'paper' then print 'sissors
-     wins'
+   * If the user chooses 'paper' and the computer chooses 'rock', then print 'rock wins'
+   * if the user chooses 'scissors' and the computer chooses 'paper' then print 'scissors wins'
    * ... and so on ...
 4. Exit
 
 You will need to use some randomness:
-    
+
 .. code-block:: python
 
     >>> import random
@@ -281,4 +296,3 @@ program.
     ###################################
     # Your turn! Enter your code here #
     ###################################
-

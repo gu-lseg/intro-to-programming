@@ -14,15 +14,15 @@ We also look at the two ways the `python` interpreter can execute your Python co
     Don't just read! Type everything and experiment.
 
 
-Interactive interpreter 
+Interactive interpreter
 =======================
 
 We launch the python interpreter through `terminal`:
 
 1. Press `Cmd(apple) + Spacebar` (the two keys together). A search box pops up.
-2. Type `terminal` and press enter. 
+2. Type `terminal` and press enter.
 
-A window will appear with a prompt:: 
+A window will appear with a prompt::
 
     ~
 
@@ -44,24 +44,26 @@ A window will pop up called `Python Turtle Graphics` containing tess the turtle.
 
 Try typing some different commands - forward and left are methods on our tess turtle object
 
+Forward takes pixels as it's input - this will move tess forward 100 pixels::
+
     >>> tess.forward(100)
 
 .. image:: /images/turtle-forward.png
 
-The left and right methods take degrees as their input
-
-::
+The left and right methods take degrees as their input - this will turn tess left 30 degrees::
 
     >>> tess.left(30)
 
 .. image:: /images/turtle-left.png
 
-Lets call some more methods on the tess our turtle object::
+Lets call some more methods on the tess our turtle object
+
+Shape and colour take strings as their inputs::
 
     >>> tess.shape('turtle')
     >>> tess.color('green')
-    
-Lets create 'bob' a new turtle object::
+
+Lets create 'bob' - a new turtle object::
 
     >>> bob = Turtle()
     >>> bob.shape('circle')
@@ -78,13 +80,14 @@ Exercise
 
 Experiment drawing shapes in different colours.
 
-1. Can you draw a triangle?
-2. Can you draw a square using two turtles in two different colours?
+1. Can you make bob a triangle so you can see which way he is pointing?
+2. Can you draw a triangle?
+3. What shapes can you draw using both turtles in different colours?
 
 Documentation
 -------------
 
-Visit the `turtle` online documentation and explore what Turtle objects can do. 
+Visit the `turtle` online documentation and explore what Turtle objects can do.
 
 |turtle_docs|
 
@@ -124,21 +127,22 @@ Creation
 
 Breakdown:
 
-1. We import an object called Turtle from somewhere called turtle. 
+1. We import an object called Turtle from somewhere called turtle.
 2. Turtle is called, creates a new object of type turtle, and returns it.
 3. This returned object is assigned to the name tess.
 
 .. tip::
-    We call an object by adding parenthesis at the end of its name. Here the
-    parenthesis are empty but then often aren't.
+    We call an object by adding parenthesis (brackets) at the end of its name. Here the
+    parenthesis are empty but they often aren't.
 
-Lets confirm the type of tess::
+Run this command to find the object type of tess::
 
     >>> type(tess)
-    turtle.Turtle
 
-.. tip:: 
-    The function `type` returns the type of a passed object.
+What type of object is tess?
+
+.. tip::
+    The function `type` returns the type of the object passed in.
 
 Turtle is a special kind of object in that it produces new objects. We call it
 a constructor object.
@@ -163,9 +167,9 @@ What other methods (behaviours) do turtle objects have?
 Code in files
 =============
 
-Most code is written and executed from a file. 
+Most code is written and executed from a file.
 
-Using SublimeText to create a file named `my_turtle_file.py` with this code:: 
+Use SublimeText to create a file named `my_turtle_file.py` in the documents folder with this code::
 
     from turtle import Turtle, exitonclick
 
@@ -173,17 +177,19 @@ Using SublimeText to create a file named `my_turtle_file.py` with this code::
     tess.shape("turtle")
     tess.forward(100)
 
-    exitonclick()  # Why this? Experiment by commenting it out.
+    exitonclick()
 
 .. tip::
 
-    All word document file names end with .doc, 
-    all files names with python code must end with .py
+    All file names with python code must end with .py
+
     We can comment out lines of code using #
 
-In cmd.exe call the python command with the filename `my_turtle_file.py` as parameter::
-  
-    ~ > python my_turtle_file.py
+Open a terminal and make sure you are in the documents directory (:ref:`See Terminal 101 <terminal-101>`). If you still have the Python interpreter open in your terminal you can exit using ``cmd + d``.
+
+In the terminal call the python interpreter command with the filename `my_turtle_file.py` as parameter::
+
+    python my_turtle_file.py
 
 
 .. tip::
@@ -196,28 +202,30 @@ In cmd.exe call the python command with the filename `my_turtle_file.py` as para
 Questions/Practicals
 --------------------
 
-1. What are the differences between using `python` interactively and using files? When would you use one or the other?
+1. What happens if you delete or comment out ``exitonclick()`` in your script and re-run it? Explain why you think this happens - discuss with your team and mentor.
 
-2. Challenge yourself to find as many different ways of drawing with a turtle object.
+2. What are the differences between using `python` interactively and using files? When would you use one or the other?
 
-3. Take your time to draw something useful and/or crazy.
+3. Challenge yourself to find as many different ways of drawing with a turtle object.
+
+4. Take your time to draw something useful and/or crazy.
 
 
 
 Shape Exercises
 ===============
 
-Lets program some shapes. We do this by breaking down into step by step instructions principles of geometry.
+Lets program some shapes. We do this by breaking down the principles of geometry into step by step instructions.
 
 Put all code inside a file named `shapes.py` to be executed using::
-    
+
     python shapes.py
 
 
 Shapes:
 
-* Draw a square as in the following picture. 
-  
+* Draw a square as in the following picture.
+
 .. tip:: Squares have right angles which are 90 degrees.
 
 .. image:: /images/turtle-square.png
@@ -228,11 +236,11 @@ Shapes:
 .. image:: /images/turtle-rectangle.png
 
 
-* Draw an equilateral triangle. 
+* Draw an equilateral triangle.
 
 .. tip:: An equilateral triangle has 3 sides of equal length and each corner has an angle of 60 degrees.
 
-* Draw many squares. Each square should be tilted left of the previous. 
+* Draw many squares. Each square should be tilted left of the previous.
 
 .. image:: /images/turtle-many-squares.png
 
@@ -242,3 +250,6 @@ Experiment with the angles between the individual squares. The picture shows thr
 
 .. tip:: Reuse the code you have already written.
 
+* Really want a challenge? Draw the 'flower' shape below:
+
+.. image:: /images/spirograph.png

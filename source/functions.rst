@@ -1,12 +1,12 @@
 Functions
 *********
 
-You can think of functions as actions, verbs, or commands 
-and you can think of parameters as adverbs: 'run, quickly'
+You can think of functions as actions, verbs, or commands
+and you can think of parameters as adverbs, e.g. 'run, quickly'
 
 Functions are special objects that contain code.
 
-When you call them, using special syntax `()`, you execute the
+When you call them, using the special syntax `()`, you execute the
 code they contain.
 
 ::
@@ -16,29 +16,30 @@ code they contain.
     >>> turtle.forward(10)         # actioned by use of '()'s
 
 
-All turtle instructions are examples of calling functions attached 
+All turtle instructions are examples of calling functions attached
 to the turtle object.
 
 `print` is another function::
-    
+
     >>> print('hello')
 
 `print` simply prints its parameter to the console.
 
 .. tip::
 
-    Functions and methods are very similar. 
+    Functions and methods are very similar.
     Methods exist on objects however functions stand alone.
 
 
 Function objects
 ================
 
-A function like everything in Python is an object. Function objects are different in that they contain blocks of code.
+A function - like everything in Python - is an object. Function objects are different to
+normal objects in that they contain blocks of code.
 
-Functions help in letting programmers organise and reuse code. They help create new abstractions.
+Functions help in letting programmers organise and reuse code. They help create useful abstractions.
 
-Function objects have names. The name is assigned at the same time you define a function.
+Function objects - like normal variables - have names. The name is assigned at the same time you define a function.
 
 defining
 --------
@@ -51,7 +52,7 @@ Creating function objects requires special syntax::
     >>> type(my_function)
     function
 
-The ``def`` keyword is followed by the function object name, followed by () and then a colon. 
+The ``def`` keyword is short for 'define' and is followed by the function object name, followed by () and then a colon.
 
 example::
 
@@ -68,14 +69,14 @@ Note:
 Usage
 -----
 
-We 'call' functions by adding `()` at the end of their names. 
-This is syntax unique to functions. It means action the function objects' code block.
+We 'call' functions by adding `()` at the end of their names.
+This is syntax unique to functions. It means execute the function object's code block.
 
 
 IndentationError
 ----------------
 
-Indentation is the number of spaces from the left hand side. In python it defines blocks of code. 
+Indentation is the number of spaces from the left hand side. In python it defines blocks of code.
 
 If you get this kind of error::
 
@@ -86,49 +87,50 @@ If you get this kind of error::
             ^
     IndentationError: expected an indented block
 
-It simply means the indentation wrong. Here the programmer has
-forgotten to add 4 spaces on the new line after the colon.
+It simply means the indentation is wrong. Here the programmer has forgotten to
+add 4 spaces before the line after the colon.
 
 
 Arguments
 =========
 
-We saw names generalise code and eases code reuse. This is also true of functions that take arguments.
+We saw that names can generalise code and ease code reuse. This is also true of functions that take arguments.
 
-Compare this function without arguments:: 
+Compare this function without arguments::
 
     def draw_right_angle():
         turtle.forward(10)
         turtle.left(90)
         turtle.forward(10)
 
-to this one with arguments:: 
+to this one with arguments::
 
     def draw_right_angle(length):
         turtle.forward(length)
         turtle.left(90)
         turtle.forward(length)
 
-The second function is more flexible. It can be used to move by any length.
+The second function is more flexible. It can be used to move in a right-angle of any length,
+whereas the first function function has the length of 10 'hardcoded' into the function.
 
-The argument acts as a *variable* only defined inside the function's code block.
+An argument acts as a *variable* that is only defined inside the function's code block.
 
-Functions can have many arguments:: 
+Functions can have many arguments::
 
     def move_diagonally(angle, length):
         turtle.left(angle)
         turtle.forward(length)
 
 
-Function Scope 
+Function Scope
 ==============
 
-We have seen two ways to add to a given namespace:
+We have seen two ways to add names to a namespace:
 
 1. An assignment statement adds a name that references an object.
-2. A function definition associates a name with an object of type function.
+2. A function definition adds a name that references an object of type function.
 
-Functions however create a namespace for the code it contains.
+Each function creates its own private namespace for the code it contains.
 
 We will use pythontutor to exercise visualising program execution.
 
@@ -140,17 +142,16 @@ We will use pythontutor to exercise visualising program execution.
 
 Step through each line of code in the browser.
 
-Notice that when execution enters a function, a new 'frame' is
-created.
+Notice that when execution enters a function, a new 'frame' is created.
 
 The interpreter creates a new namespace associated with this frame. It is
-isolated from the 'parent' frame's namespace. This namespace is emtpy unless 
-parameters are passed.
+isolated from the 'parent' frame's namespace. This namespace is empty unless
+arguments are passed.
 
 .. tip::
 
-    A namespace and a frame are different objects. For the purpose of this course 
-    however think of them as the same.
+    Technically, a namespace and a frame are different objects. For the purpose of this course
+    however you can think of them as the same thing.
 
 
 Exercises
@@ -162,7 +163,7 @@ Shapes with Arguments
 
 Reopen ``shapes.py`` and define every shape as a function with sensible arguments.
 
-Consider whether this make the code more modular, readable, reusable and general?
+Consider how this makes the code more modular, readable, reusable and general.
 
 House
 -----
