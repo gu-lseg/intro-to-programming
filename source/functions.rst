@@ -1,18 +1,28 @@
 Functions
 *********
 
-A functions is some code which has been given a name and which can be used
+A function is some code which has been given a name and which can be used
 wherever you need it in your program. When we use a function we say we are
 "calling" it.
 
 Some examples of functions we've already used are ``print``, ``int`` and
 ``type``.
 
-    >>> print("hello") hello
+    >>> print("hello")
+    hello
+    >>> int("13")
+    13
+    >>> type(True)
+    <type bool>
 
-The ``print`` function simply prints out what is between the brackets. We use
-one value, or "argument", when calling ``print``, but some functions can be
-called with zero arguments, for example the ``exit`` function:
+The ``print`` function simply prints out what is between the brackets. The
+``int`` function turns something into an integer (in this example it's a
+string "13"). The ``type`` function tells you the type of object something
+is.
+
+All of these functions only require one value, or "argument", inside the
+brackets. But some functions can be called with zero arguments, for example
+the ``exit`` function:
 
     >>> exit()
 
@@ -40,9 +50,17 @@ without repeating it.
 
 Definining functions
 --------------------
+=======
+A function - like everything in Python - is an object. Function objects are different to
+normal objects in that they contain blocks of code.
 
-Every function has to be "defined" before it can be used. To define a function
-you use ``def``:
+Functions help in letting programmers organise and reuse code. They help create useful abstractions.
+
+Function objects - like normal variables - have names. The name is assigned at the same time you define a function.
+>>>>>>> master
+
+Every function has to be "defined" before it can be used; functions have names
+like variables. To define a function you use ``def``:
 
     >>> def say_hello(name):
     ...     print("hello " + name + "!")
@@ -80,17 +98,6 @@ arguments the function requires.
     hello Barry!
     >>> say_hello("Paul")
     hello Paul!
-    >>> s_club_7 = ["Rachel", "Jo", "Bradley", "Tina", "Jon", "Hannah", "Paul"]
-    >>> for person in s_club_7:
-    ...     say_hello(person)
-    ...
-    hello Rachel!
-    hello Jo!
-    hello Bradley!
-    hello Tina!
-    hello Jon!
-    hello Hannah!
-    hello Paul!
     >>> going_nowhere()
     >>> exit()
 
@@ -101,16 +108,26 @@ Function arguments make functions more flexible and useful. For example compare
 this function for drawing a square without arguments::
 
     def draw_100_by_100_square():
-        for _ in range(4):
-	    turtle.forward(100)
-            turtle.left(90)
+        turtle.forward(100)
+        turtle.left(90)
+	turtle.forward(100)
+        turtle.left(90)
+	turtle.forward(100)
+        turtle.left(90)
+	turtle.forward(100)
+        turtle.left(90)
 
 to this one with an argument called "size"::
 
     def draw_square(size):
-        for _ in range(4):
-	    turtle.forward(size)
-            turtle.left(90)
+        turtle.forward(size)
+        turtle.left(90)
+	turtle.forward(size)
+        turtle.left(90)
+	turtle.forward(size)
+        turtle.left(90)
+	turtle.forward(size)
+        turtle.left(90)
 
 The second function is more flexible; it can be used to draw a square of any
 size. Here are some more examples of functions with arguments::
@@ -155,7 +172,7 @@ Conversions
 -----------
 
 4. Write a function called ``celsius_to_fahrenheit`` which has one argument and
-   convert a temperature in degrees celsius into the equivalent in degrees
+   converts a temperature in degrees celsius into the equivalent in degrees
    fahrenheit
    
    .. tip:: Check Wikipedia to find out how to do this conversion --

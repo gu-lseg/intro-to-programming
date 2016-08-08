@@ -1,18 +1,18 @@
-Conclusions 
+Conclusions
 ***********
 
 Programming
 ===========
 
-The constructs we have learnt (loops, conditions, data structures) mean that we
-are far more expressive as programmers.
+The constructs we have learned (loops, conditions, data structures) mean that we
+can be very expressive as programmers.
 
-Combined with abstractions we can compose and recompose new programs.
+Combined with abstractions we can combine new programs together.
 
-Building on our previously defined concept of a house we now use repetition 
+Building on our previously defined concept of a house we now use repetition
 to define a row of houses.
 
-:: 
+::
 
     def row_of_houses(number, size):
         for i in range(number):
@@ -50,8 +50,8 @@ complexity. Programming is not only about getting a computer to do things. It is
 writing code that is useful to humans.
 
 Good programming is harnessing complexity by writing code that rhymes with our
-intuitions. Good code is code that we can use with a minimal amout of context
-and already be productive.
+intuitions. Good code is code that we can use with a minimal amount of context
+and that allows us to be productive straight away.
 
 By calling::
 
@@ -62,14 +62,14 @@ helps because the code is defined at the appropriate level of abstraction over t
 
 The two major advantages are:
 
-* detail and complexity is hidden. 
+* detail and complexity is hidden.
 * the definition of the function object called `square` is shorter clearer
   and truer to its mathematical (conceptual) definition.
 
 
 This course illustrates that creative programming is about constructing useful
 abstractions. It is also about exercising your intuition to make you more
-productive. 
+productive.
 
 Design
 ======
@@ -93,13 +93,13 @@ Exercises
 A Text editor
 -------------
 
-Think about the objects that you'd have to use to reprsent editing text.
+Think about the objects that you'd have to use to represent editing text.
 
 
 Your Project
 ------------
 
-Programmers model other domains. Think of an area where you are expert and
+Programmers model other domains. Think of an area in which you are an expert and
 how you might code it.
 
 What objects, functions and variables would need to be defined?

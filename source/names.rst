@@ -112,10 +112,10 @@ What does each set of characters on either side of the equal sign mean?
 Reusability
 ===========
 
-Names enhance a programmers' expressivity. They permit generalising code
+Names enhance a programmer's expressivity. They permit generalising code
 thereby facilitating code reuse. Indeed they are often called variables.
 
-Consider this code that draws a square with side length 50::
+Consider this code, which draws a square with side length 50::
 
     turtle.forward(50)
     turtle.left(90)
@@ -162,13 +162,13 @@ The name `right_angle` was chosen to refer to an `int` of value 90.
 We could have used `thirty_degree_angle`, `angle`, or `awef` and the code would work fine. However:
 
 * `thirty_degree_angle` is misleading its 90 not 30 degrees.
-* `angle` is perhaps ok but a little vague
+* `angle` is perhaps OK but a little vague
 * `awef` is nonsense and conveys no meaning
 
 By choosing appropriate names you make the code more readable and
 intuitive. Readability is very important even for projects you are working on on
 your own. It is not always easy to remember what your intention was when you come
-back and look at your code at a later date. If you have used good variable and method names
+back and look at your code. If you have used good variable and method names
 it will be easier to make changes to your code at a later date.
 
 Exercises

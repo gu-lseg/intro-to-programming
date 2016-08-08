@@ -1,18 +1,16 @@
 Conditionals
 ************
 
-Conditional flow control is how the python interpreter chooses which code to
-execute. Think of it as how to express choices. Conditionals are a very powerful
-part of programming as it means that you can get your program to carry out different
-behaviour depending on input rather than having your program do the same thing
-every time it runs.
+Conditionals give the python interpreter a choice of which lines of code to
+execute. Conditionals are a very powerful part of programming as they allow the program
+to carry out different behaviour depending on input rather than doing the same thing
+every time it is run.
 
 Boolean expressions are lines of code that resolve to a boolean object. There
-are only two values a boolean object can take: True or False.
+are only two values that a boolean object can take: `True` or `False`.
 
 Conditionals always base their decisions on the result of a boolean expression.
 They are always followed by a block of code.
-
 
 Furthermore conditional loops enable us to harness logic relating to repetition.
 
@@ -20,11 +18,12 @@ Furthermore conditional loops enable us to harness logic relating to repetition.
 Code Blocks
 ===========
 
-A block of code is code that will execute together. In Python a block is defined by the
-use of indentation.
+A block of code is one or more lines of code that will be executed one after the other.
+In Python a block is defined by the use of indentation.
 
-All types of conditionals use code blocks which are executed depending on the
-outcome of the conditional expression that guards their execution.
+All conditionals are followed by a code block whose execution depends on the
+outcome of the conditional expression above it. A conditional is often said to 'guard' the
+execution of a code block.
 
 .. code-block:: python
 
@@ -39,7 +38,7 @@ outcome of the conditional expression that guards their execution.
 
 .. tip::
 
-    In other languages code blocks are defined by the use of braces `{}`s
+    In other languages code blocks are defined by the use of braces: `{}`
 
 Questions
 -------
@@ -60,8 +59,10 @@ Equality on strings is defined as follows:
     >>> '5' == '6'
     False
 
-Generally the objects have to first be of the same type and then have the same
-value to be equal:
+Generally both objects have to
+- be of the same type and
+- have the same value
+in order to be equal:
 
 .. code-block:: python
 
@@ -79,7 +80,7 @@ or `False` response.
 The `while` loop
 ================
 
-The `while <condition>:` construct is a way of instructing the interpreter to repeat
+The `while <condition>:` construct is a way of instructing the interpreter to repeatedly execute a code block
 indefinitely. The condition defines when the loop will terminate.
 
 syntax
@@ -121,7 +122,7 @@ visualising execution
 .. tip::
     A while loop is used to repeatedly execute an instruction until a condition
     is no longer true. You should make sure that the condition will eventually be
-    false otherwise your program will run forever. If you do end up writing a loop like
+    false otherwise your program will run forever! If you do end up writing a loop like
     this use ``ctrl + c`` to terminate your program.
 
 loop keywords
@@ -129,8 +130,7 @@ loop keywords
 
 `break` is a keyword that instructs the interpreter to break out of a loop.
 `continue` instructs the interpreter to skip the rest of the loop code block
-and continue with the next loop.
-
+and to return to the top of the loop.
 
 Practicals
 ==========
@@ -140,7 +140,7 @@ Practical: Shoe Conversion
 
 A UK company wants to export shoes to continental Europe.
 
-It hires you to write a program that prompts the user for a UK size and return
+They hire you to write a program that prompts the user for a UK size and returns
 the equivalent size it would be in Europe.
 
 Here is a conversion table:
@@ -154,16 +154,15 @@ Europe  UK
 42      8
 ======  =====
 
-Extension: Can you return an error message for the user if they enter an invalid shoe size.
+Extension: Can you return an error message for the user if they enter an invalid shoe size?
 
 Practical: Loan
 ---------------
 
-A loan repayment plan consists of a balance and monthly interest and
-repayments.
+A loan repayment plan consists of a balance, monthly interest and repayments.
 
 The loan amount in question is £100. Repayments are made at £20. Interest is
-charged monthly at %10.
+charged monthly at 10%.
 
 Write a program that prints to screen the remaining balance after every month.
 
@@ -179,14 +178,14 @@ Write a command line program that asks a user for:
 * Weight in Kilograms
 * Height in Meters
 
-Return the bmi result, followed by the users' BMI classification.
+and returns the BMI result, followed by the user's BMI classification.
 
 BMI Classification
 
 .. tip::
 
-    You will have to do some research online for how to calculate a persons
-    bmi.
+    You will have to do some research online for how to calculate a person's
+    BMI.
 
     Try working the maths out on paper first before you write the code.
 

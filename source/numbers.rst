@@ -11,26 +11,25 @@ Floats    Decimal      3.4  -23.001
 Strings   Text         'abc' 'bob'
 ========  ===========  ============
 
-We will look at how to create objects of these types and what operators 
-(behaviours) they respond to.
+We will look at how to create objects of these types and how to manipulate
+them.
 
 
 Integers & Floats
 =================
 
-`int` objects represent natural numbers. 
+`int` objects represent natural numbers.
 `float` objects represent rational numbers, numbers that have a decimal value.
 Both types can represent positive or negative numbers.
 
-Creation 
+Creation
 --------
 
-Unlike creating turtles there is no formality to creating an `int` and `float`
-objects.
+It is easier to create ints and floats than it was to create turtles.
 
-You just type them as literals::
+You can just type them out::
 
-    >>> 3              
+    >>> 3
     3
     >>> type(-5)        # confirm type
     int
@@ -42,8 +41,9 @@ You just type them as literals::
 Questions
 ---------
 
-1. Why do we have two different types to represent numbers?
-2. Find some uses cases where you'd choose an `int` and others where
+1. What is the different between an `int` and a `float`?
+2. Why do we have two different types to represent numbers?
+3. Find some uses cases where you'd choose an `int` and others where
    a `float` is more suitable.
 
 Number Operators
@@ -68,14 +68,22 @@ behaviour we expect from basic arithmentic.
     >>> 5 - 6
     -1
 
-The behaviour is to compute and return the result as a new object with the same
-type.
+The behaviour is to compute and return the result as a new number object with the same
+type. In the above example `5 + 4` equals the 9 which is of type `int`.
+
+Questions
+---------
+
+1. What is the difference between `2 * 5 + 3` and `2 * (5 + 3)`? What are the
+   answers of each expression?
+2. What happens when you divide `5` by `2`? What about `5` by `2.0`. Is there a
+   difference? If so, why?
 
 Comparison operators
 --------------------
 
 Likewise two number objects separated by comparison operators `==` `!=`
-`>=` `<=` `<` `>`, have the behaviour we expect. 
+`>=` `<=` `<` `>`, have the behaviour we expect.
 
 ::
 
@@ -90,7 +98,7 @@ Likewise two number objects separated by comparison operators `==` `!=`
 .. tip::
 
     `int` objects are used to solve problems that require manipulating numbers
-    but with no decimal point such as age, and days, IDs.
+    but with no decimal point such as age, days, and IDs.
 
 These are expressions and these evaluate to `True` or `False`.
 
@@ -122,7 +130,9 @@ code to execute.::
 Questions
 ---------
 
-Find some uses cases where you'd use the if conditional.
+1. In an if conditional, what happens if the boolean is true?
+2. When does the `else` block of code run in an if else statement?
+3. What could you use an if conditional for?
 
 Number Exercises
 ================
@@ -131,9 +141,9 @@ Number Exercises
    `bar.py` that prints 'underaged' or 'ok' depending on the age entered in the code.
 
 2. A ride operator needs to ensure clients are taller than 150cm due to security.
-   Write a prgram in a file named `ride.py` that will print 'ok' or 'not tall enough' 
+   Write a prgram in a file named `ride.py` that will print 'ok' or 'not tall enough'
    given a height entered in the code.
 
 3. A trader wants to algorithmically buy 'ACME` corp stock if they rise above
-   0.005$ but sell if they are below 0.001$. Write a script `trader.py` that 
+   0.005$ but sell if they are below 0.001$. Write a script `trader.py` that
    prints 'buy', 'sell', 'hold' depending on a sale price entered in the script.
