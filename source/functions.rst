@@ -1,192 +1,197 @@
 Functions
 *********
 
-You can think of functions as actions, verbs, or commands
-and you can think of parameters as adverbs, e.g. 'run, quickly'
+A function is some code which has been given a name and which can be used
+wherever you need it in your program. When we use a function we say we are
+"calling" it.
 
-Functions are special objects that contain code.
+Some examples of functions we've already used are ``print``, ``int`` and
+``type``.
 
-When you call them, using the special syntax `()`, you execute the
-code they contain.
+    >>> print("hello")
+    hello
+    >>> int("13")
+    13
+    >>> type(True)
+    <type bool>
 
-::
+The ``print`` function simply prints out what is between the brackets. The
+``int`` function turns something into an integer (in this example it's a
+string "13"). The ``type`` function tells you the type of object something
+is.
 
-    >>> turtle.forward             # functions have names
-    <function turtle.forward>
-    >>> turtle.forward(10)         # actioned by use of '()'s
+All of these functions only require one value, or "parameter", inside the
+brackets. But some functions can be called with zero parameters, for example
+the ``exit`` function:
 
+    >>> exit()
 
-All turtle instructions are examples of calling functions attached
-to the turtle object.
+Other functions require more than one parameter, for example the ``max``
+function:
 
-`print` is another function::
-
-    >>> print('hello')
-
-`print` simply prints its parameter to the console.
+    >>> max(1, 2)
+    2
+    >>> max(-1000, 1000, 0)
+    1000
 
 .. tip::
 
-    Functions and methods are very similar.
-    Methods exist on objects however functions stand alone.
+   Like everything else in Python, functions are objects. Function objects
+   contain code which you run using the brackets containing whatever parameters
+   that function needs.
 
 
-Function objects
-================
+Defining and using functions
+============================
 
-A function - like everything in Python - is an object. Function objects are different to
-normal objects in that they contain blocks of code.
+Functions help you to organise your code better. You can split up complicated
+tasks into several smaller, simpler ones. And they allow you to reuse code
+without repeating it.
 
-Functions help in letting programmers organise and reuse code. They help create useful abstractions.
+Definining functions
+--------------------
 
-Function objects - like normal variables - have names. The name is assigned at the same time you define a function.
+Every function has to be "defined" before it can be used; functions have names
+like variables. To define a function you use ``def``:
 
-defining
---------
-
-Creating function objects requires special syntax::
-
-    >>> def my_function():
-    ...     print('hello')    # Note 4 space indentation
+    >>> def say_hello(name):
+    ...     print("hello " + name + "!")
     ...
-    >>> type(my_function)
-    function
 
-The ``def`` keyword is short for 'define' and is followed by the function object name, followed by () and then a colon.
+The ``def`` keyword is followed by the function name, then the names of any
+parameters the function requires inside brackets, and then a colon. On the
+following lines you write the block of code for the function indented by four
+spaces, like it's indented when you write an ``if`` or ``while`` block. We call
+this a "definition".
 
-example::
+Here's an example of a definition of a function called "going_nowhere" which
+doesn't have any parameters:
 
-    def going_nowhere():
-        turtle.forward(50)
-        turlle.backward(50)
-
-Note:
-
-* The body of a function is the following block of code.
-* A block is defined by a colon, and one or more indented lines.
-* The indents are 4 spaces. The block ends on the first non indented line. (Take care to use spaces and not tabs for indenting)
-
-Usage
------
-
-We 'call' functions by adding `()` at the end of their names.
-This is syntax unique to functions. It means execute the function object's code block.
-
-
-IndentationError
-----------------
-
-Indentation is the number of spaces from the left hand side. In python it defines blocks of code.
-
-If you get this kind of error::
-
-    >>> def awef():
-    ... print('hi')
-      File "<stdin>", line 2
-        print('hi')
-            ^
-    IndentationError: expected an indented block
-
-It simply means the indentation is wrong. Here the programmer has forgotten to
-add 4 spaces before the line after the colon.
-
-
-Arguments
-=========
-
-We saw that names can generalise code and ease code reuse. This is also true of functions that take arguments.
-
-Compare this function without arguments::
-
-    def draw_right_angle():
-        turtle.forward(10)
-        turtle.left(90)
-        turtle.forward(10)
-
-to this one with arguments::
-
-    def draw_right_angle(length):
-        turtle.forward(length)
-        turtle.left(90)
-        turtle.forward(length)
-
-The second function is more flexible. It can be used to move in a right-angle of any length,
-whereas the first function function has the length of 10 'hardcoded' into the function.
-
-An argument acts as a *variable* that is only defined inside the function's code block.
-
-Functions can have many arguments::
-
-    def move_diagonally(angle, length):
-        turtle.left(angle)
-        turtle.forward(length)
-
-
-Function Scope
-==============
-
-We have seen two ways to add names to a namespace:
-
-1. An assignment statement adds a name that references an object.
-2. A function definition adds a name that references an object of type function.
-
-Each function creates its own private namespace for the code it contains.
-
-We will use pythontutor to exercise visualising program execution.
-
-|py-function-ns|
-
-.. |py-function-ns| raw:: html
-
-    <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=x+%3D+1%0Ay+%3D+2%0Asuccess+%3D+'works'%0Afailure+%3D+'broken'%0A%0Adef+inc(p)%3A%0A++++incremented+%3D+p+%2B+1%0A++++return+incremented%0A%0Adef+print_result(result)%3A%0A++++if+result%3A%0A++++++++print(success)%0A++++else%3A%0A++++++++print(failure)%0A%0Ainc_x+%3D+inc(x)%0Aprint_result(inc_x+%3D%3D+y)%0A&origin=opt-frontend.js&cumulative=false&heapPrimitives=false&drawParentPointers=false&textReferences=false&showOnlyOutputs=false&py=2&rawInputLstJSON=%5B%5D&curInstr=0&codeDivWidth=350&codeDivHeight=400"> </iframe>
-
-Step through each line of code in the browser.
-
-Notice that when execution enters a function, a new 'frame' is created.
-
-The interpreter creates a new namespace associated with this frame. It is
-isolated from the 'parent' frame's namespace. This namespace is empty unless
-arguments are passed.
+    >>> def going_nowhere():
+    ...     turtle.forward(50)
+    ...     turtle.backward(50)
+    ...
 
 .. tip::
 
-    Technically, a namespace and a frame are different objects. For the purpose of this course
-    however you can think of them as the same thing.
+   It's important to indent the code in a function definition by four spaces. If
+   you don't you'll see an error saying:
 
+   ``IndentationError: expected an indented block``
+
+Using functions
+---------------
+
+Once you've defined a function you can use, or "call", it as many times as you
+need it by putting the function name followed by the brackets containing the
+parameters the function requires.
+
+    >>> say_hello("Barry")
+    hello Barry!
+    >>> say_hello("Paul")
+    hello Paul!
+    >>> going_nowhere()
+    >>> exit()
+
+Function parameters
+===================
+
+Function parameters make functions more flexible and useful. For example compare
+this function for drawing a square without parameters::
+
+    def draw_100_by_100_square():
+        turtle.forward(100)
+        turtle.left(90)
+	turtle.forward(100)
+        turtle.left(90)
+	turtle.forward(100)
+        turtle.left(90)
+	turtle.forward(100)
+        turtle.left(90)
+
+to this one with an parameter called "size"::
+
+    def draw_square(size):
+        turtle.forward(size)
+        turtle.left(90)
+	turtle.forward(size)
+        turtle.left(90)
+	turtle.forward(size)
+        turtle.left(90)
+	turtle.forward(size)
+        turtle.left(90)
+
+The second function is more flexible; it can be used to draw a square of any
+size. Here are some more examples of functions with parameters::
+  
+    def left_diagonal(angle, length):
+        turtle.left(angle)
+	turtle.forward(length)
+        turtle.right(angle) # stay facing in the same direction
+
+    def draw_polygon(side_length, sides):
+        for _ in range(sides):
+            turtle.forward(side_length)
+	    turtle.left(360.0/sides)
+
+.. tip::
+
+   See what happens if you define a function with and parameter which has the
+   same name as a variable in your program.
+
+       >>> name = "Miss Moneypenny"
+       >>> def witty_comeback(name):
+       ...     print("Do you expect me to talk?")
+       ...     print("No " + name + ", I expect you to die!")
+       ...
+       >>> witty_comeback("Mr Bond")
+       Do you expect me to talk?
+       No ??? I expect you to die!
 
 Exercises
 =========
 
+Shapes
+------
 
-Shapes with Arguments
----------------------
-
-Reopen ``shapes.py`` and define every shape as a function with sensible arguments.
-
-Consider how this makes the code more modular, readable, reusable and general.
-
-House
------
-
-Refactor (rewrite) your house code as a function that uses two other functions.
+1. Open your "shapes.py" file and define every shape as a function with
+   parameters.
+2. Write a simple program which uses your new functions to check that they work.
+3. Rewrite your program for drawing a house using your shape functions.
 
 
-Conversion Programs
--------------------
+Conversions
+-----------
 
-This exercise assumes you have completed the `about_functions` koans.
+4. Write a function called ``celsius_to_fahrenheit`` which has one parameter and
+   converts a temperature in degrees celsius into the equivalent in degrees
+   fahrenheit
+   
+   .. tip::
 
-For each conversion function you completed in the Koans, write a simple command
-line program that prompts the user for input and returns the result.
+      Check Wikipedia to find out how to do this conversion --
+      https://en.wikipedia.org/wiki/Fahrenheit#Definition_and_conversions
 
-For example with the function convert_to_miles, create a file named
-`convert_miles_to_kilometers.py` and put your code in there.
+5. (Extension) Create a new program called "currency_converter.py" and copy the
+   following code into it::
 
-Expect users to be able to run this kind of dialog::
+     import urllib2 import json
 
-    > python convert_miles_to_kilometers.py         # user runs program
-    Please enter miles to convert: 34               # user enters 34
-    34 miles corresponds to about 54.4 kilometers
-    >
+     def get_conversion_rate(base, to):
+         response = urllib2.urlopen("http://api.fixer.io/latest?base=" + base + "&symbols=" + to)
+	 data = json.loads(response.read())
+	 return data["rates"][to]
 
-Do the same for celsius to farenheit.
+   This defines a function called ``get_conversion_rates`` which fetches the
+   current exchange rate between two currencies from the Internet. For example::
+
+     >>> get_conversion_rate("USD", "GBP")
+     0.751
+
+   Your task is to make the currency_converter.py program work like this::
+
+     $ python currency_converter.py
+     What currency do you want to convert from? USD
+     What currency do you want to convert to? GBP
+     How much do you want to convert? 100
+     100 USD = 75.1 GBP (exhange rate of 0.751)
