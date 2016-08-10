@@ -21,7 +21,7 @@ Table of Contents:
    data_structures
    loops
    conclusions
-   appendix_windows
+   appendix_mac
    appendix_errors
    appendix_classes
    appendix_resources

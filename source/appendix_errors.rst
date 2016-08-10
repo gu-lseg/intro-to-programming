@@ -4,7 +4,7 @@ Appendix B: Debugging
 Exceptions occur when the interpreter can't carry out a given instruction. The
 type of error (Exceptions are objects) communicates what is wrong.
 
-We stress that most of programming is error driven. Don't think of errors negatively rather they are problem solving opportunities.
+It is important to remember that most of programming is error driven. Don't think of errors negatively, rather they are problem solving opportunities.
 
 Debugging is working out what went wrong and fixing it.
 
@@ -28,7 +28,7 @@ person to come up against the problem.
     Always read Errors and use your intuition, then Google.
     If that hasn't helped only then ask an expert.
 
-With time many errors map to solutions instantly.
+With time, you will know the solution to an error instantly.
 
 AttributeError
 --------------
@@ -68,6 +68,27 @@ Parentheses `()` are required after the name and the ending colon `:`.
 
 No error, `print_hi` is properly defined.
 
+NameError
+------------------
+
+::
+
+    >>> var + 1
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    NameError: name 'var' is not defined
+
+Here we try and use a variable `var` before we have defined it, we need to always ensure we define a variable before we use it:
+
+::
+
+  >>> var = 1
+  >>> var + 1
+  2
+
+.. |python_website| raw:: html
+
+    <a href="https://docs.python.org/2/library/exceptions.html" target="_blank">Read more about the built in Python exceptions.</a>
 
 pdb
 ===
@@ -145,28 +166,34 @@ Execute with::
 
 `pdb` starts program and pauses at first line::
 
-    > /Users/greg/my.py(1)<module>()
-    -> x = 5
+    > my.py(1)<module>()
+    -> x = 1
     (Pdb)
 
-Executing `l` results in::
+Type `l` and press enter - this results in::
 
     (Pdb) l
-      1  ->	x = 5
-      2  	y = 6
-      3
-      4  	def f():
-      5  	    z = 4
-      6  	    total = sum(x, y, z)
-      7  	    return total
-      8
-      9  	print('hi')
-     10  	print(f())
+      1  -> x = 1
+      2   y = 2
+      3   success = 'works'
+      4   failure = 'broken'
+      5
+      6   def inc(p):
+      7       incremented = p + 1
+      8       return incremented
+      9
+     10   def print_result(result):
+     11       if result:
     [EOF]
 
-Step through each line of code keeping.
+Step through each line of code by typing `n` and pressing enter.
 
 Ensure you explore the two frames when you enter the f functions' frame.
 
 .. tip::
     We have used a python code visualiser in a similar way.
+
+
+.. |top_ten_mistakes| raw:: html
+
+    <a href="https://www.toptal.com/python/top-10-mistakes-that-python-programmers-make" target="_blank">Read the top 10 mistakes that python programmers make.</a>
