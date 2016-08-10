@@ -24,12 +24,8 @@ When `terminal` launches you get a prompt::
 
     ~ >
 
-The prompt gives you your currnent location followed by a `>`. 
+The prompt gives you your current location followed by a `>`. 
 Here I am in the directory `COMPLETE THIS` which itself is in the directory `Users`. 
-
-Now you enter the `dir` command:: 
-
-    C:\Users\greg-lo> dir
 
 This will list all the files and folders in your current directory.
 
