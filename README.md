@@ -1,5 +1,7 @@
 # Introduction to programming in Python
 
+View this course on [python-at-the-guardian.readthedocs.io](http://python-at-the-guardian.readthedocs.io/en/latest/).
+
 ## Dependencies
 
     pip install -r requirements.txt
